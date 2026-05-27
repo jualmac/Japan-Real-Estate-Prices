@@ -1,5 +1,6 @@
-# Datasets
+# Data
 data/
+*.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -146,6 +147,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+/venv
 
 # Spyder project settings
 .spyderproject
@@ -203,6 +205,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+.cursor
 
 # Marimo
 marimo/_static/
