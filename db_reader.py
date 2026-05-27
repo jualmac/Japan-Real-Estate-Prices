@@ -15,6 +15,9 @@ import pandas as pd
 # FUNCTION
 #
 ########################################################################################################################
+DATASETS_DIR = Path("./datasets")
+DB_FILE = DATASETS_DIR / "jpHouses.db"
+
 db_file = 'datasets/jpHouses.db'
 sql_query = f"""
     SELECT * 
@@ -33,6 +36,15 @@ data_types = {
     "MaxTimeToNearestStation": float,
     "Frontage": float,
 }
+
+def read_data() -> Path:
+    """
+    Read CSV files from data/datasets and initialize the SQLite database in the same folder.
+    """
+    DATASETS_DIR.mkdir(parents=True, exist_ok=True)
+    db = DBConnection(database_file=str(DB_FILE))
+    db.initialize_database(DATASETS_DIR)
+    return DATASETS_DIR
 
 class DBConnection:
     """
@@ -109,12 +121,6 @@ class DBConnection:
         Initialize SQLite tables from downloaded Kaggle CSV files when the database is empty.
         """
         data_directory = Path(data_directory)
-        csv_files = sorted(data_directory.rglob("*.csv"))
-
-        if not csv_files:
-            print(f"No CSV files found in {data_directory.resolve()}.")
-            return
-
         Path(self.database_file).parent.mkdir(parents=True, exist_ok=True)
 
         try:
@@ -128,11 +134,17 @@ class DBConnection:
                     print("Database already has tables, skipping initialization.")
                     return
 
+                csv_files = sorted(data_directory.rglob("*.csv"))
+
+                if not csv_files:
+                    print(f"No CSV files found in {data_directory.resolve()}.")
+                    return
+
                 for csv_file in csv_files:
                     table_name = csv_file.stem
 
                     # Each Kaggle CSV becomes one SQLite table with the same base filename;
-                    dataframe = pd.read_csv(csv_file)
+                    dataframe = pd.read_csv(csv_file, low_memory=False)
                     dataframe.to_sql(table_name, conn, if_exists="replace", index=False)
                     print(f"Created table {table_name} from {csv_file.name}.")
 

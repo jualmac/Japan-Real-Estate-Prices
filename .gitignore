@@ -1,3 +1,43 @@
+# LaTeX bullshit
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.brf
+*.dvi
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.pdfsync
+*.ps
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# LaTeX packages/tools
+*.acn
+*.acr
+*.alg
+*.glg
+*.loa
+*.lol
+*.loq
+*.xdy
+
 # Database (too big);
 *.db 
 

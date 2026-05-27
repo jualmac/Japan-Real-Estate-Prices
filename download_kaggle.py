@@ -15,7 +15,6 @@ if not hasattr(kaggle_env, "get_web_endpoint"):
     kaggle_env.get_web_endpoint = kaggle_env.get_endpoint
 
 import kagglehub
-from db_reader import DBConnection
 
 ########################################################################################################################
 #
