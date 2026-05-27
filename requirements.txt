@@ -1,4 +1,6 @@
 #TODO: Stick a version to each before the end + Docker -> Reproducibility;
+kagglehub
+kagglesdk
 lightgbm
 matplotlib
 numpy

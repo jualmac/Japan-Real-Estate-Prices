@@ -15,7 +15,7 @@ import pandas as pd
 # FUNCTION
 #
 ########################################################################################################################
-db_file = 'data/jpHouses.db'
+db_file = 'datasets/jpHouses.db'
 sql_query = f"""
     SELECT * 
     FROM TokyoPrices
@@ -104,7 +104,7 @@ class DBConnection:
         except sqlite3.Error as error:
             print('Error occurred - ', error)
 
-    def initialize_database(self, data_directory: str | Path = "data/trade_prices") -> None:
+    def initialize_database(self, data_directory: str | Path = "datasets") -> None:
         """
         Initialize SQLite tables from downloaded Kaggle CSV files when the database is empty.
         """
