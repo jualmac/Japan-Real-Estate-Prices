@@ -1,30 +1,25 @@
 """
-Helper function to read and write to the SQLite database;
+Helper class to read and write to the SQLite database backing the Japan Real Estate dataset.
 """
 ########################################################################################################################
-#                                                                  
+#
 # LIBRARIES
 #
 ########################################################################################################################
 import sqlite3
 from pathlib import Path
+from typing import Dict, Optional
 import pandas as pd
+from src.config import DATASETS_DIR, DB_FILE
 
 ########################################################################################################################
-#                                                                  
-# FUNCTION
+#
+# CONSTANTS
 #
 ########################################################################################################################
-DATASETS_DIR = Path("./datasets")
-DB_FILE = DATASETS_DIR / "jpHouses.db"
+DEFAULT_QUERY = "SELECT * FROM TokyoPrices"  # TODO: expand once SQL exposes all prefectures;
 
-db_file = 'datasets/jpHouses.db'
-sql_query = f"""
-    SELECT * 
-    FROM TokyoPrices
-""" #TODO: Select all data, not just Tokyo;
-
-data_types = {
+DATA_TYPES: Dict[str, type] = {
     "Breadth": float,
     "PricePerTsubo": float,
     "UnitPrice": float,
@@ -37,26 +32,32 @@ data_types = {
     "Frontage": float,
 }
 
-def read_data() -> Path:
+########################################################################################################################
+#
+# FUNCTIONS / CLASSES
+#
+########################################################################################################################
+def ensure_database() -> Path:
     """
-    Read CSV files from data/datasets and initialize the SQLite database in the same folder.
+    Make sure ./datasets exists and the SQLite file is initialized from local CSVs.
+    Returns the datasets directory.
     """
     DATASETS_DIR.mkdir(parents=True, exist_ok=True)
-    db = DBConnection(database_file=str(DB_FILE))
-    db.initialize_database(DATASETS_DIR)
+    DBConnection().initialize_database(DATASETS_DIR)
     return DATASETS_DIR
+
 
 class DBConnection:
     """
-    Handle SQLite operations for the Japan Real Estate Price Database;
+    Handle SQLite operations for the Japan Real Estate Price database.
     """
 
-    def __init__(self, database_file: str = db_file):
-        self.database_file = database_file
+    def __init__(self, database_file: str | Path = DB_FILE):
+        self.database_file = str(database_file)
 
-    def dataframe_creator(self, query: str = sql_query) -> pd.DataFrame:
+    def dataframe_creator(self, query: str = DEFAULT_QUERY) -> pd.DataFrame:
         """
-        Create a cleaned DataFrame from a SQL query.
+        Run a SELECT query and return a typed DataFrame.
         """
         try:
             # sqlite3.connect creates the SQLite file when it does not exist;
@@ -64,23 +65,22 @@ class DBConnection:
                 print("Connected to SQLite Version", sqlite3.version)
                 dataframe = pd.read_sql_query(query, conn)
 
-            # Keep numeric database columns predictable for analysis and modeling;
-            for column, dtype in data_types.items():
+            for column, dtype in DATA_TYPES.items():
                 if column in dataframe.columns:
-                    dataframe[column] = pd.to_numeric(dataframe[column], errors='coerce').astype(dtype)
+                    dataframe[column] = pd.to_numeric(dataframe[column], errors="coerce").astype(dtype)
 
-            if 'No' in dataframe.columns:
-                dataframe.set_index('No', inplace=True)
-            dataframe.replace('', pd.NA, inplace=True)
+            if "No" in dataframe.columns:
+                dataframe.set_index("No", inplace=True)
+            dataframe.replace("", pd.NA, inplace=True)
             return dataframe
 
         except sqlite3.Error as error:
-            print('Error occurred - ', error)
+            print("Error occurred - ", error)
             return pd.DataFrame()
 
-    def run_sql(self, query: str) -> pd.DataFrame | None:
+    def run_sql(self, query: str) -> Optional[pd.DataFrame]:
         """
-        Run a SQL query on the SQLite database.
+        Run an arbitrary SQL statement; returns a DataFrame for SELECTs, None otherwise.
         """
         try:
             # cursor.description is only populated for queries that return rows;
@@ -96,7 +96,7 @@ class DBConnection:
                 return pd.DataFrame(rows, columns=columns)
 
         except sqlite3.Error as error:
-            print('Error occurred - ', error)
+            print("Error occurred - ", error)
             return None
 
     def insert_dataframe(
@@ -104,7 +104,7 @@ class DBConnection:
         df: pd.DataFrame,
         table_name: str,
         if_exists: str = "append",
-        index: bool = False
+        index: bool = False,
     ) -> None:
         """
         Insert a DataFrame into the specified SQLite table.
@@ -112,13 +112,12 @@ class DBConnection:
         try:
             with sqlite3.connect(self.database_file) as conn:
                 df.to_sql(table_name, conn, if_exists=if_exists, index=index)
-
         except sqlite3.Error as error:
-            print('Error occurred - ', error)
+            print("Error occurred - ", error)
 
-    def initialize_database(self, data_directory: str | Path = "datasets") -> None:
+    def initialize_database(self, data_directory: str | Path = DATASETS_DIR) -> None:
         """
-        Initialize SQLite tables from downloaded Kaggle CSV files when the database is empty.
+        Populate SQLite tables from downloaded Kaggle CSV files when the database is empty.
         """
         data_directory = Path(data_directory)
         Path(self.database_file).parent.mkdir(parents=True, exist_ok=True)
@@ -127,7 +126,7 @@ class DBConnection:
             with sqlite3.connect(self.database_file) as conn:
                 existing_tables = pd.read_sql_query(
                     "SELECT name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%'",
-                    conn
+                    conn,
                 )
 
                 if not existing_tables.empty:
@@ -149,4 +148,4 @@ class DBConnection:
                     print(f"Created table {table_name} from {csv_file.name}.")
 
         except sqlite3.Error as error:
-            print('Error occurred - ', error)
+            print("Error occurred - ", error)

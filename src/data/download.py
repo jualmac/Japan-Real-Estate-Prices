@@ -1,5 +1,5 @@
 """
-Downloads the dataset in case it is not available on './datasets' directly from Kaggle;
+Downloads the dataset in case it is not available on './datasets' directly from Kaggle.
 """
 ########################################################################################################################
 #
@@ -7,22 +7,15 @@ Downloads the dataset in case it is not available on './datasets' directly from 
 #
 ########################################################################################################################
 from pathlib import Path
-
-# KaggleHub weirdness;
 import kagglesdk.kaggle_env as kaggle_env
 
+# KaggleHub weird shit;
 if not hasattr(kaggle_env, "get_web_endpoint"):
     kaggle_env.get_web_endpoint = kaggle_env.get_endpoint
 
 import kagglehub
+from src.config import DATASETS_DIR, TRADE_PRICES_DIR
 
-########################################################################################################################
-#
-# CONSTANTS
-#
-########################################################################################################################
-DATA_ROOT = Path("./data")
-TRADE_PRICES_DIR = DATA_ROOT / "trade_prices"
 KAGGLE_DATASET = "nishiodens/japan-real-estate-transaction-prices"
 
 ########################################################################################################################
@@ -39,7 +32,7 @@ def _trade_prices_dir_exists(directory: Path) -> bool:
 
 def download_tradeprices() -> Path:
     """
-    Download the Kaggle dataset only when ./data/trade_prices is missing.
+    Download the Kaggle dataset only when ./datasets/trade_prices is missing.
     Skips the download when the local trade_prices directory already exists.
     """
     if _trade_prices_dir_exists(TRADE_PRICES_DIR):
@@ -47,11 +40,11 @@ def download_tradeprices() -> Path:
         return TRADE_PRICES_DIR
     print(f"No data found at {TRADE_PRICES_DIR.resolve()}, downloading from Kaggle...")
 
-    # Force the download here because KaggleHub can leave a .complete marker even if it was removed or renamed;
+    # Force re-download because KaggleHub can leave a .complete marker even after manual cleanup;
     downloaded_path = kagglehub.dataset_download(
         KAGGLE_DATASET,
         force_download=True,
-        output_dir=str(TRADE_PRICES_DIR.parent),
+        output_dir=str(DATASETS_DIR),
     )
     print("Path to dataset files:", downloaded_path)
     return TRADE_PRICES_DIR
@@ -62,4 +55,4 @@ def download_tradeprices() -> Path:
 #
 ########################################################################################################################
 if __name__ == "__main__":
-    trade_prices_dir = download_tradeprices()
+    download_tradeprices()
