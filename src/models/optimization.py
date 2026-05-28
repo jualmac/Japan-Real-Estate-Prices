@@ -18,7 +18,7 @@ from pandas.core.frame import DataFrame
 from pandas.core.series import Series
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import ElasticNet
-from sklearn.metrics import mean_squared_log_error
+from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import KFold
 from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
@@ -60,10 +60,11 @@ class OptimizeRegressor:
         self.logger = logger
         PARAMETERS_DIR.mkdir(parents=True, exist_ok=True)
         self.file_name = PARAMETERS_DIR / f"best_params_{model_name}.json"
+        self._logged_lgbm_device = False
 
     def objective(self, trial: optuna.Trial) -> float:
         """
-        Objective function for Bayesian Optimization (returns CV-averaged RMSLE).
+        Objective function for Bayesian Optimization (returns CV-averaged RMSE).
         """
         if self.model_name == "rf":
             n_estimators = trial.suggest_int("n_estimators", 500, 3000, step=100)
@@ -100,6 +101,8 @@ class OptimizeRegressor:
                     min_child_weight=min_child_weight,
                     subsample=subsample,
                     colsample_bytree=colsample_bytree,
+                    tree_method="hist",
+                    device="cuda" if CONFIG.use_gpu else "cpu",
                     n_jobs=-1,
                     random_state=CONFIG.seed,
                 )
@@ -117,6 +120,7 @@ class OptimizeRegressor:
                     learning_rate=learning_rate,
                     max_depth=max_depth,
                     num_leaves=num_leaves,
+                    device_type="gpu" if CONFIG.use_gpu else "cpu",
                     verbosity=-1,
                     n_jobs=-1,
                     random_state=CONFIG.seed,
@@ -169,22 +173,29 @@ class OptimizeRegressor:
         model: Union[RandomForestRegressor, XGBRegressor, LGBMRegressor, ElasticNet, LinearSVR],
     ) -> float:
         """
-        Evaluate the model using K-Fold cross-validation; returns mean RMSLE.
+        Evaluate the model using K-Fold cross-validation; returns mean RMSE.
         """
         kf = KFold(n_splits=5, shuffle=True, random_state=CONFIG.seed)
-        rmsle_scores = []
+        rmse_scores = []
 
         for train_index, val_index in kf.split(self.X_train):
             X_tr, X_val = self.X_train.iloc[train_index], self.X_train.iloc[val_index]
             y_tr, y_val = self.y_train.iloc[train_index], self.y_train.iloc[val_index]
 
             model.fit(X_tr, y_tr)
+            if isinstance(model, LGBMRegressor) and not self._logged_lgbm_device:
+                self.logger.info(
+                    "LightGBM optimization fitted with device_type=%s",
+                    model.booster_.params.get("device_type", "cpu"),
+                )
+                self._logged_lgbm_device = True
+
             y_pred = model.predict(X_val)
 
-            rmsle = np.sqrt(mean_squared_log_error(y_val, y_pred))
-            rmsle_scores.append(rmsle)
+            rmse = np.sqrt(mean_squared_error(y_val, y_pred))
+            rmse_scores.append(rmse)
 
-        return float(np.mean(rmsle_scores))
+        return float(np.mean(rmse_scores))
 
     def optimize(self) -> dict:
         """

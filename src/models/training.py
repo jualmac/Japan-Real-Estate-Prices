@@ -17,6 +17,7 @@ from xgboost import XGBRegressor
 
 from src.config import CONFIG
 from src.models.registry import load_best_params
+from src.utils.io import logger
 
 ModelType = Union[RandomForestRegressor, XGBRegressor, LGBMRegressor, ElasticNet, LinearSVR]
 
@@ -38,9 +39,12 @@ def _instantiate(model_name: str, params: Dict) -> ModelType:
         return RandomForestRegressor(**params)
     if model_name == "xgb":
         params.setdefault("n_jobs", -1)
+        params.setdefault("tree_method", "hist")
+        params.setdefault("device", "cuda" if CONFIG.use_gpu else "cpu")
         return XGBRegressor(**params)
     if model_name == "lgbm":
         params.setdefault("n_jobs", -1)
+        params.setdefault("device_type", "gpu" if CONFIG.use_gpu else "cpu")
         params.setdefault("verbosity", -1)
         return LGBMRegressor(**params)
     if model_name == "enet":
@@ -62,6 +66,11 @@ def train_from_best_params(
     params = load_best_params(model_name)
     model = _instantiate(model_name, params)
     model.fit(X_train, y_train)
+    if isinstance(model, LGBMRegressor):
+        logger.info(
+            "LightGBM final training fitted with device_type=%s",
+            model.booster_.params.get("device_type", "cpu"),
+        )
     return model
 
 

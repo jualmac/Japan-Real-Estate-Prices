@@ -17,6 +17,7 @@ split:
   test_quantile: 0.85
 
 target_transform: log1p
+use_gpu: true
 
 models:
   - xgb
