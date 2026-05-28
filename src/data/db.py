@@ -129,8 +129,11 @@ class DBConnection:
                     conn,
                 )
 
-                if not existing_tables.empty:
-                    print("Database already has tables, skipping initialization.")
+                existing_table_names = set(existing_tables["name"])
+                expected_prefecture_tables = {f"{i:02d}" for i in range(1, 48)}
+
+                if expected_prefecture_tables.issubset(existing_table_names):
+                    print("Database already has all prefecture tables, skipping initialization.")
                     return
 
                 csv_files = sorted(data_directory.rglob("*.csv"))

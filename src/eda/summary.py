@@ -30,6 +30,7 @@ def check_duplicates(df: pd.DataFrame) -> int:
     n_duplicates = int(df.duplicated().sum())
     print("=== DUPLICATE ROW CHECK ===")
     print(f"Duplicated rows (all columns equal): {n_duplicates}")
+    print()
     return n_duplicates
 
 

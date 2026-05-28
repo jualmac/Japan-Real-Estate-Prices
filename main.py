@@ -20,6 +20,7 @@ Orchestrates the full workflow:
 #
 ########################################################################################################################
 from src.config import CONFIG, set_seed
+from src.data.db import ensure_database
 from src.data.download import download_tradeprices
 from src.data.loader import load_all_prefectures
 from src.eda.summary import check_duplicates, nan_profile, print_overview, year_distribution
@@ -45,6 +46,7 @@ def main() -> None:
     logger.info("Pipeline started (seed=%s, n_trials=%s).", CONFIG.seed, CONFIG.n_trials)
 
     download_tradeprices()
+    ensure_database()
     df = load_all_prefectures()
 
     print_overview(df)
