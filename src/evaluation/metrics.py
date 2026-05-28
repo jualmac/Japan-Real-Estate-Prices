@@ -20,7 +20,11 @@ from sklearn.metrics import (
     mean_squared_error,
     r2_score,
 )
+from xgboost import XGBRegressor
+
+from src.models.gpu_data import cudf_available, to_cudf_dataframe, to_host_array, xgboost_uses_cuda
 from src.preprocessing.feature_engineering import inverse_log_transform_target
+from src.utils.io import logger
 
 ########################################################################################################################
 #
@@ -38,7 +42,15 @@ def evaluate(model, X: pd.DataFrame, y_true_log: pd.Series) -> Dict[str, float]:
     """
     Score a single fitted model on the given split (target is log-scaled).
     """
-    y_pred_log = model.predict(X)
+    if isinstance(model, XGBRegressor) and xgboost_uses_cuda(model):
+        if cudf_available():
+            y_pred_log = to_host_array(model.predict(to_cudf_dataframe(X)))
+        else:
+            logger.warning("cuDF is unavailable; XGBoost evaluation is using pandas CPU data.")
+            y_pred_log = model.predict(X)
+    else:
+        y_pred_log = model.predict(X)
+
     y_true = _to_original_scale(y_true_log)
     y_pred = _to_original_scale(y_pred_log)
 

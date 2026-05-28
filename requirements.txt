@@ -12,3 +12,4 @@ scikit-learn
 seaborn
 shap
 xgboost
+cudf-cu13

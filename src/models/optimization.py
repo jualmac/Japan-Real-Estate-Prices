@@ -24,6 +24,13 @@ from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
 
 from src.config import CONFIG, PARAMETERS_DIR
+from src.models.gpu_data import (
+    cudf_available,
+    to_cudf_dataframe,
+    to_cudf_series,
+    to_host_array,
+    xgboost_uses_cuda,
+)
 from src.utils.io import logger
 
 
@@ -60,6 +67,8 @@ class OptimizeRegressor:
         self.logger = logger
         PARAMETERS_DIR.mkdir(parents=True, exist_ok=True)
         self.file_name = PARAMETERS_DIR / f"best_params_{model_name}.json"
+        self._logged_xgb_cudf = False
+        self._logged_xgb_cudf_unavailable = False
         self._logged_lgbm_device = False
 
     def objective(self, trial: optuna.Trial) -> float:
@@ -182,15 +191,31 @@ class OptimizeRegressor:
             X_tr, X_val = self.X_train.iloc[train_index], self.X_train.iloc[val_index]
             y_tr, y_val = self.y_train.iloc[train_index], self.y_train.iloc[val_index]
 
-            model.fit(X_tr, y_tr)
+            if isinstance(model, XGBRegressor) and xgboost_uses_cuda(model):
+                if cudf_available():
+                    model.fit(to_cudf_dataframe(X_tr), to_cudf_series(y_tr))
+                    if not self._logged_xgb_cudf:
+                        self.logger.info("XGBoost optimization fitted with cuDF GPU data.")
+                        self._logged_xgb_cudf = True
+                    y_pred = to_host_array(model.predict(to_cudf_dataframe(X_val)))
+                else:
+                    if not self._logged_xgb_cudf_unavailable:
+                        self.logger.warning(
+                            "cuDF is unavailable; XGBoost optimization is using pandas CPU data."
+                        )
+                        self._logged_xgb_cudf_unavailable = True
+                    model.fit(X_tr, y_tr)
+                    y_pred = model.predict(X_val)
+            else:
+                model.fit(X_tr, y_tr)
+                y_pred = model.predict(X_val)
+
             if isinstance(model, LGBMRegressor) and not self._logged_lgbm_device:
                 self.logger.info(
                     "LightGBM optimization fitted with device_type=%s",
                     model.booster_.params.get("device_type", "cpu"),
                 )
                 self._logged_lgbm_device = True
-
-            y_pred = model.predict(X_val)
 
             rmse = np.sqrt(mean_squared_error(y_val, y_pred))
             rmse_scores.append(rmse)

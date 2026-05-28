@@ -16,6 +16,7 @@ from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
 
 from src.config import CONFIG
+from src.models.gpu_data import cudf_available, to_cudf_dataframe, to_cudf_series, xgboost_uses_cuda
 from src.models.registry import load_best_params
 from src.utils.io import logger
 
@@ -65,7 +66,16 @@ def train_from_best_params(
     """
     params = load_best_params(model_name)
     model = _instantiate(model_name, params)
-    model.fit(X_train, y_train)
+    if isinstance(model, XGBRegressor) and xgboost_uses_cuda(model):
+        if cudf_available():
+            model.fit(to_cudf_dataframe(X_train), to_cudf_series(y_train))
+            logger.info("XGBoost final training fitted with cuDF GPU data.")
+        else:
+            logger.warning("cuDF is unavailable; XGBoost final training is using pandas CPU data.")
+            model.fit(X_train, y_train)
+    else:
+        model.fit(X_train, y_train)
+
     if isinstance(model, LGBMRegressor):
         logger.info(
             "LightGBM final training fitted with device_type=%s",
