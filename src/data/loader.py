@@ -19,16 +19,6 @@ N_PREFECTURES = 47
 # FUNCTIONS
 #
 ########################################################################################################################
-def load_prefecture_codes(database_file: Path = DB_FILE) -> pd.DataFrame:
-    """
-    Load the prefecture_code lookup table from SQLite.
-    """
-    df = DBConnection(database_file).run_sql('SELECT * FROM "prefecture_code"')
-    if df is None:
-        raise RuntimeError(f"Could not load prefecture_code from {database_file}.")
-    return df
-
-
 def load_prefectures(database_file: Path = DB_FILE) -> Dict[str, pd.DataFrame]:
     """
     Load every per-prefecture SQLite table ("01" ... "47") into a dict keyed by name.

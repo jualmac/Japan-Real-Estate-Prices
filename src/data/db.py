@@ -17,8 +17,6 @@ from src.config import DATASETS_DIR, DB_FILE
 # CONSTANTS
 #
 ########################################################################################################################
-DEFAULT_QUERY = "SELECT * FROM TokyoPrices"  # TODO: expand once SQL exposes all prefectures;
-
 DATA_TYPES: Dict[str, type] = {
     "Breadth": float,
     "PricePerTsubo": float,
@@ -54,29 +52,6 @@ class DBConnection:
 
     def __init__(self, database_file: str | Path = DB_FILE):
         self.database_file = str(database_file)
-
-    def dataframe_creator(self, query: str = DEFAULT_QUERY) -> pd.DataFrame:
-        """
-        Run a SELECT query and return a typed DataFrame.
-        """
-        try:
-            # sqlite3.connect creates the SQLite file when it does not exist;
-            with sqlite3.connect(self.database_file) as conn:
-                print("Connected to SQLite Version", sqlite3.version)
-                dataframe = pd.read_sql_query(query, conn)
-
-            for column, dtype in DATA_TYPES.items():
-                if column in dataframe.columns:
-                    dataframe[column] = pd.to_numeric(dataframe[column], errors="coerce").astype(dtype)
-
-            if "No" in dataframe.columns:
-                dataframe.set_index("No", inplace=True)
-            dataframe.replace("", pd.NA, inplace=True)
-            return dataframe
-
-        except sqlite3.Error as error:
-            print("Error occurred - ", error)
-            return pd.DataFrame()
 
     def run_sql(self, query: str) -> Optional[pd.DataFrame]:
         """

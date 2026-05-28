@@ -2,8 +2,9 @@
 Central project configuration.
 
 Holds reproducibility constants (SEED), filesystem paths, column groupings used
-across modules, and default modeling hyperparameters. Values can be overridden
-at runtime by loading config.yaml on top of the defaults defined here.
+across modules, and default modeling hyperparameters. A config.yaml mirroring
+these defaults is checked in for a planned runtime override loader; that loader
+is not wired up yet, so these dataclass defaults are the single source of truth.
 """
 ########################################################################################################################
 #
@@ -40,21 +41,6 @@ DB_FILE: Path = DATASETS_DIR / "jpHouses.db"
 # COLUMN GROUPINGS
 #
 ########################################################################################################################
-CATEGORICAL_COLUMNS: List[str] = [
-    "Type", "Region", "Prefecture", "Municipality", "DistrictName", "NearestStation",
-    "TimeToNearestStation", "FloorPlan", "LandShape", "Structure", "Use",
-    "Purpose", "Direction", "Classification", "CityPlanning", "Period",
-    "Renovation", "Remarks",
-]
-
-NUMERICAL_COLUMNS: List[str] = [
-    "No", "MunicipalityCode", "MinTimeToNearestStation", "MaxTimeToNearestStation",
-    "TradePrice", "Area", "AreaIsGreaterFlag", "UnitPrice", "PricePerTsubo",
-    "Frontage", "FrontageIsGreaterFlag", "TotalFloorArea",
-    "TotalFloorAreaIsGreaterFlag", "BuildingYear", "PrewarBuilding",
-    "CoverageRatio", "FloorAreaRatio", "Breadth", "Year", "Quarter",
-]
-
 # Columns that leak the target or are unusable signal;
 COLUMNS_TO_DROP: List[str] = ["Remarks", "UnitPrice", "PricePerTsubo", "TimeToNearestStation"]
 
@@ -78,14 +64,6 @@ NUMERICAL_FEATURES: List[str] = [
 ]
 CATEGORICAL_FEATURES: List[str] = ["Type"]
 TARGET_COLUMN: str = "TradePrice"
-
-# Snake_case names used after one-hot encoding (some models can't handle special chars);
-SNAKE_CASE_FEATURES: List[str] = [
-    "time_to_nearest_station", "area", "building_year", "coverage_ratio",
-    "floor_area_ratio", "year", "quarter_cos", "quarter_sin", "latitude",
-    "longitude", "type_forest_land", "type_pre_owned_condominiums_etc",
-    "type_residential_land_land_only", "type_residential_land_land_and_building",
-]
 
 
 ########################################################################################################################
@@ -111,14 +89,22 @@ def set_seed(seed: int) -> None:
 class Config:
     """
     Immutable runtime configuration consumed by main.py and the pipeline modules.
+
+    Notes on nested temporal CV cost
+    --------------------------------
+    Total model fits per pipeline run scale approximately as
+
+        len(models) * (outer_folds * (n_trials * inner_folds + 1)
+                       + (n_trials * inner_folds + 1))
+
+    So `n_trials`, `outer_folds`, and `inner_folds` are the main knobs to tune
+    runtime against statistical robustness of the reported metrics.
     """
     seed: int = 42
-    n_trials: int = 1
     val_quantile: float = 0.70
     test_quantile: float = 0.85
     target_transform: str = "log1p"
     use_gpu: bool = True
-    models: Tuple[str, ...] = ("xgb", "lgbm", "rf", "enet", "svr")
     log_level: str = "INFO"
     datasets_dir: Path = DATASETS_DIR
     parameters_dir: Path = PARAMETERS_DIR
@@ -126,5 +112,13 @@ class Config:
     numerical_features: Tuple[str, ...] = field(default_factory=lambda: tuple(NUMERICAL_FEATURES))
     categorical_features: Tuple[str, ...] = field(default_factory=lambda: tuple(CATEGORICAL_FEATURES))
 
+    # Nested temporal cross-validation settings;
+    # models: Tuple[str, ...] = ("xgb", "lgbm", "rf", "enet", "svr")
+    models: Tuple[str, ...] = ("xgb",)
+    nested_cv_enabled: bool = True
+    n_trials: int = 30
+    outer_folds: int = 3
+    inner_folds: int = 2
+    year_column: str = "Year"
 
 CONFIG: Config = Config()

@@ -1,0 +1,78 @@
+{
+    "model": "xgb",
+    "per_fold": [
+        {
+            "fold": 1,
+            "train_year_min": 2005,
+            "train_year_max": 2008,
+            "eval_year_min": 2009,
+            "eval_year_max": 2012,
+            "n_train": 602792,
+            "n_eval": 1184936,
+            "mape": 2.055972274629662,
+            "rmse": 113236759.12313443,
+            "mae": 11875121.912853695,
+            "r2": 0.25595184987549724,
+            "best_params": {
+                "n_estimators": 1400,
+                "learning_rate": 0.04,
+                "max_depth": 8,
+                "min_child_weight": 3,
+                "subsample": 1.0,
+                "colsample_bytree": 0.65
+            }
+        },
+        {
+            "fold": 2,
+            "train_year_min": 2005,
+            "train_year_max": 2012,
+            "eval_year_min": 2013,
+            "eval_year_max": 2016,
+            "n_train": 1787728,
+            "n_eval": 1306546,
+            "mape": 2.348064786181028,
+            "rmse": 94030686.47095433,
+            "mae": 11967915.552165275,
+            "r2": 0.31348564125353695,
+            "best_params": {
+                "n_estimators": 2800,
+                "learning_rate": 0.015,
+                "max_depth": 11,
+                "min_child_weight": 4,
+                "subsample": 0.9,
+                "colsample_bytree": 0.9
+            }
+        },
+        {
+            "fold": 3,
+            "train_year_min": 2005,
+            "train_year_max": 2016,
+            "eval_year_min": 2017,
+            "eval_year_max": 2019,
+            "n_train": 3094274,
+            "n_eval": 812244,
+            "mape": 2.3830273888907127,
+            "rmse": 94338558.309184,
+            "mae": 12782905.143572032,
+            "r2": 0.388448212910497,
+            "best_params": {
+                "n_estimators": 2200,
+                "learning_rate": 0.015,
+                "max_depth": 12,
+                "min_child_weight": 8,
+                "subsample": 0.65,
+                "colsample_bytree": 1.0
+            }
+        }
+    ],
+    "aggregate": {
+        "mape_mean": 2.2623548165671346,
+        "mape_std": 0.14663085420990185,
+        "rmse_mean": 100535334.63442425,
+        "rmse_std": 8982142.814087616,
+        "mae_mean": 12208647.536197001,
+        "mae_std": 407824.72917929146,
+        "r2_mean": 0.3192952346798437,
+        "r2_std": 0.054247181716103036
+    }
+}

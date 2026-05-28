@@ -8,15 +8,15 @@ Categorical encoding (one-hot) with consistent column layout across splits.
 ########################################################################################################################
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
-from typing import List, Tuple
+from typing import List
 
 import pandas as pd
 
 from src.config import (
     CATEGORICAL_FEATURES,
     NUMERICAL_FEATURES,
-    SNAKE_CASE_FEATURES,
 )
 
 
@@ -68,29 +68,25 @@ class CategoricalEncoder:
 # CONVENIENCE
 #
 ########################################################################################################################
-def encode_categoricals(
-    X_train: pd.DataFrame,
-    X_val: pd.DataFrame,
-    X_test: pd.DataFrame,
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def _to_snake_case(name: str) -> str:
     """
-    Fit a CategoricalEncoder on X_train, transform all three splits.
+    Convert an arbitrary column name (camelCase, one-hot, with punctuation) to
+    snake_case while preserving word boundaries.
     """
-    encoder = CategoricalEncoder().fit(X_train)
-    return encoder.transform(X_train), encoder.transform(X_val), encoder.transform(X_test)
+    s = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", "_", str(name))
+    s = s.lower()
+    s = re.sub(r"[^0-9a-z]+", "_", s)
+    return re.sub(r"_+", "_", s).strip("_")
 
 
 def to_snake_case_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
     Rename the encoded feature columns to snake_case to satisfy LightGBM/XGBoost.
 
-    The expected layout matches SNAKE_CASE_FEATURES from src.config.
+    Names are derived from the actual (encoder-produced) column labels, so the
+    layout adapts to whatever one-hot columns the fitted encoder emitted instead
+    of relying on a fixed positional constant.
     """
-    if df.shape[1] != len(SNAKE_CASE_FEATURES):
-        raise ValueError(
-            f"Expected {len(SNAKE_CASE_FEATURES)} columns, got {df.shape[1]}. "
-            "Check the encoder column order against SNAKE_CASE_FEATURES."
-        )
     df = df.copy()
-    df.columns = list(SNAKE_CASE_FEATURES)
+    df.columns = [_to_snake_case(column) for column in df.columns]
     return df

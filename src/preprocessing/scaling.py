@@ -13,7 +13,7 @@ or distance-based models in the spot-check stage.
 ########################################################################################################################
 from __future__ import annotations
 from dataclasses import dataclass, field
-from typing import Dict, List, Tuple
+from typing import Dict, List
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
@@ -68,20 +68,3 @@ class NumericScaler:
 
     def fit_transform(self, X_train: pd.DataFrame) -> pd.DataFrame:
         return self.fit(X_train).transform(X_train)
-
-
-########################################################################################################################
-#
-# CONVENIENCE
-#
-########################################################################################################################
-def scale_splits(
-    X_train: pd.DataFrame,
-    X_val: pd.DataFrame,
-    X_test: pd.DataFrame,
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """
-    Fit a NumericScaler on X_train and apply to all three splits.
-    """
-    scaler = NumericScaler().fit(X_train)
-    return scaler.transform(X_train), scaler.transform(X_val), scaler.transform(X_test)

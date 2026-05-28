@@ -42,13 +42,3 @@ def nan_profile(df: pd.DataFrame, ascending: bool = False) -> pd.Series:
     profile = df.isna().mean().round(2).sort_values(ascending=ascending)
     print(profile)
     return profile
-
-
-def dtype_audit(df: pd.DataFrame) -> pd.Series:
-    """
-    Print and return the dtype of each column (sorted alphabetically).
-    """
-    print("=== COLUMN DTYPES ===")
-    dtypes = df.dtypes.sort_values()
-    print(dtypes)
-    return dtypes

@@ -124,7 +124,7 @@ class DataCleaner:
         Learn MunicipalityCode group medians for columns that only exist after
         ``add_location_features`` runs (Latitude / Longitude).
 
-        Must be called on the training split AFTER ``apply_feature_engineering``.
+        Must be called on the training split AFTER ``feature_engineer_frame``.
         """
         df = X_train
         for column, agg in NUMERIC_MUNICIPALITY_FILLERS.items():

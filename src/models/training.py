@@ -1,5 +1,6 @@
 """
-Train the final regression models using the best hyperparameters found by OptimizeRegressor.
+Train the final regression models using the best hyperparameters found by
+OptimizeRegressor (or by nested temporal cross-validation).
 """
 ########################################################################################################################
 #
@@ -16,17 +17,9 @@ from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
 
 from src.config import CONFIG
-from src.models.gpu_data import (
-    cudf_available,
-    cuml_available,
-    is_cuml_random_forest,
-    make_cuml_random_forest,
-    to_cudf_dataframe,
-    to_cudf_series,
-    xgboost_uses_cuda,
-)
+from src.models.fit_predict import fit_model
+from src.models.gpu_data import cuml_available, make_cuml_random_forest
 from src.models.registry import load_best_params
-from src.utils.io import logger
 
 ModelType = Union[RandomForestRegressor, XGBRegressor, LGBMRegressor, ElasticNet, LinearSVR]
 
@@ -36,9 +29,14 @@ ModelType = Union[RandomForestRegressor, XGBRegressor, LGBMRegressor, ElasticNet
 # FUNCTIONS
 #
 ########################################################################################################################
-def _instantiate(model_name: str, params: Dict) -> ModelType:
+def instantiate_model(model_name: str, params: Dict) -> ModelType:
     """
-    Build a fresh regressor with sensible defaults injected on top of the loaded params.
+    Build a fresh regressor for ``model_name`` with sensible backend defaults
+    injected on top of the loaded params.
+
+    Public counterpart of the previous ``_instantiate`` helper. Used both by
+    final training and by the nested temporal CV orchestrator when fitting the
+    outer-fold model from its inner-CV best params.
     """
     params = dict(params)
     params.setdefault("random_state", CONFIG.seed)
@@ -75,32 +73,14 @@ def train_from_best_params(
     Load the best parameters from parameters/ and fit the matching regressor.
     """
     params = load_best_params(model_name)
-    model = _instantiate(model_name, params)
-    if isinstance(model, XGBRegressor) and xgboost_uses_cuda(model):
-        if cudf_available():
-            model.fit(to_cudf_dataframe(X_train), to_cudf_series(y_train))
-            logger.info("XGBoost final training fitted with cuDF GPU data.")
-        else:
-            logger.warning("cuDF is unavailable; XGBoost final training is using pandas CPU data.")
-            model.fit(X_train, y_train)
-    elif is_cuml_random_forest(model):
-        if cudf_available():
-            model.fit(to_cudf_dataframe(X_train), to_cudf_series(y_train))
-            logger.info("RandomForest final training fitted with cuML GPU backend.")
-        else:
-            model.fit(X_train.astype("float32"), y_train.astype("float32"))
-            logger.info("RandomForest final training fitted with cuML (host arrays).")
-    else:
-        model.fit(X_train, y_train)
-        if isinstance(model, RandomForestRegressor):
-            logger.info("RandomForest final training fitted with sklearn CPU backend.")
-
-    if isinstance(model, LGBMRegressor):
-        logger.info(
-            "LightGBM final training fitted with device_type=%s",
-            model.booster_.params.get("device_type", "cpu"),
-        )
-    return model
+    model = instantiate_model(model_name, params)
+    return fit_model(
+        model,
+        X_train,
+        y_train,
+        context=f"[{model_name}] final-training",
+        log_backend=True,
+    )
 
 
 def train_all(
