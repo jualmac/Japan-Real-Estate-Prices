@@ -99,23 +99,58 @@ under the same temporal validation strategy. Their predictive performance was co
 metrics, while feature importance and SHAP-based analyses were used to relate model behavior back to the economic and
 spatial determinants of Japanese housing prices.
 
+\section{Exploratory Data Analysis}
+The exploratory analysis began with an inspection of the structure, completeness, and temporal distribution of the MLIT
+transaction dataset. Each record describes a real estate transaction in Japan, with \textit{TradePrice} defined as the
+target variable to be predicted. The explanatory variables combine geographic identifiers, such as prefecture,
+municipality, district, and nearest station, with accessibility measures, including the minimum and maximum travel time
+to the closest station.
+
+The dataset also includes physical property attributes, such as area, land shape, frontage, floor plan, building year,
+structure, total floor area, and renovation status, as well as urban-planning information, including zoning, coverage
+ratio, floor-area ratio, road direction, and road classification. Temporal variables, represented by transaction year,
+quarter, and period, were used to examine the distribution of observations over time and to support the chronological
+modeling strategy adopted later in the pipeline. This initial analysis also guided the treatment of missing values,
+redundant variables, and features that could leak information from the target.
+
 \section{Methodology}
 \subsection{Data Cleaning and Feature Preparation}
 Data cleaning was performed after a chronological train-validation-test split in order to prevent information leakage
-from future transactions into earlier periods. The preprocessing stage first removed non-informative columns and applied
-domain-based rules to missing values, treating attributes such as floor plan, renovation status, structure, frontage,
-and nearest station as not applicable when their absence was implied by the property type. Remaining numerical gaps were
-imputed using statistics learned exclusively from the training set, primarily district-level aggregates with global
-medians as fallbacks. After location features were merged into the data, missing latitude and longitude values were
-handled through municipality-level medians, again fitted only on the training partition and then applied consistently to
-the validation and test sets.
+from future transactions into earlier periods. The preprocessing stage first dropped non-informative or redundant
+columns, such as "Remarks", given the general textual nature of the column and high number of missing data. Also dropped
+were columns that would leak the target information, such as "PricePerTsubo" and "UnitPrice", both being attributes of
+the "TradePrice" divided per area. Domain-based rules were applied to missing values, treating attributes such as floor
+plan, renovation status, structure, frontage, and nearest station as not applicable when their absence was implied by
+the property type. Remaining numerical gaps were imputed using statistics learned exclusively from the training set,
+primarily district-level aggregates with global medians as fallbacks. After location features were merged into the data,
+missing latitude and longitude values were handled through municipality-level medians, again fitted only on the training
+partition and then applied consistently to the validation and test sets.
 
 \subsection{Models and Evaluation}
-Testing different Machine Learning Models: 
+The study compared five regression models with different assumptions and learning architectures. \textit{XGBoost} was
+used as a gradient boosting model that builds weak decision trees sequentially, using previous errors to construct a
+stronger ensemble, while \textit{LightGBM} provided a more computationally efficient boosting approach based on
+leaf-wise tree growth. \textit{Random Forest} represented a bagging-based ensemble of decision trees trained on
+bootstrapped samples, reducing variance by averaging many independent predictors. As a linear baseline,
+\textit{ElasticNet} combined L1 and L2 regularization to balance feature selection and coefficient shrinkage. Finally,
+\textit{Support Vector Regression} estimated a regression function within an error-tolerant margin, allowing nonlinear
+patterns to be modeled through kernel transformations.
 
-Evaluation Metrics
+Model performance was evaluated using complementary regression metrics computed on the original price scale after
+reversing the logarithmic target transformation. Mean Absolute Percentage Error (MAPE) was used to express relative
+prediction error, while Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) measured absolute deviations in
+yen, with RMSE assigning greater weight to large errors. The coefficient of determination ($R^2$) was also reported to
+summarize the proportion of price variance explained by each model.
 
-Interpretability: Feature Importance and 
+Reproducibility was addressed by centralizing the experimental configuration, fixing random seeds for Python and NumPy,
+and applying the same chronological split, preprocessing rules, encoding, scaling, and model evaluation procedure across
+all algorithms. The pipeline also generated a run identifier and stored metadata, model input splits, and validation and
+test metrics, allowing each experiment to be traced back to the data partitions and feature set used during training.
+
+Interpretability was incorporated after model selection ()\textit{post hoc}) in order to connect predictive performance
+with substantive housing-market explanations. For the best-performing model, global feature importance was used to
+identify the variables that contributed most strongly to prediction, while SHAP analysis provided a more detailed view
+of how individual features influenced model outputs across the test set.
 
 \bibliographystyle{projeto}
 \bibliography{projeto}
