@@ -117,7 +117,7 @@ class Config:
     val_quantile: float = 0.70
     test_quantile: float = 0.85
     target_transform: str = "log1p"
-    models: Tuple[str, ...] = ("xgb", "lgbm")
+    models: Tuple[str, ...] = ("xgb", "lgbm", "rf", "enet", "svr")
     log_level: str = "INFO"
     datasets_dir: Path = DATASETS_DIR
     parameters_dir: Path = PARAMETERS_DIR

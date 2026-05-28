@@ -11,12 +11,14 @@ from typing import Dict, Iterable, Union
 import pandas as pd
 from lightgbm import LGBMRegressor
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.linear_model import ElasticNet
+from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
 
 from src.config import CONFIG
 from src.models.registry import load_best_params
 
-ModelType = Union[RandomForestRegressor, XGBRegressor, LGBMRegressor]
+ModelType = Union[RandomForestRegressor, XGBRegressor, LGBMRegressor, ElasticNet, LinearSVR]
 
 
 ########################################################################################################################
@@ -30,16 +32,21 @@ def _instantiate(model_name: str, params: Dict) -> ModelType:
     """
     params = dict(params)
     params.setdefault("random_state", CONFIG.seed)
-    params.setdefault("n_jobs", -1)
 
     if model_name == "rf":
-        params.setdefault("verbose", -1)
+        params.setdefault("n_jobs", -1)
         return RandomForestRegressor(**params)
     if model_name == "xgb":
+        params.setdefault("n_jobs", -1)
         return XGBRegressor(**params)
     if model_name == "lgbm":
+        params.setdefault("n_jobs", -1)
         params.setdefault("verbosity", -1)
         return LGBMRegressor(**params)
+    if model_name == "enet":
+        return ElasticNet(**params)
+    if model_name == "svr":
+        return LinearSVR(**params)
 
     raise ValueError(f"Unsupported model name: {model_name}")
 

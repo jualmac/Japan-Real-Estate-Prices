@@ -17,6 +17,7 @@ TODO:
 from typing import Sequence
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from sklearn.inspection import permutation_importance
 
@@ -28,15 +29,21 @@ from sklearn.inspection import permutation_importance
 ########################################################################################################################
 def builtin_importance(model, feature_names: Sequence[str]) -> pd.DataFrame:
     """
-    SKETCH: Return the model's built-in feature_importances_ sorted descending.
+    SKETCH: Return the model's built-in importance signal sorted descending.
 
-    Works out-of-the-box for tree-based models (RF / XGB / LGBM).
+    Works out-of-the-box for tree-based models (RF / XGB / LGBM) via
+    `feature_importances_`, and falls back to `|coef_|` for linear models
+    (ElasticNet / LinearSVR).
     """
-    if not hasattr(model, "feature_importances_"):
-        raise AttributeError("Model does not expose feature_importances_.")
+    if hasattr(model, "feature_importances_"):
+        importances = model.feature_importances_
+    elif hasattr(model, "coef_"):
+        importances = np.abs(np.ravel(model.coef_))
+    else:
+        raise AttributeError("Model exposes neither feature_importances_ nor coef_.")
     df = pd.DataFrame({
         "feature": list(feature_names),
-        "importance": model.feature_importances_,
+        "importance": importances,
     })
     return df.sort_values("importance", ascending=False).reset_index(drop=True)
 

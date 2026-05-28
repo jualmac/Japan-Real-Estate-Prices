@@ -14,6 +14,24 @@ python3 -m venv venv
 source ./venv/bin/activate
 pip install -r requirements.txt
 ``` 
-Executar através do Docker:
+
+### Execução local
+Após instalar as dependências, execute:
 ```bash
+python main.py
 ```
+
+### Executar Docker
+```bash
+docker build -t japan-real-estate-prices .
+docker run --rm japan-real-estate-prices
+```
+
+# Pipeline
+O projeto baixa e carrega os dados, faz limpeza e engenharia de atributos, separa treino/validação/teste por tempo,
+treina modelos de regressão e compara os resultados com métricas como MAPE, RMSE, MAE e R².
+
+# Estrutura
+- `main.py`: ponto de entrada do pipeline;
+- `src/`: módulos de dados, pré-processamento, modelos, avaliação e visualização;
+- `parameters/`: parâmetros e resultados gerados durante os experimentos.

@@ -21,6 +21,9 @@ target_transform: log1p
 models:
   - xgb
   - lgbm
+  - rf
+  - enet
+  - svr
 
 paths:
   datasets: ./datasets

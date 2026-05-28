@@ -17,8 +17,10 @@ from lightgbm import LGBMRegressor
 from pandas.core.frame import DataFrame
 from pandas.core.series import Series
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.linear_model import ElasticNet
 from sklearn.metrics import mean_squared_log_error
 from sklearn.model_selection import KFold
+from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
 
 from src.config import CONFIG, PARAMETERS_DIR
@@ -37,7 +39,7 @@ class OptimizeRegressor:
     Attributes
     ----------
     model_name : str
-        Name of the regression model to optimize ('rf', 'xgb', 'lgbm').
+        Name of the regression model to optimize ('rf', 'xgb', 'lgbm', 'enet', 'svr').
     n_trials : int
         Number of trials for the optimization process.
     X_train : DataFrame
@@ -121,10 +123,51 @@ class OptimizeRegressor:
                 )
             )
 
-        self.logger.error("Please provide a supported model: rf, xgb or lgbm")
+        if self.model_name == "enet":
+            alpha = trial.suggest_float("alpha", 1e-4, 10.0, log=True)
+            l1_ratio = trial.suggest_float("l1_ratio", 0.0, 1.0)
+            max_iter = trial.suggest_int("max_iter", 1000, 10000, step=1000)
+            tol = trial.suggest_float("tol", 1e-5, 1e-2, log=True)
+            selection = trial.suggest_categorical("selection", ["cyclic", "random"])
+
+            return self.evaluate(
+                ElasticNet(
+                    alpha=alpha,
+                    l1_ratio=l1_ratio,
+                    max_iter=max_iter,
+                    tol=tol,
+                    selection=selection,
+                    random_state=CONFIG.seed,
+                )
+            )
+
+        if self.model_name == "svr":
+            C = trial.suggest_float("C", 1e-3, 100.0, log=True)
+            epsilon = trial.suggest_float("epsilon", 1e-3, 1.0, log=True)
+            loss = trial.suggest_categorical(
+                "loss", ["epsilon_insensitive", "squared_epsilon_insensitive"]
+            )
+            max_iter = trial.suggest_int("max_iter", 2000, 20000, step=2000)
+            tol = trial.suggest_float("tol", 1e-5, 1e-2, log=True)
+
+            return self.evaluate(
+                LinearSVR(
+                    C=C,
+                    epsilon=epsilon,
+                    loss=loss,
+                    max_iter=max_iter,
+                    tol=tol,
+                    random_state=CONFIG.seed,
+                )
+            )
+
+        self.logger.error("Please provide a supported model: rf, xgb, lgbm, enet or svr")
         raise TypeError(f"Unsupported model name: {self.model_name}")
 
-    def evaluate(self, model: Union[RandomForestRegressor, XGBRegressor, LGBMRegressor]) -> float:
+    def evaluate(
+        self,
+        model: Union[RandomForestRegressor, XGBRegressor, LGBMRegressor, ElasticNet, LinearSVR],
+    ) -> float:
         """
         Evaluate the model using K-Fold cross-validation; returns mean RMSLE.
         """
