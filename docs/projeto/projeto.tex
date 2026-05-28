@@ -8,20 +8,12 @@
      
 \sloppy
 
-\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
+\title{CMP263 - Machine Learning Paper \\ Japanese House Prices Predition}
 
-\author{Luciana P. Nedel\inst{1}, Rafael H. Bordini\inst{2}, Flávio Rech Wagner\inst{1}, Jomi F. Hübner\inst{3} }
-
+\author{Juliano Almeida Machado\inst{1}}
 
 \address{Instituto de Informática -- Universidade Federal do Rio Grande do Sul (UFRGS)\\
-  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil
-\nextinstitute
-  Department of Computer Science -- University of Durham\\
-  Durham, U.K.
-\nextinstitute
-  Departamento de Sistemas e Computação\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil \email{\{nedel,flavio\}@inf.ufrgs.br,
-  R.Bordini@durham.ac.uk, jomi@inf.furb.br} }
+  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil}
 
 \begin{document} 
 
@@ -41,93 +33,89 @@
 \end{resumo}
 
 
-\section{General Information}
+\section{Introduction}
+The Japanese housing market presents an anomaly within global real estate economics. In most developed nations,
+residential property functions as an appreciating asset and a means for generational wealth accumulation. In contrast,
+housing in Japan behaves as a depreciating consumer durable. Within 20 to 30 years of construction, the structural value
+of a typical Japanese home depreciates to virtually zero. This structural depreciation creates a stark institutional
+decoupling between land value and building value. While urban land, especially within the Tokyo and Osaka metropolitan
+areas, retains substantial value and responds to conventional market forces, the structures erected upon that land are
+treated as temporary assets. According to data from the Ministry of Land, Infrastructure, Transport and Tourism (MLIT),
+the secondary housing market accounts for only approximately 15\% of total housing transactions in Japan, compared to
+over 80\% to 90\% in the US and UK. 
 
-All full papers and posters (short papers) submitted to some SBC conference, including any supporting documents, should
-be written in English or in Portuguese. The format paper should be A4 with single column, 3.5 cm for upper margin, 2.5
-cm for bottom margin and 3.0 cm for lateral margins, without headers or footers. The main font must be Times, 12 point
-nominal size, with 6 points of space before each paragraph. Page numbers must be suppressed.
+% #TODO: Check if this is true in the data; 
+This environment traces its origins back to the post-World War II reconstruction era. Facing severe housing shortages
+and rapid urbanization, the Japanese government prioritized speed and quantity over long-term structural durability. The
+resulting regulatory framework and market incentives codified a system of high-turnover construction, which was later
+exacerbated by the asset price bubble of the late 1980s. Japan’s geographic vulnerability to seismic activity also
+dictates its building philosophies. The Building Standard Act of Japan has undergone continuous revisions, with the most
+critical shift occurring in 1981 with the introduction of the \textit{Shin-Taishin} (New Anti-Seismic Design Code).
+Homes constructed prior to 1981 are fundamentally viewed as structurally unsafe and financially uninsurable by
+contemporary standards. Subsequent amendments following the 1995 Hanshin-Awaji (Kobe) earthquake and the 2011 Tohoku
+earthquake have further accelerated the technological obsolescence of older properties. Consequently, buyers often
+perceive purchasing a pre-owned home not just as an economic compromise, but as a direct compromise on structural
+safety.
 
-Full papers must respect the page limits defined by the conference. Conferences that publish just abstracts ask for
-\textbf{one}-page texts.
+Complementing these rigid safety mandates is a pervasive cultural preference for new builds, known as
+\textit{Shinchiku}. A newly built home carries a significant socio-cultural premium in Japan, symbolizing clean slates,
+modernization, and social status. This preference is structurally reinforced by financial institutions, whereas Japanese
+banks routinely structure residential mortgages around the statutory useful life (\textit{Taikyusei}) of the building.
+For a standard timber-frame home, this period is legally defined as 22 years. Once a structure surpasses this threshold,
+securing a mortgage for its resale becomes exceedingly difficult, effectively freezing the secondary market.
 
-\section{First Page} \label{sec:firstpage}
+It is also important to note that one of the most pressing modern challenge facing the Japanese housing market is the
+nation's demographic trajectory. Japan is characterized by a rapid aging society combined with a beneath replacement
+fertility rate, a critical example of most modern post-industrial societies. The population has been in a continuous
+state of decline since its peak in the late 2000s. This population contraction has triggered the abandoned house
+(\textit{akiya}) phenomenon. Millions of homes across rural, suburban, and even peripheral urban areas stand completely
+vacant, given the tendency of inheriting families to frequently abandon the physical structures. This has created a
+massive inventory of valueless, deteriorating properties that distort local real estate valuations and create severe
+municipal management challenges.
 
-The first page must display the paper title, the name and address of the authors, the abstract in English and ``resumo''
-in Portuguese (``resumos'' are required only for papers written in Portuguese). The title must be centered over the
-whole page, in 16 point boldface font and with 12 points of space before itself. Author names must be centered in 12
-point font, bold, all of them disposed in the same line, separated by commas and with 12 points of space after the
-title. Addresses must be centered in 12 point font, also with 12 points of space after the authors' names. E-mail
-addresses should be written using font Courier New, 10 point nominal size, with 6 points of space before and 6 points of
-space after.
+The Japanese housing market presents an invaluable case study for urban economists and sociologists alike. It challenges
+the universal assumption that residential property is an inherently safe, appreciating asset class. As other
+post-industrial nations begin to face similar demographic plateaus and climate-induced regulatory pressures,
+understanding the mechanisms of Japan’s ``scrap-and-build'' housing model becomes essential. 
 
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font, indented 0.8cm on both sides. The word
-\textbf{Abstract} and \textbf{Resumo}, should be written in boldface and must precede the text.
+\section{Research Problem and Objectives}
+This work investigates the extent to which transaction-level information can explain and predict residential real estate
+prices in Japan. Using data collected by the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) between 2005
+and 2019 and made available through Kaggle, the study frames Japanese housing valuation as a supervised regression
+problem. The central task is to estimate property transaction prices from observable attributes such as location,
+property type, land characteristics, building age, and temporal market conditions.
 
-\section{CD-ROMs and Printed Proceedings}
+The problem is relevant because Japanese real estate prices are shaped by a combination of economic, demographic and
+geographic factors that differ from those observed in many other developed housing markets. In this context, predictive
+modeling is not only a technical exercise, but also a way to examine which variables carry the strongest explanatory
+power in a market characterized by structural depreciation, regional imbalance, and changing demand. Accordingly, this
+paper aims to develop, evaluate, and interpret Machine Learning regression models capable of predicting housing prices
+while providing insight into the main determinants of valuation in the Japanese residential market.
 
-In some conferences, the papers are published on CD-ROM while only the abstract is published in the printed Proceedings.
-In this case, authors are invited to prepare two final versions of the paper. One, complete, to be published on the CD
-and the other, containing only the first page, with abstract and ``resumo'' (for papers in Portuguese).
+This study followed a reproducible empirical workflow that combined data cleaning, feature preparation, model
+comparison, and interpretability analysis. Several regression algorithms with distinct inductive biases, including
+Gradient Boosting, Random Forests, ElasticNet regression, and Support Vector Regression, were trained and evaluated
+under the same temporal validation strategy. Their predictive performance was compared using standard regression
+metrics, while feature importance and SHAP-based analyses were used to relate model behavior back to the economic and
+spatial determinants of Japanese housing prices.
 
-\section{Sections and Paragraphs}
+\section{Methodology}
+\subsection{Data Cleaning and Feature Preparation}
+Data cleaning was performed after a chronological train-validation-test split in order to prevent information leakage
+from future transactions into earlier periods. The preprocessing stage first removed non-informative columns and applied
+domain-based rules to missing values, treating attributes such as floor plan, renovation status, structure, frontage,
+and nearest station as not applicable when their absence was implied by the property type. Remaining numerical gaps were
+imputed using statistics learned exclusively from the training set, primarily district-level aggregates with global
+medians as fallbacks. After location features were merged into the data, missing latitude and longitude values were
+handled through municipality-level medians, again fitted only on the training partition and then applied consistently to
+the validation and test sets.
 
-Section titles must be in boldface, 13pt, flush left. There should be an extra 12 pt of space before each title. Section
-numbering is optional. The first paragraph of each section should not be indented, while the first lines of subsequent
-paragraphs should be indented by 1.27 cm.
+\subsection{Models and Evaluation}
+Testing different Machine Learning Models: 
 
-\subsection{Subsections}
+Evaluation Metrics
 
-The subsection titles must be in boldface, 12pt, flush left.
-
-\section{Figures and Captions}\label{sec:figs}
-
-
-Figure and table captions should be centered if less than one line (Figure~\ref{fig:exampleFig1}), otherwise justified
-and indented by 0.8cm on both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must be Helvetica, 10
-point, boldface, with 6 points of space before and after each caption.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.5\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.3\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one line and justified considering margins
-  mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
-
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid thick, doubled, or unnecessary framing
-lines. When reporting empirical data, do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1) and the font used must also be Helvetica,
-10 point, boldface, with 6 points of space before and after each caption.
-
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
-
-\section{Images}
-
-All images and illustrations should be in black-and-white, or gray tones, excepting for the papers that will be
-electronically available (on CD-ROMs, internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include images with excessive resolution, as they
-may take hours to print, without any visible difference in the result. 
-
-\section{References}
-
-Bibliographic references must be unambiguous and uniform.  We recommend giving the author names references in brackets,
-e.g. \cite{knuth:84}, \cite{boulic:91}, and \cite{smith:99}.
-
-The references must be listed using 12 point font size, with 6 points of space before each reference. The first line of
-each reference should not be indented, while the subsequent should be indented by 0.5 cm.
+Interpretability: Feature Importance and 
 
 \bibliographystyle{projeto}
 \bibliography{projeto}

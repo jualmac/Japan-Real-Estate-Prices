@@ -26,6 +26,7 @@ from src.data.loader import load_all_prefectures
 from src.eda.summary import check_duplicates, nan_profile, print_overview
 from src.evaluation.metrics import evaluate_all
 from src.interpretability.feature_importance import plot_importance
+from src.interpretability.shap_analysis import run_shap_analysis
 from src.models.optimization import OptimizeRegressor
 from src.models.training import train_all
 from src.preprocessing.cleaning import DataCleaner
@@ -94,7 +95,7 @@ def main() -> None:
     best_name = results["rmse"].idxmin()
     logger.info("Best model by RMSE: %s", best_name)
     plot_importance(models[best_name], X_tr.columns)
-    # TODO: shap_summary(models[best_name], subsample_for_shap(X_te))
+    run_shap_analysis(models[best_name], X_te)
 
 ########################################################################################################################
 #

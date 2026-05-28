@@ -1,6 +1,6 @@
 {
-    "n_estimators": 1200,
-    "learning_rate": 0.055,
-    "max_depth": 12,
-    "num_leaves": 108
+    "n_estimators": 3000,
+    "learning_rate": 0.08499999999999999,
+    "max_depth": 7,
+    "num_leaves": 96
 }
