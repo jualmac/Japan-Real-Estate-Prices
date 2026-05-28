@@ -40,10 +40,10 @@ def nature_encode(df: pd.DataFrame, col: str, div_period: int) -> None:
 
 def rebuild_time_to_nearest_station(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Rebuild a clean numeric `TimeToNearestStation` as the mean of min/max times.
+    Rebuild a clean numeric `TimeToNearestStation` from min/max walking times.
 
-    The raw column mixes numeric minutes and intervals like '1H30-2H', which
-    breaks training. min/max columns are always numeric, so the mean is safe.
+    Equal min/max values preserve exact minute observations; interval estimates
+    are represented by their midpoint.
     """
     if {"MinTimeToNearestStation", "MaxTimeToNearestStation"}.issubset(df.columns):
         df["TimeToNearestStation"] = (

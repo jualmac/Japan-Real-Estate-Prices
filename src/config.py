@@ -56,7 +56,7 @@ NUMERICAL_COLUMNS: List[str] = [
 ]
 
 # Columns that leak the target or are unusable signal;
-COLUMNS_TO_DROP: List[str] = ["Remarks", "UnitPrice", "PricePerTsubo", "TimeToNearestStation"]
+COLUMNS_TO_DROP: List[str] = ["Remarks", "UnitPrice", "PricePerTsubo"]
 
 # Property types that are bare land (no building, no station, etc.);
 LAND_TYPES: List[str] = ["Residential Land(Land Only)", "Agricultural Land", "Forest Land"]
