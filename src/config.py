@@ -29,7 +29,7 @@ PROJECT_ROOT: Path = Path(__file__).resolve().parents[1]
 DATASETS_DIR: Path = PROJECT_ROOT / "datasets"
 TRADE_PRICES_DIR: Path = DATASETS_DIR / "trade_prices"
 PREFECTURE_CODE_FILE: Path = DATASETS_DIR / "prefecture_code.csv"
-LOCATIONS_FILE: Path = PROJECT_ROOT / "locations.csv"
+LOCATIONS_FILE: Path = DATASETS_DIR / "locations.csv"
 PARAMETERS_DIR: Path = PROJECT_ROOT / "parameters"
 LOGS_DIR: Path = PROJECT_ROOT / "logs"
 DB_FILE: Path = DATASETS_DIR / "jpHouses.db"
@@ -113,7 +113,7 @@ class Config:
     Immutable runtime configuration consumed by main.py and the pipeline modules.
     """
     seed: int = 42
-    n_trials: int = 30
+    n_trials: int = 2
     val_quantile: float = 0.70
     test_quantile: float = 0.85
     target_transform: str = "log1p"

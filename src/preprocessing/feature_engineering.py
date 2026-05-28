@@ -11,7 +11,8 @@ from pathlib import Path
 from typing import Tuple
 import numpy as np
 import pandas as pd
-from src.config import LOCATIONS_FILE
+from src.config import DB_FILE
+from src.data.locations import load_locations
 
 # TODO: Add rolling-window statistics on TradePrice per Municipality/Year;
 
@@ -51,13 +52,11 @@ def rebuild_time_to_nearest_station(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def add_location_features(df: pd.DataFrame, locations_path: Path = LOCATIONS_FILE) -> pd.DataFrame:
+def add_location_features(df: pd.DataFrame, database_file: Path = DB_FILE) -> pd.DataFrame:
     """
-    Left-merge Latitude/Longitude from locations.csv onto df (keyed on DistrictName).
-
-    TODO: Move locations.csv into a SQLite table populated with geopy lookups.
+    Left-merge Latitude/Longitude from SQLite locations table onto df.
     """
-    df_locations = pd.read_csv(locations_path)
+    df_locations = load_locations(database_file)
     return df.merge(df_locations, on="DistrictName", how="left")
 
 
@@ -95,7 +94,7 @@ def apply_feature_engineering(
     do not learn anything from the data):
     1. Rebuild TimeToNearestStation from min/max.
     2. Cyclical encoding of Quarter.
-    3. Merge Latitude/Longitude from locations.csv.
+    3. Merge Latitude/Longitude from the SQLite locations table.
     4. Log-transform the target series.
     """
     splits = []

@@ -130,10 +130,10 @@ class DBConnection:
                 )
 
                 existing_table_names = set(existing_tables["name"])
-                expected_prefecture_tables = {f"{i:02d}" for i in range(1, 48)}
+                expected_data_tables = {f"{i:02d}" for i in range(1, 48)} | {"locations", "prefecture_code"}
 
-                if expected_prefecture_tables.issubset(existing_table_names):
-                    print("Database already has all prefecture tables, skipping initialization.")
+                if expected_data_tables.issubset(existing_table_names):
+                    print("Database already has all expected data tables, skipping initialization.")
                     return
 
                 csv_files = sorted(data_directory.rglob("*.csv"))
@@ -144,6 +144,8 @@ class DBConnection:
 
                 for csv_file in csv_files:
                     table_name = csv_file.stem
+                    if table_name in existing_table_names:
+                        continue
 
                     # Each Kaggle CSV becomes one SQLite table with the same base filename;
                     dataframe = pd.read_csv(csv_file, low_memory=False)
