@@ -1,0 +1,35 @@
+# SKETCH: Centralized runtime configuration for the pipeline.
+#
+# These values mirror the defaults in src/config.py::Config. The plan is to
+# load this file at startup (PyYAML) and overlay it on top of the defaults so
+# experiments can be reproduced just by editing this file.
+#
+# TODO:
+#  - Wire a loader (src/config.py::Config.from_yaml) that hydrates Config from this file.
+#  - Add per-model parameter search-space overrides (instead of hard-coding in OptimizeRegressor).
+#  - Add a `dataset_version:` key so we can pin Kaggle dataset revisions.
+
+seed: 42
+n_trials: 30
+
+split:
+  val_quantile: 0.70
+  test_quantile: 0.85
+
+target_transform: log1p
+use_gpu: true
+
+models:
+  - xgb
+  - lgbm
+  - rf
+  - enet
+  - svr
+
+paths:
+  datasets: ./datasets
+  parameters: ./parameters
+  logs: ./logs
+
+logging:
+  level: INFO
