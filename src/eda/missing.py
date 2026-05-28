@@ -10,15 +10,8 @@ the imputation rules in src/preprocessing/cleaning.py.
 #
 ########################################################################################################################
 from typing import Iterable, List
-
 import pandas as pd
 
-
-########################################################################################################################
-#
-# CONSTANTS
-#
-########################################################################################################################
 DEFAULT_COLUMNS_TO_ANALYZE: List[str] = [
     "Renovation", "FloorPlan", "Purpose", "TotalFloorArea",
     "BuildingYear", "Use", "Structure", "Frontage", "Breadth",
@@ -26,7 +19,6 @@ DEFAULT_COLUMNS_TO_ANALYZE: List[str] = [
     "FloorAreaRatio", "CoverageRatio", "MaxTimeToNearestStation",
     "MinTimeToNearestStation", "NearestStation", "CityPlanning",
 ]
-
 
 ########################################################################################################################
 #
@@ -63,7 +55,6 @@ def analyze_missing_by_type(df: pd.DataFrame, column: str, type_column: str = "T
     summary = group.agg(total="size", filled="count")
     summary["pct_filled"] = (summary["filled"] / summary["total"] * 100).round(1)
     print(summary)
-
     return summary
 
 
