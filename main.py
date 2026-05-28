@@ -23,7 +23,7 @@ from src.config import CONFIG, set_seed
 from src.data.db import ensure_database
 from src.data.download import download_tradeprices
 from src.data.loader import load_all_prefectures
-from src.eda.summary import check_duplicates, nan_profile, print_overview, year_distribution
+from src.eda.summary import check_duplicates, nan_profile, print_overview
 from src.evaluation.metrics import evaluate_all
 from src.interpretability.feature_importance import plot_importance
 from src.models.optimization import OptimizeRegressor
@@ -34,6 +34,7 @@ from src.preprocessing.feature_engineering import apply_feature_engineering
 from src.preprocessing.scaling import scale_splits
 from src.preprocessing.splitting import temporal_split, unpack_split
 from src.utils.logging import setup_logging
+from src.visualization.plots import year_distribution
 
 ########################################################################################################################
 #

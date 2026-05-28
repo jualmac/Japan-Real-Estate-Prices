@@ -52,13 +52,3 @@ def dtype_audit(df: pd.DataFrame) -> pd.Series:
     dtypes = df.dtypes.sort_values()
     print(dtypes)
     return dtypes
-
-
-def year_distribution(df: pd.DataFrame, year_column: str = "Year") -> pd.Series:
-    """
-    Print the row count per Year (useful before a temporal split).
-    """
-    print(f"=== ROW DISTRIBUTION BY {year_column} ===")
-    counts = df[year_column].value_counts().sort_index()
-    print(counts)
-    return counts

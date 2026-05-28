@@ -3,8 +3,8 @@ DataCleaner: column dropping, dtype coercion, and rule-based NaN imputation.
 
 The cleaner is fit on the training split only and replays the learned
 group-wise statistics on the validation/test splits. This prevents the
-data leakage that existed in the original aaa.py monolith (where the train
-imputer for TimeToNearestStation was fitted using X_test medians).
+data leakage that existed in the original aaa.py monolith (where imputers were
+fitted using X_test medians).
 
 Imputation rules (informed by the EDA in src/eda/missing.py):
 - Land-only types receive 'Not Applicable' for FloorPlan / Renovation / Structure.
@@ -35,7 +35,8 @@ from src.config import COLUMNS_TO_DROP, CONDO_TYPES, LAND_TYPES, RURAL_TYPES
 ########################################################################################################################
 NUMERIC_DISTRICT_FILLERS: Dict[str, str] = {
     "BuildingYear": "mean",
-    "TimeToNearestStation": "median",
+    "MinTimeToNearestStation": "median",
+    "MaxTimeToNearestStation": "median",
     "CoverageRatio": "median",
     "FloorAreaRatio": "median",
 }
