@@ -16,7 +16,15 @@ from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
 
 from src.config import CONFIG
-from src.models.gpu_data import cudf_available, to_cudf_dataframe, to_cudf_series, xgboost_uses_cuda
+from src.models.gpu_data import (
+    cudf_available,
+    cuml_available,
+    is_cuml_random_forest,
+    make_cuml_random_forest,
+    to_cudf_dataframe,
+    to_cudf_series,
+    xgboost_uses_cuda,
+)
 from src.models.registry import load_best_params
 from src.utils.io import logger
 
@@ -36,6 +44,8 @@ def _instantiate(model_name: str, params: Dict) -> ModelType:
     params.setdefault("random_state", CONFIG.seed)
 
     if model_name == "rf":
+        if CONFIG.use_gpu and cuml_available():
+            return make_cuml_random_forest(**params)
         params.setdefault("n_jobs", -1)
         return RandomForestRegressor(**params)
     if model_name == "xgb":
@@ -73,8 +83,17 @@ def train_from_best_params(
         else:
             logger.warning("cuDF is unavailable; XGBoost final training is using pandas CPU data.")
             model.fit(X_train, y_train)
+    elif is_cuml_random_forest(model):
+        if cudf_available():
+            model.fit(to_cudf_dataframe(X_train), to_cudf_series(y_train))
+            logger.info("RandomForest final training fitted with cuML GPU backend.")
+        else:
+            model.fit(X_train.astype("float32"), y_train.astype("float32"))
+            logger.info("RandomForest final training fitted with cuML (host arrays).")
     else:
         model.fit(X_train, y_train)
+        if isinstance(model, RandomForestRegressor):
+            logger.info("RandomForest final training fitted with sklearn CPU backend.")
 
     if isinstance(model, LGBMRegressor):
         logger.info(

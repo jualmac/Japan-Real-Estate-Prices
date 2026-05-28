@@ -22,7 +22,13 @@ from sklearn.metrics import (
 )
 from xgboost import XGBRegressor
 
-from src.models.gpu_data import cudf_available, to_cudf_dataframe, to_host_array, xgboost_uses_cuda
+from src.models.gpu_data import (
+    cudf_available,
+    is_cuml_random_forest,
+    to_cudf_dataframe,
+    to_host_array,
+    xgboost_uses_cuda,
+)
 from src.preprocessing.feature_engineering import inverse_log_transform_target
 from src.utils.io import logger
 
@@ -48,6 +54,11 @@ def evaluate(model, X: pd.DataFrame, y_true_log: pd.Series) -> Dict[str, float]:
         else:
             logger.warning("cuDF is unavailable; XGBoost evaluation is using pandas CPU data.")
             y_pred_log = model.predict(X)
+    elif is_cuml_random_forest(model):
+        if cudf_available():
+            y_pred_log = to_host_array(model.predict(to_cudf_dataframe(X)))
+        else:
+            y_pred_log = to_host_array(model.predict(X.astype("float32")))
     else:
         y_pred_log = model.predict(X)
 

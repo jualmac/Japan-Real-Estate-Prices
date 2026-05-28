@@ -13,8 +13,12 @@ Imputation rules (informed by the EDA in src/eda/missing.py):
 - Rural types receive 'Not Applicable' for NearestStation.
 - When MinTimeToNearestStation == 120 and MaxTimeToNearestStation is NaN,
   MaxTimeToNearestStation is filled with 120.
-- Numerical features are imputed by DistrictName / MunicipalityCode group
-  statistics learned on train, falling back to column-wide medians.
+- Numerical features are imputed by DistrictName group statistics learned on
+  train, falling back to column-wide medians.
+- Latitude / Longitude are populated by ``add_location_features`` and may end
+  up NaN whenever the DistrictName merge misses; ``fit_post_merge`` /
+  ``transform_post_merge`` learn MunicipalityCode group medians on train and
+  replay them on val/test after feature engineering.
 """
 ########################################################################################################################
 #
@@ -61,6 +65,7 @@ class DataCleaner:
     municipality_group_medians: Dict[str, pd.Series] = field(default_factory=dict)
     column_medians: Dict[str, float] = field(default_factory=dict)
     fitted: bool = False
+    post_merge_fitted: bool = False
 
     def fit(self, X_train: pd.DataFrame) -> "DataCleaner":
         """
@@ -113,6 +118,44 @@ class DataCleaner:
 
     def fit_transform(self, X_train: pd.DataFrame) -> pd.DataFrame:
         return self.fit(X_train).transform(X_train)
+
+    def fit_post_merge(self, X_train: pd.DataFrame) -> "DataCleaner":
+        """
+        Learn MunicipalityCode group medians for columns that only exist after
+        ``add_location_features`` runs (Latitude / Longitude).
+
+        Must be called on the training split AFTER ``apply_feature_engineering``.
+        """
+        df = X_train
+        for column, agg in NUMERIC_MUNICIPALITY_FILLERS.items():
+            if column not in df.columns:
+                continue
+            if "MunicipalityCode" in df.columns:
+                self.municipality_group_medians[column] = (
+                    df.groupby("MunicipalityCode")[column].agg(agg)
+                )
+            self.column_medians[column] = float(df[column].median())
+        self.post_merge_fitted = True
+        return self
+
+    def transform_post_merge(self, X: pd.DataFrame) -> pd.DataFrame:
+        """
+        Apply the post-merge MunicipalityCode imputers to Latitude / Longitude,
+        with a column-wide median fallback. Safe to call on any split.
+        """
+        if not self.post_merge_fitted:
+            raise RuntimeError("DataCleaner.transform_post_merge called before fit_post_merge.")
+
+        df = X.copy()
+        for column in NUMERIC_MUNICIPALITY_FILLERS:
+            if column not in df.columns:
+                continue
+            if column in self.municipality_group_medians and "MunicipalityCode" in df.columns:
+                df[column] = df[column].fillna(
+                    df["MunicipalityCode"].map(self.municipality_group_medians[column])
+                )
+            df[column] = df[column].fillna(self.column_medians.get(column))
+        return df
 
     ####################################################################################################################
     # Private helpers

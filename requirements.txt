@@ -13,3 +13,4 @@ seaborn
 shap
 xgboost
 cudf-cu13
+cuml-cu13

@@ -1,5 +1,5 @@
 """
-Optional cuDF helpers for GPU-backed model input.
+Optional cuDF / cuML helpers for GPU-backed model input.
 """
 ########################################################################################################################
 #
@@ -15,6 +15,11 @@ try:
     import cudf
 except ImportError:
     cudf = None
+
+try:
+    from cuml.ensemble import RandomForestRegressor as _CuMLRandomForestRegressor
+except ImportError:
+    _CuMLRandomForestRegressor = None
 
 ########################################################################################################################
 #
@@ -63,3 +68,34 @@ def xgboost_uses_cuda(model: Any) -> bool:
     """
     device = str(model.get_params().get("device", "")).lower()
     return device.startswith("cuda")
+
+
+def cuml_available() -> bool:
+    """
+    Return whether RAPIDS cuML RandomForestRegressor is importable.
+    """
+    return _CuMLRandomForestRegressor is not None
+
+
+def make_cuml_random_forest(**params: Any) -> Any:
+    """
+    Instantiate a cuML RandomForestRegressor, filtering out sklearn-only kwargs.
+
+    cuML's RF does not accept ``n_jobs`` (it uses ``n_streams``) and does not
+    support sklearn's ``criterion`` string; unsupported keys are dropped so that
+    the Optuna search space stays shared between the sklearn and cuML backends.
+    """
+    if _CuMLRandomForestRegressor is None:
+        raise ImportError("cuML is not installed in this environment.")
+    sklearn_only = {"n_jobs", "criterion"}
+    cleaned = {k: v for k, v in params.items() if k not in sklearn_only}
+    return _CuMLRandomForestRegressor(**cleaned)
+
+
+def is_cuml_random_forest(model: Any) -> bool:
+    """
+    Return whether ``model`` is a cuML RandomForestRegressor instance.
+    """
+    if _CuMLRandomForestRegressor is None:
+        return False
+    return isinstance(model, _CuMLRandomForestRegressor)

@@ -64,6 +64,12 @@ def main() -> None:
     X_tr, X_val, X_te, y_tr, y_val, y_te = apply_feature_engineering(
         X_tr, X_val, X_te, y_tr, y_val, y_te
     )
+
+    cleaner.fit_post_merge(X_tr)
+    X_tr = cleaner.transform_post_merge(X_tr)
+    X_val = cleaner.transform_post_merge(X_val)
+    X_te = cleaner.transform_post_merge(X_te)
+
     X_tr, X_val, X_te = encode_categoricals(X_tr, X_val, X_te)
     X_tr, X_val, X_te = scale_splits(X_tr, X_val, X_te)
 

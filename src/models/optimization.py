@@ -26,6 +26,9 @@ from xgboost import XGBRegressor
 from src.config import CONFIG, PARAMETERS_DIR
 from src.models.gpu_data import (
     cudf_available,
+    cuml_available,
+    is_cuml_random_forest,
+    make_cuml_random_forest,
     to_cudf_dataframe,
     to_cudf_series,
     to_host_array,
@@ -70,6 +73,7 @@ class OptimizeRegressor:
         self._logged_xgb_cudf = False
         self._logged_xgb_cudf_unavailable = False
         self._logged_lgbm_device = False
+        self._logged_rf_backend = False
 
     def objective(self, trial: optuna.Trial) -> float:
         """
@@ -82,17 +86,19 @@ class OptimizeRegressor:
             min_samples_leaf = trial.suggest_int("min_samples_leaf", 1, 10, step=1)
             max_samples = trial.suggest_float("max_samples", 0.5, 1.0, step=0.05)
 
-            return self.evaluate(
-                RandomForestRegressor(
-                    n_estimators=n_estimators,
-                    max_depth=max_depth,
-                    min_samples_split=min_samples_split,
-                    min_samples_leaf=min_samples_leaf,
-                    max_samples=max_samples,
-                    n_jobs=-1,
-                    random_state=CONFIG.seed,
-                )
+            rf_params = dict(
+                n_estimators=n_estimators,
+                max_depth=max_depth,
+                min_samples_split=min_samples_split,
+                min_samples_leaf=min_samples_leaf,
+                max_samples=max_samples,
+                random_state=CONFIG.seed,
             )
+
+            if CONFIG.use_gpu and cuml_available():
+                return self.evaluate(make_cuml_random_forest(**rf_params))
+
+            return self.evaluate(RandomForestRegressor(n_jobs=-1, **rf_params))
 
         if self.model_name == "xgb":
             n_estimators = trial.suggest_int("n_estimators", 500, 3000, step=100)
@@ -206,9 +212,26 @@ class OptimizeRegressor:
                         self._logged_xgb_cudf_unavailable = True
                     model.fit(X_tr, y_tr)
                     y_pred = model.predict(X_val)
+            elif is_cuml_random_forest(model):
+                if cudf_available():
+                    model.fit(to_cudf_dataframe(X_tr), to_cudf_series(y_tr))
+                    y_pred = to_host_array(model.predict(to_cudf_dataframe(X_val)))
+                else:
+                    model.fit(X_tr.astype("float32"), y_tr.astype("float32"))
+                    y_pred = to_host_array(model.predict(X_val.astype("float32")))
+                if not self._logged_rf_backend:
+                    self.logger.info("RandomForest optimization fitted with cuML GPU backend.")
+                    self._logged_rf_backend = True
             else:
                 model.fit(X_tr, y_tr)
                 y_pred = model.predict(X_val)
+                if (
+                    self.model_name == "rf"
+                    and isinstance(model, RandomForestRegressor)
+                    and not self._logged_rf_backend
+                ):
+                    self.logger.info("RandomForest optimization fitted with sklearn CPU backend.")
+                    self._logged_rf_backend = True
 
             if isinstance(model, LGBMRegressor) and not self._logged_lgbm_device:
                 self.logger.info(
