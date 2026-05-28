@@ -6,6 +6,8 @@ matplotlib
 numpy
 optuna
 pandas
+pyyaml
 scikit-learn
 seaborn
+shap
 xgboost
