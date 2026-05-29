@@ -38,24 +38,24 @@ The Japanese housing market presents an anomaly within global real estate econom
 residential property functions as an appreciating asset and a means for generational wealth accumulation. In contrast,
 housing in Japan behaves as a depreciating consumer durable. Within 20 to 30 years of construction, the structural value
 of a typical Japanese home depreciates to virtually zero. This structural depreciation creates a stark institutional
-decoupling between land value and building value. While urban land, especially within the Tokyo and Osaka metropolitan
-areas, retains substantial value and responds to conventional market forces, the structures erected upon that land are
-treated as temporary assets. According to data from the Ministry of Land, Infrastructure, Transport and Tourism (MLIT),
-the secondary housing market accounts for only approximately 15\% of total housing transactions in Japan, compared to
-over 80\% to 90\% in the US and UK. 
+decoupling between land value and building value \cite{yoshida2016structure}. While urban land, especially within the
+Tokyo and Osaka metropolitan areas, retains substantial value and responds to conventional market forces, the structures
+erected upon that land are treated as temporary assets. According to data from the Ministry of Land, Infrastructure,
+Transport and Tourism (MLIT), the secondary housing market accounts for only approximately 15\% of total housing
+transactions in Japan, compared to over 80\% to 90\% in the US and UK \cite{mlit2019revitalization}.
 
 % #TODO: Check if this is true in the data; 
 This environment traces its origins back to the post-World War II reconstruction era. Facing severe housing shortages
-and rapid urbanization, the Japanese government prioritized speed and quantity over long-term structural durability. The
-resulting regulatory framework and market incentives codified a system of high-turnover construction, which was later
-exacerbated by the asset price bubble of the late 1980s. Japan’s geographic vulnerability to seismic activity also
-dictates its building philosophies. The Building Standard Act of Japan has undergone continuous revisions, with the most
-critical shift occurring in 1981 with the introduction of the \textit{Shin-Taishin} (New Anti-Seismic Design Code).
-Homes constructed prior to 1981 are fundamentally viewed as structurally unsafe and financially uninsurable by
-contemporary standards. Subsequent amendments following the 1995 Hanshin-Awaji (Kobe) earthquake and the 2011 Tohoku
-earthquake have further accelerated the technological obsolescence of older properties. Consequently, buyers often
-perceive purchasing a pre-owned home not just as an economic compromise, but as a direct compromise on structural
-safety.
+and rapid urbanization, the Japanese government prioritized speed and quantity over long-term structural durability
+\cite{hirayama2006housing}. The resulting regulatory framework and market incentives codified a system of high-turnover
+construction, which was later exacerbated by the asset price bubble of the late 1980s. Japan’s geographic vulnerability
+to seismic activity also dictates its building philosophies. The Building Standard Act of Japan has undergone continuous
+revisions, with the most critical shift occurring in 1981 with the introduction of the \textit{Shin-Taishin} (New
+Anti-Seismic Design Code). Homes constructed prior to 1981 are fundamentally viewed as structurally unsafe and
+frequently fail to qualify for standard bank financing, as they're heavily penalized under modern insurance structures.
+Subsequent amendments following the 1995 Hanshin-Awaji (Kobe) earthquake and the 2011 Tohoku earthquake have further
+accelerated the technological obsolescence of older properties. Consequently, buyers often perceive purchasing a
+pre-owned home not just as an economic compromise, but as a direct compromise on structural safety.
 
 Complementing these rigid safety mandates is a pervasive cultural preference for new builds, known as
 \textit{Shinchiku}. A newly built home carries a significant socio-cultural premium in Japan, symbolizing clean slates,
@@ -81,9 +81,10 @@ understanding the mechanisms of Japan’s ``scrap-and-build'' housing model beco
 \section{Research Problem and Objectives}
 This work investigates the extent to which transaction-level information can explain and predict residential real estate
 prices in Japan. Using data collected by the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) between 2005
-and 2019 and made available through Kaggle, the study frames Japanese housing valuation as a supervised regression
-problem. The central task is to estimate property transaction prices from observable attributes such as location,
-property type, land characteristics, building age, and temporal market conditions.
+and 2019 and made available through Kaggle \cite{nishiodens_japan_real_estate}, the study frames Japanese housing
+valuation as a supervised regression problem. The central task is to estimate property transaction prices from
+observable attributes such as location, property type, land characteristics, building age, and temporal market
+conditions.
 
 The problem is relevant because Japanese real estate prices are shaped by a combination of economic, demographic and
 geographic factors that differ from those observed in many other developed housing markets. In this context, predictive
@@ -113,6 +114,13 @@ quarter, and period, were used to examine the distribution of observations over 
 modeling strategy adopted later in the pipeline. This initial analysis also guided the treatment of missing values,
 redundant variables, and features that could leak information from the target.
 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/year_distribution.png}
+  \caption{a) Distribution of the Year of property transaction b) Distribution of Year of property construction}
+  \label{fig:year}
+  \end{figure}
+
 \section{Methodology}
 \subsection{Data Cleaning and Feature Preparation}
 Data cleaning was performed after a chronological train-validation-test split in order to prevent information leakage
@@ -126,15 +134,19 @@ primarily district-level aggregates with global medians as fallbacks. After loca
 missing latitude and longitude values were handled through municipality-level medians, again fitted only on the training
 partition and then applied consistently to the validation and test sets.
 
+% #TODO: FEATURE PREP
+
 \subsection{Models and Evaluation}
-The study compared five regression models with different assumptions and learning architectures. \textit{XGBoost} was
-used as a gradient boosting model that builds weak decision trees sequentially, using previous errors to construct a
-stronger ensemble, while \textit{LightGBM} provided a more computationally efficient boosting approach based on
-leaf-wise tree growth. \textit{Random Forest} represented a bagging-based ensemble of decision trees trained on
-bootstrapped samples, reducing variance by averaging many independent predictors. As a linear baseline,
-\textit{ElasticNet} combined L1 and L2 regularization to balance feature selection and coefficient shrinkage. Finally,
-\textit{Support Vector Regression} estimated a regression function within an error-tolerant margin, allowing nonlinear
-patterns to be modeled through kernel transformations.
+The study compared five regression models with different assumptions and learning architectures. \textit{XGBoost}
+\cite{chen_xgboost} was used as a gradient boosting model that builds weak decision trees sequentially, using previous
+errors to construct a stronger ensemble, while \textit{LightGBM} \cite{lightgbm} provided a more computationally
+efficient boosting approach based on leaf-wise tree growth. \textit{Random Forest} represented a bagging-based ensemble
+of decision trees trained on bootstrapped samples, reducing variance by averaging many independent predictors. For
+technical reasons, the version of \textit{Random Forest} implemented was the one from \textit{cuML}
+\cite{raschka2020machine}, given their faster training and inference on GPU. As a linear baseline, \textit{ElasticNet}
+\cite{Zou2005} combined L1 and L2 regularization to balance feature selection and coefficient shrinkage. Finally,
+\textit{Support Vector Regression} \cite{Smola2004} estimated a regression function within an error-tolerant margin,
+allowing nonlinear patterns to be modeled through kernel transformations.
 
 Model performance was evaluated using complementary regression metrics computed on the original price scale after
 reversing the logarithmic target transformation. Mean Absolute Percentage Error (MAPE) was used to express relative
@@ -151,6 +163,9 @@ Interpretability was incorporated after model selection ()\textit{post hoc}) in 
 with substantive housing-market explanations. For the best-performing model, global feature importance was used to
 identify the variables that contributed most strongly to prediction, while SHAP analysis provided a more detailed view
 of how individual features influenced model outputs across the test set.
+
+\section{Results}
+IN PROGRESS
 
 \bibliographystyle{projeto}
 \bibliography{projeto}
