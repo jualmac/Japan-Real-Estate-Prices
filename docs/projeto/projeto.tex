@@ -20,16 +20,11 @@
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers for SBC conferences. For papers in
-  English, you should add just an abstract while for the papers in Portuguese, we also ask for an abstract in Portuguese
-  (``resumo''). In both cases, abstracts should not have more than 10 lines and must be in the first page of the paper.
+% #TODO
 \end{abstract}
      
 \begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e resumos de artigos para publicação nos anais
-  das conferências organizadas pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos escritos em
-  português. Artigos em inglês deverão apresentar apenas abstract. Nos dois casos, o autor deve tomar cuidado para que o
-  resumo (e o abstract) não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira página do artigo.
+% #TODO
 \end{resumo}
 
 
@@ -114,27 +109,80 @@ quarter, and period, were used to examine the distribution of observations over 
 modeling strategy adopted later in the pipeline. This initial analysis also guided the treatment of missing values,
 redundant variables, and features that could leak information from the target.
 
+The correlation analysis in Figure~\ref{fig:feature-correlation} highlights the strongest linear relationships between
+\textit{TradePrice} and the available numerical attributes. Property size, represented by \textit{Area} and
+\textit{TotalFloorArea}, has a clear positive association with transaction price, confirming that larger properties tend
+to command higher market values. Road frontage and other access-related variables are also related to price, suggesting
+that physical accessibility and road exposure contribute to property valuation. One less intuitive result is the weak
+negative correlation between \textit{BuildingYear} and \textit{TradePrice}, since newer buildings are usually expected
+to be more valuable. This pattern may reflect the fact that many older properties in the dataset are larger, renovated,
+or located in more established and expensive urban areas. The following plots examine these hypotheses by looking at the
+temporal coverage of the data, the relationship between building age and property area, and the renovation profile of
+older buildings.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/corr.png}
+  \caption{Correlation matrix for the numerical variables}
+  \label{fig:feature-correlation}
+  \end{figure}
+
+Figure~\ref{fig:year-distribution} summarizes the temporal structure of the dataset. The transaction-year distribution
+indicates how observations are spread across the market period covered by the data, while the construction-year
+distribution shows the age profile of the traded building stock. This is important because the project uses a
+chronological train-validation-test split, and because building age may capture both depreciation and location effects.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=.99\textwidth]{../../plots/year_distribution.png}
-  \caption{a) Distribution of the Year of property transaction b) Distribution of Year of property construction}
-  \label{fig:year}
+  \caption{Temporal distributions in the dataset: transaction years and construction years of the traded properties.}
+  \label{fig:year-distribution}
+  \end{figure}
+
+Figure~\ref{fig:old-buildings-area} suggests that older buildings tend to have larger floor areas. This helps explain
+why the direct correlation between construction year and price can be weak, since building age is not isolated from
+other value drivers, especially size and location. In this dataset, some older properties may remain expensive because
+they offer more usable space or are concentrated in mature urban districts.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/old buildings.png}
+  \caption{Relationship between building age and property area, showing that older properties often correspond to larger
+  buildings in the observed transactions.}
+  \label{fig:old-buildings-area}
   \end{figure}
 
 \section{Methodology}
 \subsection{Data Cleaning and Feature Preparation}
-Data cleaning was performed after a chronological train-validation-test split in order to prevent information leakage
-from future transactions into earlier periods. The preprocessing stage first dropped non-informative or redundant
-columns, such as "Remarks", given the general textual nature of the column and high number of missing data. Also dropped
-were columns that would leak the target information, such as "PricePerTsubo" and "UnitPrice", both being attributes of
-the "TradePrice" divided per area. Domain-based rules were applied to missing values, treating attributes such as floor
-plan, renovation status, structure, frontage, and nearest station as not applicable when their absence was implied by
-the property type. Remaining numerical gaps were imputed using statistics learned exclusively from the training set,
-primarily district-level aggregates with global medians as fallbacks. After location features were merged into the data,
-missing latitude and longitude values were handled through municipality-level medians, again fitted only on the training
-partition and then applied consistently to the validation and test sets.
+Data cleaning was performed only after the chronological train-validation-test split, so that all preprocessing
+parameters were estimated from past observations and then applied to later periods. This design reduced the risk of
+information leakage from future transactions into the training process. The first step removed variables that were
+either not suitable for modeling or directly derived from the target. The textual \textit{Remarks} field was discarded
+because of its unstructured nature and high missingness, same as for \textit{Renovation}, while \textit{UnitPrice} and
+\textit{PricePerTsubo} were removed because they encode transformations of \textit{TradePrice} and would therefore leak
+information about the response variable.
 
-% #TODO: FEATURE PREP
+Missing values were then treated through a combination of domain rules and train-fitted statistical imputations. For
+property types in which some attributes were conceptually absent, such as land-only or rural transactions, variables
+including floor plan, status, structure, frontage, and nearest station were filled as not applicable or with
+structurally meaningful values. The original station-distance field was also reconstructed from the minimum and maximum
+time-to-station variables, producing a consistent numerical accessibility measure. Remaining numerical gaps were imputed
+with statistics learned exclusively from the training set, primarily district-level aggregates with global medians as
+fallbacks. After latitude and longitude were merged into the data, missing coordinates were handled with
+municipality-level medians, again fitted only on the training partition and then applied consistently to the validation
+and test sets.
+
+Additional feature preparation was applied after the initial cleaning stage. The original station-distance
+representation was converted into a numerical \textit{TimeToNearestStation} variable using the midpoint between the
+minimum and maximum reported travel times, while the transaction quarter was encoded with sine and cosine
+transformations to preserve its cyclical structure. Geographic information was enriched by merging latitude and
+longitude from the auxiliary locations database. The target variable was transformed with $\log(1+x)$ because housing
+prices are strongly right-skewed, with a small number of very expensive transactions that can dominate loss functions
+based on absolute or squared errors. Modeling the logarithm of price compresses these extreme values and makes the
+learning problem closer to predicting relative price differences rather than only fitting the largest transactions. The
+models were therefore trained and produced predictions on the transformed scale. Before reporting evaluation metrics,
+both predictions and observed values were converted back to Yen using the inverse transformation. Finally, categorical
+variables were one-hot encoded using a layout learned on the training set, numerical features were normalized with
+train-fitted min-max scalers, and feature names were standardized to ensure compatibility with the different modeling
+libraries.
 
 \subsection{Models and Evaluation}
 The study compared five regression models with different assumptions and learning architectures. \textit{XGBoost}
@@ -151,7 +199,7 @@ allowing nonlinear patterns to be modeled through kernel transformations.
 Model performance was evaluated using complementary regression metrics computed on the original price scale after
 reversing the logarithmic target transformation. Mean Absolute Percentage Error (MAPE) was used to express relative
 prediction error, while Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) measured absolute deviations in
-yen, with RMSE assigning greater weight to large errors. The coefficient of determination ($R^2$) was also reported to
+Yen, with RMSE assigning greater weight to large errors. The coefficient of determination ($R^2$) was also reported to
 summarize the proportion of price variance explained by each model.
 
 Reproducibility was addressed by centralizing the experimental configuration, fixing random seeds for Python and NumPy,
@@ -159,7 +207,7 @@ and applying the same chronological split, preprocessing rules, encoding, scalin
 all algorithms. The pipeline also generated a run identifier and stored metadata, model input splits, and validation and
 test metrics, allowing each experiment to be traced back to the data partitions and feature set used during training.
 
-Interpretability was incorporated after model selection ()\textit{post hoc}) in order to connect predictive performance
+Interpretability was incorporated after model selection (\textit{post hoc}) in order to connect predictive performance
 with substantive housing-market explanations. For the best-performing model, global feature importance was used to
 identify the variables that contributed most strongly to prediction, while SHAP analysis provided a more detailed view
 of how individual features influenced model outputs across the test set.
