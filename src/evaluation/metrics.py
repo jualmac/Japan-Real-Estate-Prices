@@ -1,4 +1,3 @@
-#TODO: Persist the results table as parameters/metrics.csv for reproducibility.
 """
 Performance metrics and model comparison.
 

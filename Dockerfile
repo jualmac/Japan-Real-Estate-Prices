@@ -1,5 +1,4 @@
 #TODO: Pin a specific python:3.11-slim
-#TODO: Document the docker run / docker compose invocation in README.md
 FROM python:3.11-slim
 
 WORKDIR /app

@@ -1,4 +1,4 @@
-#TODO: Stick a version to each before the end + Docker -> Reproducibility;
+#TODO: Stick a version to each before the end -> Reproducibility;
 kagglehub
 kagglesdk
 geopy

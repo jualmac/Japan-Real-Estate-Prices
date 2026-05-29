@@ -20,12 +20,19 @@ Orchestrates the full workflow:
 #
 ########################################################################################################################
 from src.config import CONFIG, set_seed
+from src.data.audit import (
+    create_run_id,
+    save_model_input_splits,
+    save_model_metrics,
+    save_pipeline_run_metadata,
+)
 from src.data.db import ensure_database
 from src.data.download import download_tradeprices
 from src.data.loader import load_all_prefectures
 from src.eda.summary import check_duplicates, nan_profile, print_overview
 from src.evaluation.metrics import evaluate_all
 from src.interpretability.feature_importance import plot_importance
+from src.interpretability.shap_analysis import run_shap_analysis
 from src.models.optimization import OptimizeRegressor
 from src.models.training import train_all
 from src.preprocessing.cleaning import DataCleaner
@@ -44,7 +51,8 @@ from src.visualization.plots import year_distribution
 def main() -> None:
     logger = setup_logging(level=CONFIG.log_level)
     set_seed(CONFIG.seed)
-    logger.info("Pipeline started (seed=%s, n_trials=%s).", CONFIG.seed, CONFIG.n_trials)
+    run_id = create_run_id()
+    logger.info("Pipeline started (run_id=%s, seed=%s, n_trials=%s).", run_id, CONFIG.seed, CONFIG.n_trials)
 
     download_tradeprices()
     ensure_database()
@@ -77,6 +85,17 @@ def main() -> None:
     X_val = to_snake_case_columns(X_val)
     X_te = to_snake_case_columns(X_te)
 
+    save_pipeline_run_metadata(run_id, split, X_tr.columns)
+    saved_split_rows = save_model_input_splits(
+        run_id,
+        {
+            "train": (X_tr, y_tr),
+            "validation": (X_val, y_val),
+            "test": (X_te, y_te),
+        },
+    )
+    logger.info("Saved %d model input audit rows for run_id=%s.", saved_split_rows, run_id)
+
     for model_name in CONFIG.models:
         logger.info("Optimizing %s with %d trials...", model_name, CONFIG.n_trials)
         OptimizeRegressor(
@@ -88,13 +107,24 @@ def main() -> None:
 
     models = train_all(CONFIG.models, X_tr, y_tr)
 
+    validation_results = evaluate_all(models, X_val, y_val)
+    logger.info("Model comparison on the validation split:\n%s", validation_results)
+
     results = evaluate_all(models, X_te, y_te)
     logger.info("Model comparison on the test split:\n%s", results)
+    saved_metric_rows = save_model_metrics(
+        run_id,
+        {
+            "validation": validation_results,
+            "test": results,
+        },
+    )
+    logger.info("Saved %d model metric audit rows for run_id=%s.", saved_metric_rows, run_id)
 
     best_name = results["rmse"].idxmin()
     logger.info("Best model by RMSE: %s", best_name)
     plot_importance(models[best_name], X_tr.columns)
-    # TODO: shap_summary(models[best_name], subsample_for_shap(X_te))
+    run_shap_analysis(models[best_name], X_te)
 
 ########################################################################################################################
 #

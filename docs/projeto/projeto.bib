@@ -24,3 +24,98 @@
   year = 	 {1999},
   editor = 	 {A. B. Smith-Jones}
 }
+
+ @inproceedings{chen_xgboost,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {{XGBoost}: A Scalable Tree Boosting System},
+  booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  series    = {KDD '16},
+  year      = {2016},
+  isbn      = {978-1-4503-4232-2},
+  location  = {San Francisco, California, USA},
+  pages     = {785--794},
+  numpages  = {10},
+  url       = {\url{http://doi.acm.org/10.1145/2939672.2939785}},
+  doi       = {10.1145/2939672.2939785},
+  acmid     = {2939785},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  keywords  = {large-scale machine learning}
+}
+
+ @inproceedings{lightgbm,
+  author    = {Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  title     = {LightGBM: a highly efficient gradient boosting decision tree},
+  year      = {2017},
+  isbn      = {9781510860964},
+  publisher = {Curran Associates Inc.},
+  address   = {Red Hook, NY, USA},
+  abstract  = {Gradient Boosting Decision Tree (GBDT) is a popular machine learning algorithm, and has quite a few effective implementations such as XGBoost and pGBRT. Although many engineering optimizations have been adopted in these implementations, the efficiency and scalability are still unsatisfactory when the feature dimension is high and data size is large. A major reason is that for each feature, they need to scan all the data instances to estimate the information gain of all possible split points, which is very time consuming. To tackle this problem, we propose two novel techniques: Gradient-based One-Side Sampling (GOSS) and Exclusive Feature Bundling (EFB). With GOSS, we exclude a significant proportion of data instances with small gradients, and only use the rest to estimate the information gain. We prove that, since the data instances with larger gradients play a more important role in the computation of information gain, GOSS can obtain quite accurate estimation of the information gain with a much smaller data size. With EFB, we bundle mutually exclusive features (i.e., they rarely take nonzero values simultaneously), to reduce the number of features. We prove that finding the optimal bundling of exclusive features is NP-hard, but a greedy algorithm can achieve quite good approximation ratio (and thus can effectively reduce the number of features without hurting the accuracy of split point determination by much). We call our new GBDT implementation with GOSS and EFB LightGBM. Our experiments on multiple public datasets show that, LightGBM speeds up the training process of conventional GBDT by up to over 20 times while achieving almost the same accuracy.},
+  booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+  pages     = {3149–3157},
+  numpages  = {9},
+  location  = {Long Beach, California, USA},
+  series    = {NIPS'17}
+}
+
+@article{raschka2020machine,
+  title={Machine Learning in Python: Main developments and technology trends in data science, machine learning, and artificial intelligence},
+  author={Raschka, Sebastian and Patterson, Joshua and Nolet, Corey},
+  journal={arXiv preprint arXiv:2002.04803},
+  year={2020}
+}
+
+@article{Zou2005,
+  author  = {Zou, Hui and Hastie, Trevor},
+  title   = {Regularization and Variable Selection Via the Elastic Net},
+  journal = {Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  year    = {2005},
+  volume  = {67},
+  pages   = {301-320},
+  howpublished     = {\url{https://doi.org/10.1111/j.1467-9868.2005.00503.x}}
+}
+
+@article{Smola2004,
+  author  = {Smola, Alex J. and Schölkopf, Bernhard},
+  title   = {A tutorial on support vector regression},
+  journal = {Statistics and Computing},
+  year    = {2004},
+  volume  = {14},
+  pages   = {199-222},
+  howpublished     = {\url{https://doi.org/10.1023/b:stco.0000035301.49549.88}}
+}
+
+@misc{nishiodens_japan_real_estate,
+  author       = {S. Nishio},
+  title        = {Japan Real Estate Transaction Prices},
+  year         = {2019},
+  publisher    = {Kaggle},
+  howpublished = {\url{https://www.kaggle.com/datasets/nishiodens/japan-real-estate-transaction-prices}},
+  note         = {Data sourced originally from the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) of Japan with this Gist https://gist.github.com/nishio-dens/d66a52cb26a4fe0851ceb353c75ecdf7}
+}
+
+@online{mlit2019revitalization,
+  author   = {{Ministry of Land, Infrastructure, Transport and Tourism}},
+  title    = {Revitalization of the market for existing housing (Kizon jutaku ryutsu shijo no kasseika)},
+  year     = {2019},
+  howpublished      = {\url{https://www.mlit.go.jp/seisakutokatsu/hyouka/content/001313273.pdf}},
+  urldate  = {2026-05-28},
+  language = {japanese}
+}
+
+@article{yoshida2016structure,
+  author  = {Yoshida, Jiro},
+  title   = {Structure Depreciation and Returns to Scale of Real Estate},
+  journal = {SSRN Electronic Journal},
+  year    = {2016},
+  publisher = {Elsevier BV},
+  doi     = {10.2139/ssrn.2734555}
+}
+
+@book{hirayama2006housing,
+  author    = {Hirayama, Yosuke and Ronald, Richard},
+  title     = {Housing and Social Transition in Japan},
+  publisher = {Routledge},
+  year      = {2006},
+  doi       = {10.4324/9780203967423}
+}

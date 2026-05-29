@@ -8,126 +8,212 @@
      
 \sloppy
 
-\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
+\title{CMP263 - Machine Learning Paper \\ Japanese House Prices Predition}
 
-\author{Luciana P. Nedel\inst{1}, Rafael H. Bordini\inst{2}, Flávio Rech Wagner\inst{1}, Jomi F. Hübner\inst{3} }
-
+\author{Juliano Almeida Machado\inst{1}}
 
 \address{Instituto de Informática -- Universidade Federal do Rio Grande do Sul (UFRGS)\\
-  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil
-\nextinstitute
-  Department of Computer Science -- University of Durham\\
-  Durham, U.K.
-\nextinstitute
-  Departamento de Sistemas e Computação\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil \email{\{nedel,flavio\}@inf.ufrgs.br,
-  R.Bordini@durham.ac.uk, jomi@inf.furb.br} }
+  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil}
 
 \begin{document} 
 
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers for SBC conferences. For papers in
-  English, you should add just an abstract while for the papers in Portuguese, we also ask for an abstract in Portuguese
-  (``resumo''). In both cases, abstracts should not have more than 10 lines and must be in the first page of the paper.
+% #TODO
 \end{abstract}
      
 \begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e resumos de artigos para publicação nos anais
-  das conferências organizadas pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos escritos em
-  português. Artigos em inglês deverão apresentar apenas abstract. Nos dois casos, o autor deve tomar cuidado para que o
-  resumo (e o abstract) não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira página do artigo.
+% #TODO
 \end{resumo}
 
 
-\section{General Information}
+\section{Introduction}
+The Japanese housing market presents an anomaly within global real estate economics. In most developed nations,
+residential property functions as an appreciating asset and a means for generational wealth accumulation. In contrast,
+housing in Japan behaves as a depreciating consumer durable. Within 20 to 30 years of construction, the structural value
+of a typical Japanese home depreciates to virtually zero. This structural depreciation creates a stark institutional
+decoupling between land value and building value \cite{yoshida2016structure}. While urban land, especially within the
+Tokyo and Osaka metropolitan areas, retains substantial value and responds to conventional market forces, the structures
+erected upon that land are treated as temporary assets. According to data from the Ministry of Land, Infrastructure,
+Transport and Tourism (MLIT), the secondary housing market accounts for only approximately 15\% of total housing
+transactions in Japan, compared to over 80\% to 90\% in the US and UK \cite{mlit2019revitalization}.
 
-All full papers and posters (short papers) submitted to some SBC conference, including any supporting documents, should
-be written in English or in Portuguese. The format paper should be A4 with single column, 3.5 cm for upper margin, 2.5
-cm for bottom margin and 3.0 cm for lateral margins, without headers or footers. The main font must be Times, 12 point
-nominal size, with 6 points of space before each paragraph. Page numbers must be suppressed.
+% #TODO: Check if this is true in the data; 
+This environment traces its origins back to the post-World War II reconstruction era. Facing severe housing shortages
+and rapid urbanization, the Japanese government prioritized speed and quantity over long-term structural durability
+\cite{hirayama2006housing}. The resulting regulatory framework and market incentives codified a system of high-turnover
+construction, which was later exacerbated by the asset price bubble of the late 1980s. Japan’s geographic vulnerability
+to seismic activity also dictates its building philosophies. The Building Standard Act of Japan has undergone continuous
+revisions, with the most critical shift occurring in 1981 with the introduction of the \textit{Shin-Taishin} (New
+Anti-Seismic Design Code). Homes constructed prior to 1981 are fundamentally viewed as structurally unsafe and
+frequently fail to qualify for standard bank financing, as they're heavily penalized under modern insurance structures.
+Subsequent amendments following the 1995 Hanshin-Awaji (Kobe) earthquake and the 2011 Tohoku earthquake have further
+accelerated the technological obsolescence of older properties. Consequently, buyers often perceive purchasing a
+pre-owned home not just as an economic compromise, but as a direct compromise on structural safety.
 
-Full papers must respect the page limits defined by the conference. Conferences that publish just abstracts ask for
-\textbf{one}-page texts.
+Complementing these rigid safety mandates is a pervasive cultural preference for new builds, known as
+\textit{Shinchiku}. A newly built home carries a significant socio-cultural premium in Japan, symbolizing clean slates,
+modernization, and social status. This preference is structurally reinforced by financial institutions, whereas Japanese
+banks routinely structure residential mortgages around the statutory useful life (\textit{Taikyusei}) of the building.
+For a standard timber-frame home, this period is legally defined as 22 years. Once a structure surpasses this threshold,
+securing a mortgage for its resale becomes exceedingly difficult, effectively freezing the secondary market.
 
-\section{First Page} \label{sec:firstpage}
+It is also important to note that one of the most pressing modern challenge facing the Japanese housing market is the
+nation's demographic trajectory. Japan is characterized by a rapid aging society combined with a beneath replacement
+fertility rate, a critical example of most modern post-industrial societies. The population has been in a continuous
+state of decline since its peak in the late 2000s. This population contraction has triggered the abandoned house
+(\textit{akiya}) phenomenon. Millions of homes across rural, suburban, and even peripheral urban areas stand completely
+vacant, given the tendency of inheriting families to frequently abandon the physical structures. This has created a
+massive inventory of valueless, deteriorating properties that distort local real estate valuations and create severe
+municipal management challenges.
 
-The first page must display the paper title, the name and address of the authors, the abstract in English and ``resumo''
-in Portuguese (``resumos'' are required only for papers written in Portuguese). The title must be centered over the
-whole page, in 16 point boldface font and with 12 points of space before itself. Author names must be centered in 12
-point font, bold, all of them disposed in the same line, separated by commas and with 12 points of space after the
-title. Addresses must be centered in 12 point font, also with 12 points of space after the authors' names. E-mail
-addresses should be written using font Courier New, 10 point nominal size, with 6 points of space before and 6 points of
-space after.
+The Japanese housing market presents an invaluable case study for urban economists and sociologists alike. It challenges
+the universal assumption that residential property is an inherently safe, appreciating asset class. As other
+post-industrial nations begin to face similar demographic plateaus and climate-induced regulatory pressures,
+understanding the mechanisms of Japan’s ``scrap-and-build'' housing model becomes essential. 
 
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font, indented 0.8cm on both sides. The word
-\textbf{Abstract} and \textbf{Resumo}, should be written in boldface and must precede the text.
+\section{Research Problem and Objectives}
+This work investigates the extent to which transaction-level information can explain and predict residential real estate
+prices in Japan. Using data collected by the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) between 2005
+and 2019 and made available through Kaggle \cite{nishiodens_japan_real_estate}, the study frames Japanese housing
+valuation as a supervised regression problem. The central task is to estimate property transaction prices from
+observable attributes such as location, property type, land characteristics, building age, and temporal market
+conditions.
 
-\section{CD-ROMs and Printed Proceedings}
+The problem is relevant because Japanese real estate prices are shaped by a combination of economic, demographic and
+geographic factors that differ from those observed in many other developed housing markets. In this context, predictive
+modeling is not only a technical exercise, but also a way to examine which variables carry the strongest explanatory
+power in a market characterized by structural depreciation, regional imbalance, and changing demand. Accordingly, this
+paper aims to develop, evaluate, and interpret Machine Learning regression models capable of predicting housing prices
+while providing insight into the main determinants of valuation in the Japanese residential market.
 
-In some conferences, the papers are published on CD-ROM while only the abstract is published in the printed Proceedings.
-In this case, authors are invited to prepare two final versions of the paper. One, complete, to be published on the CD
-and the other, containing only the first page, with abstract and ``resumo'' (for papers in Portuguese).
+This study followed a reproducible empirical workflow that combined data cleaning, feature preparation, model
+comparison, and interpretability analysis. Several regression algorithms with distinct inductive biases, including
+Gradient Boosting, Random Forests, ElasticNet regression, and Support Vector Regression, were trained and evaluated
+under the same temporal validation strategy. Their predictive performance was compared using standard regression
+metrics, while feature importance and SHAP-based analyses were used to relate model behavior back to the economic and
+spatial determinants of Japanese housing prices.
 
-\section{Sections and Paragraphs}
+\section{Exploratory Data Analysis}
+The exploratory analysis began with an inspection of the structure, completeness, and temporal distribution of the MLIT
+transaction dataset. Each record describes a real estate transaction in Japan, with \textit{TradePrice} defined as the
+target variable to be predicted. The explanatory variables combine geographic identifiers, such as prefecture,
+municipality, district, and nearest station, with accessibility measures, including the minimum and maximum travel time
+to the closest station.
 
-Section titles must be in boldface, 13pt, flush left. There should be an extra 12 pt of space before each title. Section
-numbering is optional. The first paragraph of each section should not be indented, while the first lines of subsequent
-paragraphs should be indented by 1.27 cm.
+The dataset also includes physical property attributes, such as area, land shape, frontage, floor plan, building year,
+structure, total floor area, and renovation status, as well as urban-planning information, including zoning, coverage
+ratio, floor-area ratio, road direction, and road classification. Temporal variables, represented by transaction year,
+quarter, and period, were used to examine the distribution of observations over time and to support the chronological
+modeling strategy adopted later in the pipeline. This initial analysis also guided the treatment of missing values,
+redundant variables, and features that could leak information from the target.
 
-\subsection{Subsections}
-
-The subsection titles must be in boldface, 12pt, flush left.
-
-\section{Figures and Captions}\label{sec:figs}
-
-
-Figure and table captions should be centered if less than one line (Figure~\ref{fig:exampleFig1}), otherwise justified
-and indented by 0.8cm on both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must be Helvetica, 10
-point, boldface, with 6 points of space before and after each caption.
+The correlation analysis in Figure~\ref{fig:feature-correlation} highlights the strongest linear relationships between
+\textit{TradePrice} and the available numerical attributes. Property size, represented by \textit{Area} and
+\textit{TotalFloorArea}, has a clear positive association with transaction price, confirming that larger properties tend
+to command higher market values. Road frontage and other access-related variables are also related to price, suggesting
+that physical accessibility and road exposure contribute to property valuation. One less intuitive result is the weak
+negative correlation between \textit{BuildingYear} and \textit{TradePrice}, since newer buildings are usually expected
+to be more valuable. This pattern may reflect the fact that many older properties in the dataset are larger, renovated,
+or located in more established and expensive urban areas. The following plots examine these hypotheses by looking at the
+temporal coverage of the data, the relationship between building age and property area, and the renovation profile of
+older buildings.
 
 \begin{figure}[ht]
-\centering
-\includegraphics[width=.5\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
-\end{figure}
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/corr.png}
+  \caption{Correlation matrix for the numerical variables}
+  \label{fig:feature-correlation}
+  \end{figure}
 
+Figure~\ref{fig:year-distribution} summarizes the temporal structure of the dataset. The transaction-year distribution
+indicates how observations are spread across the market period covered by the data, while the construction-year
+distribution shows the age profile of the traded building stock. This is important because the project uses a
+chronological train-validation-test split, and because building age may capture both depreciation and location effects.
 \begin{figure}[ht]
-\centering
-\includegraphics[width=.3\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one line and justified considering margins
-  mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/year_distribution.png}
+  \caption{Temporal distributions in the dataset: transaction years and construction years of the traded properties.}
+  \label{fig:year-distribution}
+  \end{figure}
 
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid thick, doubled, or unnecessary framing
-lines. When reporting empirical data, do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1) and the font used must also be Helvetica,
-10 point, boldface, with 6 points of space before and after each caption.
+Figure~\ref{fig:old-buildings-area} suggests that older buildings tend to have larger floor areas. This helps explain
+why the direct correlation between construction year and price can be weak, since building age is not isolated from
+other value drivers, especially size and location. In this dataset, some older properties may remain expensive because
+they offer more usable space or are concentrated in mature urban districts.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/old buildings.png}
+  \caption{Relationship between building age and property area, showing that older properties often correspond to larger
+  buildings in the observed transactions.}
+  \label{fig:old-buildings-area}
+  \end{figure}
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
+\section{Methodology}
+\subsection{Data Cleaning and Feature Preparation}
+Data cleaning was performed only after the chronological train-validation-test split, so that all preprocessing
+parameters were estimated from past observations and then applied to later periods. This design reduced the risk of
+information leakage from future transactions into the training process. The first step removed variables that were
+either not suitable for modeling or directly derived from the target. The textual \textit{Remarks} field was discarded
+because of its unstructured nature and high missingness, same as for \textit{Renovation}, while \textit{UnitPrice} and
+\textit{PricePerTsubo} were removed because they encode transformations of \textit{TradePrice} and would therefore leak
+information about the response variable.
 
-\section{Images}
+Missing values were then treated through a combination of domain rules and train-fitted statistical imputations. For
+property types in which some attributes were conceptually absent, such as land-only or rural transactions, variables
+including floor plan, status, structure, frontage, and nearest station were filled as not applicable or with
+structurally meaningful values. The original station-distance field was also reconstructed from the minimum and maximum
+time-to-station variables, producing a consistent numerical accessibility measure. Remaining numerical gaps were imputed
+with statistics learned exclusively from the training set, primarily district-level aggregates with global medians as
+fallbacks. After latitude and longitude were merged into the data, missing coordinates were handled with
+municipality-level medians, again fitted only on the training partition and then applied consistently to the validation
+and test sets.
 
-All images and illustrations should be in black-and-white, or gray tones, excepting for the papers that will be
-electronically available (on CD-ROMs, internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include images with excessive resolution, as they
-may take hours to print, without any visible difference in the result. 
+Additional feature preparation was applied after the initial cleaning stage. The original station-distance
+representation was converted into a numerical \textit{TimeToNearestStation} variable using the midpoint between the
+minimum and maximum reported travel times, while the transaction quarter was encoded with sine and cosine
+transformations to preserve its cyclical structure. Geographic information was enriched by merging latitude and
+longitude from the auxiliary locations database. The target variable was transformed with $\log(1+x)$ because housing
+prices are strongly right-skewed, with a small number of very expensive transactions that can dominate loss functions
+based on absolute or squared errors. Modeling the logarithm of price compresses these extreme values and makes the
+learning problem closer to predicting relative price differences rather than only fitting the largest transactions. The
+models were therefore trained and produced predictions on the transformed scale. Before reporting evaluation metrics,
+both predictions and observed values were converted back to Yen using the inverse transformation. Finally, categorical
+variables were one-hot encoded using a layout learned on the training set, numerical features were normalized with
+train-fitted min-max scalers, and feature names were standardized to ensure compatibility with the different modeling
+libraries.
 
-\section{References}
+\subsection{Models and Evaluation}
+The study compared five regression models with different assumptions and learning architectures. \textit{XGBoost}
+\cite{chen_xgboost} was used as a gradient boosting model that builds weak decision trees sequentially, using previous
+errors to construct a stronger ensemble, while \textit{LightGBM} \cite{lightgbm} provided a more computationally
+efficient boosting approach based on leaf-wise tree growth. \textit{Random Forest} represented a bagging-based ensemble
+of decision trees trained on bootstrapped samples, reducing variance by averaging many independent predictors. For
+technical reasons, the version of \textit{Random Forest} implemented was the one from \textit{cuML}
+\cite{raschka2020machine}, given their faster training and inference on GPU. As a linear baseline, \textit{ElasticNet}
+\cite{Zou2005} combined L1 and L2 regularization to balance feature selection and coefficient shrinkage. Finally,
+\textit{Support Vector Regression} \cite{Smola2004} estimated a regression function within an error-tolerant margin,
+allowing nonlinear patterns to be modeled through kernel transformations.
 
-Bibliographic references must be unambiguous and uniform.  We recommend giving the author names references in brackets,
-e.g. \cite{knuth:84}, \cite{boulic:91}, and \cite{smith:99}.
+Model performance was evaluated using complementary regression metrics computed on the original price scale after
+reversing the logarithmic target transformation. Mean Absolute Percentage Error (MAPE) was used to express relative
+prediction error, while Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) measured absolute deviations in
+Yen, with RMSE assigning greater weight to large errors. The coefficient of determination ($R^2$) was also reported to
+summarize the proportion of price variance explained by each model.
 
-The references must be listed using 12 point font size, with 6 points of space before each reference. The first line of
-each reference should not be indented, while the subsequent should be indented by 0.5 cm.
+Reproducibility was addressed by centralizing the experimental configuration, fixing random seeds for Python and NumPy,
+and applying the same chronological split, preprocessing rules, encoding, scaling, and model evaluation procedure across
+all algorithms. The pipeline also generated a run identifier and stored metadata, model input splits, and validation and
+test metrics, allowing each experiment to be traced back to the data partitions and feature set used during training.
+
+Interpretability was incorporated after model selection (\textit{post hoc}) in order to connect predictive performance
+with substantive housing-market explanations. For the best-performing model, global feature importance was used to
+identify the variables that contributed most strongly to prediction, while SHAP analysis provided a more detailed view
+of how individual features influenced model outputs across the test set.
+
+\section{Results}
+IN PROGRESS
 
 \bibliographystyle{projeto}
 \bibliography{projeto}
