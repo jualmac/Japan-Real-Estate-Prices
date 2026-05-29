@@ -77,3 +77,8 @@ treina modelos de regressão e compara os resultados com métricas como MAPE, RM
 | Quarter | Time of transaction year-quarter |  |
 | Renovation | Renovation? | Not yet' 'Done' |
 | Remarks | Note |  |
+
+# Uso de Ferramentas de IA
+Partes destes trabalho foram realizadas com o auxílio de Ferrramentas de IA. Em especial em debugging de código, implementação de novas features, revisão textual e limpezas gerais. Em todas suas instâncias, essas ferramentas foram utilizadas como suporte, não substituindo os objetivos de aprendizado do curso.
+
+**Modelos utilizados:** Gemini (Chat geral) ChatGPT 5.5 (Código), e Qwen 3.5 9B (Código);
