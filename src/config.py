@@ -147,6 +147,7 @@ class Config:
     target_transform: str = "log1p"
     use_gpu: bool = True
     models: Tuple[str, ...] = ("xgb", "lgbm", "rf")
+    # models: Tuple[str, ...] = ("xgb", "lgbm", "rf", "enet", "svr")
     log_level: str = "INFO"
     datasets_dir: Path = DATASETS_DIR
     parameters_dir: Path = PARAMETERS_DIR

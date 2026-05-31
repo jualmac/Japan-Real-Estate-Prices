@@ -20,11 +20,23 @@
 \maketitle
 
 \begin{abstract}
-% #TODO
+This paper studies residential real estate price prediction in Japan using transaction-level data from the Ministry of
+Land, Infrastructure, Transport and Tourism (MLIT), made available through Kaggle. The problem is formulated as a
+supervised regression task in which prices are estimated from spatial, temporal, accessibility, and physical attributes.
+The empirical workflow combines chronological validation, leakage-aware preprocessing, model comparison, and
+interpretability analysis across the main residential property types. The study compares tree-based ensembles,
+regularized linear regression, and support vector regression. [Space reserved for the main conclusions and final
+empirical findings.]
 \end{abstract}
      
 \begin{resumo} 
-% #TODO
+Este trabalho investiga a predição de preços de imóveis residenciais no Japão a partir de dados transacionais do
+Ministry of Land, Infrastructure, Transport and Tourism (MLIT), disponibilizados por meio do Kaggle. O problema é
+formulado como uma tarefa de regressão supervisionada, na qual os preços são estimados a partir de atributos espaciais,
+temporais, físicos e de acessibilidade. O fluxo empírico combina validação cronológica, pré-processamento voltado à
+prevenção de vazamento de informação, comparação de modelos e análise interpretável para os principais tipos de imóveis
+residenciais. O estudo compara ensembles de árvores, regressão linear regularizada e regressão por vetores de suporte.
+[Espaço reservado para as principais conclusões e resultados empíricos finais.]
 \end{resumo}
 
 
@@ -155,11 +167,12 @@ they offer more usable space or are concentrated in mature urban districts.
 \subsection{Data Cleaning and Feature Preparation}
 Data cleaning was performed only after the chronological train-validation-test split, so that all preprocessing
 parameters were estimated from past observations and then applied to later periods. This design reduced the risk of
-information leakage from future transactions into the training process. The first step removed variables that were
-either not suitable for modeling or directly derived from the target. The textual \textit{Remarks} field was discarded
-because of its unstructured nature and high missingness, same as for \textit{Renovation}, while \textit{UnitPrice} and
-\textit{PricePerTsubo} were removed because they encode transformations of \textit{TradePrice} and would therefore leak
-information about the response variable.
+information leakage from future transactions into the training process. SQLite was used as a lightweight database layer
+to organize the raw files and enable efficient access to the large dataset directly within the code. The first step
+removed variables that were either not suitable for modeling or directly derived from the target. The textual
+\textit{Remarks} field was discarded because of its unstructured nature and high missingness, same as for
+\textit{Renovation}, while \textit{UnitPrice} and \textit{PricePerTsubo} were removed because they encode
+transformations of \textit{TradePrice} and would therefore leak information about the response variable.
 
 Missing values were then treated through a combination of domain rules and train-fitted statistical imputations. For
 property types in which some attributes were conceptually absent, such as land-only, condominium, or rural transactions,

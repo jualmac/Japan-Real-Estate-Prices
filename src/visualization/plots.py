@@ -18,6 +18,22 @@ from src.evaluation.metrics import predict_original_scale
 from src.preprocessing.feature_engineering import inverse_log_transform_target
 
 
+def _finite_numeric_values(df: pd.DataFrame, column: str) -> pd.Series:
+    numeric = pd.to_numeric(df[column], errors="coerce")
+    return numeric[np.isfinite(numeric)]
+
+
+def _plot_discrete_hist_or_empty(df: pd.DataFrame, column: str, ax) -> None:
+    finite_values = _finite_numeric_values(df, column)
+    if finite_values.empty:
+        ax.text(0.5, 0.5, f"No finite {column} values available.", ha="center", va="center")
+        ax.set_xticks([])
+        ax.set_yticks([])
+        return
+
+    sns.histplot(x=finite_values, discrete=True, shrink=0.8, ax=ax)
+
+
 ########################################################################################################################
 #
 # FUNCTIONS
@@ -52,12 +68,12 @@ def year_distribution(
 
     fig, axes = plt.subplots(1, 2, figsize=figsize)
 
-    sns.histplot(data=df, x=year_column, discrete=True, shrink=0.8, ax=axes[0])
+    _plot_discrete_hist_or_empty(df, year_column, axes[0])
     axes[0].set_title(f"Row Distribution by {year_column}")
     axes[0].set_xlabel(year_column)
     axes[0].set_ylabel("Row Count")
 
-    sns.histplot(data=df, x=building_year_column, discrete=True, shrink=0.8, ax=axes[1])
+    _plot_discrete_hist_or_empty(df, building_year_column, axes[1])
     axes[1].set_title(f"Row Distribution by {building_year_column}")
     axes[1].set_xlabel(building_year_column)
     axes[1].set_ylabel("Row Count")

@@ -19,7 +19,14 @@ Orchestrates the full workflow:
 # LIBRARIES
 #
 ########################################################################################################################
+import os
 from pathlib import Path
+
+os.environ.setdefault("MPLBACKEND", "Agg")
+
+import matplotlib
+
+matplotlib.use("Agg")
 
 from src.config import CONFIG, PARAMETERS_DIR, Study, set_seed
 from src.data.audit import (
