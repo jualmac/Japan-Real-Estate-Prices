@@ -43,12 +43,20 @@ NUMERIC_DISTRICT_FILLERS: Dict[str, str] = {
     "MaxTimeToNearestStation": "median",
     "CoverageRatio": "median",
     "FloorAreaRatio": "median",
+    "Frontage": "median",
+    "Breadth": "median",
 }
 
 NUMERIC_MUNICIPALITY_FILLERS: Dict[str, str] = {
     "Latitude": "median",
     "Longitude": "median",
 }
+
+# Categorical columns whose residual NaNs (after the structural rules below) are
+# filled with an explicit "Unknown" level so one-hot encoding keeps them as a
+# distinct, non-leaking category;
+CATEGORICAL_UNKNOWN_FILLERS: List[str] = ["Structure", "Classification", "CityPlanning"]
+UNKNOWN_CATEGORY: str = "Unknown"
 
 ########################################################################################################################
 #
@@ -194,4 +202,10 @@ class DataCleaner:
         if {"MinTimeToNearestStation", "MaxTimeToNearestStation"}.issubset(df.columns):
             saturation_mask = df["MinTimeToNearestStation"] == 120
             df.loc[saturation_mask, "MaxTimeToNearestStation"] = df.loc[saturation_mask, "MaxTimeToNearestStation"].fillna(120)
+
+        # Residual categorical NaNs (not covered by the structural rules above)
+        # become an explicit "Unknown" level rather than being dropped silently;
+        for column in CATEGORICAL_UNKNOWN_FILLERS:
+            if column in df.columns:
+                df[column] = df[column].fillna(UNKNOWN_CATEGORY)
         return df

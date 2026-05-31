@@ -74,18 +74,12 @@ NUMERICAL_FEATURES: List[str] = [
     "Quarter_sin",
     "Latitude",
     "Longitude",
+    "Frontage",
+    "Breadth",
 ]
-# Each study filters to a single Type, so the column is constant and is dropped at the encoding step;
-CATEGORICAL_FEATURES: List[str] = []
+# Type itself stays constant within a study, but these categorical attributes vary;
+CATEGORICAL_FEATURES: List[str] = ["Structure", "Classification", "CityPlanning"]
 TARGET_COLUMN: str = "TradePrice"
-
-# Snake_case names used after encoding (some models can't handle special chars).
-# Matches the numeric encoder output order (no Type dummies in per-study mode);
-SNAKE_CASE_FEATURES: List[str] = [
-    "time_to_nearest_station", "area", "building_year", "coverage_ratio",
-    "floor_area_ratio", "year", "quarter_cos", "quarter_sin", "latitude",
-    "longitude",
-]
 
 
 ########################################################################################################################

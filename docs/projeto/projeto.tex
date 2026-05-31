@@ -162,14 +162,17 @@ because of its unstructured nature and high missingness, same as for \textit{Ren
 information about the response variable.
 
 Missing values were then treated through a combination of domain rules and train-fitted statistical imputations. For
-property types in which some attributes were conceptually absent, such as land-only or rural transactions, variables
-including floor plan, status, structure, frontage, and nearest station were filled as not applicable or with
-structurally meaningful values. The original station-distance field was also reconstructed from the minimum and maximum
-time-to-station variables, producing a consistent numerical accessibility measure. Remaining numerical gaps were imputed
-with statistics learned exclusively from the training set, primarily district-level aggregates with global medians as
-fallbacks. After latitude and longitude were merged into the data, missing coordinates were handled with
-municipality-level medians, again fitted only on the training partition and then applied consistently to the validation
-and test sets.
+property types in which some attributes were conceptually absent, such as land-only, condominium, or rural transactions,
+variables including floor plan, structure, road classification, city planning, frontage, breadth, and nearest station were filled as
+not applicable or with structurally meaningful values. In particular, frontage and road breadth were set to zero for
+condominiums, where these measurements do not translate to the category. The original station-distance field was also
+reconstructed from the minimum and maximum time-to-station variables, producing a consistent numerical accessibility
+measure. Remaining numerical gaps, including frontage, breadth, coverage ratio, and floor-area ratio, were imputed with
+statistics learned exclusively from the training set, primarily district-level aggregates with global medians as
+fallbacks. Remaining missing values in structure, road classification, and city planning were kept as an explicit unknown category
+before categorical encoding. After latitude and longitude were merged into the data, missing coordinates were handled
+with municipality-level medians, again fitted only on the training partition and then applied consistently to the
+validation and test sets.
 
 Additional feature preparation was applied after the initial cleaning stage. The original station-distance
 representation was converted into a numerical \textit{TimeToNearestStation} variable using the midpoint between the
@@ -181,9 +184,13 @@ a small number of very expensive transactions that can dominate loss functions b
 Modeling the logarithm of price compresses these extreme values and makes the learning problem closer to predicting
 relative price differences rather than only fitting the largest transactions. The models were therefore trained and
 produced predictions on the transformed scale. Before reporting evaluation metrics, both predictions and observed values
-were converted back to Yen using the inverse transformation. Finally, numerical features were normalized with
-train-fitted min-max scalers, and feature names were standardized to ensure compatibility with the different modeling
-libraries.
+were converted back to Yen using the inverse transformation. The final feature set combined numerical attributes
+(\textit{TimeToNearestStation}, \textit{Area}, \textit{BuildingYear}, \textit{CoverageRatio}, \textit{FloorAreaRatio},
+\textit{Year}, cyclical quarter encodings, \textit{Latitude}, \textit{Longitude}, \textit{Frontage}, and
+\textit{Breadth}) with one-hot encoded categorical attributes for \textit{Structure}, road \textit{Classification},
+and \textit{CityPlanning}.
+Finally, numerical features were normalized with train-fitted min-max scalers, and feature names were standardized to
+ensure compatibility with the different modeling libraries.
 
 \subsection{Property-Type Study Design}
 The final modeling pipeline was organized as a set of independent property-type studies. Three residential market
@@ -217,8 +224,7 @@ Model performance was evaluated using complementary regression metrics on both t
 scales. In log space, Root Mean Squared Error (RMSE) and the coefficient of determination ($R^2$) were used to compare
 models on the same scale used during training. After reversing the logarithmic target transformation, RMSE and Mean
 Absolute Error (MAE) measured absolute deviations in Yen, while original-scale $R^2$ summarized the proportion of price
-variance explained by each model. Mean Absolute Percentage Error (MAPE) was not reported because small or unstable
-denominators can make it misleading for this dataset.
+variance explained by each model.
 
 Reproducibility was addressed by centralizing the experimental configuration, fixing random seeds for Python and NumPy,
 and applying the same chronological split, preprocessing rules, scaling, and model evaluation procedure across all

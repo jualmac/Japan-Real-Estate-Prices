@@ -8,6 +8,7 @@ Categorical encoding (one-hot) with consistent column layout across splits.
 ########################################################################################################################
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from typing import List, Tuple
 
@@ -16,7 +17,6 @@ import pandas as pd
 from src.config import (
     CATEGORICAL_FEATURES,
     NUMERICAL_FEATURES,
-    SNAKE_CASE_FEATURES,
 )
 
 
@@ -80,17 +80,39 @@ def encode_categoricals(
     return encoder.transform(X_train), encoder.transform(X_val), encoder.transform(X_test)
 
 
+def _to_snake_case(name: str) -> str:
+    """
+    Convert an arbitrary column name to a snake_case, special-char-free token.
+
+    Handles CamelCase boundaries (``FloorAreaRatio`` -> ``floor_area_ratio``) and
+    one-hot suffixes containing spaces or punctuation
+    (``Classification_City Road`` -> ``classification_city_road``).
+    """
+    s = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", "_", name)
+    s = re.sub(r"(?<=[A-Z])(?=[A-Z][a-z])", "_", s)
+    s = re.sub(r"[^0-9a-zA-Z]+", "_", s)
+    s = re.sub(r"_+", "_", s).strip("_")
+    return s.lower()
+
+
 def to_snake_case_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
     Rename the encoded feature columns to snake_case to satisfy LightGBM/XGBoost.
 
-    The expected layout matches SNAKE_CASE_FEATURES from src.config.
+    The number of one-hot columns depends on the categorical levels present in
+    each study's training split, so names are derived dynamically rather than
+    from a fixed list. Duplicate results are disambiguated with a numeric suffix.
     """
-    if df.shape[1] != len(SNAKE_CASE_FEATURES):
-        raise ValueError(
-            f"Expected {len(SNAKE_CASE_FEATURES)} columns, got {df.shape[1]}. "
-            "Check the encoder column order against SNAKE_CASE_FEATURES."
-        )
     df = df.copy()
-    df.columns = list(SNAKE_CASE_FEATURES)
+    new_columns: List[str] = []
+    seen: dict[str, int] = {}
+    for column in df.columns:
+        snake = _to_snake_case(str(column))
+        if snake in seen:
+            seen[snake] += 1
+            snake = f"{snake}_{seen[snake]}"
+        else:
+            seen[snake] = 0
+        new_columns.append(snake)
+    df.columns = new_columns
     return df
