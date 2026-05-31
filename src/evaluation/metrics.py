@@ -1,8 +1,8 @@
 """
 Performance metrics and model comparison.
 
-Provides MAPE / RMSE / MAE / R^2 in the original (un-logged) target scale and
-a tidy comparison DataFrame across models.
+Provides RMSE / R^2 in log space plus RMSE / MAE / R^2 in the original Yen
+target scale, returned as a tidy comparison DataFrame across models.
 """
 
 ########################################################################################################################
@@ -15,7 +15,6 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import (
     mean_absolute_error,
-    mean_absolute_percentage_error,
     mean_squared_error,
     r2_score,
 )
@@ -73,27 +72,33 @@ def predict_original_scale(model, X: pd.DataFrame) -> np.ndarray:
 
 def evaluate(model, X: pd.DataFrame, y_true_log: pd.Series) -> Dict[str, float]:
     """
-    Score a single fitted model on the given split (target is log-scaled).
+    Score a single fitted model on the given split.
+
+    The target is log-scaled during training. Log-space metrics are useful for
+    model comparison, while Yen-scale metrics are easier to interpret.
     """
-    y_pred = predict_original_scale(model, X)
-    y_true = _to_original_scale(y_true_log)
+    y_pred_log = predict_log(model, X)
+    y_true_log_array = np.asarray(y_true_log)
+    y_pred_yen = _to_original_scale(y_pred_log)
+    y_true_yen = _to_original_scale(y_true_log_array)
 
     return {
-        "mape": float(mean_absolute_percentage_error(y_true, y_pred)),
-        "rmse": float(np.sqrt(mean_squared_error(y_true, y_pred))),
-        "mae": float(mean_absolute_error(y_true, y_pred)),
-        "r2": float(r2_score(y_true, y_pred)),
+        "rmse_log": float(np.sqrt(mean_squared_error(y_true_log_array, y_pred_log))),
+        "r2_log": float(r2_score(y_true_log_array, y_pred_log)),
+        "rmse_yen": float(np.sqrt(mean_squared_error(y_true_yen, y_pred_yen))),
+        "mae_yen": float(mean_absolute_error(y_true_yen, y_pred_yen)),
+        "r2_yen": float(r2_score(y_true_yen, y_pred_yen)),
     }
 
 
 def evaluate_all(models: Dict[str, object], X: pd.DataFrame, y_log: pd.Series) -> pd.DataFrame:
     """
     Apply evaluate() to every fitted model and return a tidy comparison DataFrame.
-    Rows are model names; columns are metric names. Sorted by RMSE ascending.
+    Rows are model names; columns are metric names. Sorted by Yen-scale RMSE ascending.
     """
     rows = {name: evaluate(model, X, y_log) for name, model in models.items()}
     df = pd.DataFrame.from_dict(rows, orient="index")
-    return df.sort_values("rmse", ascending=True)
+    return df.sort_values("rmse_yen", ascending=True)
 
 
 def comparison_table(predictions_log: np.ndarray, y_true_log: pd.Series) -> pd.DataFrame:

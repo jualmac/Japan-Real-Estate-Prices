@@ -11,7 +11,7 @@ Orchestrates the full workflow:
 7.  Categorical encoding + numeric scaling (train-fitted, replayed elsewhere).
 8.  Hyperparameter optimization (Optuna) per candidate model.
 9.  Final training with the best parameters.
-10. Evaluation (MAPE / RMSE / MAE / R^2).
+10. Evaluation (log-space RMSE / R^2 and Yen-scale RMSE / MAE / R^2).
 11. Interpretability (feature importance + SHAP) on the best model.
 """
 ########################################################################################################################
@@ -147,8 +147,8 @@ def run_study(study: Study, df, run_id: str, logger) -> None:
         saved_metric_rows, run_id, study.name,
     )
 
-    best_name = results["rmse"].idxmin()
-    logger.info("Best model by RMSE for study '%s': %s", study.name, best_name)
+    best_name = results["rmse_yen"].idxmin()
+    logger.info("Best model by Yen-scale RMSE for study '%s': %s", study.name, best_name)
     plot_importance(models[best_name], X_tr.columns, output_dir=plots_dir)
     run_shap_analysis(models[best_name], X_te, output_dir=plots_dir)
 

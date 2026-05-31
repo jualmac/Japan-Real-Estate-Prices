@@ -29,7 +29,8 @@ docker run --rm japan-real-estate-prices
 
 # Pipeline
 O projeto baixa e carrega os dados, faz limpeza e engenharia de atributos, separa treino/validação/teste por tempo,
-treina modelos de regressão e compara os resultados com métricas como MAPE, RMSE, MAE e R².
+treina modelos de regressão e compara os resultados com RMSE/R² no espaço logarítmico e RMSE/MAE/R² na escala original
+em Yen.
 
 # Estrutura
 - `main.py`: ponto de entrada do pipeline;

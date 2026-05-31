@@ -213,11 +213,12 @@ technical reasons, the version of \textit{Random Forest} implemented was the one
 \textit{Support Vector Regression} \cite{Smola2004} estimated a regression function within an error-tolerant margin,
 allowing nonlinear patterns to be modeled through kernel transformations.
 
-Model performance was evaluated using complementary regression metrics computed on the original price scale after
-reversing the logarithmic target transformation. Mean Absolute Percentage Error (MAPE) was used to express relative
-prediction error, while Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) measured absolute deviations in
-Yen, with RMSE assigning greater weight to large errors. The coefficient of determination ($R^2$) was also reported to
-summarize the proportion of price variance explained by each model.
+Model performance was evaluated using complementary regression metrics on both the transformed and original price
+scales. In log space, Root Mean Squared Error (RMSE) and the coefficient of determination ($R^2$) were used to compare
+models on the same scale used during training. After reversing the logarithmic target transformation, RMSE and Mean
+Absolute Error (MAE) measured absolute deviations in Yen, while original-scale $R^2$ summarized the proportion of price
+variance explained by each model. Mean Absolute Percentage Error (MAPE) was not reported because small or unstable
+denominators can make it misleading for this dataset.
 
 Reproducibility was addressed by centralizing the experimental configuration, fixing random seeds for Python and NumPy,
 and applying the same chronological split, preprocessing rules, scaling, and model evaluation procedure across all

@@ -72,7 +72,7 @@ def year_distribution(
 def plot_train_validation_loss(
     train_results: pd.DataFrame,
     validation_results: pd.DataFrame,
-    metric: str = "rmse",
+    metric: str = "rmse_yen",
     output_dir: Path | str = "plots",
     filename: str = "train_validation_loss.png",
     figsize: Tuple[int, int] = (12, 6),
@@ -95,9 +95,10 @@ def plot_train_validation_loss(
 
     fig, ax = plt.subplots(figsize=figsize)
     loss_df.plot(kind="bar", ax=ax)
-    ax.set_title(f"Training vs Validation Loss ({metric.upper()})")
+    metric_label = metric.upper().replace("_", " ")
+    ax.set_title(f"Training vs Validation Loss ({metric_label})")
     ax.set_xlabel("Model")
-    ax.set_ylabel(f"{metric.upper()} on Original TradePrice Scale (Yen)")
+    ax.set_ylabel(f"{metric_label} on Original TradePrice Scale (Yen)")
     ax.tick_params(axis="x", rotation=0)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
     ax.legend(title="Split")

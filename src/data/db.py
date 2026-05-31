@@ -55,6 +55,43 @@ class DBConnection:
     def __init__(self, database_file: str | Path = DB_FILE):
         self.database_file = str(database_file)
 
+    @staticmethod
+    def _quote_identifier(identifier: str) -> str:
+        """
+        Quote a SQLite identifier while preserving it as a single identifier.
+        """
+        return '"' + identifier.replace('"', '""') + '"'
+
+    @staticmethod
+    def _sqlite_type(dtype) -> str:
+        """
+        Map a pandas dtype to a SQLite storage class for additive schema updates.
+        """
+        if pd.api.types.is_integer_dtype(dtype):
+            return "INTEGER"
+        if pd.api.types.is_float_dtype(dtype):
+            return "REAL"
+        if pd.api.types.is_bool_dtype(dtype):
+            return "INTEGER"
+        return "TEXT"
+
+    def _add_missing_columns(self, conn: sqlite3.Connection, df: pd.DataFrame, table_name: str) -> None:
+        """
+        Add DataFrame columns that are missing from an existing SQLite table.
+        """
+        quoted_table = self._quote_identifier(table_name)
+        existing_columns = pd.read_sql_query(f"PRAGMA table_info({quoted_table})", conn)
+        existing_column_names = set(existing_columns["name"])
+
+        for column_name, dtype in df.dtypes.items():
+            if column_name in existing_column_names:
+                continue
+
+            quoted_column = self._quote_identifier(column_name)
+            conn.execute(
+                f"ALTER TABLE {quoted_table} ADD COLUMN {quoted_column} {self._sqlite_type(dtype)}"
+            )
+
     def dataframe_creator(self, query: str = DEFAULT_QUERY) -> pd.DataFrame:
         """
         Run a SELECT query and return a typed DataFrame.
@@ -62,7 +99,7 @@ class DBConnection:
         try:
             # sqlite3.connect creates the SQLite file when it does not exist;
             with sqlite3.connect(self.database_file) as conn:
-                print("Connected to SQLite Version", sqlite3.version)
+                print("Connected to SQLite Version", sqlite3.sqlite_version)
                 dataframe = pd.read_sql_query(query, conn)
 
             for column, dtype in DATA_TYPES.items():
@@ -111,6 +148,15 @@ class DBConnection:
         """
         try:
             with sqlite3.connect(self.database_file) as conn:
+                if if_exists == "append":
+                    tables = pd.read_sql_query(
+                        "SELECT name FROM sqlite_master WHERE type = 'table' AND name = ?",
+                        conn,
+                        params=(table_name,),
+                    )
+                    if not tables.empty:
+                        self._add_missing_columns(conn, df, table_name)
+
                 df.to_sql(table_name, conn, if_exists=if_exists, index=index)
         except sqlite3.Error as error:
             print("Error occurred - ", error)
