@@ -78,8 +78,7 @@ This work investigates the extent to which transaction-level information can exp
 prices in Japan. Using data collected by the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) between 2005
 and 2019 and made available through Kaggle \cite{nishiodens_japan_real_estate}, the study frames Japanese housing
 valuation as a supervised regression problem. The central task is to estimate property transaction prices from
-observable attributes such as location, property type, land characteristics, building age, and temporal market
-conditions.
+observable attributes such as location, land characteristics, building age, and temporal market conditions.
 
 The problem is relevant because Japanese real estate prices are shaped by a combination of economic, demographic and
 geographic factors that differ from those observed in many other developed housing markets. In this context, predictive
@@ -91,9 +90,11 @@ while providing insight into the main determinants of valuation in the Japanese 
 This study followed a reproducible empirical workflow that combined data cleaning, feature preparation, model
 comparison, and interpretability analysis. Several regression algorithms with distinct inductive biases, including
 Gradient Boosting, Random Forests, ElasticNet regression, and Support Vector Regression, were trained and evaluated
-under the same temporal validation strategy. Their predictive performance was compared using standard regression
-metrics, while feature importance and SHAP-based analyses were used to relate model behavior back to the economic and
-spatial determinants of Japanese housing prices.
+under the same temporal validation strategy. Rather than estimating a single pooled model for all observations, the
+empirical design separated the task into independent studies for the main residential property types. The models were
+trained and evaluated under the same temporal validation strategy within each study. Their predictive performance was
+compared using standard regression metrics, while feature importance and SHAP-based analyses were used to relate model
+behavior back to the economic and spatial determinants of Japanese housing prices.
 
 \section{Exploratory Data Analysis}
 The exploratory analysis began with an inspection of the structure, completeness, and temporal distribution of the MLIT
@@ -179,10 +180,25 @@ prices are strongly right-skewed, with a small number of very expensive transact
 based on absolute or squared errors. Modeling the logarithm of price compresses these extreme values and makes the
 learning problem closer to predicting relative price differences rather than only fitting the largest transactions. The
 models were therefore trained and produced predictions on the transformed scale. Before reporting evaluation metrics,
-both predictions and observed values were converted back to Yen using the inverse transformation. Finally, categorical
-variables were one-hot encoded using a layout learned on the training set, numerical features were normalized with
-train-fitted min-max scalers, and feature names were standardized to ensure compatibility with the different modeling
-libraries.
+both predictions and observed values were converted back to Yen using the inverse transformation. Finally, numerical
+features were normalized with train-fitted min-max scalers, and feature names were standardized to ensure compatibility
+with the different modeling libraries.
+
+\subsection{Property-Type Study Design}
+The final modeling pipeline was organized as a set of independent property-type studies. Three residential market
+segments were considered: \textit{Residential Land (Land and Building)}, \textit{Residential Land (Land Only)}, and
+\textit{Pre-owned Condominiums, etc.}. Agricultural and forest land observations were excluded from this stage because
+their price formation mechanisms differ substantially from residential transactions and would introduce a distinct
+economic problem into the same regression task.
+
+For each study, the dataset was first filtered to the corresponding property type and then passed through the complete
+workflow of chronological splitting, cleaning, feature engineering, scaling, hyperparameter optimization, training,
+evaluation, and interpretability analysis. This avoids forcing structurally heterogeneous markets into a single
+regression function. It also prevents the property-type indicator from acting as a coarse proxy for different valuation
+regimes, as we've noted in the preliminary tests, where the \textit{Type} would act was one the of the main indicators
+of value; after filtering, that variable is constant within each study and is therefore not used as a model feature. The
+same experimental protocol was applied to all studies, while parameter files, diagnostic plots, input snapshots, and
+metric records were stored separately or tagged by study name to preserve traceability.
 
 \subsection{Models and Evaluation}
 The study compared five regression models with different assumptions and learning architectures. \textit{XGBoost}
@@ -203,9 +219,10 @@ Yen, with RMSE assigning greater weight to large errors. The coefficient of dete
 summarize the proportion of price variance explained by each model.
 
 Reproducibility was addressed by centralizing the experimental configuration, fixing random seeds for Python and NumPy,
-and applying the same chronological split, preprocessing rules, encoding, scaling, and model evaluation procedure across
-all algorithms. The pipeline also generated a run identifier and stored metadata, model input splits, and validation and
-test metrics, allowing each experiment to be traced back to the data partitions and feature set used during training.
+and applying the same chronological split, preprocessing rules, scaling, and model evaluation procedure across all
+algorithms and property-type studies. The pipeline also generated a run identifier and stored metadata, model input
+splits, and training, validation, and test metrics, allowing each experiment to be traced back to the study, data
+partitions, and feature set used during training.
 
 Interpretability was incorporated after model selection (\textit{post hoc}) in order to connect predictive performance
 with substantive housing-market explanations. For the best-performing model, global feature importance was used to
