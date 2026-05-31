@@ -10,7 +10,7 @@ into the past. The cutoff years are derived from quantiles of the Year column.
 #
 ########################################################################################################################
 from dataclasses import dataclass
-from typing import Tuple
+from typing import Iterable, Tuple
 import pandas as pd
 from src.config import CONFIG, TARGET_COLUMN
 
@@ -39,6 +39,18 @@ class TemporalSplit:
 # FUNCTIONS
 #
 ########################################################################################################################
+def filter_by_type(
+    df: pd.DataFrame,
+    property_types: Iterable[str],
+    type_column: str = "Type",
+) -> pd.DataFrame:
+    """
+    Restrict the dataset to the given property type(s) for a single study.
+    """
+    types = list(property_types)
+    return df[df[type_column].isin(types)].copy()
+
+
 def temporal_split(
     df: pd.DataFrame,
     target_column: str = TARGET_COLUMN,

@@ -76,16 +76,51 @@ NUMERICAL_FEATURES: List[str] = [
     "Latitude",
     "Longitude",
 ]
-CATEGORICAL_FEATURES: List[str] = ["Type"]
+# Each study filters to a single Type, so the column is constant and is dropped at the encoding step;
+CATEGORICAL_FEATURES: List[str] = []
 TARGET_COLUMN: str = "TradePrice"
 
-# Snake_case names used after one-hot encoding (some models can't handle special chars);
+# Snake_case names used after encoding (some models can't handle special chars).
+# Matches the numeric encoder output order (no Type dummies in per-study mode);
 SNAKE_CASE_FEATURES: List[str] = [
     "time_to_nearest_station", "area", "building_year", "coverage_ratio",
     "floor_area_ratio", "year", "quarter_cos", "quarter_sin", "latitude",
-    "longitude", "type_forest_land", "type_pre_owned_condominiums_etc",
-    "type_residential_land_land_only", "type_residential_land_land_and_building",
+    "longitude",
 ]
+
+
+########################################################################################################################
+#
+# STUDIES
+#
+########################################################################################################################
+@dataclass(frozen=True)
+class Study:
+    """
+    One modeling study scoped to a single property type (or group of types).
+
+    Each study runs the full pipeline independently so that heterogeneous
+    property markets are not forced into a single regressor.
+    """
+    name: str
+    property_types: Tuple[str, ...]
+
+
+# The three residential studies; agricultural and forest land are excluded;
+STUDIES: Tuple[Study, ...] = (
+    Study(
+        name="residential_land_and_building",
+        property_types=("Residential Land(Land and Building)",),
+    ),
+    Study(
+        name="residential_land_only",
+        property_types=("Residential Land(Land Only)",),
+    ),
+    Study(
+        name="pre_owned_condominiums",
+        property_types=("Pre-owned Condominiums, etc.",),
+    ),
+)
 
 
 ########################################################################################################################
@@ -118,13 +153,14 @@ class Config:
     test_quantile: float = 0.85
     target_transform: str = "log1p"
     use_gpu: bool = True
-    models: Tuple[str, ...] = ("xgb", "lgbm", "rf", "enet", "svr")
+    models: Tuple[str, ...] = ("xgb", "lgbm", "rf")
     log_level: str = "INFO"
     datasets_dir: Path = DATASETS_DIR
     parameters_dir: Path = PARAMETERS_DIR
     logs_dir: Path = LOGS_DIR
     numerical_features: Tuple[str, ...] = field(default_factory=lambda: tuple(NUMERICAL_FEATURES))
     categorical_features: Tuple[str, ...] = field(default_factory=lambda: tuple(CATEGORICAL_FEATURES))
+    studies: Tuple[Study, ...] = field(default_factory=lambda: tuple(STUDIES))
 
 
 CONFIG: Config = Config()

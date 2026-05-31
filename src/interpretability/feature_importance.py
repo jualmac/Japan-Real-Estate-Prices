@@ -14,7 +14,8 @@ TODO:
 # LIBRARIES
 #
 ########################################################################################################################
-from typing import Sequence
+from pathlib import Path
+from typing import Sequence, Union
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -77,16 +78,29 @@ def permutation_importance_report(
     return df.sort_values("importance_mean", ascending=False).reset_index(drop=True)
 
 
-def plot_importance(model, feature_names: Sequence[str], top_n: int = 15) -> None:
+def plot_importance(
+    model,
+    feature_names: Sequence[str],
+    top_n: int = 15,
+    output_dir: Union[Path, str] = "plots",
+    filename: str = "feature_importance.png",
+) -> Path:
     """
-    SKETCH: Bar chart of the top_n most important features.
+    SKETCH: Bar chart of the top_n most important features, saved to output_dir.
 
     TODO: switch to seaborn / consistent figure styling once it is defined.
     """
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / filename
+
     importance_df = builtin_importance(model, feature_names).head(top_n)
-    plt.figure(figsize=(10, 0.4 * top_n + 2))
+    fig = plt.figure(figsize=(10, 0.4 * top_n + 2))
     plt.barh(importance_df["feature"][::-1], importance_df["importance"][::-1])
     plt.title(f"Top {top_n} feature importances")
     plt.xlabel("Importance")
     plt.tight_layout()
-    plt.show()
+    fig.savefig(output_path, dpi=200, bbox_inches="tight")
+    plt.close(fig)
+
+    return output_path

@@ -9,6 +9,7 @@ Bayesian hyperparameter optimization (Optuna) for the candidate regressors.
 #
 ########################################################################################################################
 import json
+from pathlib import Path
 from typing import Union
 
 import numpy as np
@@ -62,14 +63,22 @@ class OptimizeRegressor:
         Destination JSON file for the best hyperparameters.
     """
 
-    def __init__(self, model_name: str, n_trials: int, X_train: DataFrame, y_train: Series):
+    def __init__(
+        self,
+        model_name: str,
+        n_trials: int,
+        X_train: DataFrame,
+        y_train: Series,
+        parameters_dir: Path = PARAMETERS_DIR,
+    ):
         self.model_name = model_name
         self.n_trials = n_trials
         self.X_train = X_train
         self.y_train = y_train
         self.logger = logger
-        PARAMETERS_DIR.mkdir(parents=True, exist_ok=True)
-        self.file_name = PARAMETERS_DIR / f"best_params_{model_name}.json"
+        parameters_dir = Path(parameters_dir)
+        parameters_dir.mkdir(parents=True, exist_ok=True)
+        self.file_name = parameters_dir / f"best_params_{model_name}.json"
         self._logged_xgb_cudf = False
         self._logged_xgb_cudf_unavailable = False
         self._logged_lgbm_device = False
@@ -97,7 +106,6 @@ class OptimizeRegressor:
 
             if CONFIG.use_gpu and cuml_available():
                 return self.evaluate(make_cuml_random_forest(**rf_params))
-
             return self.evaluate(RandomForestRegressor(n_jobs=-1, **rf_params))
 
         if self.model_name == "xgb":

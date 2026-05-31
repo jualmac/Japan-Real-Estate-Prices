@@ -43,9 +43,9 @@ def _to_original_scale(y_log: np.ndarray | pd.Series) -> np.ndarray:
     return inverse_log_transform_target(y_log)
 
 
-def evaluate(model, X: pd.DataFrame, y_true_log: pd.Series) -> Dict[str, float]:
+def predict_log(model, X: pd.DataFrame) -> np.ndarray:
     """
-    Score a single fitted model on the given split (target is log-scaled).
+    Predict on the transformed target scale used during training.
     """
     if isinstance(model, XGBRegressor) and xgboost_uses_cuda(model):
         if cudf_available():
@@ -61,8 +61,22 @@ def evaluate(model, X: pd.DataFrame, y_true_log: pd.Series) -> Dict[str, float]:
     else:
         y_pred_log = model.predict(X)
 
+    return np.asarray(y_pred_log)
+
+
+def predict_original_scale(model, X: pd.DataFrame) -> np.ndarray:
+    """
+    Predict and invert the log1p target transformation back to the original scale.
+    """
+    return _to_original_scale(predict_log(model, X))
+
+
+def evaluate(model, X: pd.DataFrame, y_true_log: pd.Series) -> Dict[str, float]:
+    """
+    Score a single fitted model on the given split (target is log-scaled).
+    """
+    y_pred = predict_original_scale(model, X)
     y_true = _to_original_scale(y_true_log)
-    y_pred = _to_original_scale(y_pred_log)
 
     return {
         "mape": float(mean_absolute_percentage_error(y_true, y_pred)),

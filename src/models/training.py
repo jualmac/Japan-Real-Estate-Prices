@@ -6,16 +6,17 @@ Train the final regression models using the best hyperparameters found by Optimi
 # LIBRARIES
 #
 ########################################################################################################################
+from pathlib import Path
 from typing import Dict, Iterable, Union
 
 import pandas as pd
-from lightgbm import LGBMRegressor
+from lightgbm import LGBMRegressor, log_evaluation
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import ElasticNet
 from sklearn.svm import LinearSVR
 from xgboost import XGBRegressor
 
-from src.config import CONFIG
+from src.config import CONFIG, PARAMETERS_DIR
 from src.models.gpu_data import (
     cudf_available,
     cuml_available,
@@ -70,19 +71,35 @@ def train_from_best_params(
     model_name: str,
     X_train: pd.DataFrame,
     y_train: pd.Series,
+    X_validation: pd.DataFrame | None = None,
+    y_validation: pd.Series | None = None,
+    parameters_dir: Path = PARAMETERS_DIR,
 ) -> ModelType:
     """
     Load the best parameters from parameters/ and fit the matching regressor.
     """
-    params = load_best_params(model_name)
+    params = load_best_params(model_name, parameters_dir)
     model = _instantiate(model_name, params)
+    has_validation = X_validation is not None and y_validation is not None
     if isinstance(model, XGBRegressor) and xgboost_uses_cuda(model):
         if cudf_available():
-            model.fit(to_cudf_dataframe(X_train), to_cudf_series(y_train))
+            eval_set = None
+            if has_validation:
+                eval_set = [
+                    (to_cudf_dataframe(X_train), to_cudf_series(y_train)),
+                    (to_cudf_dataframe(X_validation), to_cudf_series(y_validation)),
+                ]
+            model.fit(
+                to_cudf_dataframe(X_train),
+                to_cudf_series(y_train),
+                eval_set=eval_set,
+                verbose=False,
+            )
             logger.info("XGBoost final training fitted with cuDF GPU data.")
         else:
             logger.warning("cuDF is unavailable; XGBoost final training is using pandas CPU data.")
-            model.fit(X_train, y_train)
+            eval_set = [(X_train, y_train), (X_validation, y_validation)] if has_validation else None
+            model.fit(X_train, y_train, eval_set=eval_set, verbose=False)
     elif is_cuml_random_forest(model):
         if cudf_available():
             model.fit(to_cudf_dataframe(X_train), to_cudf_series(y_train))
@@ -90,6 +107,19 @@ def train_from_best_params(
         else:
             model.fit(X_train.astype("float32"), y_train.astype("float32"))
             logger.info("RandomForest final training fitted with cuML (host arrays).")
+    elif isinstance(model, XGBRegressor):
+        eval_set = [(X_train, y_train), (X_validation, y_validation)] if has_validation else None
+        model.fit(X_train, y_train, eval_set=eval_set, verbose=False)
+    elif isinstance(model, LGBMRegressor):
+        fit_kwargs = {}
+        if has_validation:
+            fit_kwargs = {
+                "eval_set": [(X_train, y_train), (X_validation, y_validation)],
+                "eval_names": ["train", "validation"],
+                "eval_metric": "rmse",
+                "callbacks": [log_evaluation(period=0)],
+            }
+        model.fit(X_train, y_train, **fit_kwargs)
     else:
         model.fit(X_train, y_train)
         if isinstance(model, RandomForestRegressor):
@@ -107,8 +137,16 @@ def train_all(
     model_names: Iterable[str],
     X_train: pd.DataFrame,
     y_train: pd.Series,
+    X_validation: pd.DataFrame | None = None,
+    y_validation: pd.Series | None = None,
+    parameters_dir: Path = PARAMETERS_DIR,
 ) -> Dict[str, ModelType]:
     """
     Fit every requested model and return a dict keyed by model name.
     """
-    return {name: train_from_best_params(name, X_train, y_train) for name in model_names}
+    return {
+        name: train_from_best_params(
+            name, X_train, y_train, X_validation, y_validation, parameters_dir
+        )
+        for name in model_names
+    }
