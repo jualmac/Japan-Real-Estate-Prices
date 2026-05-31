@@ -163,16 +163,16 @@ information about the response variable.
 
 Missing values were then treated through a combination of domain rules and train-fitted statistical imputations. For
 property types in which some attributes were conceptually absent, such as land-only, condominium, or rural transactions,
-variables including floor plan, structure, road classification, city planning, frontage, breadth, and nearest station were filled as
-not applicable or with structurally meaningful values. In particular, frontage and road breadth were set to zero for
-condominiums, where these measurements do not translate to the category. The original station-distance field was also
-reconstructed from the minimum and maximum time-to-station variables, producing a consistent numerical accessibility
-measure. Remaining numerical gaps, including frontage, breadth, coverage ratio, and floor-area ratio, were imputed with
-statistics learned exclusively from the training set, primarily district-level aggregates with global medians as
-fallbacks. Remaining missing values in structure, road classification, and city planning were kept as an explicit unknown category
-before categorical encoding. After latitude and longitude were merged into the data, missing coordinates were handled
-with municipality-level medians, again fitted only on the training partition and then applied consistently to the
-validation and test sets.
+variables including floor plan, structure, road classification, city planning, frontage, breadth, and nearest station
+were filled as not applicable or with structurally meaningful values. In particular, frontage and road breadth were set
+to zero for condominiums, where these measurements do not translate to the category. The original station-distance field
+was also reconstructed from the minimum and maximum time-to-station variables, producing a consistent numerical
+accessibility measure. Remaining numerical gaps, including frontage, breadth, coverage ratio, and floor-area ratio, were
+imputed with statistics learned exclusively from the training set, primarily district-level aggregates with global
+medians as fallbacks. Remaining missing values in structure, road classification, and city planning were kept as an
+explicit unknown category before categorical encoding. After latitude and longitude were merged into the data, missing
+coordinates were handled with municipality-level medians, again fitted only on the training partition and then applied
+consistently to the validation and test sets.
 
 Additional feature preparation was applied after the initial cleaning stage. The original station-distance
 representation was converted into a numerical \textit{TimeToNearestStation} variable using the midpoint between the
@@ -187,10 +187,9 @@ produced predictions on the transformed scale. Before reporting evaluation metri
 were converted back to Yen using the inverse transformation. The final feature set combined numerical attributes
 (\textit{TimeToNearestStation}, \textit{Area}, \textit{BuildingYear}, \textit{CoverageRatio}, \textit{FloorAreaRatio},
 \textit{Year}, cyclical quarter encodings, \textit{Latitude}, \textit{Longitude}, \textit{Frontage}, and
-\textit{Breadth}) with one-hot encoded categorical attributes for \textit{Structure}, road \textit{Classification},
-and \textit{CityPlanning}.
-Finally, numerical features were normalized with train-fitted min-max scalers, and feature names were standardized to
-ensure compatibility with the different modeling libraries.
+\textit{Breadth}) with one-hot encoded categorical attributes for \textit{Structure}, road \textit{Classification}, and
+\textit{CityPlanning}. Finally, numerical features were normalized with train-fitted min-max scalers, and feature names
+were standardized to ensure compatibility with the different modeling libraries.
 
 \subsection{Property-Type Study Design}
 The final modeling pipeline was organized as a set of independent property-type studies. Three residential market
