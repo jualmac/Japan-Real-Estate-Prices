@@ -29,7 +29,6 @@ PROJECT_ROOT: Path = Path(__file__).resolve().parents[1]
 DATASETS_DIR: Path = PROJECT_ROOT / "datasets"
 TRADE_PRICES_DIR: Path = DATASETS_DIR / "trade_prices"
 PREFECTURE_CODE_FILE: Path = DATASETS_DIR / "prefecture_code.csv"
-LOCATIONS_FILE: Path = DATASETS_DIR / "locations.csv"
 PARAMETERS_DIR: Path = PROJECT_ROOT / "parameters"
 LOGS_DIR: Path = PROJECT_ROOT / "logs"
 DB_FILE: Path = DATASETS_DIR / "jpHouses.db"

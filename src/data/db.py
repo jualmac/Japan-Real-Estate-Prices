@@ -130,7 +130,11 @@ class DBConnection:
                 )
 
                 existing_table_names = set(existing_tables["name"])
-                expected_data_tables = {f"{i:02d}" for i in range(1, 48)} | {"locations", "prefecture_code"}
+                expected_data_tables = {f"{i:02d}" for i in range(1, 48)} | {
+                    "prefecture_code",
+                    "municipality_code",
+                    "district_code",
+                }
 
                 if expected_data_tables.issubset(existing_table_names):
                     print("Database already has all expected data tables, skipping initialization.")

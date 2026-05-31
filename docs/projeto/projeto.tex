@@ -175,14 +175,15 @@ Additional feature preparation was applied after the initial cleaning stage. The
 representation was converted into a numerical \textit{TimeToNearestStation} variable using the midpoint between the
 minimum and maximum reported travel times, while the transaction quarter was encoded with sine and cosine
 transformations to preserve its cyclical structure. Geographic information was enriched by merging latitude and
-longitude from the auxiliary locations database. The target variable was transformed with $\log(1+x)$ because housing
-prices are strongly right-skewed, with a small number of very expensive transactions that can dominate loss functions
-based on absolute or squared errors. Modeling the logarithm of price compresses these extreme values and makes the
-learning problem closer to predicting relative price differences rather than only fitting the largest transactions. The
-models were therefore trained and produced predictions on the transformed scale. Before reporting evaluation metrics,
-both predictions and observed values were converted back to Yen using the inverse transformation. Finally, numerical
-features were normalized with train-fitted min-max scalers, and feature names were standardized to ensure compatibility
-with the different modeling libraries.
+longitude from the auxiliary locations database, using Geolonia address data to obtain more reliable district-level
+coordinates. The target variable was transformed with $\log(1+x)$ because housing prices are strongly right-skewed, with
+a small number of very expensive transactions that can dominate loss functions based on absolute or squared errors.
+Modeling the logarithm of price compresses these extreme values and makes the learning problem closer to predicting
+relative price differences rather than only fitting the largest transactions. The models were therefore trained and
+produced predictions on the transformed scale. Before reporting evaluation metrics, both predictions and observed values
+were converted back to Yen using the inverse transformation. Finally, numerical features were normalized with
+train-fitted min-max scalers, and feature names were standardized to ensure compatibility with the different modeling
+libraries.
 
 \subsection{Property-Type Study Design}
 The final modeling pipeline was organized as a set of independent property-type studies. Three residential market

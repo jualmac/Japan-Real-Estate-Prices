@@ -12,7 +12,7 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 from src.config import DB_FILE
-from src.data.locations import load_locations
+from src.data.locations import load_geolonia_location_lookup, normalize_romaji_key
 
 # TODO: Add rolling-window statistics on TradePrice per Municipality/Year;
 
@@ -54,10 +54,18 @@ def rebuild_time_to_nearest_station(df: pd.DataFrame) -> pd.DataFrame:
 
 def add_location_features(df: pd.DataFrame, database_file: Path = DB_FILE) -> pd.DataFrame:
     """
-    Left-merge Latitude/Longitude from SQLite locations table onto df.
+    Left-merge Latitude/Longitude from Geolonia-backed location tables.
     """
-    df_locations = load_locations(database_file)
-    return df.merge(df_locations, on="DistrictName", how="left")
+    df_locations = load_geolonia_location_lookup(database_file)
+    df = df.copy()
+    df["DistrictNameKey"] = df["DistrictName"].apply(normalize_romaji_key)
+    merged = df.merge(
+        df_locations[["MunicipalityCode", "DistrictNameKey", "Latitude", "Longitude"]],
+        on=["MunicipalityCode", "DistrictNameKey"],
+        how="left",
+        validate="many_to_one",
+    )
+    return merged.drop(columns="DistrictNameKey")
 
 
 def log_transform_target(y: pd.Series) -> pd.Series:

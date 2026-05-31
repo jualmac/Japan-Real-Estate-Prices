@@ -35,6 +35,9 @@ treina modelos de regressão e compara os resultados com métricas como MAPE, RM
 - `main.py`: ponto de entrada do pipeline;
 - `src/`: módulos de dados, pré-processamento, modelos, avaliação e visualização;
 - `parameters/`: parâmetros e resultados gerados durante os experimentos.
+- `docs/`: artigo em LaTeX;
+- `datasets/`: cópia do dataset extraído do Kaggle;
+- `plots/`: plots e imagens relevantes;
 
 # Sobre o Dataset
 | FieldName | Description | Values |
