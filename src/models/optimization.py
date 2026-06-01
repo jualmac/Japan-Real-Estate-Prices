@@ -72,7 +72,7 @@ class OptimizeRegressor:
         parameters_dir: Path = PARAMETERS_DIR,
     ):
         self.model_name = model_name
-        self.n_trials = n_trials
+        self.n_trials = 1 if model_name == "rf" else n_trials # sklearn RandomForest CV is very slow; always run a single trial.
         self.X_train = X_train
         self.y_train = y_train
         self.logger = logger

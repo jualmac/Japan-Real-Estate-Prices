@@ -64,12 +64,48 @@ def _build_explainer(model, X_background: pd.DataFrame) -> shap.Explainer:
     return shap.Explainer(model.predict, X_background)
 
 
+def _as_single_output_explanation(shap_values: shap.Explanation) -> shap.Explanation:
+    """
+    Collapse SHAP's extra singleton output axis for single-target regressors.
+
+    Different explainers attach the spurious singleton axis to different
+    attributes. TreeExplainer can return 3-D ``values`` of shape
+    ``(n, features, 1)``, whereas LinearExplainer keeps ``values`` 2-D but
+    returns ``base_values`` of shape ``(n, 1)``. Either form breaks the slicer
+    used by ``shap.plots.scatter``/``waterfall``, so we normalise all of them
+    back to single-output shapes here.
+    """
+    values = np.asarray(shap_values.values)
+    if values.ndim == 3 and 1 in values.shape[1:]:
+        values = values[:, 0, :] if values.shape[1] == 1 else values[:, :, 0]
+
+    base_values = shap_values.base_values
+    if base_values is not None:
+        base_values = np.asarray(base_values)
+        if base_values.ndim == 2 and base_values.shape[1] == 1:
+            base_values = base_values[:, 0]
+
+    data = shap_values.data
+    if data is not None:
+        data = np.asarray(data)
+        if data.ndim == 3 and 1 in data.shape[1:]:
+            data = data[:, 0, :] if data.shape[1] == 1 else data[:, :, 0]
+
+    return shap.Explanation(
+        values=values,
+        base_values=base_values,
+        data=data,
+        feature_names=shap_values.feature_names,
+    )
+
+
 def compute_shap_values(model, X_sample: pd.DataFrame) -> shap.Explanation:
     """
     Build the explainer and return a SHAP Explanation object for `X_sample`.
     """
     explainer = _build_explainer(model, X_sample)
-    return explainer(X_sample)
+    return _as_single_output_explanation(explainer(X_sample))
+
 
 
 def _save_current_figure(output_dir: Union[Path, str], filename: str) -> Path:
@@ -123,8 +159,13 @@ def shap_dependence(
     Dependence (scatter) plot showing how `feature` drives its own contribution.
     """
     filename = filename or f"shap_dependence_{feature}.png"
+    feature_names = list(shap_values.feature_names)
+    if feature not in feature_names:
+        raise ValueError(f"Feature {feature!r} is not present in SHAP feature names.")
+    feature_idx = feature_names.index(feature)
+
     plt.figure()
-    shap.plots.scatter(shap_values[:, feature], show=False)
+    shap.plots.scatter(shap_values[:, feature_idx], show=False)
     return _save_current_figure(output_dir, filename)
 
 

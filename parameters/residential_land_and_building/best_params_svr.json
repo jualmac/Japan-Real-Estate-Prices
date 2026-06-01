@@ -1,0 +1,7 @@
+{
+    "C": 4.435416692087424,
+    "epsilon": 0.00251769887800956,
+    "loss": "squared_epsilon_insensitive",
+    "max_iter": 18000,
+    "tol": 0.000694118137388954
+}
