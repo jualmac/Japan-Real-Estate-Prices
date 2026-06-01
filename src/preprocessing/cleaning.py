@@ -15,6 +15,9 @@ Imputation rules (informed by the EDA in src/eda/missing.py):
   MaxTimeToNearestStation is filled with 120.
 - Numerical features are imputed by DistrictName group statistics learned on
   train, falling back to column-wide medians.
+- Numerical features that are entirely NaN on the training split (e.g.
+  BuildingYear in land-only studies, which have no building) carry no signal and
+  cannot be imputed from a NaN median, so they are dropped from every split.
 - Latitude / Longitude are populated by ``add_location_features`` and may end
   up NaN whenever the DistrictName merge misses; ``fit_post_merge`` /
   ``transform_post_merge`` learn MunicipalityCode group medians on train and
@@ -72,6 +75,11 @@ class DataCleaner:
     district_group_medians: Dict[str, pd.Series] = field(default_factory=dict)
     municipality_group_medians: Dict[str, pd.Series] = field(default_factory=dict)
     column_medians: Dict[str, float] = field(default_factory=dict)
+    # Numeric features that are entirely NaN on the training split (e.g.
+    # BuildingYear for land-only studies, where there is no building). They carry
+    # no signal and cannot be imputed from a NaN median, so they are dropped from
+    # every split rather than filled with an arbitrary sentinel.
+    fully_missing_columns: List[str] = field(default_factory=list)
     fitted: bool = False
     post_merge_fitted: bool = False
 
@@ -91,8 +99,13 @@ class DataCleaner:
                 self.municipality_group_medians[column] = df.groupby("MunicipalityCode")[column].agg(agg)
 
         for column in list(NUMERIC_DISTRICT_FILLERS) + list(NUMERIC_MUNICIPALITY_FILLERS):
-            if column in df.columns:
-                self.column_medians[column] = float(df[column].median())
+            if column not in df.columns:
+                continue
+            median = df[column].median()
+            if pd.notna(median):
+                self.column_medians[column] = float(median)
+            elif column not in self.fully_missing_columns:
+                self.fully_missing_columns.append(column)
 
         self.fitted = True
         return self
@@ -106,6 +119,7 @@ class DataCleaner:
 
         df = X.copy()
         df = self._drop_columns(df)
+        df = self._drop_fully_missing(df)
         df = self._apply_rule_imputations(df)
 
         # Fill numeric NaNs via the train-fitted group medians, with column-wide medians as fallback;
@@ -138,11 +152,16 @@ class DataCleaner:
         for column, agg in NUMERIC_MUNICIPALITY_FILLERS.items():
             if column not in df.columns:
                 continue
+            median = df[column].median()
+            if pd.isna(median):
+                if column not in self.fully_missing_columns:
+                    self.fully_missing_columns.append(column)
+                continue
             if "MunicipalityCode" in df.columns:
                 self.municipality_group_medians[column] = (
                     df.groupby("MunicipalityCode")[column].agg(agg)
                 )
-            self.column_medians[column] = float(df[column].median())
+            self.column_medians[column] = float(median)
         self.post_merge_fitted = True
         return self
 
@@ -155,6 +174,7 @@ class DataCleaner:
             raise RuntimeError("DataCleaner.transform_post_merge called before fit_post_merge.")
 
         df = X.copy()
+        df = self._drop_fully_missing(df)
         for column in NUMERIC_MUNICIPALITY_FILLERS:
             if column not in df.columns:
                 continue
@@ -168,6 +188,12 @@ class DataCleaner:
     ####################################################################################################################
     # Private helpers
     ####################################################################################################################
+    def _drop_fully_missing(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Drop numeric features flagged as entirely NaN on the training split.
+        """
+        return df.drop(columns=[c for c in self.fully_missing_columns if c in df.columns])
+
     def _drop_columns(self, df: pd.DataFrame) -> pd.DataFrame:
         return df.drop(columns=[c for c in self.columns_to_drop if c in df.columns])
 

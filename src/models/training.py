@@ -62,6 +62,8 @@ def _instantiate(model_name: str, params: Dict) -> ModelType:
     if model_name == "enet":
         return ElasticNet(**params)
     if model_name == "svr":
+        params.setdefault("max_iter", 100_000)
+        params.setdefault("tol", 1e-3)
         return LinearSVR(**params)
 
     raise ValueError(f"Unsupported model name: {model_name}")

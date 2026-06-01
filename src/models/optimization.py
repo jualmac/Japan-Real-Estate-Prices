@@ -174,16 +174,14 @@ class OptimizeRegressor:
             loss = trial.suggest_categorical(
                 "loss", ["epsilon_insensitive", "squared_epsilon_insensitive"]
             )
-            max_iter = trial.suggest_int("max_iter", 2000, 20000, step=2000)
-            tol = trial.suggest_float("tol", 1e-5, 1e-2, log=True)
 
             return self.evaluate(
                 LinearSVR(
                     C=C,
                     epsilon=epsilon,
                     loss=loss,
-                    max_iter=max_iter,
-                    tol=tol,
+                    max_iter=100_000,
+                    tol=1e-3,
                     random_state=CONFIG.seed,
                 )
             )
@@ -258,7 +256,11 @@ class OptimizeRegressor:
         Run optuna study; persist best params to JSON and return them.
         """
         study = optuna.create_study(direction="minimize")
-        study.optimize(lambda trial: self.objective(trial), n_trials=self.n_trials)
+        study.optimize(
+            lambda trial: self.objective(trial),
+            n_trials=self.n_trials,
+            timeout=900,
+        )
 
         with open(self.file_name, "w") as f:
             json.dump(study.best_params, f, indent=4)
