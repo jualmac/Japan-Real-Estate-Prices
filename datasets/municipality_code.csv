@@ -1,0 +1,1895 @@
+"PrefectureCode","MunicipalityCode","MunicipalityCodeInt","PrefectureJP","PrefectureKana","PrefectureEN","MunicipalityJP","MunicipalityKana","MunicipalityRomaji","MunicipalityEN"
+"01","01101",1101,北海道,ホッカイドウ,Hokkaido,札幌市中央区,サッポロシチュウオウク,Sapporo Shi Chuo Ku,"Chuo Ward,Sapporo City"
+"01","01102",1102,北海道,ホッカイドウ,Hokkaido,札幌市北区,サッポロシキタク,Sapporo Shi Kita Ku,"Kita Ward,Sapporo City"
+"01","01103",1103,北海道,ホッカイドウ,Hokkaido,札幌市東区,サッポロシヒガシク,Sapporo Shi Higashi Ku,"Higashi Ward,Sapporo City"
+"01","01104",1104,北海道,ホッカイドウ,Hokkaido,札幌市白石区,サッポロシシロイシク,Sapporo Shi Shiroishi Ku,"Shiroishi Ward,Sapporo City"
+"01","01105",1105,北海道,ホッカイドウ,Hokkaido,札幌市豊平区,サッポロシトヨヒラク,Sapporo Shi Toyohira Ku,"Toyohira Ward,Sapporo City"
+"01","01106",1106,北海道,ホッカイドウ,Hokkaido,札幌市南区,サッポロシミナミク,Sapporo Shi Minami Ku,"Minami Ward,Sapporo City"
+"01","01107",1107,北海道,ホッカイドウ,Hokkaido,札幌市西区,サッポロシニシク,Sapporo Shi Nishi Ku,"Nishi Ward,Sapporo City"
+"01","01108",1108,北海道,ホッカイドウ,Hokkaido,札幌市厚別区,サッポロシアツベツク,Sapporo Shi Atsubetsu Ku,"Atsubetsu Ward,Sapporo City"
+"01","01109",1109,北海道,ホッカイドウ,Hokkaido,札幌市手稲区,サッポロシテイネク,Sapporo Shi Teine Ku,"Teine Ward,Sapporo City"
+"01","01110",1110,北海道,ホッカイドウ,Hokkaido,札幌市清田区,サッポロシキヨタク,Sapporo Shi Kiyota Ku,"Kiyota Ward,Sapporo City"
+"01","01202",1202,北海道,ホッカイドウ,Hokkaido,函館市,ハコダテシ,Hakodate Shi,Hakodate City
+"01","01203",1203,北海道,ホッカイドウ,Hokkaido,小樽市,オタルシ,Otaru Shi,Otaru City
+"01","01204",1204,北海道,ホッカイドウ,Hokkaido,旭川市,アサヒカワシ,Asahikawa Shi,Asahikawa City
+"01","01205",1205,北海道,ホッカイドウ,Hokkaido,室蘭市,ムロランシ,Muroran Shi,Muroran City
+"01","01206",1206,北海道,ホッカイドウ,Hokkaido,釧路市,クシロシ,Kushiro Shi,Kushiro City
+"01","01207",1207,北海道,ホッカイドウ,Hokkaido,帯広市,オビヒロシ,Obihiro Shi,Obihiro City
+"01","01208",1208,北海道,ホッカイドウ,Hokkaido,北見市,キタミシ,Kitami Shi,Kitami City
+"01","01209",1209,北海道,ホッカイドウ,Hokkaido,夕張市,ユウバリシ,Yubari Shi,Yubari City
+"01","01210",1210,北海道,ホッカイドウ,Hokkaido,岩見沢市,イワミザワシ,Iwamizawa Shi,Iwamizawa City
+"01","01211",1211,北海道,ホッカイドウ,Hokkaido,網走市,アバシリシ,Abashiri Shi,Abashiri City
+"01","01212",1212,北海道,ホッカイドウ,Hokkaido,留萌市,ルモイシ,Rumoi Shi,Rumoi City
+"01","01213",1213,北海道,ホッカイドウ,Hokkaido,苫小牧市,トマコマイシ,Tomakomai Shi,Tomakomai City
+"01","01214",1214,北海道,ホッカイドウ,Hokkaido,稚内市,ワッカナイシ,Wakkanai Shi,Wakkanai City
+"01","01215",1215,北海道,ホッカイドウ,Hokkaido,美唄市,ビバイシ,Bibai Shi,Bibai City
+"01","01216",1216,北海道,ホッカイドウ,Hokkaido,芦別市,アシベツシ,Ashibetsu Shi,Ashibetsu City
+"01","01217",1217,北海道,ホッカイドウ,Hokkaido,江別市,エベツシ,Ebetsu Shi,Ebetsu City
+"01","01218",1218,北海道,ホッカイドウ,Hokkaido,赤平市,アカビラシ,Akabira Shi,Akabira City
+"01","01219",1219,北海道,ホッカイドウ,Hokkaido,紋別市,モンベツシ,Mombetsu Shi,Mombetsu City
+"01","01220",1220,北海道,ホッカイドウ,Hokkaido,士別市,シベツシ,Shibetsu Shi,Shibetsu City
+"01","01221",1221,北海道,ホッカイドウ,Hokkaido,名寄市,ナヨロシ,Nayoro Shi,Nayoro City
+"01","01222",1222,北海道,ホッカイドウ,Hokkaido,三笠市,ミカサシ,Mikasa Shi,Mikasa City
+"01","01223",1223,北海道,ホッカイドウ,Hokkaido,根室市,ネムロシ,Nemuro Shi,Nemuro City
+"01","01224",1224,北海道,ホッカイドウ,Hokkaido,千歳市,チトセシ,Chitose Shi,Chitose City
+"01","01225",1225,北海道,ホッカイドウ,Hokkaido,滝川市,タキカワシ,Takikawa Shi,Takikawa City
+"01","01226",1226,北海道,ホッカイドウ,Hokkaido,砂川市,スナガワシ,Sunagawa Shi,Sunagawa City
+"01","01227",1227,北海道,ホッカイドウ,Hokkaido,歌志内市,ウタシナイシ,Utashinai Shi,Utashinai City
+"01","01228",1228,北海道,ホッカイドウ,Hokkaido,深川市,フカガワシ,Fukagawa Shi,Fukagawa City
+"01","01229",1229,北海道,ホッカイドウ,Hokkaido,富良野市,フラノシ,Furano Shi,Furano City
+"01","01230",1230,北海道,ホッカイドウ,Hokkaido,登別市,ノボリベツシ,Noboribetsu Shi,Noboribetsu City
+"01","01231",1231,北海道,ホッカイドウ,Hokkaido,恵庭市,エニワシ,Eniwa Shi,Eniwa City
+"01","01233",1233,北海道,ホッカイドウ,Hokkaido,伊達市,ダテシ,Date Shi,Date City
+"01","01234",1234,北海道,ホッカイドウ,Hokkaido,北広島市,キタヒロシマシ,Kitahiroshima Shi,Kitahiroshima City
+"01","01235",1235,北海道,ホッカイドウ,Hokkaido,石狩市,イシカリシ,Ishikari Shi,Ishikari City
+"01","01236",1236,北海道,ホッカイドウ,Hokkaido,北斗市,ホクトシ,Hokuto Shi,Hokuto City
+"01","01303",1303,北海道,ホッカイドウ,Hokkaido,石狩郡当別町,イシカリグントウベツチョウ,Ishikari Gun Tobetsu Cho,Ishikari District Tobetsu Town
+"01","01304",1304,北海道,ホッカイドウ,Hokkaido,石狩郡新篠津村,イシカリグンシンシノツムラ,Ishikari Gun Shinshinotsu Mura,Ishikari District Shinshinotsu Village
+"01","01331",1331,北海道,ホッカイドウ,Hokkaido,松前郡松前町,マツマエグンマツマエチョウ,Matsumae Gun Matsumae Cho,Matsumae District Matsumae Town
+"01","01332",1332,北海道,ホッカイドウ,Hokkaido,松前郡福島町,マツマエグンフクシマチョウ,Matsumae Gun Fukushima Cho,Matsumae District Fukushima Town
+"01","01333",1333,北海道,ホッカイドウ,Hokkaido,上磯郡知内町,カミイソグンシリウチチョウ,Kamiiso Gun Shiriuchi Cho,Kamiiso District Shiriuchi Town
+"01","01334",1334,北海道,ホッカイドウ,Hokkaido,上磯郡木古内町,カミイソグンキコナイチョウ,Kamiiso Gun Kikonai Cho,Kamiiso District Kikonai Town
+"01","01337",1337,北海道,ホッカイドウ,Hokkaido,亀田郡七飯町,カメダグンナナエチョウ,Kameda Gun Nanae Cho,Kameda District Nanae Town
+"01","01343",1343,北海道,ホッカイドウ,Hokkaido,茅部郡鹿部町,カヤベグンシカベチョウ,Kayabe Gun Shikabe Cho,Kayabe District Shikabe Town
+"01","01345",1345,北海道,ホッカイドウ,Hokkaido,茅部郡森町,カヤベグンモリマチ,Kayabe Gun Mori Machi,Kayabe District Mori Town
+"01","01346",1346,北海道,ホッカイドウ,Hokkaido,二海郡八雲町,フタミグンヤクモチョウ,Futami Gun Yakumo Cho,Futami District Yakumo Town
+"01","01347",1347,北海道,ホッカイドウ,Hokkaido,山越郡長万部町,ヤマコシグンオシャマンベチョウ,Yamakoshi Gun Oshamambe Cho,Yamakoshi District Oshamambe Town
+"01","01361",1361,北海道,ホッカイドウ,Hokkaido,檜山郡江差町,ヒヤマグンエサシチョウ,Hiyama Gun Esashi Cho,Hiyama District Esashi Town
+"01","01362",1362,北海道,ホッカイドウ,Hokkaido,檜山郡上ノ国町,ヒヤマグンカミノクニチョウ,Hiyama Gun Kaminokuni Cho,Hiyama District Kaminokuni Town
+"01","01363",1363,北海道,ホッカイドウ,Hokkaido,檜山郡厚沢部町,ヒヤマグンアッサブチョウ,Hiyama Gun Assabu Cho,Hiyama District Assabu Town
+"01","01364",1364,北海道,ホッカイドウ,Hokkaido,爾志郡乙部町,ニシグンオトベチョウ,Nishi Gun Otobe Cho,Nishi District Otobe Town
+"01","01367",1367,北海道,ホッカイドウ,Hokkaido,奥尻郡奥尻町,オクシリグンオクシリチョウ,Okushiri Gun Okushiri Cho,Okushiri District Okushiri Town
+"01","01370",1370,北海道,ホッカイドウ,Hokkaido,瀬棚郡今金町,セタナグンイマカネチョウ,Setana Gun Imakane Cho,Setana District Imakane Town
+"01","01371",1371,北海道,ホッカイドウ,Hokkaido,久遠郡せたな町,クドウグンセタナチョウ,Kudo Gun Setana Cho,Kudo District Setana Town
+"01","01391",1391,北海道,ホッカイドウ,Hokkaido,島牧郡島牧村,シママキグンシママキムラ,Shimamaki Gun Shimamaki Mura,Shimamaki District Shimamaki Village
+"01","01392",1392,北海道,ホッカイドウ,Hokkaido,寿都郡寿都町,スッツグンスッツチョウ,Suttsu Gun Suttsu Cho,Suttsu District Suttsu Town
+"01","01393",1393,北海道,ホッカイドウ,Hokkaido,寿都郡黒松内町,スッツグンクロマツナイチョウ,Suttsu Gun Kuromatsunai Cho,Suttsu District Kuromatsunai Town
+"01","01394",1394,北海道,ホッカイドウ,Hokkaido,磯谷郡蘭越町,イソヤグンランコシチョウ,Isoya Gun Rankoshi Cho,Isoya District Rankoshi Town
+"01","01395",1395,北海道,ホッカイドウ,Hokkaido,虻田郡ニセコ町,アブタグンニセコチョウ,Abuta Gun Niseko Cho,Abuta District Niseko Town
+"01","01396",1396,北海道,ホッカイドウ,Hokkaido,虻田郡真狩村,アブタグンマッカリムラ,Abuta Gun Makkari Mura,Abuta District Makkari Village
+"01","01397",1397,北海道,ホッカイドウ,Hokkaido,虻田郡留寿都村,アブタグンルスツムラ,Abuta Gun Rusutsu Mura,Abuta District Rusutsu Village
+"01","01398",1398,北海道,ホッカイドウ,Hokkaido,虻田郡喜茂別町,アブタグンキモベツチョウ,Abuta Gun Kimobetsu Cho,Abuta District Kimobetsu Town
+"01","01399",1399,北海道,ホッカイドウ,Hokkaido,虻田郡京極町,アブタグンキョウゴクチョウ,Abuta Gun Kyogoku Cho,Abuta District Kyogoku Town
+"01","01400",1400,北海道,ホッカイドウ,Hokkaido,虻田郡倶知安町,アブタグンクッチャンチョウ,Abuta Gun Kutchan Cho,Abuta District Kutchan Town
+"01","01401",1401,北海道,ホッカイドウ,Hokkaido,岩内郡共和町,イワナイグンキョウワチョウ,Iwanai Gun Kyowa Cho,Iwanai District Kyowa Town
+"01","01402",1402,北海道,ホッカイドウ,Hokkaido,岩内郡岩内町,イワナイグンイワナイチョウ,Iwanai Gun Iwanai Cho,Iwanai District Iwanai Town
+"01","01403",1403,北海道,ホッカイドウ,Hokkaido,古宇郡泊村,フルウグントマリムラ,Furu Gun Tomari Mura,Furu District Tomari Village
+"01","01404",1404,北海道,ホッカイドウ,Hokkaido,古宇郡神恵内村,フルウグンカモエナイムラ,Furu Gun Kamoenai Mura,Furu District Kamoenai Village
+"01","01405",1405,北海道,ホッカイドウ,Hokkaido,積丹郡積丹町,シャコタングンシャコタンチョウ,Shakotan Gun Shakotan Cho,Shakotan District Shakotan Town
+"01","01406",1406,北海道,ホッカイドウ,Hokkaido,古平郡古平町,フルビラグンフルビラチョウ,Furubira Gun Furubira Cho,Furubira District Furubira Town
+"01","01407",1407,北海道,ホッカイドウ,Hokkaido,余市郡仁木町,ヨイチグンニキチョウ,Yoichi Gun Niki Cho,Yoichi District Niki Town
+"01","01408",1408,北海道,ホッカイドウ,Hokkaido,余市郡余市町,ヨイチグンヨイチチョウ,Yoichi Gun Yoichi Cho,Yoichi District Yoichi Town
+"01","01409",1409,北海道,ホッカイドウ,Hokkaido,余市郡赤井川村,ヨイチグンアカイガワムラ,Yoichi Gun Akaigawa Mura,Yoichi District Akaigawa Village
+"01","01423",1423,北海道,ホッカイドウ,Hokkaido,空知郡南幌町,ソラチグンナンポロチョウ,Sorachi Gun Namporo Cho,Sorachi District Namporo Town
+"01","01424",1424,北海道,ホッカイドウ,Hokkaido,空知郡奈井江町,ソラチグンナイエチョウ,Sorachi Gun Naie Cho,Sorachi District Naie Town
+"01","01425",1425,北海道,ホッカイドウ,Hokkaido,空知郡上砂川町,ソラチグンカミスナガワチョウ,Sorachi Gun Kamisunagawa Cho,Sorachi District Kamisunagawa Town
+"01","01427",1427,北海道,ホッカイドウ,Hokkaido,夕張郡由仁町,ユウバリグンユニチョウ,Yubari Gun Yuni Cho,Yubari District Yuni Town
+"01","01428",1428,北海道,ホッカイドウ,Hokkaido,夕張郡長沼町,ユウバリグンナガヌマチョウ,Yubari Gun Naganuma Cho,Yubari District Naganuma Town
+"01","01429",1429,北海道,ホッカイドウ,Hokkaido,夕張郡栗山町,ユウバリグンクリヤマチョウ,Yubari Gun Kuriyama Cho,Yubari District Kuriyama Town
+"01","01430",1430,北海道,ホッカイドウ,Hokkaido,樺戸郡月形町,カバトグンツキガタチョウ,Kabato Gun Tsukigata Cho,Kabato District Tsukigata Town
+"01","01431",1431,北海道,ホッカイドウ,Hokkaido,樺戸郡浦臼町,カバトグンウラウスチョウ,Kabato Gun Urausu Cho,Kabato District Urausu Town
+"01","01432",1432,北海道,ホッカイドウ,Hokkaido,樺戸郡新十津川町,カバトグンシントツカワチョウ,Kabato Gun Shintotsukawa Cho,Kabato District Shintotsukawa Town
+"01","01433",1433,北海道,ホッカイドウ,Hokkaido,雨竜郡妹背牛町,ウリュウグンモセウシチョウ,Uryu Gun Moseushi Cho,Uryu District Moseushi Town
+"01","01434",1434,北海道,ホッカイドウ,Hokkaido,雨竜郡秩父別町,ウリュウグンチップベツチョウ,Uryu Gun Chippubetsu Cho,Uryu District Chippubetsu Town
+"01","01436",1436,北海道,ホッカイドウ,Hokkaido,雨竜郡雨竜町,ウリュウグンウリュウチョウ,Uryu Gun Uryu Cho,Uryu District Uryu Town
+"01","01437",1437,北海道,ホッカイドウ,Hokkaido,雨竜郡北竜町,ウリュウグンホクリュウチョウ,Uryu Gun Hokuryu Cho,Uryu District Hokuryu Town
+"01","01438",1438,北海道,ホッカイドウ,Hokkaido,雨竜郡沼田町,ウリュウグンヌマタチョウ,Uryu Gun Numata Cho,Uryu District Numata Town
+"01","01452",1452,北海道,ホッカイドウ,Hokkaido,上川郡鷹栖町,カミカワグンタカスチョウ,Kamikawa Gun Takasu Cho,Kamikawa District Takasu Town
+"01","01453",1453,北海道,ホッカイドウ,Hokkaido,上川郡東神楽町,カミカワグンヒガシカグラチョウ,Kamikawa Gun Higashikagura Cho,Kamikawa District Higashikagura Town
+"01","01454",1454,北海道,ホッカイドウ,Hokkaido,上川郡当麻町,カミカワグントウマチョウ,Kamikawa Gun Toma Cho,Kamikawa District Toma Town
+"01","01455",1455,北海道,ホッカイドウ,Hokkaido,上川郡比布町,カミカワグンピップチョウ,Kamikawa Gun Pippu Cho,Kamikawa District Pippu Town
+"01","01456",1456,北海道,ホッカイドウ,Hokkaido,上川郡愛別町,カミカワグンアイベツチョウ,Kamikawa Gun Aibetsu Cho,Kamikawa District Aibetsu Town
+"01","01457",1457,北海道,ホッカイドウ,Hokkaido,上川郡上川町,カミカワグンカミカワチョウ,Kamikawa Gun Kamikawa Cho,Kamikawa District Kamikawa Town
+"01","01458",1458,北海道,ホッカイドウ,Hokkaido,上川郡東川町,カミカワグンヒガシカワチョウ,Kamikawa Gun Higashikawa Cho,Kamikawa District Higashikawa Town
+"01","01459",1459,北海道,ホッカイドウ,Hokkaido,上川郡美瑛町,カミカワグンビエイチョウ,Kamikawa Gun Biei Cho,Kamikawa District Biei Town
+"01","01460",1460,北海道,ホッカイドウ,Hokkaido,空知郡上富良野町,ソラチグンカミフラノチョウ,Sorachi Gun Kamifurano Cho,Sorachi District Kamifurano Town
+"01","01461",1461,北海道,ホッカイドウ,Hokkaido,空知郡中富良野町,ソラチグンナカフラノチョウ,Sorachi Gun Nakafurano Cho,Sorachi District Nakafurano Town
+"01","01462",1462,北海道,ホッカイドウ,Hokkaido,空知郡南富良野町,ソラチグンミナミフラノチョウ,Sorachi Gun Minamifurano Cho,Sorachi District Minamifurano Town
+"01","01463",1463,北海道,ホッカイドウ,Hokkaido,勇払郡占冠村,ユウフツグンシムカップムラ,Yufutsu Gun Shimukappu Mura,Yufutsu District Shimukappu Village
+"01","01464",1464,北海道,ホッカイドウ,Hokkaido,上川郡和寒町,カミカワグンワッサムチョウ,Kamikawa Gun Wassamu Cho,Kamikawa District Wassamu Town
+"01","01465",1465,北海道,ホッカイドウ,Hokkaido,上川郡剣淵町,カミカワグンケンブチチョウ,Kamikawa Gun Kembuchi Cho,Kamikawa District Kembuchi Town
+"01","01468",1468,北海道,ホッカイドウ,Hokkaido,上川郡下川町,カミカワグンシモカワチョウ,Kamikawa Gun Shimokawa Cho,Kamikawa District Shimokawa Town
+"01","01469",1469,北海道,ホッカイドウ,Hokkaido,中川郡美深町,ナカガワグンビフカチョウ,Nakagawa Gun Bifuka Cho,Nakagawa District Bifuka Town
+"01","01470",1470,北海道,ホッカイドウ,Hokkaido,中川郡音威子府村,ナカガワグンオトイネップムラ,Nakagawa Gun Otoineppu Mura,Nakagawa District Otoineppu Village
+"01","01471",1471,北海道,ホッカイドウ,Hokkaido,中川郡中川町,ナカガワグンナカガワチョウ,Nakagawa Gun Nakagawa Cho,Nakagawa District Nakagawa Town
+"01","01472",1472,北海道,ホッカイドウ,Hokkaido,雨竜郡幌加内町,ウリュウグンホロカナイチョウ,Uryu Gun Horokanai Cho,Uryu District Horokanai Town
+"01","01481",1481,北海道,ホッカイドウ,Hokkaido,増毛郡増毛町,マシケグンマシケチョウ,Mashike Gun Mashike Cho,Mashike District Mashike Town
+"01","01482",1482,北海道,ホッカイドウ,Hokkaido,留萌郡小平町,ルモイグンオビラチョウ,Rumoi Gun Obira Cho,Rumoi District Obira Town
+"01","01483",1483,北海道,ホッカイドウ,Hokkaido,苫前郡苫前町,トママエグントママエチョウ,Tomamae Gun Tomamae Cho,Tomamae District Tomamae Town
+"01","01484",1484,北海道,ホッカイドウ,Hokkaido,苫前郡羽幌町,トママエグンハボロチョウ,Tomamae Gun Haboro Cho,Tomamae District Haboro Town
+"01","01485",1485,北海道,ホッカイドウ,Hokkaido,苫前郡初山別村,トママエグンショサンベツムラ,Tomamae Gun Shosambetsu Mura,Tomamae District Shosambetsu Village
+"01","01486",1486,北海道,ホッカイドウ,Hokkaido,天塩郡遠別町,テシオグンエンベツチョウ,Teshio Gun Embetsu Cho,Teshio District Embetsu Town
+"01","01487",1487,北海道,ホッカイドウ,Hokkaido,天塩郡天塩町,テシオグンテシオチョウ,Teshio Gun Teshio Cho,Teshio District Teshio Town
+"01","01511",1511,北海道,ホッカイドウ,Hokkaido,宗谷郡猿払村,ソウヤグンサルフツムラ,Soya Gun Sarufutsu Mura,Soya District Sarufutsu Village
+"01","01512",1512,北海道,ホッカイドウ,Hokkaido,枝幸郡浜頓別町,エサシグンハマトンベツチョウ,Esashi Gun Hamatombetsu Cho,Esashi District Hamatombetsu Town
+"01","01513",1513,北海道,ホッカイドウ,Hokkaido,枝幸郡中頓別町,エサシグンナカトンベツチョウ,Esashi Gun Nakatombetsu Cho,Esashi District Nakatombetsu Town
+"01","01514",1514,北海道,ホッカイドウ,Hokkaido,枝幸郡枝幸町,エサシグンエサシチョウ,Esashi Gun Esashi Cho,Esashi District Esashi Town
+"01","01516",1516,北海道,ホッカイドウ,Hokkaido,天塩郡豊富町,テシオグントヨトミチョウ,Teshio Gun Toyotomi Cho,Teshio District Toyotomi Town
+"01","01517",1517,北海道,ホッカイドウ,Hokkaido,礼文郡礼文町,レブングンレブンチョウ,Rebun Gun Rebun Cho,Rebun District Rebun Town
+"01","01518",1518,北海道,ホッカイドウ,Hokkaido,利尻郡利尻町,リシリグンリシリチョウ,Rishiri Gun Rishiri Cho,Rishiri District Rishiri Town
+"01","01519",1519,北海道,ホッカイドウ,Hokkaido,利尻郡利尻富士町,リシリグンリシリフジチョウ,Rishiri Gun Rishirifuji Cho,Rishiri District Rishirifuji Town
+"01","01520",1520,北海道,ホッカイドウ,Hokkaido,天塩郡幌延町,テシオグンホロノベチョウ,Teshio Gun Horonobe Cho,Teshio District Horonobe Town
+"01","01543",1543,北海道,ホッカイドウ,Hokkaido,網走郡美幌町,アバシリグンビホロチョウ,Abashiri Gun Bihoro Cho,Abashiri District Bihoro Town
+"01","01544",1544,北海道,ホッカイドウ,Hokkaido,網走郡津別町,アバシリグンツベツチョウ,Abashiri Gun Tsubetsu Cho,Abashiri District Tsubetsu Town
+"01","01545",1545,北海道,ホッカイドウ,Hokkaido,斜里郡斜里町,シャリグンシャリチョウ,Shari Gun Shari Cho,Shari District Shari Town
+"01","01546",1546,北海道,ホッカイドウ,Hokkaido,斜里郡清里町,シャリグンキヨサトチョウ,Shari Gun Kiyosato Cho,Shari District Kiyosato Town
+"01","01547",1547,北海道,ホッカイドウ,Hokkaido,斜里郡小清水町,シャリグンコシミズチョウ,Shari Gun Koshimizu Cho,Shari District Koshimizu Town
+"01","01549",1549,北海道,ホッカイドウ,Hokkaido,常呂郡訓子府町,トコログンクンネップチョウ,Tokoro Gun Kunneppu Cho,Tokoro District Kunneppu Town
+"01","01550",1550,北海道,ホッカイドウ,Hokkaido,常呂郡置戸町,トコログンオケトチョウ,Tokoro Gun Oketo Cho,Tokoro District Oketo Town
+"01","01552",1552,北海道,ホッカイドウ,Hokkaido,常呂郡佐呂間町,トコログンサロマチョウ,Tokoro Gun Saroma Cho,Tokoro District Saroma Town
+"01","01555",1555,北海道,ホッカイドウ,Hokkaido,紋別郡遠軽町,モンベツグンエンガルチョウ,Mombetsu Gun Engaru Cho,Mombetsu District Engaru Town
+"01","01559",1559,北海道,ホッカイドウ,Hokkaido,紋別郡湧別町,モンベツグンユウベツチョウ,Mombetsu Gun Yubetsu Cho,Mombetsu District Yubetsu Town
+"01","01560",1560,北海道,ホッカイドウ,Hokkaido,紋別郡滝上町,モンベツグンタキノウエチョウ,Mombetsu Gun Takinoe Cho,Mombetsu District Takinoe Town
+"01","01561",1561,北海道,ホッカイドウ,Hokkaido,紋別郡興部町,モンベツグンオコッペチョウ,Mombetsu Gun Okoppe Cho,Mombetsu District Okoppe Town
+"01","01562",1562,北海道,ホッカイドウ,Hokkaido,紋別郡西興部村,モンベツグンニシオコッペムラ,Mombetsu Gun Nishiokoppe Mura,Mombetsu District Nishiokoppe Village
+"01","01563",1563,北海道,ホッカイドウ,Hokkaido,紋別郡雄武町,モンベツグンオウムチョウ,Mombetsu Gun Omu Cho,Mombetsu District Omu Town
+"01","01564",1564,北海道,ホッカイドウ,Hokkaido,網走郡大空町,アバシリグンオオゾラチョウ,Abashiri Gun Ozora Cho,Abashiri District Ozora Town
+"01","01571",1571,北海道,ホッカイドウ,Hokkaido,虻田郡豊浦町,アブタグントヨウラチョウ,Abuta Gun Toyora Cho,Abuta District Toyora Town
+"01","01575",1575,北海道,ホッカイドウ,Hokkaido,有珠郡壮瞥町,ウスグンソウベツチョウ,Usu Gun Sobetsu Cho,Usu District Sobetsu Town
+"01","01578",1578,北海道,ホッカイドウ,Hokkaido,白老郡白老町,シラオイグンシラオイチョウ,Shiraoi Gun Shiraoi Cho,Shiraoi District Shiraoi Town
+"01","01581",1581,北海道,ホッカイドウ,Hokkaido,勇払郡厚真町,ユウフツグンアツマチョウ,Yufutsu Gun Atsuma Cho,Yufutsu District Atsuma Town
+"01","01584",1584,北海道,ホッカイドウ,Hokkaido,虻田郡洞爺湖町,アブタグントウヤコチョウ,Abuta Gun Toyako Cho,Abuta District Toyako Town
+"01","01585",1585,北海道,ホッカイドウ,Hokkaido,勇払郡安平町,ユウフツグンアビラチョウ,Yufutsu Gun Abira Cho,Yufutsu District Abira Town
+"01","01586",1586,北海道,ホッカイドウ,Hokkaido,勇払郡むかわ町,ユウフツグンムカワチョウ,Yufutsu Gun Mukawa Cho,Yufutsu District Mukawa Town
+"01","01601",1601,北海道,ホッカイドウ,Hokkaido,沙流郡日高町,サルグンヒダカチョウ,Saru Gun Hidaka Cho,Saru District Hidaka Town
+"01","01602",1602,北海道,ホッカイドウ,Hokkaido,沙流郡平取町,サルグンビラトリチョウ,Saru Gun Biratori Cho,Saru District Biratori Town
+"01","01604",1604,北海道,ホッカイドウ,Hokkaido,新冠郡新冠町,ニイカップグンニイカップチョウ,Niikappu Gun Niikappu Cho,Niikappu District Niikappu Town
+"01","01607",1607,北海道,ホッカイドウ,Hokkaido,浦河郡浦河町,ウラカワグンウラカワチョウ,Urakawa Gun Urakawa Cho,Urakawa District Urakawa Town
+"01","01608",1608,北海道,ホッカイドウ,Hokkaido,様似郡様似町,サマニグンサマニチョウ,Samani Gun Samani Cho,Samani District Samani Town
+"01","01609",1609,北海道,ホッカイドウ,Hokkaido,幌泉郡えりも町,ホロイズミグンエリモチョウ,Horoizumi Gun Erimo Cho,Horoizumi District Erimo Town
+"01","01610",1610,北海道,ホッカイドウ,Hokkaido,日高郡新ひだか町,ヒダカグンシンヒダカチョウ,Hidaka Gun Shinhidaka Cho,Hidaka District Shinhidaka Town
+"01","01631",1631,北海道,ホッカイドウ,Hokkaido,河東郡音更町,カトウグンオトフケチョウ,Kato Gun Otofuke Cho,Kato District Otofuke Town
+"01","01632",1632,北海道,ホッカイドウ,Hokkaido,河東郡士幌町,カトウグンシホロチョウ,Kato Gun Shihoro Cho,Kato District Shihoro Town
+"01","01633",1633,北海道,ホッカイドウ,Hokkaido,河東郡上士幌町,カトウグンカミシホロチョウ,Kato Gun Kamishihoro Cho,Kato District Kamishihoro Town
+"01","01634",1634,北海道,ホッカイドウ,Hokkaido,河東郡鹿追町,カトウグンシカオイチョウ,Kato Gun Shikaoi Cho,Kato District Shikaoi Town
+"01","01635",1635,北海道,ホッカイドウ,Hokkaido,上川郡新得町,カミカワグンシントクチョウ,Kamikawa Gun Shintoku Cho,Kamikawa District Shintoku Town
+"01","01636",1636,北海道,ホッカイドウ,Hokkaido,上川郡清水町,カミカワグンシミズチョウ,Kamikawa Gun Shimizu Cho,Kamikawa District Shimizu Town
+"01","01637",1637,北海道,ホッカイドウ,Hokkaido,河西郡芽室町,カサイグンメムロチョウ,Kasai Gun Memuro Cho,Kasai District Memuro Town
+"01","01638",1638,北海道,ホッカイドウ,Hokkaido,河西郡中札内村,カサイグンナカサツナイムラ,Kasai Gun Nakasatsunai Mura,Kasai District Nakasatsunai Village
+"01","01639",1639,北海道,ホッカイドウ,Hokkaido,河西郡更別村,カサイグンサラベツムラ,Kasai Gun Sarabetsu Mura,Kasai District Sarabetsu Village
+"01","01641",1641,北海道,ホッカイドウ,Hokkaido,広尾郡大樹町,ヒロオグンタイキチョウ,Hiro Gun Taiki Cho,Hiro District Taiki Town
+"01","01642",1642,北海道,ホッカイドウ,Hokkaido,広尾郡広尾町,ヒロオグンヒロオチョウ,Hiro Gun Hiro Cho,Hiro District Hiro Town
+"01","01643",1643,北海道,ホッカイドウ,Hokkaido,中川郡幕別町,ナカガワグンマクベツチョウ,Nakagawa Gun Makubetsu Cho,Nakagawa District Makubetsu Town
+"01","01644",1644,北海道,ホッカイドウ,Hokkaido,中川郡池田町,ナカガワグンイケダチョウ,Nakagawa Gun Ikeda Cho,Nakagawa District Ikeda Town
+"01","01645",1645,北海道,ホッカイドウ,Hokkaido,中川郡豊頃町,ナカガワグントヨコロチョウ,Nakagawa Gun Toyokoro Cho,Nakagawa District Toyokoro Town
+"01","01646",1646,北海道,ホッカイドウ,Hokkaido,中川郡本別町,ナカガワグンホンベツチョウ,Nakagawa Gun Hombetsu Cho,Nakagawa District Hombetsu Town
+"01","01647",1647,北海道,ホッカイドウ,Hokkaido,足寄郡足寄町,アショログンアショロチョウ,Ashoro Gun Ashoro Cho,Ashoro District Ashoro Town
+"01","01648",1648,北海道,ホッカイドウ,Hokkaido,足寄郡陸別町,アショログンリクベツチョウ,Ashoro Gun Rikubetsu Cho,Ashoro District Rikubetsu Town
+"01","01649",1649,北海道,ホッカイドウ,Hokkaido,十勝郡浦幌町,トカチグンウラホロチョウ,Tokachi Gun Urahoro Cho,Tokachi District Urahoro Town
+"01","01661",1661,北海道,ホッカイドウ,Hokkaido,釧路郡釧路町,クシログンクシロチョウ,Kushiro Gun Kushiro Cho,Kushiro District Kushiro Town
+"01","01662",1662,北海道,ホッカイドウ,Hokkaido,厚岸郡厚岸町,アッケシグンアッケシチョウ,Akkeshi Gun Akkeshi Cho,Akkeshi District Akkeshi Town
+"01","01663",1663,北海道,ホッカイドウ,Hokkaido,厚岸郡浜中町,アッケシグンハマナカチョウ,Akkeshi Gun Hamanaka Cho,Akkeshi District Hamanaka Town
+"01","01664",1664,北海道,ホッカイドウ,Hokkaido,川上郡標茶町,カワカミグンシベチャチョウ,Kawakami Gun Shibecha Cho,Kawakami District Shibecha Town
+"01","01665",1665,北海道,ホッカイドウ,Hokkaido,川上郡弟子屈町,カワカミグンテシカガチョウ,Kawakami Gun Teshikaga Cho,Kawakami District Teshikaga Town
+"01","01667",1667,北海道,ホッカイドウ,Hokkaido,阿寒郡鶴居村,アカングンツルイムラ,Akan Gun Tsurui Mura,Akan District Tsurui Village
+"01","01668",1668,北海道,ホッカイドウ,Hokkaido,白糠郡白糠町,シラヌカグンシラヌカチョウ,Shiranuka Gun Shiranuka Cho,Shiranuka District Shiranuka Town
+"01","01691",1691,北海道,ホッカイドウ,Hokkaido,野付郡別海町,ノツケグンベツカイチョウ,Notsuke Gun Betsukai Cho,Notsuke District Betsukai Town
+"01","01692",1692,北海道,ホッカイドウ,Hokkaido,標津郡中標津町,シベツグンナカシベツチョウ,Shibetsu Gun Nakashibetsu Cho,Shibetsu District Nakashibetsu Town
+"01","01693",1693,北海道,ホッカイドウ,Hokkaido,標津郡標津町,シベツグンシベツチョウ,Shibetsu Gun Shibetsu Cho,Shibetsu District Shibetsu Town
+"01","01694",1694,北海道,ホッカイドウ,Hokkaido,目梨郡羅臼町,メナシグンラウスチョウ,Menashi Gun Rausu Cho,Menashi District Rausu Town
+"02","02201",2201,青森県,アオモリケン,Aomori,青森市,アオモリシ,Aomori Shi,Aomori City
+"02","02202",2202,青森県,アオモリケン,Aomori,弘前市,ヒロサキシ,Hirosaki Shi,Hirosaki City
+"02","02203",2203,青森県,アオモリケン,Aomori,八戸市,ハチノヘシ,Hachinohe Shi,Hachinohe City
+"02","02204",2204,青森県,アオモリケン,Aomori,黒石市,クロイシシ,Kuroishi Shi,Kuroishi City
+"02","02205",2205,青森県,アオモリケン,Aomori,五所川原市,ゴショガワラシ,Goshogawara Shi,Goshogawara City
+"02","02206",2206,青森県,アオモリケン,Aomori,十和田市,トワダシ,Towada Shi,Towada City
+"02","02207",2207,青森県,アオモリケン,Aomori,三沢市,ミサワシ,Misawa Shi,Misawa City
+"02","02208",2208,青森県,アオモリケン,Aomori,むつ市,ムツシ,Mutsu Shi,Mutsu City
+"02","02209",2209,青森県,アオモリケン,Aomori,つがる市,ツガルシ,Tsugaru Shi,Tsugaru City
+"02","02210",2210,青森県,アオモリケン,Aomori,平川市,ヒラカワシ,Hirakawa Shi,Hirakawa City
+"02","02301",2301,青森県,アオモリケン,Aomori,東津軽郡平内町,ヒガシツガルグンヒラナイマチ,Higashitsugaru Gun Hiranai Machi,Higashitsugaru District Hiranai Town
+"02","02303",2303,青森県,アオモリケン,Aomori,東津軽郡今別町,ヒガシツガルグンイマベツマチ,Higashitsugaru Gun Imabetsu Machi,Higashitsugaru District Imabetsu Town
+"02","02304",2304,青森県,アオモリケン,Aomori,東津軽郡蓬田村,ヒガシツガルグンヨモギタムラ,Higashitsugaru Gun Yomogita Mura,Higashitsugaru District Yomogita Village
+"02","02307",2307,青森県,アオモリケン,Aomori,東津軽郡外ケ浜町,ヒガシツガルグンソトガハママチ,Higashitsugaru Gun Sotogahama Machi,Higashitsugaru District Sotogahama Town
+"02","02321",2321,青森県,アオモリケン,Aomori,西津軽郡鰺ヶ沢町,ニシツガルグンアジガサワマチ,Nishitsugaru Gun Ajigasawa Machi,Nishitsugaru District Ajigasawa Town
+"02","02323",2323,青森県,アオモリケン,Aomori,西津軽郡深浦町,ニシツガルグンフカウラマチ,Nishitsugaru Gun Fukaura Machi,Nishitsugaru District Fukaura Town
+"02","02343",2343,青森県,アオモリケン,Aomori,中津軽郡西目屋村,ナカツガルグンニシメヤムラ,Nakatsugaru Gun Nishimeya Mura,Nakatsugaru District Nishimeya Village
+"02","02361",2361,青森県,アオモリケン,Aomori,南津軽郡藤崎町,ミナミツガルグンフジサキマチ,Minamitsugaru Gun Fujisaki Machi,Minamitsugaru District Fujisaki Town
+"02","02362",2362,青森県,アオモリケン,Aomori,南津軽郡大鰐町,ミナミツガルグンオオワニマチ,Minamitsugaru Gun Owani Machi,Minamitsugaru District Owani Town
+"02","02367",2367,青森県,アオモリケン,Aomori,南津軽郡田舎館村,ミナミツガルグンイナカダテムラ,Minamitsugaru Gun Inakadate Mura,Minamitsugaru District Inakadate Village
+"02","02381",2381,青森県,アオモリケン,Aomori,北津軽郡板柳町,キタツガルグンイタヤナギマチ,Kitatsugaru Gun Itayanagi Machi,Kitatsugaru District Itayanagi Town
+"02","02384",2384,青森県,アオモリケン,Aomori,北津軽郡鶴田町,キタツガルグンツルタマチ,Kitatsugaru Gun Tsuruta Machi,Kitatsugaru District Tsuruta Town
+"02","02387",2387,青森県,アオモリケン,Aomori,北津軽郡中泊町,キタツガルグンナカドマリマチ,Kitatsugaru Gun Nakadomari Machi,Kitatsugaru District Nakadomari Town
+"02","02401",2401,青森県,アオモリケン,Aomori,上北郡野辺地町,カミキタグンノヘジマチ,Kamikita Gun Noheji Machi,Kamikita District Noheji Town
+"02","02402",2402,青森県,アオモリケン,Aomori,上北郡七戸町,カミキタグンシチノヘマチ,Kamikita Gun Shichinohe Machi,Kamikita District Shichinohe Town
+"02","02405",2405,青森県,アオモリケン,Aomori,上北郡六戸町,カミキタグンロクノヘマチ,Kamikita Gun Rokunohe Machi,Kamikita District Rokunohe Town
+"02","02406",2406,青森県,アオモリケン,Aomori,上北郡横浜町,カミキタグンヨコハママチ,Kamikita Gun Yokohama Machi,Kamikita District Yokohama Town
+"02","02408",2408,青森県,アオモリケン,Aomori,上北郡東北町,カミキタグントウホクマチ,Kamikita Gun Tohoku Machi,Kamikita District Tohoku Town
+"02","02411",2411,青森県,アオモリケン,Aomori,上北郡六ヶ所村,カミキタグンロッカショムラ,Kamikita Gun Rokkasho Mura,Kamikita District Rokkasho Village
+"02","02412",2412,青森県,アオモリケン,Aomori,上北郡おいらせ町,カミキタグンオイラセチョウ,Kamikita Gun Oirase Cho,Kamikita District Oirase Town
+"02","02423",2423,青森県,アオモリケン,Aomori,下北郡大間町,シモキタグンオオママチ,Shimokita Gun Oma Machi,Shimokita District Oma Town
+"02","02424",2424,青森県,アオモリケン,Aomori,下北郡東通村,シモキタグンヒガシドオリムラ,Shimokita Gun Higashidori Mura,Shimokita District Higashidori Village
+"02","02425",2425,青森県,アオモリケン,Aomori,下北郡風間浦村,シモキタグンカザマウラムラ,Shimokita Gun Kazamaura Mura,Shimokita District Kazamaura Village
+"02","02426",2426,青森県,アオモリケン,Aomori,下北郡佐井村,シモキタグンサイムラ,Shimokita Gun Sai Mura,Shimokita District Sai Village
+"02","02441",2441,青森県,アオモリケン,Aomori,三戸郡三戸町,サンノヘグンサンノヘマチ,Sannohe Gun Sannohe Machi,Sannohe District Sannohe Town
+"02","02442",2442,青森県,アオモリケン,Aomori,三戸郡五戸町,サンノヘグンゴノヘマチ,Sannohe Gun Gonohe Machi,Sannohe District Gonohe Town
+"02","02443",2443,青森県,アオモリケン,Aomori,三戸郡田子町,サンノヘグンタッコマチ,Sannohe Gun Takko Machi,Sannohe District Takko Town
+"02","02445",2445,青森県,アオモリケン,Aomori,三戸郡南部町,サンノヘグンナンブチョウ,Sannohe Gun Nambu Cho,Sannohe District Nambu Town
+"02","02446",2446,青森県,アオモリケン,Aomori,三戸郡階上町,サンノヘグンハシカミチョウ,Sannohe Gun Hashikami Cho,Sannohe District Hashikami Town
+"02","02450",2450,青森県,アオモリケン,Aomori,三戸郡新郷村,サンノヘグンシンゴウムラ,Sannohe Gun Shingo Mura,Sannohe District Shingo Village
+"03","03201",3201,岩手県,イワテケン,Iwate,盛岡市,モリオカシ,Morioka Shi,Morioka City
+"03","03202",3202,岩手県,イワテケン,Iwate,宮古市,ミヤコシ,Miyako Shi,Miyako City
+"03","03203",3203,岩手県,イワテケン,Iwate,大船渡市,オオフナトシ,Ofunato Shi,Ofunato City
+"03","03205",3205,岩手県,イワテケン,Iwate,花巻市,ハナマキシ,Hanamaki Shi,Hanamaki City
+"03","03206",3206,岩手県,イワテケン,Iwate,北上市,キタカミシ,Kitakami Shi,Kitakami City
+"03","03207",3207,岩手県,イワテケン,Iwate,久慈市,クジシ,Kuji Shi,Kuji City
+"03","03208",3208,岩手県,イワテケン,Iwate,遠野市,トオノシ,Tono Shi,Tono City
+"03","03209",3209,岩手県,イワテケン,Iwate,一関市,イチノセキシ,Ichinoseki Shi,Ichinoseki City
+"03","03210",3210,岩手県,イワテケン,Iwate,陸前高田市,リクゼンタカタシ,Rikuzentakata Shi,Rikuzentakata City
+"03","03211",3211,岩手県,イワテケン,Iwate,釜石市,カマイシシ,Kamaishi Shi,Kamaishi City
+"03","03213",3213,岩手県,イワテケン,Iwate,二戸市,ニノヘシ,Ninohe Shi,Ninohe City
+"03","03214",3214,岩手県,イワテケン,Iwate,八幡平市,ハチマンタイシ,Hachimantai Shi,Hachimantai City
+"03","03215",3215,岩手県,イワテケン,Iwate,奥州市,オウシュウシ,Oshu Shi,Oshu City
+"03","03216",3216,岩手県,イワテケン,Iwate,滝沢市,タキザワシ,Takizawa Shi,Takizawa City
+"03","03301",3301,岩手県,イワテケン,Iwate,岩手郡雫石町,イワテグンシズクイシチョウ,Iwate Gun Shizukuishi Cho,Iwate District Shizukuishi Town
+"03","03302",3302,岩手県,イワテケン,Iwate,岩手郡葛巻町,イワテグンクズマキマチ,Iwate Gun Kuzumaki Machi,Iwate District Kuzumaki Town
+"03","03303",3303,岩手県,イワテケン,Iwate,岩手郡岩手町,イワテグンイワテマチ,Iwate Gun Iwate Machi,Iwate District Iwate Town
+"03","03321",3321,岩手県,イワテケン,Iwate,紫波郡紫波町,シワグンシワチョウ,Shiwa Gun Shiwa Cho,Shiwa District Shiwa Town
+"03","03322",3322,岩手県,イワテケン,Iwate,紫波郡矢巾町,シワグンヤハバチョウ,Shiwa Gun Yahaba Cho,Shiwa District Yahaba Town
+"03","03366",3366,岩手県,イワテケン,Iwate,和賀郡西和賀町,ワガグンニシワガマチ,Waga Gun Nishiwaga Machi,Waga District Nishiwaga Town
+"03","03381",3381,岩手県,イワテケン,Iwate,胆沢郡金ケ崎町,イサワグンカネガサキチョウ,Isawa Gun Kanegasaki Cho,Isawa District Kanegasaki Town
+"03","03402",3402,岩手県,イワテケン,Iwate,西磐井郡平泉町,ニシイワイグンヒライズミチョウ,Nishiiwai Gun Hiraizumi Cho,Nishiiwai District Hiraizumi Town
+"03","03441",3441,岩手県,イワテケン,Iwate,気仙郡住田町,ケセングンスミタチョウ,Kesen Gun Sumita Cho,Kesen District Sumita Town
+"03","03461",3461,岩手県,イワテケン,Iwate,上閉伊郡大槌町,カミヘイグンオオツチチョウ,Kamihei Gun Otsuchi Cho,Kamihei District Otsuchi Town
+"03","03482",3482,岩手県,イワテケン,Iwate,下閉伊郡山田町,シモヘイグンヤマダマチ,Shimohei Gun Yamada Machi,Shimohei District Yamada Town
+"03","03483",3483,岩手県,イワテケン,Iwate,下閉伊郡岩泉町,シモヘイグンイワイズミチョウ,Shimohei Gun Iwaizumi Cho,Shimohei District Iwaizumi Town
+"03","03484",3484,岩手県,イワテケン,Iwate,下閉伊郡田野畑村,シモヘイグンタノハタムラ,Shimohei Gun Tanohata Mura,Shimohei District Tanohata Village
+"03","03485",3485,岩手県,イワテケン,Iwate,下閉伊郡普代村,シモヘイグンフダイムラ,Shimohei Gun Fudai Mura,Shimohei District Fudai Village
+"03","03501",3501,岩手県,イワテケン,Iwate,九戸郡軽米町,クノヘグンカルマイマチ,Kunohe Gun Karumai Machi,Kunohe District Karumai Town
+"03","03503",3503,岩手県,イワテケン,Iwate,九戸郡野田村,クノヘグンノダムラ,Kunohe Gun Noda Mura,Kunohe District Noda Village
+"03","03506",3506,岩手県,イワテケン,Iwate,九戸郡九戸村,クノヘグンクノヘムラ,Kunohe Gun Kunohe Mura,Kunohe District Kunohe Village
+"03","03507",3507,岩手県,イワテケン,Iwate,九戸郡洋野町,クノヘグンヒロノチョウ,Kunohe Gun Hirono Cho,Kunohe District Hirono Town
+"03","03524",3524,岩手県,イワテケン,Iwate,二戸郡一戸町,ニノヘグンイチノヘマチ,Ninohe Gun Ichinohe Machi,Ninohe District Ichinohe Town
+"04","04101",4101,宮城県,ミヤギケン,Miyagi,仙台市青葉区,センダイシアオバク,Sendai Shi Aoba Ku,"Aoba Ward,Sendai City"
+"04","04102",4102,宮城県,ミヤギケン,Miyagi,仙台市宮城野区,センダイシミヤギノク,Sendai Shi Miyagino Ku,"Miyagino Ward,Sendai City"
+"04","04103",4103,宮城県,ミヤギケン,Miyagi,仙台市若林区,センダイシワカバヤシク,Sendai Shi Wakabayashi Ku,"Wakabayashi Ward,Sendai City"
+"04","04104",4104,宮城県,ミヤギケン,Miyagi,仙台市太白区,センダイシタイハクク,Sendai Shi Taihaku Ku,"Taihaku Ward,Sendai City"
+"04","04105",4105,宮城県,ミヤギケン,Miyagi,仙台市泉区,センダイシイズミク,Sendai Shi Izumi Ku,"Izumi Ward,Sendai City"
+"04","04202",4202,宮城県,ミヤギケン,Miyagi,石巻市,イシノマキシ,Ishinomaki Shi,Ishinomaki City
+"04","04203",4203,宮城県,ミヤギケン,Miyagi,塩竈市,シオガマシ,Shiogama Shi,Shiogama City
+"04","04205",4205,宮城県,ミヤギケン,Miyagi,気仙沼市,ケセンヌマシ,Kesennuma Shi,Kesennuma City
+"04","04206",4206,宮城県,ミヤギケン,Miyagi,白石市,シロイシシ,Shiroishi Shi,Shiroishi City
+"04","04207",4207,宮城県,ミヤギケン,Miyagi,名取市,ナトリシ,Natori Shi,Natori City
+"04","04208",4208,宮城県,ミヤギケン,Miyagi,角田市,カクダシ,Kakuda Shi,Kakuda City
+"04","04209",4209,宮城県,ミヤギケン,Miyagi,多賀城市,タガジョウシ,Tagajo Shi,Tagajo City
+"04","04211",4211,宮城県,ミヤギケン,Miyagi,岩沼市,イワヌマシ,Iwanuma Shi,Iwanuma City
+"04","04212",4212,宮城県,ミヤギケン,Miyagi,登米市,トメシ,Tome Shi,Tome City
+"04","04213",4213,宮城県,ミヤギケン,Miyagi,栗原市,クリハラシ,Kurihara Shi,Kurihara City
+"04","04214",4214,宮城県,ミヤギケン,Miyagi,東松島市,ヒガシマツシマシ,Higashimatsushima Shi,Higashimatsushima City
+"04","04215",4215,宮城県,ミヤギケン,Miyagi,大崎市,オオサキシ,Osaki Shi,Osaki City
+"04","04216",4216,宮城県,ミヤギケン,Miyagi,富谷市,トミヤシ,Tomiya Shi,Tomiya City
+"04","04301",4301,宮城県,ミヤギケン,Miyagi,刈田郡蔵王町,カッタグンザオウマチ,Katta Gun Zao Machi,Katta District Zao Town
+"04","04302",4302,宮城県,ミヤギケン,Miyagi,刈田郡七ヶ宿町,カッタグンシチカシュクマチ,Katta Gun Shichikashuku Machi,Katta District Shichikashuku Town
+"04","04321",4321,宮城県,ミヤギケン,Miyagi,柴田郡大河原町,シバタグンオオガワラマチ,Shibata Gun Ogawara Machi,Shibata District Ogawara Town
+"04","04322",4322,宮城県,ミヤギケン,Miyagi,柴田郡村田町,シバタグンムラタマチ,Shibata Gun Murata Machi,Shibata District Murata Town
+"04","04323",4323,宮城県,ミヤギケン,Miyagi,柴田郡柴田町,シバタグンシバタマチ,Shibata Gun Shibata Machi,Shibata District Shibata Town
+"04","04324",4324,宮城県,ミヤギケン,Miyagi,柴田郡川崎町,シバタグンカワサキマチ,Shibata Gun Kawasaki Machi,Shibata District Kawasaki Town
+"04","04341",4341,宮城県,ミヤギケン,Miyagi,伊具郡丸森町,イググンマルモリマチ,Igu Gun Marumori Machi,Igu District Marumori Town
+"04","04361",4361,宮城県,ミヤギケン,Miyagi,亘理郡亘理町,ワタリグンワタリチョウ,Watari Gun Watari Cho,Watari District Watari Town
+"04","04362",4362,宮城県,ミヤギケン,Miyagi,亘理郡山元町,ワタリグンヤマモトチョウ,Watari Gun Yamamoto Cho,Watari District Yamamoto Town
+"04","04401",4401,宮城県,ミヤギケン,Miyagi,宮城郡松島町,ミヤギグンマツシママチ,Miyagi Gun Matsushima Machi,Miyagi District Matsushima Town
+"04","04404",4404,宮城県,ミヤギケン,Miyagi,宮城郡七ヶ浜町,ミヤギグンシチガハママチ,Miyagi Gun Shichigahama Machi,Miyagi District Shichigahama Town
+"04","04406",4406,宮城県,ミヤギケン,Miyagi,宮城郡利府町,ミヤギグンリフチョウ,Miyagi Gun Rifu Cho,Miyagi District Rifu Town
+"04","04421",4421,宮城県,ミヤギケン,Miyagi,黒川郡大和町,クロカワグンタイワチョウ,Kurokawa Gun Taiwa Cho,Kurokawa District Taiwa Town
+"04","04422",4422,宮城県,ミヤギケン,Miyagi,黒川郡大郷町,クロカワグンオオサトチョウ,Kurokawa Gun Osato Cho,Kurokawa District Osato Town
+"04","04424",4424,宮城県,ミヤギケン,Miyagi,黒川郡大衡村,クロカワグンオオヒラムラ,Kurokawa Gun Ohira Mura,Kurokawa District Ohira Village
+"04","04444",4444,宮城県,ミヤギケン,Miyagi,加美郡色麻町,カミグンシカマチョウ,Kami Gun Shikama Cho,Kami District Shikama Town
+"04","04445",4445,宮城県,ミヤギケン,Miyagi,加美郡加美町,カミグンカミマチ,Kami Gun Kami Machi,Kami District Kami Town
+"04","04501",4501,宮城県,ミヤギケン,Miyagi,遠田郡涌谷町,トオダグンワクヤチョウ,Toda Gun Wakuya Cho,Toda District Wakuya Town
+"04","04505",4505,宮城県,ミヤギケン,Miyagi,遠田郡美里町,トオダグンミサトマチ,Toda Gun Misato Machi,Toda District Misato Town
+"04","04581",4581,宮城県,ミヤギケン,Miyagi,牡鹿郡女川町,オシカグンオナガワチョウ,Oshika Gun Onagawa Cho,Oshika District Onagawa Town
+"04","04606",4606,宮城県,ミヤギケン,Miyagi,本吉郡南三陸町,モトヨシグンミナミサンリクチョウ,Motoyoshi Gun Minamisanriku Cho,Motoyoshi District Minamisanriku Town
+"05","05201",5201,秋田県,アキタケン,Akita,秋田市,アキタシ,Akita Shi,Akita City
+"05","05202",5202,秋田県,アキタケン,Akita,能代市,ノシロシ,Noshiro Shi,Noshiro City
+"05","05203",5203,秋田県,アキタケン,Akita,横手市,ヨコテシ,Yokote Shi,Yokote City
+"05","05204",5204,秋田県,アキタケン,Akita,大館市,オオダテシ,Odate Shi,Odate City
+"05","05206",5206,秋田県,アキタケン,Akita,男鹿市,オガシ,Oga Shi,Oga City
+"05","05207",5207,秋田県,アキタケン,Akita,湯沢市,ユザワシ,Yuzawa Shi,Yuzawa City
+"05","05209",5209,秋田県,アキタケン,Akita,鹿角市,カヅノシ,Kazuno Shi,Kazuno City
+"05","05210",5210,秋田県,アキタケン,Akita,由利本荘市,ユリホンジョウシ,Yurihonjo Shi,Yurihonjo City
+"05","05211",5211,秋田県,アキタケン,Akita,潟上市,カタガミシ,Katagami Shi,Katagami City
+"05","05212",5212,秋田県,アキタケン,Akita,大仙市,ダイセンシ,Daisen Shi,Daisen City
+"05","05213",5213,秋田県,アキタケン,Akita,北秋田市,キタアキタシ,Kitaakita Shi,Kitaakita City
+"05","05214",5214,秋田県,アキタケン,Akita,にかほ市,ニカホシ,Nikaho Shi,Nikaho City
+"05","05215",5215,秋田県,アキタケン,Akita,仙北市,センボクシ,Semboku Shi,Semboku City
+"05","05303",5303,秋田県,アキタケン,Akita,鹿角郡小坂町,カヅノグンコサカマチ,Kazuno Gun Kosaka Machi,Kazuno District Kosaka Town
+"05","05327",5327,秋田県,アキタケン,Akita,北秋田郡上小阿仁村,キタアキタグンカミコアニムラ,Kitaakita Gun Kamikoani Mura,Kitaakita District Kamikoani Village
+"05","05346",5346,秋田県,アキタケン,Akita,山本郡藤里町,ヤマモトグンフジサトマチ,Yamamoto Gun Fujisato Machi,Yamamoto District Fujisato Town
+"05","05348",5348,秋田県,アキタケン,Akita,山本郡三種町,ヤマモトグンミタネチョウ,Yamamoto Gun Mitane Cho,Yamamoto District Mitane Town
+"05","05349",5349,秋田県,アキタケン,Akita,山本郡八峰町,ヤマモトグンハッポウチョウ,Yamamoto Gun Happo Cho,Yamamoto District Happo Town
+"05","05361",5361,秋田県,アキタケン,Akita,南秋田郡五城目町,ミナミアキタグンゴジョウメマチ,Minamiakita Gun Gojome Machi,Minamiakita District Gojome Town
+"05","05363",5363,秋田県,アキタケン,Akita,南秋田郡八郎潟町,ミナミアキタグンハチロウガタマチ,Minamiakita Gun Hachirogata Machi,Minamiakita District Hachirogata Town
+"05","05366",5366,秋田県,アキタケン,Akita,南秋田郡井川町,ミナミアキタグンイカワマチ,Minamiakita Gun Ikawa Machi,Minamiakita District Ikawa Town
+"05","05368",5368,秋田県,アキタケン,Akita,南秋田郡大潟村,ミナミアキタグンオオガタムラ,Minamiakita Gun Ogata Mura,Minamiakita District Ogata Village
+"05","05434",5434,秋田県,アキタケン,Akita,仙北郡美郷町,センボクグンミサトチョウ,Semboku Gun Misato Cho,Semboku District Misato Town
+"05","05463",5463,秋田県,アキタケン,Akita,雄勝郡羽後町,オガチグンウゴマチ,Ogachi Gun Ugo Machi,Ogachi District Ugo Town
+"05","05464",5464,秋田県,アキタケン,Akita,雄勝郡東成瀬村,オガチグンヒガシナルセムラ,Ogachi Gun Higashinaruse Mura,Ogachi District Higashinaruse Village
+"06","06201",6201,山形県,ヤマガタケン,Yamagata,山形市,ヤマガタシ,Yamagata Shi,Yamagata City
+"06","06202",6202,山形県,ヤマガタケン,Yamagata,米沢市,ヨネザワシ,Yonezawa Shi,Yonezawa City
+"06","06203",6203,山形県,ヤマガタケン,Yamagata,鶴岡市,ツルオカシ,Tsuruoka Shi,Tsuruoka City
+"06","06204",6204,山形県,ヤマガタケン,Yamagata,酒田市,サカタシ,Sakata Shi,Sakata City
+"06","06205",6205,山形県,ヤマガタケン,Yamagata,新庄市,シンジョウシ,Shinjo Shi,Shinjo City
+"06","06206",6206,山形県,ヤマガタケン,Yamagata,寒河江市,サガエシ,Sagae Shi,Sagae City
+"06","06207",6207,山形県,ヤマガタケン,Yamagata,上山市,カミノヤマシ,Kaminoyama Shi,Kaminoyama City
+"06","06208",6208,山形県,ヤマガタケン,Yamagata,村山市,ムラヤマシ,Murayama Shi,Murayama City
+"06","06209",6209,山形県,ヤマガタケン,Yamagata,長井市,ナガイシ,Nagai Shi,Nagai City
+"06","06210",6210,山形県,ヤマガタケン,Yamagata,天童市,テンドウシ,Tendo Shi,Tendo City
+"06","06211",6211,山形県,ヤマガタケン,Yamagata,東根市,ヒガシネシ,Higashine Shi,Higashine City
+"06","06212",6212,山形県,ヤマガタケン,Yamagata,尾花沢市,オバナザワシ,Obanazawa Shi,Obanazawa City
+"06","06213",6213,山形県,ヤマガタケン,Yamagata,南陽市,ナンヨウシ,Nanyo Shi,Nanyo City
+"06","06301",6301,山形県,ヤマガタケン,Yamagata,東村山郡山辺町,ヒガシムラヤマグンヤマノベマチ,Higashimurayama Gun Yamanobe Machi,Higashimurayama District Yamanobe Town
+"06","06302",6302,山形県,ヤマガタケン,Yamagata,東村山郡中山町,ヒガシムラヤマグンナカヤママチ,Higashimurayama Gun Nakayama Machi,Higashimurayama District Nakayama Town
+"06","06321",6321,山形県,ヤマガタケン,Yamagata,西村山郡河北町,ニシムラヤマグンカホクチョウ,Nishimurayama Gun Kahoku Cho,Nishimurayama District Kahoku Town
+"06","06322",6322,山形県,ヤマガタケン,Yamagata,西村山郡西川町,ニシムラヤマグンニシカワマチ,Nishimurayama Gun Nishikawa Machi,Nishimurayama District Nishikawa Town
+"06","06323",6323,山形県,ヤマガタケン,Yamagata,西村山郡朝日町,ニシムラヤマグンアサヒマチ,Nishimurayama Gun Asahi Machi,Nishimurayama District Asahi Town
+"06","06324",6324,山形県,ヤマガタケン,Yamagata,西村山郡大江町,ニシムラヤマグンオオエマチ,Nishimurayama Gun Oe Machi,Nishimurayama District Oe Town
+"06","06341",6341,山形県,ヤマガタケン,Yamagata,北村山郡大石田町,キタムラヤマグンオオイシダマチ,Kitamurayama Gun Oishida Machi,Kitamurayama District Oishida Town
+"06","06361",6361,山形県,ヤマガタケン,Yamagata,最上郡金山町,モガミグンカネヤママチ,Mogami Gun Kaneyama Machi,Mogami District Kaneyama Town
+"06","06362",6362,山形県,ヤマガタケン,Yamagata,最上郡最上町,モガミグンモガミマチ,Mogami Gun Mogami Machi,Mogami District Mogami Town
+"06","06363",6363,山形県,ヤマガタケン,Yamagata,最上郡舟形町,モガミグンフナガタマチ,Mogami Gun Funagata Machi,Mogami District Funagata Town
+"06","06364",6364,山形県,ヤマガタケン,Yamagata,最上郡真室川町,モガミグンマムロガワマチ,Mogami Gun Mamurogawa Machi,Mogami District Mamurogawa Town
+"06","06365",6365,山形県,ヤマガタケン,Yamagata,最上郡大蔵村,モガミグンオオクラムラ,Mogami Gun Okura Mura,Mogami District Okura Village
+"06","06366",6366,山形県,ヤマガタケン,Yamagata,最上郡鮭川村,モガミグンサケガワムラ,Mogami Gun Sakegawa Mura,Mogami District Sakegawa Village
+"06","06367",6367,山形県,ヤマガタケン,Yamagata,最上郡戸沢村,モガミグントザワムラ,Mogami Gun Tozawa Mura,Mogami District Tozawa Village
+"06","06381",6381,山形県,ヤマガタケン,Yamagata,東置賜郡高畠町,ヒガシオキタマグンタカハタマチ,Higashiokitama Gun Takahata Machi,Higashiokitama District Takahata Town
+"06","06382",6382,山形県,ヤマガタケン,Yamagata,東置賜郡川西町,ヒガシオキタマグンカワニシマチ,Higashiokitama Gun Kawanishi Machi,Higashiokitama District Kawanishi Town
+"06","06401",6401,山形県,ヤマガタケン,Yamagata,西置賜郡小国町,ニシオキタマグンオグニマチ,Nishiokitama Gun Oguni Machi,Nishiokitama District Oguni Town
+"06","06402",6402,山形県,ヤマガタケン,Yamagata,西置賜郡白鷹町,ニシオキタマグンシラタカマチ,Nishiokitama Gun Shirataka Machi,Nishiokitama District Shirataka Town
+"06","06403",6403,山形県,ヤマガタケン,Yamagata,西置賜郡飯豊町,ニシオキタマグンイイデマチ,Nishiokitama Gun Iide Machi,Nishiokitama District Iide Town
+"06","06426",6426,山形県,ヤマガタケン,Yamagata,東田川郡三川町,ヒガシタガワグンミカワマチ,Higashitagawa Gun Mikawa Machi,Higashitagawa District Mikawa Town
+"06","06428",6428,山形県,ヤマガタケン,Yamagata,東田川郡庄内町,ヒガシタガワグンショウナイマチ,Higashitagawa Gun Shonai Machi,Higashitagawa District Shonai Town
+"06","06461",6461,山形県,ヤマガタケン,Yamagata,飽海郡遊佐町,アクミグンユザマチ,Akumi Gun Yuza Machi,Akumi District Yuza Town
+"07","07201",7201,福島県,フクシマケン,Fukushima,福島市,フクシマシ,Fukushima Shi,Fukushima City
+"07","07202",7202,福島県,フクシマケン,Fukushima,会津若松市,アイヅワカマツシ,Aizuwakamatsu Shi,Aizuwakamatsu City
+"07","07203",7203,福島県,フクシマケン,Fukushima,郡山市,コオリヤマシ,Koriyama Shi,Koriyama City
+"07","07204",7204,福島県,フクシマケン,Fukushima,いわき市,イワキシ,Iwaki Shi,Iwaki City
+"07","07205",7205,福島県,フクシマケン,Fukushima,白河市,シラカワシ,Shirakawa Shi,Shirakawa City
+"07","07207",7207,福島県,フクシマケン,Fukushima,須賀川市,スカガワシ,Sukagawa Shi,Sukagawa City
+"07","07208",7208,福島県,フクシマケン,Fukushima,喜多方市,キタカタシ,Kitakata Shi,Kitakata City
+"07","07209",7209,福島県,フクシマケン,Fukushima,相馬市,ソウマシ,Soma Shi,Soma City
+"07","07210",7210,福島県,フクシマケン,Fukushima,二本松市,ニホンマツシ,Nihommatsu Shi,Nihommatsu City
+"07","07211",7211,福島県,フクシマケン,Fukushima,田村市,タムラシ,Tamura Shi,Tamura City
+"07","07212",7212,福島県,フクシマケン,Fukushima,南相馬市,ミナミソウマシ,Minamisoma Shi,Minamisoma City
+"07","07213",7213,福島県,フクシマケン,Fukushima,伊達市,ダテシ,Date Shi,Date City
+"07","07214",7214,福島県,フクシマケン,Fukushima,本宮市,モトミヤシ,Motomiya Shi,Motomiya City
+"07","07301",7301,福島県,フクシマケン,Fukushima,伊達郡桑折町,ダテグンコオリマチ,Date Gun Kori Machi,Date District Kori Town
+"07","07303",7303,福島県,フクシマケン,Fukushima,伊達郡国見町,ダテグンクニミマチ,Date Gun Kunimi Machi,Date District Kunimi Town
+"07","07308",7308,福島県,フクシマケン,Fukushima,伊達郡川俣町,ダテグンカワマタマチ,Date Gun Kawamata Machi,Date District Kawamata Town
+"07","07322",7322,福島県,フクシマケン,Fukushima,安達郡大玉村,アダチグンオオタマムラ,Adachi Gun Otama Mura,Adachi District Otama Village
+"07","07342",7342,福島県,フクシマケン,Fukushima,岩瀬郡鏡石町,イワセグンカガミイシマチ,Iwase Gun Kagamiishi Machi,Iwase District Kagamiishi Town
+"07","07344",7344,福島県,フクシマケン,Fukushima,岩瀬郡天栄村,イワセグンテンエイムラ,Iwase Gun Tenei Mura,Iwase District Tenei Village
+"07","07362",7362,福島県,フクシマケン,Fukushima,南会津郡下郷町,ミナミアイヅグンシモゴウマチ,Minamiaizu Gun Shimogo Machi,Minamiaizu District Shimogo Town
+"07","07364",7364,福島県,フクシマケン,Fukushima,南会津郡檜枝岐村,ミナミアイヅグンヒノエマタムラ,Minamiaizu Gun Hinoemata Mura,Minamiaizu District Hinoemata Village
+"07","07367",7367,福島県,フクシマケン,Fukushima,南会津郡只見町,ミナミアイヅグンタダミマチ,Minamiaizu Gun Tadami Machi,Minamiaizu District Tadami Town
+"07","07368",7368,福島県,フクシマケン,Fukushima,南会津郡南会津町,ミナミアイヅグンミナミアイヅマチ,Minamiaizu Gun Minamiaizu Machi,Minamiaizu District Minamiaizu Town
+"07","07402",7402,福島県,フクシマケン,Fukushima,耶麻郡北塩原村,ヤマグンキタシオバラムラ,Yama Gun Kitashiobara Mura,Yama District Kitashiobara Village
+"07","07405",7405,福島県,フクシマケン,Fukushima,耶麻郡西会津町,ヤマグンニシアイヅマチ,Yama Gun Nishiaizu Machi,Yama District Nishiaizu Town
+"07","07407",7407,福島県,フクシマケン,Fukushima,耶麻郡磐梯町,ヤマグンバンダイマチ,Yama Gun Bandai Machi,Yama District Bandai Town
+"07","07408",7408,福島県,フクシマケン,Fukushima,耶麻郡猪苗代町,ヤマグンイナワシロマチ,Yama Gun Inawashiro Machi,Yama District Inawashiro Town
+"07","07421",7421,福島県,フクシマケン,Fukushima,河沼郡会津坂下町,カワヌマグンアイヅバンゲマチ,Kawanuma Gun Aizubange Machi,Kawanuma District Aizubange Town
+"07","07422",7422,福島県,フクシマケン,Fukushima,河沼郡湯川村,カワヌマグンユガワムラ,Kawanuma Gun Yugawa Mura,Kawanuma District Yugawa Village
+"07","07423",7423,福島県,フクシマケン,Fukushima,河沼郡柳津町,カワヌマグンヤナイヅマチ,Kawanuma Gun Yanaizu Machi,Kawanuma District Yanaizu Town
+"07","07444",7444,福島県,フクシマケン,Fukushima,大沼郡三島町,オオヌマグンミシママチ,Onuma Gun Mishima Machi,Onuma District Mishima Town
+"07","07445",7445,福島県,フクシマケン,Fukushima,大沼郡金山町,オオヌマグンカネヤママチ,Onuma Gun Kaneyama Machi,Onuma District Kaneyama Town
+"07","07446",7446,福島県,フクシマケン,Fukushima,大沼郡昭和村,オオヌマグンショウワムラ,Onuma Gun Showa Mura,Onuma District Showa Village
+"07","07447",7447,福島県,フクシマケン,Fukushima,大沼郡会津美里町,オオヌマグンアイヅミサトマチ,Onuma Gun Aizumisato Machi,Onuma District Aizumisato Town
+"07","07461",7461,福島県,フクシマケン,Fukushima,西白河郡西郷村,ニシシラカワグンニシゴウムラ,Nishishirakawa Gun Nishigo Mura,Nishishirakawa District Nishigo Village
+"07","07464",7464,福島県,フクシマケン,Fukushima,西白河郡泉崎村,ニシシラカワグンイズミザキムラ,Nishishirakawa Gun Izumizaki Mura,Nishishirakawa District Izumizaki Village
+"07","07465",7465,福島県,フクシマケン,Fukushima,西白河郡中島村,ニシシラカワグンナカジマムラ,Nishishirakawa Gun Nakajima Mura,Nishishirakawa District Nakajima Village
+"07","07466",7466,福島県,フクシマケン,Fukushima,西白河郡矢吹町,ニシシラカワグンヤブキマチ,Nishishirakawa Gun Yabuki Machi,Nishishirakawa District Yabuki Town
+"07","07481",7481,福島県,フクシマケン,Fukushima,東白川郡棚倉町,ヒガシシラカワグンタナグラマチ,Higashishirakawa Gun Tanagura Machi,Higashishirakawa District Tanagura Town
+"07","07482",7482,福島県,フクシマケン,Fukushima,東白川郡矢祭町,ヒガシシラカワグンヤマツリマチ,Higashishirakawa Gun Yamatsuri Machi,Higashishirakawa District Yamatsuri Town
+"07","07483",7483,福島県,フクシマケン,Fukushima,東白川郡塙町,ヒガシシラカワグンハナワマチ,Higashishirakawa Gun Hanawa Machi,Higashishirakawa District Hanawa Town
+"07","07484",7484,福島県,フクシマケン,Fukushima,東白川郡鮫川村,ヒガシシラカワグンサメガワムラ,Higashishirakawa Gun Samegawa Mura,Higashishirakawa District Samegawa Village
+"07","07501",7501,福島県,フクシマケン,Fukushima,石川郡石川町,イシカワグンイシカワマチ,Ishikawa Gun Ishikawa Machi,Ishikawa District Ishikawa Town
+"07","07502",7502,福島県,フクシマケン,Fukushima,石川郡玉川村,イシカワグンタマカワムラ,Ishikawa Gun Tamakawa Mura,Ishikawa District Tamakawa Village
+"07","07503",7503,福島県,フクシマケン,Fukushima,石川郡平田村,イシカワグンヒラタムラ,Ishikawa Gun Hirata Mura,Ishikawa District Hirata Village
+"07","07504",7504,福島県,フクシマケン,Fukushima,石川郡浅川町,イシカワグンアサカワマチ,Ishikawa Gun Asakawa Machi,Ishikawa District Asakawa Town
+"07","07505",7505,福島県,フクシマケン,Fukushima,石川郡古殿町,イシカワグンフルドノマチ,Ishikawa Gun Furudono Machi,Ishikawa District Furudono Town
+"07","07521",7521,福島県,フクシマケン,Fukushima,田村郡三春町,タムラグンミハルマチ,Tamura Gun Miharu Machi,Tamura District Miharu Town
+"07","07522",7522,福島県,フクシマケン,Fukushima,田村郡小野町,タムラグンオノマチ,Tamura Gun Ono Machi,Tamura District Ono Town
+"07","07541",7541,福島県,フクシマケン,Fukushima,双葉郡広野町,フタバグンヒロノマチ,Futaba Gun Hirono Machi,Futaba District Hirono Town
+"07","07542",7542,福島県,フクシマケン,Fukushima,双葉郡楢葉町,フタバグンナラハマチ,Futaba Gun Naraha Machi,Futaba District Naraha Town
+"07","07543",7543,福島県,フクシマケン,Fukushima,双葉郡富岡町,フタバグントミオカマチ,Futaba Gun Tomioka Machi,Futaba District Tomioka Town
+"07","07544",7544,福島県,フクシマケン,Fukushima,双葉郡川内村,フタバグンカワウチムラ,Futaba Gun Kawauchi Mura,Futaba District Kawauchi Village
+"07","07545",7545,福島県,フクシマケン,Fukushima,双葉郡大熊町,フタバグンオオクママチ,Futaba Gun Okuma Machi,Futaba District Okuma Town
+"07","07546",7546,福島県,フクシマケン,Fukushima,双葉郡双葉町,フタバグンフタバマチ,Futaba Gun Futaba Machi,Futaba District Futaba Town
+"07","07547",7547,福島県,フクシマケン,Fukushima,双葉郡浪江町,フタバグンナミエマチ,Futaba Gun Namie Machi,Futaba District Namie Town
+"07","07548",7548,福島県,フクシマケン,Fukushima,双葉郡葛尾村,フタバグンカツラオムラ,Futaba Gun Katsurao Mura,Futaba District Katsurao Village
+"07","07561",7561,福島県,フクシマケン,Fukushima,相馬郡新地町,ソウマグンシンチマチ,Soma Gun Shinchi Machi,Soma District Shinchi Town
+"07","07564",7564,福島県,フクシマケン,Fukushima,相馬郡飯舘村,ソウマグンイイタテムラ,Soma Gun Iitate Mura,Soma District Iitate Village
+"08","08201",8201,茨城県,イバラキケン,Ibaraki,水戸市,ミトシ,Mito Shi,Mito City
+"08","08202",8202,茨城県,イバラキケン,Ibaraki,日立市,ヒタチシ,Hitachi Shi,Hitachi City
+"08","08203",8203,茨城県,イバラキケン,Ibaraki,土浦市,ツチウラシ,Tsuchiura Shi,Tsuchiura City
+"08","08204",8204,茨城県,イバラキケン,Ibaraki,古河市,コガシ,Koga Shi,Koga City
+"08","08205",8205,茨城県,イバラキケン,Ibaraki,石岡市,イシオカシ,Ishioka Shi,Ishioka City
+"08","08207",8207,茨城県,イバラキケン,Ibaraki,結城市,ユウキシ,Yuki Shi,Yuki City
+"08","08208",8208,茨城県,イバラキケン,Ibaraki,龍ヶ崎市,リュウガサキシ,Ryugasaki Shi,Ryugasaki City
+"08","08210",8210,茨城県,イバラキケン,Ibaraki,下妻市,シモツマシ,Shimotsuma Shi,Shimotsuma City
+"08","08211",8211,茨城県,イバラキケン,Ibaraki,常総市,ジョウソウシ,Joso Shi,Joso City
+"08","08212",8212,茨城県,イバラキケン,Ibaraki,常陸太田市,ヒタチオオタシ,Hitachiota Shi,Hitachiota City
+"08","08214",8214,茨城県,イバラキケン,Ibaraki,高萩市,タカハギシ,Takahagi Shi,Takahagi City
+"08","08215",8215,茨城県,イバラキケン,Ibaraki,北茨城市,キタイバラキシ,Kitaibaraki Shi,Kitaibaraki City
+"08","08216",8216,茨城県,イバラキケン,Ibaraki,笠間市,カサマシ,Kasama Shi,Kasama City
+"08","08217",8217,茨城県,イバラキケン,Ibaraki,取手市,トリデシ,Toride Shi,Toride City
+"08","08219",8219,茨城県,イバラキケン,Ibaraki,牛久市,ウシクシ,Ushiku Shi,Ushiku City
+"08","08220",8220,茨城県,イバラキケン,Ibaraki,つくば市,ツクバシ,Tsukuba Shi,Tsukuba City
+"08","08221",8221,茨城県,イバラキケン,Ibaraki,ひたちなか市,ヒタチナカシ,Hitachinaka Shi,Hitachinaka City
+"08","08222",8222,茨城県,イバラキケン,Ibaraki,鹿嶋市,カシマシ,Kashima Shi,Kashima City
+"08","08223",8223,茨城県,イバラキケン,Ibaraki,潮来市,イタコシ,Itako Shi,Itako City
+"08","08224",8224,茨城県,イバラキケン,Ibaraki,守谷市,モリヤシ,Moriya Shi,Moriya City
+"08","08225",8225,茨城県,イバラキケン,Ibaraki,常陸大宮市,ヒタチオオミヤシ,Hitachiomiya Shi,Hitachiomiya City
+"08","08226",8226,茨城県,イバラキケン,Ibaraki,那珂市,ナカシ,Naka Shi,Naka City
+"08","08227",8227,茨城県,イバラキケン,Ibaraki,筑西市,チクセイシ,Chikusei Shi,Chikusei City
+"08","08228",8228,茨城県,イバラキケン,Ibaraki,坂東市,バンドウシ,Bando Shi,Bando City
+"08","08229",8229,茨城県,イバラキケン,Ibaraki,稲敷市,イナシキシ,Inashiki Shi,Inashiki City
+"08","08230",8230,茨城県,イバラキケン,Ibaraki,かすみがうら市,カスミガウラシ,Kasumigaura Shi,Kasumigaura City
+"08","08231",8231,茨城県,イバラキケン,Ibaraki,桜川市,サクラガワシ,Sakuragawa Shi,Sakuragawa City
+"08","08232",8232,茨城県,イバラキケン,Ibaraki,神栖市,カミスシ,Kamisu Shi,Kamisu City
+"08","08233",8233,茨城県,イバラキケン,Ibaraki,行方市,ナメガタシ,Namegata Shi,Namegata City
+"08","08234",8234,茨城県,イバラキケン,Ibaraki,鉾田市,ホコタシ,Hokota Shi,Hokota City
+"08","08235",8235,茨城県,イバラキケン,Ibaraki,つくばみらい市,ツクバミライシ,Tsukubamirai Shi,Tsukubamirai City
+"08","08236",8236,茨城県,イバラキケン,Ibaraki,小美玉市,オミタマシ,Omitama Shi,Omitama City
+"08","08302",8302,茨城県,イバラキケン,Ibaraki,東茨城郡茨城町,ヒガシイバラキグンイバラキマチ,Higashiibaraki Gun Ibaraki Machi,Higashiibaraki District Ibaraki Town
+"08","08309",8309,茨城県,イバラキケン,Ibaraki,東茨城郡大洗町,ヒガシイバラキグンオオアライマチ,Higashiibaraki Gun Oarai Machi,Higashiibaraki District Oarai Town
+"08","08310",8310,茨城県,イバラキケン,Ibaraki,東茨城郡城里町,ヒガシイバラキグンシロサトマチ,Higashiibaraki Gun Shirosato Machi,Higashiibaraki District Shirosato Town
+"08","08341",8341,茨城県,イバラキケン,Ibaraki,那珂郡東海村,ナカグントウカイムラ,Naka Gun Tokai Mura,Naka District Tokai Village
+"08","08364",8364,茨城県,イバラキケン,Ibaraki,久慈郡大子町,クジグンダイゴマチ,Kuji Gun Daigo Machi,Kuji District Daigo Town
+"08","08442",8442,茨城県,イバラキケン,Ibaraki,稲敷郡美浦村,イナシキグンミホムラ,Inashiki Gun Miho Mura,Inashiki District Miho Village
+"08","08443",8443,茨城県,イバラキケン,Ibaraki,稲敷郡阿見町,イナシキグンアミマチ,Inashiki Gun Ami Machi,Inashiki District Ami Town
+"08","08447",8447,茨城県,イバラキケン,Ibaraki,稲敷郡河内町,イナシキグンカワチマチ,Inashiki Gun Kawachi Machi,Inashiki District Kawachi Town
+"08","08521",8521,茨城県,イバラキケン,Ibaraki,結城郡八千代町,ユウキグンヤチヨマチ,Yuki Gun Yachiyo Machi,Yuki District Yachiyo Town
+"08","08542",8542,茨城県,イバラキケン,Ibaraki,猿島郡五霞町,サシマグンゴカマチ,Sashima Gun Goka Machi,Sashima District Goka Town
+"08","08546",8546,茨城県,イバラキケン,Ibaraki,猿島郡境町,サシマグンサカイマチ,Sashima Gun Sakai Machi,Sashima District Sakai Town
+"08","08564",8564,茨城県,イバラキケン,Ibaraki,北相馬郡利根町,キタソウマグントネマチ,Kitasoma Gun Tone Machi,Kitasoma District Tone Town
+"09","09201",9201,栃木県,トチギケン,Tochigi,宇都宮市,ウツノミヤシ,Utsunomiya Shi,Utsunomiya City
+"09","09202",9202,栃木県,トチギケン,Tochigi,足利市,アシカガシ,Ashikaga Shi,Ashikaga City
+"09","09203",9203,栃木県,トチギケン,Tochigi,栃木市,トチギシ,Tochigi Shi,Tochigi City
+"09","09204",9204,栃木県,トチギケン,Tochigi,佐野市,サノシ,Sano Shi,Sano City
+"09","09205",9205,栃木県,トチギケン,Tochigi,鹿沼市,カヌマシ,Kanuma Shi,Kanuma City
+"09","09206",9206,栃木県,トチギケン,Tochigi,日光市,ニッコウシ,Nikko Shi,Nikko City
+"09","09208",9208,栃木県,トチギケン,Tochigi,小山市,オヤマシ,Oyama Shi,Oyama City
+"09","09209",9209,栃木県,トチギケン,Tochigi,真岡市,モオカシ,Moka Shi,Moka City
+"09","09210",9210,栃木県,トチギケン,Tochigi,大田原市,オオタワラシ,Otawara Shi,Otawara City
+"09","09211",9211,栃木県,トチギケン,Tochigi,矢板市,ヤイタシ,Yaita Shi,Yaita City
+"09","09213",9213,栃木県,トチギケン,Tochigi,那須塩原市,ナスシオバラシ,Nasushiobara Shi,Nasushiobara City
+"09","09214",9214,栃木県,トチギケン,Tochigi,さくら市,サクラシ,Sakura Shi,Sakura City
+"09","09215",9215,栃木県,トチギケン,Tochigi,那須烏山市,ナスカラスヤマシ,Nasukarasuyama Shi,Nasukarasuyama City
+"09","09216",9216,栃木県,トチギケン,Tochigi,下野市,シモツケシ,Shimotsuke Shi,Shimotsuke City
+"09","09301",9301,栃木県,トチギケン,Tochigi,河内郡上三川町,カワチグンカミノカワマチ,Kawachi Gun Kaminokawa Machi,Kawachi District Kaminokawa Town
+"09","09342",9342,栃木県,トチギケン,Tochigi,芳賀郡益子町,ハガグンマシコマチ,Haga Gun Mashiko Machi,Haga District Mashiko Town
+"09","09343",9343,栃木県,トチギケン,Tochigi,芳賀郡茂木町,ハガグンモテギマチ,Haga Gun Motegi Machi,Haga District Motegi Town
+"09","09344",9344,栃木県,トチギケン,Tochigi,芳賀郡市貝町,ハガグンイチカイマチ,Haga Gun Ichikai Machi,Haga District Ichikai Town
+"09","09345",9345,栃木県,トチギケン,Tochigi,芳賀郡芳賀町,ハガグンハガマチ,Haga Gun Haga Machi,Haga District Haga Town
+"09","09361",9361,栃木県,トチギケン,Tochigi,下都賀郡壬生町,シモツガグンミブマチ,Shimotsuga Gun Mibu Machi,Shimotsuga District Mibu Town
+"09","09364",9364,栃木県,トチギケン,Tochigi,下都賀郡野木町,シモツガグンノギマチ,Shimotsuga Gun Nogi Machi,Shimotsuga District Nogi Town
+"09","09384",9384,栃木県,トチギケン,Tochigi,塩谷郡塩谷町,シオヤグンシオヤマチ,Shioya Gun Shioya Machi,Shioya District Shioya Town
+"09","09386",9386,栃木県,トチギケン,Tochigi,塩谷郡高根沢町,シオヤグンタカネザワマチ,Shioya Gun Takanezawa Machi,Shioya District Takanezawa Town
+"09","09407",9407,栃木県,トチギケン,Tochigi,那須郡那須町,ナスグンナスマチ,Nasu Gun Nasu Machi,Nasu District Nasu Town
+"09","09411",9411,栃木県,トチギケン,Tochigi,那須郡那珂川町,ナスグンナカガワマチ,Nasu Gun Nakagawa Machi,Nasu District Nakagawa Town
+"10","10201",10201,群馬県,グンマケン,Gumma,前橋市,マエバシシ,Maebashi Shi,Maebashi City
+"10","10202",10202,群馬県,グンマケン,Gumma,高崎市,タカサキシ,Takasaki Shi,Takasaki City
+"10","10203",10203,群馬県,グンマケン,Gumma,桐生市,キリュウシ,Kiryu Shi,Kiryu City
+"10","10204",10204,群馬県,グンマケン,Gumma,伊勢崎市,イセサキシ,Isesaki Shi,Isesaki City
+"10","10205",10205,群馬県,グンマケン,Gumma,太田市,オオタシ,Ota Shi,Ota City
+"10","10206",10206,群馬県,グンマケン,Gumma,沼田市,ヌマタシ,Numata Shi,Numata City
+"10","10207",10207,群馬県,グンマケン,Gumma,館林市,タテバヤシシ,Tatebayashi Shi,Tatebayashi City
+"10","10208",10208,群馬県,グンマケン,Gumma,渋川市,シブカワシ,Shibukawa Shi,Shibukawa City
+"10","10209",10209,群馬県,グンマケン,Gumma,藤岡市,フジオカシ,Fujioka Shi,Fujioka City
+"10","10210",10210,群馬県,グンマケン,Gumma,富岡市,トミオカシ,Tomioka Shi,Tomioka City
+"10","10211",10211,群馬県,グンマケン,Gumma,安中市,アンナカシ,Annaka Shi,Annaka City
+"10","10212",10212,群馬県,グンマケン,Gumma,みどり市,ミドリシ,Midori Shi,Midori City
+"10","10344",10344,群馬県,グンマケン,Gumma,北群馬郡榛東村,キタグンマグンシントウムラ,Kitagumma Gun Shinto Mura,Kitagumma District Shinto Village
+"10","10345",10345,群馬県,グンマケン,Gumma,北群馬郡吉岡町,キタグンマグンヨシオカマチ,Kitagumma Gun Yoshioka Machi,Kitagumma District Yoshioka Town
+"10","10366",10366,群馬県,グンマケン,Gumma,多野郡上野村,タノグンウエノムラ,Tano Gun Ueno Mura,Tano District Ueno Village
+"10","10367",10367,群馬県,グンマケン,Gumma,多野郡神流町,タノグンカンナマチ,Tano Gun Kanna Machi,Tano District Kanna Town
+"10","10382",10382,群馬県,グンマケン,Gumma,甘楽郡下仁田町,カンラグンシモニタマチ,Kanra Gun Shimonita Machi,Kanra District Shimonita Town
+"10","10383",10383,群馬県,グンマケン,Gumma,甘楽郡南牧村,カンラグンナンモクムラ,Kanra Gun Nammoku Mura,Kanra District Nammoku Village
+"10","10384",10384,群馬県,グンマケン,Gumma,甘楽郡甘楽町,カンラグンカンラマチ,Kanra Gun Kanra Machi,Kanra District Kanra Town
+"10","10421",10421,群馬県,グンマケン,Gumma,吾妻郡中之条町,アガツマグンナカノジョウマチ,Agatsuma Gun Nakanojo Machi,Agatsuma District Nakanojo Town
+"10","10424",10424,群馬県,グンマケン,Gumma,吾妻郡長野原町,アガツマグンナガノハラマチ,Agatsuma Gun Naganohara Machi,Agatsuma District Naganohara Town
+"10","10425",10425,群馬県,グンマケン,Gumma,吾妻郡嬬恋村,アガツマグンツマゴイムラ,Agatsuma Gun Tsumagoi Mura,Agatsuma District Tsumagoi Village
+"10","10426",10426,群馬県,グンマケン,Gumma,吾妻郡草津町,アガツマグンクサツマチ,Agatsuma Gun Kusatsu Machi,Agatsuma District Kusatsu Town
+"10","10428",10428,群馬県,グンマケン,Gumma,吾妻郡高山村,アガツマグンタカヤマムラ,Agatsuma Gun Takayama Mura,Agatsuma District Takayama Village
+"10","10429",10429,群馬県,グンマケン,Gumma,吾妻郡東吾妻町,アガツマグンヒガシアガツママチ,Agatsuma Gun Higashiagatsuma Machi,Agatsuma District Higashiagatsuma Town
+"10","10443",10443,群馬県,グンマケン,Gumma,利根郡片品村,トネグンカタシナムラ,Tone Gun Katashina Mura,Tone District Katashina Village
+"10","10444",10444,群馬県,グンマケン,Gumma,利根郡川場村,トネグンカワバムラ,Tone Gun Kawaba Mura,Tone District Kawaba Village
+"10","10448",10448,群馬県,グンマケン,Gumma,利根郡昭和村,トネグンショウワムラ,Tone Gun Showa Mura,Tone District Showa Village
+"10","10449",10449,群馬県,グンマケン,Gumma,利根郡みなかみ町,トネグンミナカミマチ,Tone Gun Minakami Machi,Tone District Minakami Town
+"10","10464",10464,群馬県,グンマケン,Gumma,佐波郡玉村町,サワグンタマムラマチ,Sawa Gun Tamamura Machi,Sawa District Tamamura Town
+"10","10521",10521,群馬県,グンマケン,Gumma,邑楽郡板倉町,オウラグンイタクラマチ,Ora Gun Itakura Machi,Ora District Itakura Town
+"10","10522",10522,群馬県,グンマケン,Gumma,邑楽郡明和町,オウラグンメイワマチ,Ora Gun Meiwa Machi,Ora District Meiwa Town
+"10","10523",10523,群馬県,グンマケン,Gumma,邑楽郡千代田町,オウラグンチヨダマチ,Ora Gun Chiyoda Machi,Ora District Chiyoda Town
+"10","10524",10524,群馬県,グンマケン,Gumma,邑楽郡大泉町,オウラグンオオイズミマチ,Ora Gun Oizumi Machi,Ora District Oizumi Town
+"10","10525",10525,群馬県,グンマケン,Gumma,邑楽郡邑楽町,オウラグンオウラマチ,Ora Gun Ora Machi,Ora District Ora Town
+"11","11101",11101,埼玉県,サイタマケン,Saitama,さいたま市西区,サイタマシニシク,Saitama Shi Nishi Ku,"Nishi Ward,Saitama City"
+"11","11102",11102,埼玉県,サイタマケン,Saitama,さいたま市北区,サイタマシキタク,Saitama Shi Kita Ku,"Kita Ward,Saitama City"
+"11","11103",11103,埼玉県,サイタマケン,Saitama,さいたま市大宮区,サイタマシオオミヤク,Saitama Shi Omiya Ku,"Omiya Ward,Saitama City"
+"11","11104",11104,埼玉県,サイタマケン,Saitama,さいたま市見沼区,サイタマシミヌマク,Saitama Shi Minuma Ku,"Minuma Ward,Saitama City"
+"11","11105",11105,埼玉県,サイタマケン,Saitama,さいたま市中央区,サイタマシチュウオウク,Saitama Shi Chuo Ku,"Chuo Ward,Saitama City"
+"11","11106",11106,埼玉県,サイタマケン,Saitama,さいたま市桜区,サイタマシサクラク,Saitama Shi Sakura Ku,"Sakura Ward,Saitama City"
+"11","11107",11107,埼玉県,サイタマケン,Saitama,さいたま市浦和区,サイタマシウラワク,Saitama Shi Urawa Ku,"Urawa Ward,Saitama City"
+"11","11108",11108,埼玉県,サイタマケン,Saitama,さいたま市南区,サイタマシミナミク,Saitama Shi Minami Ku,"Minami Ward,Saitama City"
+"11","11109",11109,埼玉県,サイタマケン,Saitama,さいたま市緑区,サイタマシミドリク,Saitama Shi Midori Ku,"Midori Ward,Saitama City"
+"11","11110",11110,埼玉県,サイタマケン,Saitama,さいたま市岩槻区,サイタマシイワツキク,Saitama Shi Iwatsuki Ku,"Iwatsuki Ward,Saitama City"
+"11","11201",11201,埼玉県,サイタマケン,Saitama,川越市,カワゴエシ,Kawagoe Shi,Kawagoe City
+"11","11202",11202,埼玉県,サイタマケン,Saitama,熊谷市,クマガヤシ,Kumagaya Shi,Kumagaya City
+"11","11203",11203,埼玉県,サイタマケン,Saitama,川口市,カワグチシ,Kawaguchi Shi,Kawaguchi City
+"11","11206",11206,埼玉県,サイタマケン,Saitama,行田市,ギョウダシ,Gyoda Shi,Gyoda City
+"11","11207",11207,埼玉県,サイタマケン,Saitama,秩父市,チチブシ,Chichibu Shi,Chichibu City
+"11","11208",11208,埼玉県,サイタマケン,Saitama,所沢市,トコロザワシ,Tokorozawa Shi,Tokorozawa City
+"11","11209",11209,埼玉県,サイタマケン,Saitama,飯能市,ハンノウシ,Hanno Shi,Hanno City
+"11","11210",11210,埼玉県,サイタマケン,Saitama,加須市,カゾシ,Kazo Shi,Kazo City
+"11","11211",11211,埼玉県,サイタマケン,Saitama,本庄市,ホンジョウシ,Honjo Shi,Honjo City
+"11","11212",11212,埼玉県,サイタマケン,Saitama,東松山市,ヒガシマツヤマシ,Higashimatsuyama Shi,Higashimatsuyama City
+"11","11214",11214,埼玉県,サイタマケン,Saitama,春日部市,カスカベシ,Kasukabe Shi,Kasukabe City
+"11","11215",11215,埼玉県,サイタマケン,Saitama,狭山市,サヤマシ,Sayama Shi,Sayama City
+"11","11216",11216,埼玉県,サイタマケン,Saitama,羽生市,ハニュウシ,Hanyu Shi,Hanyu City
+"11","11217",11217,埼玉県,サイタマケン,Saitama,鴻巣市,コウノスシ,Konosu Shi,Konosu City
+"11","11218",11218,埼玉県,サイタマケン,Saitama,深谷市,フカヤシ,Fukaya Shi,Fukaya City
+"11","11219",11219,埼玉県,サイタマケン,Saitama,上尾市,アゲオシ,Ageo Shi,Ageo City
+"11","11221",11221,埼玉県,サイタマケン,Saitama,草加市,ソウカシ,Soka Shi,Soka City
+"11","11222",11222,埼玉県,サイタマケン,Saitama,越谷市,コシガヤシ,Koshigaya Shi,Koshigaya City
+"11","11223",11223,埼玉県,サイタマケン,Saitama,蕨市,ワラビシ,Warabi Shi,Warabi City
+"11","11224",11224,埼玉県,サイタマケン,Saitama,戸田市,トダシ,Toda Shi,Toda City
+"11","11225",11225,埼玉県,サイタマケン,Saitama,入間市,イルマシ,Iruma Shi,Iruma City
+"11","11227",11227,埼玉県,サイタマケン,Saitama,朝霞市,アサカシ,Asaka Shi,Asaka City
+"11","11228",11228,埼玉県,サイタマケン,Saitama,志木市,シキシ,Shiki Shi,Shiki City
+"11","11229",11229,埼玉県,サイタマケン,Saitama,和光市,ワコウシ,Wako Shi,Wako City
+"11","11230",11230,埼玉県,サイタマケン,Saitama,新座市,ニイザシ,Niiza Shi,Niiza City
+"11","11231",11231,埼玉県,サイタマケン,Saitama,桶川市,オケガワシ,Okegawa Shi,Okegawa City
+"11","11232",11232,埼玉県,サイタマケン,Saitama,久喜市,クキシ,Kuki Shi,Kuki City
+"11","11233",11233,埼玉県,サイタマケン,Saitama,北本市,キタモトシ,Kitamoto Shi,Kitamoto City
+"11","11234",11234,埼玉県,サイタマケン,Saitama,八潮市,ヤシオシ,Yashio Shi,Yashio City
+"11","11235",11235,埼玉県,サイタマケン,Saitama,富士見市,フジミシ,Fujimi Shi,Fujimi City
+"11","11237",11237,埼玉県,サイタマケン,Saitama,三郷市,ミサトシ,Misato Shi,Misato City
+"11","11238",11238,埼玉県,サイタマケン,Saitama,蓮田市,ハスダシ,Hasuda Shi,Hasuda City
+"11","11239",11239,埼玉県,サイタマケン,Saitama,坂戸市,サカドシ,Sakado Shi,Sakado City
+"11","11240",11240,埼玉県,サイタマケン,Saitama,幸手市,サッテシ,Satte Shi,Satte City
+"11","11241",11241,埼玉県,サイタマケン,Saitama,鶴ヶ島市,ツルガシマシ,Tsurugashima Shi,Tsurugashima City
+"11","11242",11242,埼玉県,サイタマケン,Saitama,日高市,ヒダカシ,Hidaka Shi,Hidaka City
+"11","11243",11243,埼玉県,サイタマケン,Saitama,吉川市,ヨシカワシ,Yoshikawa Shi,Yoshikawa City
+"11","11245",11245,埼玉県,サイタマケン,Saitama,ふじみ野市,フジミノシ,Fujimino Shi,Fujimino City
+"11","11246",11246,埼玉県,サイタマケン,Saitama,白岡市,シラオカシ,Shiraoka Shi,Shiraoka City
+"11","11301",11301,埼玉県,サイタマケン,Saitama,北足立郡伊奈町,キタアダチグンイナマチ,Kitaadachi Gun Ina Machi,Kitaadachi District Ina Town
+"11","11324",11324,埼玉県,サイタマケン,Saitama,入間郡三芳町,イルマグンミヨシマチ,Iruma Gun Miyoshi Machi,Iruma District Miyoshi Town
+"11","11326",11326,埼玉県,サイタマケン,Saitama,入間郡毛呂山町,イルマグンモロヤママチ,Iruma Gun Moroyama Machi,Iruma District Moroyama Town
+"11","11327",11327,埼玉県,サイタマケン,Saitama,入間郡越生町,イルマグンオゴセマチ,Iruma Gun Ogose Machi,Iruma District Ogose Town
+"11","11341",11341,埼玉県,サイタマケン,Saitama,比企郡滑川町,ヒキグンナメガワマチ,Hiki Gun Namegawa Machi,Hiki District Namegawa Town
+"11","11342",11342,埼玉県,サイタマケン,Saitama,比企郡嵐山町,ヒキグンランザンマチ,Hiki Gun Ranzan Machi,Hiki District Ranzan Town
+"11","11343",11343,埼玉県,サイタマケン,Saitama,比企郡小川町,ヒキグンオガワマチ,Hiki Gun Ogawa Machi,Hiki District Ogawa Town
+"11","11346",11346,埼玉県,サイタマケン,Saitama,比企郡川島町,ヒキグンカワジママチ,Hiki Gun Kawajima Machi,Hiki District Kawajima Town
+"11","11347",11347,埼玉県,サイタマケン,Saitama,比企郡吉見町,ヒキグンヨシミマチ,Hiki Gun Yoshimi Machi,Hiki District Yoshimi Town
+"11","11348",11348,埼玉県,サイタマケン,Saitama,比企郡鳩山町,ヒキグンハトヤママチ,Hiki Gun Hatoyama Machi,Hiki District Hatoyama Town
+"11","11349",11349,埼玉県,サイタマケン,Saitama,比企郡ときがわ町,ヒキグントキガワマチ,Hiki Gun Tokigawa Machi,Hiki District Tokigawa Town
+"11","11361",11361,埼玉県,サイタマケン,Saitama,秩父郡横瀬町,チチブグンヨコゼマチ,Chichibu Gun Yokoze Machi,Chichibu District Yokoze Town
+"11","11362",11362,埼玉県,サイタマケン,Saitama,秩父郡皆野町,チチブグンミナノマチ,Chichibu Gun Minano Machi,Chichibu District Minano Town
+"11","11363",11363,埼玉県,サイタマケン,Saitama,秩父郡長瀞町,チチブグンナガトロマチ,Chichibu Gun Nagatoro Machi,Chichibu District Nagatoro Town
+"11","11365",11365,埼玉県,サイタマケン,Saitama,秩父郡小鹿野町,チチブグンオガノマチ,Chichibu Gun Ogano Machi,Chichibu District Ogano Town
+"11","11369",11369,埼玉県,サイタマケン,Saitama,秩父郡東秩父村,チチブグンヒガシチチブムラ,Chichibu Gun Higashichichibu Mura,Chichibu District Higashichichibu Village
+"11","11381",11381,埼玉県,サイタマケン,Saitama,児玉郡美里町,コダマグンミサトマチ,Kodama Gun Misato Machi,Kodama District Misato Town
+"11","11383",11383,埼玉県,サイタマケン,Saitama,児玉郡神川町,コダマグンカミカワマチ,Kodama Gun Kamikawa Machi,Kodama District Kamikawa Town
+"11","11385",11385,埼玉県,サイタマケン,Saitama,児玉郡上里町,コダマグンカミサトマチ,Kodama Gun Kamisato Machi,Kodama District Kamisato Town
+"11","11408",11408,埼玉県,サイタマケン,Saitama,大里郡寄居町,オオサトグンヨリイマチ,Osato Gun Yorii Machi,Osato District Yorii Town
+"11","11442",11442,埼玉県,サイタマケン,Saitama,南埼玉郡宮代町,ミナミサイタマグンミヤシロマチ,Minamisaitama Gun Miyashiro Machi,Minamisaitama District Miyashiro Town
+"11","11464",11464,埼玉県,サイタマケン,Saitama,北葛飾郡杉戸町,キタカツシカグンスギトマチ,Kitakatsushika Gun Sugito Machi,Kitakatsushika District Sugito Town
+"11","11465",11465,埼玉県,サイタマケン,Saitama,北葛飾郡松伏町,キタカツシカグンマツブシマチ,Kitakatsushika Gun Matsubushi Machi,Kitakatsushika District Matsubushi Town
+"12","12101",12101,千葉県,チバケン,Chiba,千葉市中央区,チバシチュウオウク,Chiba Shi Chuo Ku,"Chuo Ward,Chiba City"
+"12","12102",12102,千葉県,チバケン,Chiba,千葉市花見川区,チバシハナミガワク,Chiba Shi Hanamigawa Ku,"Hanamigawa Ward,Chiba City"
+"12","12103",12103,千葉県,チバケン,Chiba,千葉市稲毛区,チバシイナゲク,Chiba Shi Inage Ku,"Inage Ward,Chiba City"
+"12","12104",12104,千葉県,チバケン,Chiba,千葉市若葉区,チバシワカバク,Chiba Shi Wakaba Ku,"Wakaba Ward,Chiba City"
+"12","12105",12105,千葉県,チバケン,Chiba,千葉市緑区,チバシミドリク,Chiba Shi Midori Ku,"Midori Ward,Chiba City"
+"12","12106",12106,千葉県,チバケン,Chiba,千葉市美浜区,チバシミハマク,Chiba Shi Mihama Ku,"Mihama Ward,Chiba City"
+"12","12202",12202,千葉県,チバケン,Chiba,銚子市,チョウシシ,Choshi Shi,Choshi City
+"12","12203",12203,千葉県,チバケン,Chiba,市川市,イチカワシ,Ichikawa Shi,Ichikawa City
+"12","12204",12204,千葉県,チバケン,Chiba,船橋市,フナバシシ,Funabashi Shi,Funabashi City
+"12","12205",12205,千葉県,チバケン,Chiba,館山市,タテヤマシ,Tateyama Shi,Tateyama City
+"12","12206",12206,千葉県,チバケン,Chiba,木更津市,キサラヅシ,Kisarazu Shi,Kisarazu City
+"12","12207",12207,千葉県,チバケン,Chiba,松戸市,マツドシ,Matsudo Shi,Matsudo City
+"12","12208",12208,千葉県,チバケン,Chiba,野田市,ノダシ,Noda Shi,Noda City
+"12","12210",12210,千葉県,チバケン,Chiba,茂原市,モバラシ,Mobara Shi,Mobara City
+"12","12211",12211,千葉県,チバケン,Chiba,成田市,ナリタシ,Narita Shi,Narita City
+"12","12212",12212,千葉県,チバケン,Chiba,佐倉市,サクラシ,Sakura Shi,Sakura City
+"12","12213",12213,千葉県,チバケン,Chiba,東金市,トウガネシ,Togane Shi,Togane City
+"12","12215",12215,千葉県,チバケン,Chiba,旭市,アサヒシ,Asahi Shi,Asahi City
+"12","12216",12216,千葉県,チバケン,Chiba,習志野市,ナラシノシ,Narashino Shi,Narashino City
+"12","12217",12217,千葉県,チバケン,Chiba,柏市,カシワシ,Kashiwa Shi,Kashiwa City
+"12","12218",12218,千葉県,チバケン,Chiba,勝浦市,カツウラシ,Katsura Shi,Katsura City
+"12","12219",12219,千葉県,チバケン,Chiba,市原市,イチハラシ,Ichihara Shi,Ichihara City
+"12","12220",12220,千葉県,チバケン,Chiba,流山市,ナガレヤマシ,Nagareyama Shi,Nagareyama City
+"12","12221",12221,千葉県,チバケン,Chiba,八千代市,ヤチヨシ,Yachiyo Shi,Yachiyo City
+"12","12222",12222,千葉県,チバケン,Chiba,我孫子市,アビコシ,Abiko Shi,Abiko City
+"12","12223",12223,千葉県,チバケン,Chiba,鴨川市,カモガワシ,Kamogawa Shi,Kamogawa City
+"12","12224",12224,千葉県,チバケン,Chiba,鎌ヶ谷市,カマガヤシ,Kamagaya Shi,Kamagaya City
+"12","12225",12225,千葉県,チバケン,Chiba,君津市,キミツシ,Kimitsu Shi,Kimitsu City
+"12","12226",12226,千葉県,チバケン,Chiba,富津市,フッツシ,Futtsu Shi,Futtsu City
+"12","12227",12227,千葉県,チバケン,Chiba,浦安市,ウラヤスシ,Urayasu Shi,Urayasu City
+"12","12228",12228,千葉県,チバケン,Chiba,四街道市,ヨツカイドウシ,Yotsukaido Shi,Yotsukaido City
+"12","12229",12229,千葉県,チバケン,Chiba,袖ヶ浦市,ソデガウラシ,Sodegaura Shi,Sodegaura City
+"12","12230",12230,千葉県,チバケン,Chiba,八街市,ヤチマタシ,Yachimata Shi,Yachimata City
+"12","12231",12231,千葉県,チバケン,Chiba,印西市,インザイシ,Inzai Shi,Inzai City
+"12","12232",12232,千葉県,チバケン,Chiba,白井市,シロイシ,Shiroi Shi,Shiroi City
+"12","12233",12233,千葉県,チバケン,Chiba,富里市,トミサトシ,Tomisato Shi,Tomisato City
+"12","12234",12234,千葉県,チバケン,Chiba,南房総市,ミナミボウソウシ,Minamiboso Shi,Minamiboso City
+"12","12235",12235,千葉県,チバケン,Chiba,匝瑳市,ソウサシ,Sosa Shi,Sosa City
+"12","12236",12236,千葉県,チバケン,Chiba,香取市,カトリシ,Katori Shi,Katori City
+"12","12237",12237,千葉県,チバケン,Chiba,山武市,サンムシ,Sammu Shi,Sammu City
+"12","12238",12238,千葉県,チバケン,Chiba,いすみ市,イスミシ,Isumi Shi,Isumi City
+"12","12239",12239,千葉県,チバケン,Chiba,大網白里市,オオアミシラサトシ,Oamishirasato Shi,Oamishirasato City
+"12","12322",12322,千葉県,チバケン,Chiba,印旛郡酒々井町,インバグンシスイマチ,Imba Gun Shisui Machi,Imba District Shisui Town
+"12","12329",12329,千葉県,チバケン,Chiba,印旛郡栄町,インバグンサカエマチ,Imba Gun Sakae Machi,Imba District Sakae Town
+"12","12342",12342,千葉県,チバケン,Chiba,香取郡神崎町,カトリグンコウザキマチ,Katori Gun Kozaki Machi,Katori District Kozaki Town
+"12","12347",12347,千葉県,チバケン,Chiba,香取郡多古町,カトリグンタコマチ,Katori Gun Tako Machi,Katori District Tako Town
+"12","12349",12349,千葉県,チバケン,Chiba,香取郡東庄町,カトリグントウノショウマチ,Katori Gun Tonosho Machi,Katori District Tonosho Town
+"12","12403",12403,千葉県,チバケン,Chiba,山武郡九十九里町,サンブグンクジュウクリマチ,Sambu Gun Kujukuri Machi,Sambu District Kujukuri Town
+"12","12409",12409,千葉県,チバケン,Chiba,山武郡芝山町,サンブグンシバヤママチ,Sambu Gun Shibayama Machi,Sambu District Shibayama Town
+"12","12410",12410,千葉県,チバケン,Chiba,山武郡横芝光町,サンブグンヨコシバヒカリマチ,Sambu Gun Yokoshibahikari Machi,Sambu District Yokoshibahikari Town
+"12","12421",12421,千葉県,チバケン,Chiba,長生郡一宮町,チョウセイグンイチノミヤマチ,Chosei Gun Ichinomiya Machi,Chosei District Ichinomiya Town
+"12","12422",12422,千葉県,チバケン,Chiba,長生郡睦沢町,チョウセイグンムツザワマチ,Chosei Gun Mutsuzawa Machi,Chosei District Mutsuzawa Town
+"12","12423",12423,千葉県,チバケン,Chiba,長生郡長生村,チョウセイグンチョウセイムラ,Chosei Gun Chosei Mura,Chosei District Chosei Village
+"12","12424",12424,千葉県,チバケン,Chiba,長生郡白子町,チョウセイグンシラコマチ,Chosei Gun Shirako Machi,Chosei District Shirako Town
+"12","12426",12426,千葉県,チバケン,Chiba,長生郡長柄町,チョウセイグンナガラマチ,Chosei Gun Nagara Machi,Chosei District Nagara Town
+"12","12427",12427,千葉県,チバケン,Chiba,長生郡長南町,チョウセイグンチョウナンマチ,Chosei Gun Chonan Machi,Chosei District Chonan Town
+"12","12441",12441,千葉県,チバケン,Chiba,夷隅郡大多喜町,イスミグンオオタキマチ,Isumi Gun Otaki Machi,Isumi District Otaki Town
+"12","12443",12443,千葉県,チバケン,Chiba,夷隅郡御宿町,イスミグンオンジュクマチ,Isumi Gun Onjuku Machi,Isumi District Onjuku Town
+"12","12463",12463,千葉県,チバケン,Chiba,安房郡鋸南町,アワグンキョナンマチ,Awa Gun Kyonan Machi,Awa District Kyonan Town
+"13","13101",13101,東京都,トウキョウト,Tokyo,千代田区,チヨダク,Chiyoda Ku,Chiyoda Ward
+"13","13102",13102,東京都,トウキョウト,Tokyo,中央区,チュウオウク,Chuo Ku,Chuo Ward
+"13","13103",13103,東京都,トウキョウト,Tokyo,港区,ミナトク,Minato Ku,Minato Ward
+"13","13104",13104,東京都,トウキョウト,Tokyo,新宿区,シンジュクク,Shinjuku Ku,Shinjuku Ward
+"13","13105",13105,東京都,トウキョウト,Tokyo,文京区,ブンキョウク,Bunkyo Ku,Bunkyo Ward
+"13","13106",13106,東京都,トウキョウト,Tokyo,台東区,タイトウク,Taito Ku,Taito Ward
+"13","13107",13107,東京都,トウキョウト,Tokyo,墨田区,スミダク,Sumida Ku,Sumida Ward
+"13","13108",13108,東京都,トウキョウト,Tokyo,江東区,コウトウク,Koto Ku,Koto Ward
+"13","13109",13109,東京都,トウキョウト,Tokyo,品川区,シナガワク,Shinagawa Ku,Shinagawa Ward
+"13","13110",13110,東京都,トウキョウト,Tokyo,目黒区,メグロク,Meguro Ku,Meguro Ward
+"13","13111",13111,東京都,トウキョウト,Tokyo,大田区,オオタク,Ota Ku,Ota Ward
+"13","13112",13112,東京都,トウキョウト,Tokyo,世田谷区,セタガヤク,Setagaya Ku,Setagaya Ward
+"13","13113",13113,東京都,トウキョウト,Tokyo,渋谷区,シブヤク,Shibuya Ku,Shibuya Ward
+"13","13114",13114,東京都,トウキョウト,Tokyo,中野区,ナカノク,Nakano Ku,Nakano Ward
+"13","13115",13115,東京都,トウキョウト,Tokyo,杉並区,スギナミク,Suginami Ku,Suginami Ward
+"13","13116",13116,東京都,トウキョウト,Tokyo,豊島区,トシマク,Toshima Ku,Toshima Ward
+"13","13117",13117,東京都,トウキョウト,Tokyo,北区,キタク,Kita Ku,Kita Ward
+"13","13118",13118,東京都,トウキョウト,Tokyo,荒川区,アラカワク,Arakawa Ku,Arakawa Ward
+"13","13119",13119,東京都,トウキョウト,Tokyo,板橋区,イタバシク,Itabashi Ku,Itabashi Ward
+"13","13120",13120,東京都,トウキョウト,Tokyo,練馬区,ネリマク,Nerima Ku,Nerima Ward
+"13","13121",13121,東京都,トウキョウト,Tokyo,足立区,アダチク,Adachi Ku,Adachi Ward
+"13","13122",13122,東京都,トウキョウト,Tokyo,葛飾区,カツシカク,Katsushika Ku,Katsushika Ward
+"13","13123",13123,東京都,トウキョウト,Tokyo,江戸川区,エドガワク,Edogawa Ku,Edogawa Ward
+"13","13201",13201,東京都,トウキョウト,Tokyo,八王子市,ハチオウジシ,Hachioji Shi,Hachioji City
+"13","13202",13202,東京都,トウキョウト,Tokyo,立川市,タチカワシ,Tachikawa Shi,Tachikawa City
+"13","13203",13203,東京都,トウキョウト,Tokyo,武蔵野市,ムサシノシ,Musashino Shi,Musashino City
+"13","13204",13204,東京都,トウキョウト,Tokyo,三鷹市,ミタカシ,Mitaka Shi,Mitaka City
+"13","13205",13205,東京都,トウキョウト,Tokyo,青梅市,オウメシ,Ome Shi,Ome City
+"13","13206",13206,東京都,トウキョウト,Tokyo,府中市,フチュウシ,Fuchu Shi,Fuchu City
+"13","13207",13207,東京都,トウキョウト,Tokyo,昭島市,アキシマシ,Akishima Shi,Akishima City
+"13","13208",13208,東京都,トウキョウト,Tokyo,調布市,チョウフシ,Chofu Shi,Chofu City
+"13","13209",13209,東京都,トウキョウト,Tokyo,町田市,マチダシ,Machida Shi,Machida City
+"13","13210",13210,東京都,トウキョウト,Tokyo,小金井市,コガネイシ,Koganei Shi,Koganei City
+"13","13211",13211,東京都,トウキョウト,Tokyo,小平市,コダイラシ,Kodaira Shi,Kodaira City
+"13","13212",13212,東京都,トウキョウト,Tokyo,日野市,ヒノシ,Hino Shi,Hino City
+"13","13213",13213,東京都,トウキョウト,Tokyo,東村山市,ヒガシムラヤマシ,Higashimurayama Shi,Higashimurayama City
+"13","13214",13214,東京都,トウキョウト,Tokyo,国分寺市,コクブンジシ,Kokubunji Shi,Kokubunji City
+"13","13215",13215,東京都,トウキョウト,Tokyo,国立市,クニタチシ,Kunitachi Shi,Kunitachi City
+"13","13218",13218,東京都,トウキョウト,Tokyo,福生市,フッサシ,Fussa Shi,Fussa City
+"13","13219",13219,東京都,トウキョウト,Tokyo,狛江市,コマエシ,Komae Shi,Komae City
+"13","13220",13220,東京都,トウキョウト,Tokyo,東大和市,ヒガシヤマトシ,Higashiyamato Shi,Higashiyamato City
+"13","13221",13221,東京都,トウキョウト,Tokyo,清瀬市,キヨセシ,Kiyose Shi,Kiyose City
+"13","13222",13222,東京都,トウキョウト,Tokyo,東久留米市,ヒガシクルメシ,Higashikurume Shi,Higashikurume City
+"13","13223",13223,東京都,トウキョウト,Tokyo,武蔵村山市,ムサシムラヤマシ,Musashimurayama Shi,Musashimurayama City
+"13","13224",13224,東京都,トウキョウト,Tokyo,多摩市,タマシ,Tama Shi,Tama City
+"13","13225",13225,東京都,トウキョウト,Tokyo,稲城市,イナギシ,Inagi Shi,Inagi City
+"13","13227",13227,東京都,トウキョウト,Tokyo,羽村市,ハムラシ,Hamura Shi,Hamura City
+"13","13228",13228,東京都,トウキョウト,Tokyo,あきる野市,アキルノシ,Akiruno Shi,Akiruno City
+"13","13229",13229,東京都,トウキョウト,Tokyo,西東京市,ニシトウキョウシ,Nishitokyo Shi,Nishitokyo City
+"13","13303",13303,東京都,トウキョウト,Tokyo,西多摩郡瑞穂町,ニシタマグンミズホマチ,Nishitama Gun Mizuho Machi,Nishitama District Mizuho Town
+"13","13305",13305,東京都,トウキョウト,Tokyo,西多摩郡日の出町,ニシタマグンヒノデマチ,Nishitama Gun Hinode Machi,Nishitama District Hinode Town
+"13","13307",13307,東京都,トウキョウト,Tokyo,西多摩郡檜原村,ニシタマグンヒノハラムラ,Nishitama Gun Hinohara Mura,Nishitama District Hinohara Village
+"13","13308",13308,東京都,トウキョウト,Tokyo,西多摩郡奥多摩町,ニシタマグンオクタママチ,Nishitama Gun Okutama Machi,Nishitama District Okutama Town
+"13","13361",13361,東京都,トウキョウト,Tokyo,大島町,オオシママチ,Oshima Machi,Oshima Town
+"13","13363",13363,東京都,トウキョウト,Tokyo,新島村,ニイジマムラ,Niijima Mura,Niijima Village
+"13","13364",13364,東京都,トウキョウト,Tokyo,神津島村,コウヅシマムラ,Kozushima Mura,Kozushima Village
+"13","13381",13381,東京都,トウキョウト,Tokyo,三宅村,ミヤケムラ,Miyake Mura,Miyake Village
+"13","13382",13382,東京都,トウキョウト,Tokyo,御蔵島村,ミクラジマムラ,Mikurajima Mura,Mikurajima Village
+"13","13401",13401,東京都,トウキョウト,Tokyo,八丈町,ハチジョウマチ,Hachijo Machi,Hachijo Town
+"13","13402",13402,東京都,トウキョウト,Tokyo,青ヶ島村,アオガシマムラ,Aogashima Mura,Aogashima Village
+"13","13421",13421,東京都,トウキョウト,Tokyo,小笠原村,オガサワラムラ,Ogasawara Mura,Ogasawara Village
+"14","14101",14101,神奈川県,カナガワケン,Kanagawa,横浜市鶴見区,ヨコハマシツルミク,Yokohama Shi Tsurumi Ku,"Tsurumi Ward,Yokohama City"
+"14","14102",14102,神奈川県,カナガワケン,Kanagawa,横浜市神奈川区,ヨコハマシカナガワク,Yokohama Shi Kanagawa Ku,"Kanagawa Ward,Yokohama City"
+"14","14103",14103,神奈川県,カナガワケン,Kanagawa,横浜市西区,ヨコハマシニシク,Yokohama Shi Nishi Ku,"Nishi Ward,Yokohama City"
+"14","14104",14104,神奈川県,カナガワケン,Kanagawa,横浜市中区,ヨコハマシナカク,Yokohama Shi Naka Ku,"Naka Ward,Yokohama City"
+"14","14105",14105,神奈川県,カナガワケン,Kanagawa,横浜市南区,ヨコハマシミナミク,Yokohama Shi Minami Ku,"Minami Ward,Yokohama City"
+"14","14106",14106,神奈川県,カナガワケン,Kanagawa,横浜市保土ケ谷区,ヨコハマシホドガヤク,Yokohama Shi Hodogaya Ku,"Hodogaya Ward,Yokohama City"
+"14","14107",14107,神奈川県,カナガワケン,Kanagawa,横浜市磯子区,ヨコハマシイソゴク,Yokohama Shi Isogo Ku,"Isogo Ward,Yokohama City"
+"14","14108",14108,神奈川県,カナガワケン,Kanagawa,横浜市金沢区,ヨコハマシカナザワク,Yokohama Shi Kanazawa Ku,"Kanazawa Ward,Yokohama City"
+"14","14109",14109,神奈川県,カナガワケン,Kanagawa,横浜市港北区,ヨコハマシコウホクク,Yokohama Shi Kohoku Ku,"Kohoku Ward,Yokohama City"
+"14","14110",14110,神奈川県,カナガワケン,Kanagawa,横浜市戸塚区,ヨコハマシトツカク,Yokohama Shi Totsuka Ku,"Totsuka Ward,Yokohama City"
+"14","14111",14111,神奈川県,カナガワケン,Kanagawa,横浜市港南区,ヨコハマシコウナンク,Yokohama Shi Konan Ku,"Konan Ward,Yokohama City"
+"14","14112",14112,神奈川県,カナガワケン,Kanagawa,横浜市旭区,ヨコハマシアサヒク,Yokohama Shi Asahi Ku,"Asahi Ward,Yokohama City"
+"14","14113",14113,神奈川県,カナガワケン,Kanagawa,横浜市緑区,ヨコハマシミドリク,Yokohama Shi Midori Ku,"Midori Ward,Yokohama City"
+"14","14114",14114,神奈川県,カナガワケン,Kanagawa,横浜市瀬谷区,ヨコハマシセヤク,Yokohama Shi Seya Ku,"Seya Ward,Yokohama City"
+"14","14115",14115,神奈川県,カナガワケン,Kanagawa,横浜市栄区,ヨコハマシサカエク,Yokohama Shi Sakae Ku,"Sakae Ward,Yokohama City"
+"14","14116",14116,神奈川県,カナガワケン,Kanagawa,横浜市泉区,ヨコハマシイズミク,Yokohama Shi Izumi Ku,"Izumi Ward,Yokohama City"
+"14","14117",14117,神奈川県,カナガワケン,Kanagawa,横浜市青葉区,ヨコハマシアオバク,Yokohama Shi Aoba Ku,"Aoba Ward,Yokohama City"
+"14","14118",14118,神奈川県,カナガワケン,Kanagawa,横浜市都筑区,ヨコハマシツヅキク,Yokohama Shi Tsuzuki Ku,"Tsuzuki Ward,Yokohama City"
+"14","14131",14131,神奈川県,カナガワケン,Kanagawa,川崎市川崎区,カワサキシカワサキク,Kawasaki Shi Kawasaki Ku,"Kawasaki Ward,Kawasaki City"
+"14","14132",14132,神奈川県,カナガワケン,Kanagawa,川崎市幸区,カワサキシサイワイク,Kawasaki Shi Saiwai Ku,"Saiwai Ward,Kawasaki City"
+"14","14133",14133,神奈川県,カナガワケン,Kanagawa,川崎市中原区,カワサキシナカハラク,Kawasaki Shi Nakahara Ku,"Nakahara Ward,Kawasaki City"
+"14","14134",14134,神奈川県,カナガワケン,Kanagawa,川崎市高津区,カワサキシタカツク,Kawasaki Shi Takatsu Ku,"Takatsu Ward,Kawasaki City"
+"14","14135",14135,神奈川県,カナガワケン,Kanagawa,川崎市多摩区,カワサキシタマク,Kawasaki Shi Tama Ku,"Tama Ward,Kawasaki City"
+"14","14136",14136,神奈川県,カナガワケン,Kanagawa,川崎市宮前区,カワサキシミヤマエク,Kawasaki Shi Miyamae Ku,"Miyamae Ward,Kawasaki City"
+"14","14137",14137,神奈川県,カナガワケン,Kanagawa,川崎市麻生区,カワサキシアサオク,Kawasaki Shi Asao Ku,"Asao Ward,Kawasaki City"
+"14","14151",14151,神奈川県,カナガワケン,Kanagawa,相模原市緑区,サガミハラシミドリク,Sagamihara Shi Midori Ku,"Midori Ward,Sagamihara City"
+"14","14152",14152,神奈川県,カナガワケン,Kanagawa,相模原市中央区,サガミハラシチュウオウク,Sagamihara Shi Chuo Ku,"Chuo Ward,Sagamihara City"
+"14","14153",14153,神奈川県,カナガワケン,Kanagawa,相模原市南区,サガミハラシミナミク,Sagamihara Shi Minami Ku,"Minami Ward,Sagamihara City"
+"14","14201",14201,神奈川県,カナガワケン,Kanagawa,横須賀市,ヨコスカシ,Yokosuka Shi,Yokosuka City
+"14","14203",14203,神奈川県,カナガワケン,Kanagawa,平塚市,ヒラツカシ,Hiratsuka Shi,Hiratsuka City
+"14","14204",14204,神奈川県,カナガワケン,Kanagawa,鎌倉市,カマクラシ,Kamakura Shi,Kamakura City
+"14","14205",14205,神奈川県,カナガワケン,Kanagawa,藤沢市,フジサワシ,Fujisawa Shi,Fujisawa City
+"14","14206",14206,神奈川県,カナガワケン,Kanagawa,小田原市,オダワラシ,Odawara Shi,Odawara City
+"14","14207",14207,神奈川県,カナガワケン,Kanagawa,茅ヶ崎市,チガサキシ,Chigasaki Shi,Chigasaki City
+"14","14208",14208,神奈川県,カナガワケン,Kanagawa,逗子市,ズシシ,Zushi Shi,Zushi City
+"14","14210",14210,神奈川県,カナガワケン,Kanagawa,三浦市,ミウラシ,Miura Shi,Miura City
+"14","14211",14211,神奈川県,カナガワケン,Kanagawa,秦野市,ハダノシ,Hadano Shi,Hadano City
+"14","14212",14212,神奈川県,カナガワケン,Kanagawa,厚木市,アツギシ,Atsugi Shi,Atsugi City
+"14","14213",14213,神奈川県,カナガワケン,Kanagawa,大和市,ヤマトシ,Yamato Shi,Yamato City
+"14","14214",14214,神奈川県,カナガワケン,Kanagawa,伊勢原市,イセハラシ,Isehara Shi,Isehara City
+"14","14215",14215,神奈川県,カナガワケン,Kanagawa,海老名市,エビナシ,Ebina Shi,Ebina City
+"14","14216",14216,神奈川県,カナガワケン,Kanagawa,座間市,ザマシ,Zama Shi,Zama City
+"14","14217",14217,神奈川県,カナガワケン,Kanagawa,南足柄市,ミナミアシガラシ,Minamiashigara Shi,Minamiashigara City
+"14","14218",14218,神奈川県,カナガワケン,Kanagawa,綾瀬市,アヤセシ,Ayase Shi,Ayase City
+"14","14301",14301,神奈川県,カナガワケン,Kanagawa,三浦郡葉山町,ミウラグンハヤママチ,Miura Gun Hayama Machi,Miura District Hayama Town
+"14","14321",14321,神奈川県,カナガワケン,Kanagawa,高座郡寒川町,コウザグンサムカワマチ,Koza Gun Samukawa Machi,Koza District Samukawa Town
+"14","14341",14341,神奈川県,カナガワケン,Kanagawa,中郡大磯町,ナカグンオオイソマチ,Naka Gun Oiso Machi,Naka District Oiso Town
+"14","14342",14342,神奈川県,カナガワケン,Kanagawa,中郡二宮町,ナカグンニノミヤマチ,Naka Gun Ninomiya Machi,Naka District Ninomiya Town
+"14","14361",14361,神奈川県,カナガワケン,Kanagawa,足柄上郡中井町,アシガラカミグンナカイマチ,Ashigarakami Gun Nakai Machi,Ashigarakami District Nakai Town
+"14","14362",14362,神奈川県,カナガワケン,Kanagawa,足柄上郡大井町,アシガラカミグンオオイマチ,Ashigarakami Gun Oi Machi,Ashigarakami District Oi Town
+"14","14363",14363,神奈川県,カナガワケン,Kanagawa,足柄上郡松田町,アシガラカミグンマツダマチ,Ashigarakami Gun Matsuda Machi,Ashigarakami District Matsuda Town
+"14","14364",14364,神奈川県,カナガワケン,Kanagawa,足柄上郡山北町,アシガラカミグンヤマキタマチ,Ashigarakami Gun Yamakita Machi,Ashigarakami District Yamakita Town
+"14","14366",14366,神奈川県,カナガワケン,Kanagawa,足柄上郡開成町,アシガラカミグンカイセイマチ,Ashigarakami Gun Kaisei Machi,Ashigarakami District Kaisei Town
+"14","14382",14382,神奈川県,カナガワケン,Kanagawa,足柄下郡箱根町,アシガラシモグンハコネマチ,Ashigarashimo Gun Hakone Machi,Ashigarashimo District Hakone Town
+"14","14383",14383,神奈川県,カナガワケン,Kanagawa,足柄下郡真鶴町,アシガラシモグンマナヅルマチ,Ashigarashimo Gun Manazuru Machi,Ashigarashimo District Manazuru Town
+"14","14384",14384,神奈川県,カナガワケン,Kanagawa,足柄下郡湯河原町,アシガラシモグンユガワラマチ,Ashigarashimo Gun Yugawara Machi,Ashigarashimo District Yugawara Town
+"14","14401",14401,神奈川県,カナガワケン,Kanagawa,愛甲郡愛川町,アイコウグンアイカワマチ,Aiko Gun Aikawa Machi,Aiko District Aikawa Town
+"14","14402",14402,神奈川県,カナガワケン,Kanagawa,愛甲郡清川村,アイコウグンキヨカワムラ,Aiko Gun Kiyokawa Mura,Aiko District Kiyokawa Village
+"15","15101",15101,新潟県,ニイガタケン,Niigata,新潟市北区,ニイガタシキタク,Niigata Shi Kita Ku,"Kita Ward,Niigata City"
+"15","15102",15102,新潟県,ニイガタケン,Niigata,新潟市東区,ニイガタシヒガシク,Niigata Shi Higashi Ku,"Higashi Ward,Niigata City"
+"15","15103",15103,新潟県,ニイガタケン,Niigata,新潟市中央区,ニイガタシチュウオウク,Niigata Shi Chuo Ku,"Chuo Ward,Niigata City"
+"15","15104",15104,新潟県,ニイガタケン,Niigata,新潟市江南区,ニイガタシコウナンク,Niigata Shi Konan Ku,"Konan Ward,Niigata City"
+"15","15105",15105,新潟県,ニイガタケン,Niigata,新潟市秋葉区,ニイガタシアキハク,Niigata Shi Akiha Ku,"Akiha Ward,Niigata City"
+"15","15106",15106,新潟県,ニイガタケン,Niigata,新潟市南区,ニイガタシミナミク,Niigata Shi Minami Ku,"Minami Ward,Niigata City"
+"15","15107",15107,新潟県,ニイガタケン,Niigata,新潟市西区,ニイガタシニシク,Niigata Shi Nishi Ku,"Nishi Ward,Niigata City"
+"15","15108",15108,新潟県,ニイガタケン,Niigata,新潟市西蒲区,ニイガタシニシカンク,Niigata Shi Nishikan Ku,"Nishikan Ward,Niigata City"
+"15","15202",15202,新潟県,ニイガタケン,Niigata,長岡市,ナガオカシ,Nagaoka Shi,Nagaoka City
+"15","15204",15204,新潟県,ニイガタケン,Niigata,三条市,サンジョウシ,Sanjo Shi,Sanjo City
+"15","15205",15205,新潟県,ニイガタケン,Niigata,柏崎市,カシワザキシ,Kashiwazaki Shi,Kashiwazaki City
+"15","15206",15206,新潟県,ニイガタケン,Niigata,新発田市,シバタシ,Shibata Shi,Shibata City
+"15","15208",15208,新潟県,ニイガタケン,Niigata,小千谷市,オヂヤシ,Ojiya Shi,Ojiya City
+"15","15209",15209,新潟県,ニイガタケン,Niigata,加茂市,カモシ,Kamo Shi,Kamo City
+"15","15210",15210,新潟県,ニイガタケン,Niigata,十日町市,トオカマチシ,Tokamachi Shi,Tokamachi City
+"15","15211",15211,新潟県,ニイガタケン,Niigata,見附市,ミツケシ,Mitsuke Shi,Mitsuke City
+"15","15212",15212,新潟県,ニイガタケン,Niigata,村上市,ムラカミシ,Murakami Shi,Murakami City
+"15","15213",15213,新潟県,ニイガタケン,Niigata,燕市,ツバメシ,Tsubame Shi,Tsubame City
+"15","15216",15216,新潟県,ニイガタケン,Niigata,糸魚川市,イトイガワシ,Itoigawa Shi,Itoigawa City
+"15","15217",15217,新潟県,ニイガタケン,Niigata,妙高市,ミョウコウシ,Myoko Shi,Myoko City
+"15","15218",15218,新潟県,ニイガタケン,Niigata,五泉市,ゴセンシ,Gosen Shi,Gosen City
+"15","15222",15222,新潟県,ニイガタケン,Niigata,上越市,ジョウエツシ,Joetsu Shi,Joetsu City
+"15","15223",15223,新潟県,ニイガタケン,Niigata,阿賀野市,アガノシ,Agano Shi,Agano City
+"15","15224",15224,新潟県,ニイガタケン,Niigata,佐渡市,サドシ,Sado Shi,Sado City
+"15","15225",15225,新潟県,ニイガタケン,Niigata,魚沼市,ウオヌマシ,Uonuma Shi,Uonuma City
+"15","15226",15226,新潟県,ニイガタケン,Niigata,南魚沼市,ミナミウオヌマシ,Minamiuonuma Shi,Minamiuonuma City
+"15","15227",15227,新潟県,ニイガタケン,Niigata,胎内市,タイナイシ,Tainai Shi,Tainai City
+"15","15307",15307,新潟県,ニイガタケン,Niigata,北蒲原郡聖籠町,キタカンバラグンセイロウマチ,Kitakambara Gun Seiro Machi,Kitakambara District Seiro Town
+"15","15342",15342,新潟県,ニイガタケン,Niigata,西蒲原郡弥彦村,ニシカンバラグンヤヒコムラ,Nishikambara Gun Yahiko Mura,Nishikambara District Yahiko Village
+"15","15361",15361,新潟県,ニイガタケン,Niigata,南蒲原郡田上町,ミナミカンバラグンタガミマチ,Minamikambara Gun Tagami Machi,Minamikambara District Tagami Town
+"15","15385",15385,新潟県,ニイガタケン,Niigata,東蒲原郡阿賀町,ヒガシカンバラグンアガマチ,Higashikambara Gun Aga Machi,Higashikambara District Aga Town
+"15","15405",15405,新潟県,ニイガタケン,Niigata,三島郡出雲崎町,サントウグンイズモザキマチ,Santo Gun Izumozaki Machi,Santo District Izumozaki Town
+"15","15461",15461,新潟県,ニイガタケン,Niigata,南魚沼郡湯沢町,ミナミウオヌマグンユザワマチ,Minamiuonuma Gun Yuzawa Machi,Minamiuonuma District Yuzawa Town
+"15","15482",15482,新潟県,ニイガタケン,Niigata,中魚沼郡津南町,ナカウオヌマグンツナンマチ,Nakauonuma Gun Tsunan Machi,Nakauonuma District Tsunan Town
+"15","15504",15504,新潟県,ニイガタケン,Niigata,刈羽郡刈羽村,カリワグンカリワムラ,Kariwa Gun Kariwa Mura,Kariwa District Kariwa Village
+"15","15581",15581,新潟県,ニイガタケン,Niigata,岩船郡関川村,イワフネグンセキカワムラ,Iwafune Gun Sekikawa Mura,Iwafune District Sekikawa Village
+"15","15586",15586,新潟県,ニイガタケン,Niigata,岩船郡粟島浦村,イワフネグンアワシマウラムラ,Iwafune Gun Awashimaura Mura,Iwafune District Awashimaura Village
+"16","16201",16201,富山県,トヤマケン,Toyama,富山市,トヤマシ,Toyama Shi,Toyama City
+"16","16202",16202,富山県,トヤマケン,Toyama,高岡市,タカオカシ,Takaoka Shi,Takaoka City
+"16","16204",16204,富山県,トヤマケン,Toyama,魚津市,ウオヅシ,Uozu Shi,Uozu City
+"16","16205",16205,富山県,トヤマケン,Toyama,氷見市,ヒミシ,Himi Shi,Himi City
+"16","16206",16206,富山県,トヤマケン,Toyama,滑川市,ナメリカワシ,Namerikawa Shi,Namerikawa City
+"16","16207",16207,富山県,トヤマケン,Toyama,黒部市,クロベシ,Kurobe Shi,Kurobe City
+"16","16208",16208,富山県,トヤマケン,Toyama,砺波市,トナミシ,Tonami Shi,Tonami City
+"16","16209",16209,富山県,トヤマケン,Toyama,小矢部市,オヤベシ,Oyabe Shi,Oyabe City
+"16","16210",16210,富山県,トヤマケン,Toyama,南砺市,ナントシ,Nanto Shi,Nanto City
+"16","16211",16211,富山県,トヤマケン,Toyama,射水市,イミズシ,Imizu Shi,Imizu City
+"16","16321",16321,富山県,トヤマケン,Toyama,中新川郡舟橋村,ナカニイカワグンフナハシムラ,Nakaniikawa Gun Funahashi Mura,Nakaniikawa District Funahashi Village
+"16","16322",16322,富山県,トヤマケン,Toyama,中新川郡上市町,ナカニイカワグンカミイチマチ,Nakaniikawa Gun Kamiichi Machi,Nakaniikawa District Kamiichi Town
+"16","16323",16323,富山県,トヤマケン,Toyama,中新川郡立山町,ナカニイカワグンタテヤママチ,Nakaniikawa Gun Tateyama Machi,Nakaniikawa District Tateyama Town
+"16","16342",16342,富山県,トヤマケン,Toyama,下新川郡入善町,シモニイカワグンニュウゼンマチ,Shimoniikawa Gun Nyuzen Machi,Shimoniikawa District Nyuzen Town
+"16","16343",16343,富山県,トヤマケン,Toyama,下新川郡朝日町,シモニイカワグンアサヒマチ,Shimoniikawa Gun Asahi Machi,Shimoniikawa District Asahi Town
+"17","17201",17201,石川県,イシカワケン,Ishikawa,金沢市,カナザワシ,Kanazawa Shi,Kanazawa City
+"17","17202",17202,石川県,イシカワケン,Ishikawa,七尾市,ナナオシ,Nanao Shi,Nanao City
+"17","17203",17203,石川県,イシカワケン,Ishikawa,小松市,コマツシ,Komatsu Shi,Komatsu City
+"17","17204",17204,石川県,イシカワケン,Ishikawa,輪島市,ワジマシ,Wajima Shi,Wajima City
+"17","17205",17205,石川県,イシカワケン,Ishikawa,珠洲市,スズシ,Suzu Shi,Suzu City
+"17","17206",17206,石川県,イシカワケン,Ishikawa,加賀市,カガシ,Kaga Shi,Kaga City
+"17","17207",17207,石川県,イシカワケン,Ishikawa,羽咋市,ハクイシ,Hakui Shi,Hakui City
+"17","17209",17209,石川県,イシカワケン,Ishikawa,かほく市,カホクシ,Kahoku Shi,Kahoku City
+"17","17210",17210,石川県,イシカワケン,Ishikawa,白山市,ハクサンシ,Hakusan Shi,Hakusan City
+"17","17211",17211,石川県,イシカワケン,Ishikawa,能美市,ノミシ,Nomi Shi,Nomi City
+"17","17212",17212,石川県,イシカワケン,Ishikawa,野々市市,ノノイチシ,Nonoichi Shi,Nonoichi City
+"17","17324",17324,石川県,イシカワケン,Ishikawa,能美郡川北町,ノミグンカワキタマチ,Nomi Gun Kawakita Machi,Nomi District Kawakita Town
+"17","17361",17361,石川県,イシカワケン,Ishikawa,河北郡津幡町,カホクグンツバタマチ,Kahoku Gun Tsubata Machi,Kahoku District Tsubata Town
+"17","17365",17365,石川県,イシカワケン,Ishikawa,河北郡内灘町,カホクグンウチナダマチ,Kahoku Gun Uchinada Machi,Kahoku District Uchinada Town
+"17","17384",17384,石川県,イシカワケン,Ishikawa,羽咋郡志賀町,ハクイグンシカマチ,Hakui Gun Shika Machi,Hakui District Shika Town
+"17","17386",17386,石川県,イシカワケン,Ishikawa,羽咋郡宝達志水町,ハクイグンホウダツシミズチョウ,Hakui Gun Hodatsushimizu Cho,Hakui District Hodatsushimizu Town
+"17","17407",17407,石川県,イシカワケン,Ishikawa,鹿島郡中能登町,カシマグンナカノトマチ,Kashima Gun Nakanoto Machi,Kashima District Nakanoto Town
+"17","17461",17461,石川県,イシカワケン,Ishikawa,鳳珠郡穴水町,ホウスグンアナミズマチ,Hosu Gun Anamizu Machi,Hosu District Anamizu Town
+"17","17463",17463,石川県,イシカワケン,Ishikawa,鳳珠郡能登町,ホウスグンノトチョウ,Hosu Gun Noto Cho,Hosu District Noto Town
+"18","18201",18201,福井県,フクイケン,Fukui,福井市,フクイシ,Fukui Shi,Fukui City
+"18","18202",18202,福井県,フクイケン,Fukui,敦賀市,ツルガシ,Tsuruga Shi,Tsuruga City
+"18","18204",18204,福井県,フクイケン,Fukui,小浜市,オバマシ,Obama Shi,Obama City
+"18","18205",18205,福井県,フクイケン,Fukui,大野市,オオノシ,Ono Shi,Ono City
+"18","18206",18206,福井県,フクイケン,Fukui,勝山市,カツヤマシ,Katsuyama Shi,Katsuyama City
+"18","18207",18207,福井県,フクイケン,Fukui,鯖江市,サバエシ,Sabae Shi,Sabae City
+"18","18208",18208,福井県,フクイケン,Fukui,あわら市,アワラシ,Awara Shi,Awara City
+"18","18209",18209,福井県,フクイケン,Fukui,越前市,エチゼンシ,Echizen Shi,Echizen City
+"18","18210",18210,福井県,フクイケン,Fukui,坂井市,サカイシ,Sakai Shi,Sakai City
+"18","18322",18322,福井県,フクイケン,Fukui,吉田郡永平寺町,ヨシダグンエイヘイジチョウ,Yoshida Gun Eiheiji Cho,Yoshida District Eiheiji Town
+"18","18382",18382,福井県,フクイケン,Fukui,今立郡池田町,イマダテグンイケダチョウ,Imadate Gun Ikeda Cho,Imadate District Ikeda Town
+"18","18404",18404,福井県,フクイケン,Fukui,南条郡南越前町,ナンジョウグンミナミエチゼンチョウ,Nanjo Gun Minamiechizen Cho,Nanjo District Minamiechizen Town
+"18","18423",18423,福井県,フクイケン,Fukui,丹生郡越前町,ニュウグンエチゼンチョウ,Nyu Gun Echizen Cho,Nyu District Echizen Town
+"18","18442",18442,福井県,フクイケン,Fukui,三方郡美浜町,ミカタグンミハマチョウ,Mikata Gun Mihama Cho,Mikata District Mihama Town
+"18","18481",18481,福井県,フクイケン,Fukui,大飯郡高浜町,オオイグンタカハマチョウ,Oi Gun Takahama Cho,Oi District Takahama Town
+"18","18483",18483,福井県,フクイケン,Fukui,大飯郡おおい町,オオイグンオオイチョウ,Oi Gun Oi Cho,Oi District Oi Town
+"18","18501",18501,福井県,フクイケン,Fukui,三方上中郡若狭町,ミカタカミナカグンワカサチョウ,Mikatakaminaka Gun Wakasa Cho,Mikatakaminaka District Wakasa Town
+"19","19201",19201,山梨県,ヤマナシケン,Yamanashi,甲府市,コウフシ,Kofu Shi,Kofu City
+"19","19202",19202,山梨県,ヤマナシケン,Yamanashi,富士吉田市,フジヨシダシ,Fujiyoshida Shi,Fujiyoshida City
+"19","19204",19204,山梨県,ヤマナシケン,Yamanashi,都留市,ツルシ,Tsuru Shi,Tsuru City
+"19","19205",19205,山梨県,ヤマナシケン,Yamanashi,山梨市,ヤマナシシ,Yamanashi Shi,Yamanashi City
+"19","19206",19206,山梨県,ヤマナシケン,Yamanashi,大月市,オオツキシ,Otsuki Shi,Otsuki City
+"19","19207",19207,山梨県,ヤマナシケン,Yamanashi,韮崎市,ニラサキシ,Nirasaki Shi,Nirasaki City
+"19","19208",19208,山梨県,ヤマナシケン,Yamanashi,南アルプス市,ミナミアルプスシ,Minamiarupusu Shi,Minamiarupusu City
+"19","19209",19209,山梨県,ヤマナシケン,Yamanashi,北杜市,ホクトシ,Hokuto Shi,Hokuto City
+"19","19210",19210,山梨県,ヤマナシケン,Yamanashi,甲斐市,カイシ,Kai Shi,Kai City
+"19","19211",19211,山梨県,ヤマナシケン,Yamanashi,笛吹市,フエフキシ,Fuefuki Shi,Fuefuki City
+"19","19212",19212,山梨県,ヤマナシケン,Yamanashi,上野原市,ウエノハラシ,Uenohara Shi,Uenohara City
+"19","19213",19213,山梨県,ヤマナシケン,Yamanashi,甲州市,コウシュウシ,Koshu Shi,Koshu City
+"19","19214",19214,山梨県,ヤマナシケン,Yamanashi,中央市,チュウオウシ,Chuo Shi,Chuo City
+"19","19346",19346,山梨県,ヤマナシケン,Yamanashi,西八代郡市川三郷町,ニシヤツシログンイチカワミサトチョウ,Nishiyatsushiro Gun Ichikawamisato Cho,Nishiyatsushiro District Ichikawamisato Town
+"19","19364",19364,山梨県,ヤマナシケン,Yamanashi,南巨摩郡早川町,ミナミコマグンハヤカワチョウ,Minamikoma Gun Hayakawa Cho,Minamikoma District Hayakawa Town
+"19","19365",19365,山梨県,ヤマナシケン,Yamanashi,南巨摩郡身延町,ミナミコマグンミノブチョウ,Minamikoma Gun Minobu Cho,Minamikoma District Minobu Town
+"19","19366",19366,山梨県,ヤマナシケン,Yamanashi,南巨摩郡南部町,ミナミコマグンナンブチョウ,Minamikoma Gun Nambu Cho,Minamikoma District Nambu Town
+"19","19368",19368,山梨県,ヤマナシケン,Yamanashi,南巨摩郡富士川町,ミナミコマグンフジカワチョウ,Minamikoma Gun Fujikawa Cho,Minamikoma District Fujikawa Town
+"19","19384",19384,山梨県,ヤマナシケン,Yamanashi,中巨摩郡昭和町,ナカコマグンショウワチョウ,Nakakoma Gun Showa Cho,Nakakoma District Showa Town
+"19","19422",19422,山梨県,ヤマナシケン,Yamanashi,南都留郡道志村,ミナミツルグンドウシムラ,Minamitsuru Gun Doshi Mura,Minamitsuru District Doshi Village
+"19","19423",19423,山梨県,ヤマナシケン,Yamanashi,南都留郡西桂町,ミナミツルグンニシカツラチョウ,Minamitsuru Gun Nishikatsura Cho,Minamitsuru District Nishikatsura Town
+"19","19424",19424,山梨県,ヤマナシケン,Yamanashi,南都留郡忍野村,ミナミツルグンオシノムラ,Minamitsuru Gun Oshino Mura,Minamitsuru District Oshino Village
+"19","19425",19425,山梨県,ヤマナシケン,Yamanashi,南都留郡山中湖村,ミナミツルグンヤマナカコムラ,Minamitsuru Gun Yamanakako Mura,Minamitsuru District Yamanakako Village
+"19","19429",19429,山梨県,ヤマナシケン,Yamanashi,南都留郡鳴沢村,ミナミツルグンナルサワムラ,Minamitsuru Gun Narusawa Mura,Minamitsuru District Narusawa Village
+"19","19430",19430,山梨県,ヤマナシケン,Yamanashi,南都留郡富士河口湖町,ミナミツルグンフジカワグチコマチ,Minamitsuru Gun Fujikawaguchiko Machi,Minamitsuru District Fujikawaguchiko Town
+"19","19442",19442,山梨県,ヤマナシケン,Yamanashi,北都留郡小菅村,キタツルグンコスゲムラ,Kitatsuru Gun Kosuge Mura,Kitatsuru District Kosuge Village
+"19","19443",19443,山梨県,ヤマナシケン,Yamanashi,北都留郡丹波山村,キタツルグンタバヤマムラ,Kitatsuru Gun Tabayama Mura,Kitatsuru District Tabayama Village
+"20","20201",20201,長野県,ナガノケン,Nagano,長野市,ナガノシ,Nagano Shi,Nagano City
+"20","20202",20202,長野県,ナガノケン,Nagano,松本市,マツモトシ,Matsumoto Shi,Matsumoto City
+"20","20203",20203,長野県,ナガノケン,Nagano,上田市,ウエダシ,Ueda Shi,Ueda City
+"20","20204",20204,長野県,ナガノケン,Nagano,岡谷市,オカヤシ,Okaya Shi,Okaya City
+"20","20205",20205,長野県,ナガノケン,Nagano,飯田市,イイダシ,Iida Shi,Iida City
+"20","20206",20206,長野県,ナガノケン,Nagano,諏訪市,スワシ,Suwa Shi,Suwa City
+"20","20207",20207,長野県,ナガノケン,Nagano,須坂市,スザカシ,Suzaka Shi,Suzaka City
+"20","20208",20208,長野県,ナガノケン,Nagano,小諸市,コモロシ,Komoro Shi,Komoro City
+"20","20209",20209,長野県,ナガノケン,Nagano,伊那市,イナシ,Ina Shi,Ina City
+"20","20210",20210,長野県,ナガノケン,Nagano,駒ヶ根市,コマガネシ,Komagane Shi,Komagane City
+"20","20211",20211,長野県,ナガノケン,Nagano,中野市,ナカノシ,Nakano Shi,Nakano City
+"20","20212",20212,長野県,ナガノケン,Nagano,大町市,オオマチシ,Omachi Shi,Omachi City
+"20","20213",20213,長野県,ナガノケン,Nagano,飯山市,イイヤマシ,Iiyama Shi,Iiyama City
+"20","20214",20214,長野県,ナガノケン,Nagano,茅野市,チノシ,Chino Shi,Chino City
+"20","20215",20215,長野県,ナガノケン,Nagano,塩尻市,シオジリシ,Shiojiri Shi,Shiojiri City
+"20","20217",20217,長野県,ナガノケン,Nagano,佐久市,サクシ,Saku Shi,Saku City
+"20","20218",20218,長野県,ナガノケン,Nagano,千曲市,チクマシ,Chikuma Shi,Chikuma City
+"20","20219",20219,長野県,ナガノケン,Nagano,東御市,トウミシ,Tomi Shi,Tomi City
+"20","20220",20220,長野県,ナガノケン,Nagano,安曇野市,アヅミノシ,Azumino Shi,Azumino City
+"20","20303",20303,長野県,ナガノケン,Nagano,南佐久郡小海町,ミナミサクグンコウミマチ,Minamisaku Gun Komi Machi,Minamisaku District Komi Town
+"20","20304",20304,長野県,ナガノケン,Nagano,南佐久郡川上村,ミナミサクグンカワカミムラ,Minamisaku Gun Kawakami Mura,Minamisaku District Kawakami Village
+"20","20305",20305,長野県,ナガノケン,Nagano,南佐久郡南牧村,ミナミサクグンミナミマキムラ,Minamisaku Gun Minamimaki Mura,Minamisaku District Minamimaki Village
+"20","20306",20306,長野県,ナガノケン,Nagano,南佐久郡南相木村,ミナミサクグンミナミアイキムラ,Minamisaku Gun Minamiaiki Mura,Minamisaku District Minamiaiki Village
+"20","20307",20307,長野県,ナガノケン,Nagano,南佐久郡北相木村,ミナミサクグンキタアイキムラ,Minamisaku Gun Kitaaiki Mura,Minamisaku District Kitaaiki Village
+"20","20309",20309,長野県,ナガノケン,Nagano,南佐久郡佐久穂町,ミナミサクグンサクホマチ,Minamisaku Gun Sakuho Machi,Minamisaku District Sakuho Town
+"20","20321",20321,長野県,ナガノケン,Nagano,北佐久郡軽井沢町,キタサクグンカルイザワマチ,Kitasaku Gun Karuizawa Machi,Kitasaku District Karuizawa Town
+"20","20323",20323,長野県,ナガノケン,Nagano,北佐久郡御代田町,キタサクグンミヨタマチ,Kitasaku Gun Miyota Machi,Kitasaku District Miyota Town
+"20","20324",20324,長野県,ナガノケン,Nagano,北佐久郡立科町,キタサクグンタテシナマチ,Kitasaku Gun Tateshina Machi,Kitasaku District Tateshina Town
+"20","20349",20349,長野県,ナガノケン,Nagano,小県郡青木村,チイサガタグンアオキムラ,Chiisagata Gun Aoki Mura,Chiisagata District Aoki Village
+"20","20350",20350,長野県,ナガノケン,Nagano,小県郡長和町,チイサガタグンナガワマチ,Chiisagata Gun Nagawa Machi,Chiisagata District Nagawa Town
+"20","20361",20361,長野県,ナガノケン,Nagano,諏訪郡下諏訪町,スワグンシモスワマチ,Suwa Gun Shimosuwa Machi,Suwa District Shimosuwa Town
+"20","20362",20362,長野県,ナガノケン,Nagano,諏訪郡富士見町,スワグンフジミマチ,Suwa Gun Fujimi Machi,Suwa District Fujimi Town
+"20","20363",20363,長野県,ナガノケン,Nagano,諏訪郡原村,スワグンハラムラ,Suwa Gun Hara Mura,Suwa District Hara Village
+"20","20382",20382,長野県,ナガノケン,Nagano,上伊那郡辰野町,カミイナグンタツノマチ,Kamiina Gun Tatsuno Machi,Kamiina District Tatsuno Town
+"20","20383",20383,長野県,ナガノケン,Nagano,上伊那郡箕輪町,カミイナグンミノワマチ,Kamiina Gun Minowa Machi,Kamiina District Minowa Town
+"20","20384",20384,長野県,ナガノケン,Nagano,上伊那郡飯島町,カミイナグンイイジママチ,Kamiina Gun Iijima Machi,Kamiina District Iijima Town
+"20","20385",20385,長野県,ナガノケン,Nagano,上伊那郡南箕輪村,カミイナグンミナミミノワムラ,Kamiina Gun Minamiminowa Mura,Kamiina District Minamiminowa Village
+"20","20386",20386,長野県,ナガノケン,Nagano,上伊那郡中川村,カミイナグンナカガワムラ,Kamiina Gun Nakagawa Mura,Kamiina District Nakagawa Village
+"20","20388",20388,長野県,ナガノケン,Nagano,上伊那郡宮田村,カミイナグンミヤダムラ,Kamiina Gun Miyada Mura,Kamiina District Miyada Village
+"20","20402",20402,長野県,ナガノケン,Nagano,下伊那郡松川町,シモイナグンマツカワマチ,Shimoina Gun Matsukawa Machi,Shimoina District Matsukawa Town
+"20","20403",20403,長野県,ナガノケン,Nagano,下伊那郡高森町,シモイナグンタカモリマチ,Shimoina Gun Takamori Machi,Shimoina District Takamori Town
+"20","20404",20404,長野県,ナガノケン,Nagano,下伊那郡阿南町,シモイナグンアナンチョウ,Shimoina Gun Anan Cho,Shimoina District Anan Town
+"20","20407",20407,長野県,ナガノケン,Nagano,下伊那郡阿智村,シモイナグンアチムラ,Shimoina Gun Achi Mura,Shimoina District Achi Village
+"20","20409",20409,長野県,ナガノケン,Nagano,下伊那郡平谷村,シモイナグンヒラヤムラ,Shimoina Gun Hiraya Mura,Shimoina District Hiraya Village
+"20","20410",20410,長野県,ナガノケン,Nagano,下伊那郡根羽村,シモイナグンネバムラ,Shimoina Gun Neba Mura,Shimoina District Neba Village
+"20","20411",20411,長野県,ナガノケン,Nagano,下伊那郡下條村,シモイナグンシモジョウムラ,Shimoina Gun Shimojo Mura,Shimoina District Shimojo Village
+"20","20412",20412,長野県,ナガノケン,Nagano,下伊那郡売木村,シモイナグンウルギムラ,Shimoina Gun Urugi Mura,Shimoina District Urugi Village
+"20","20413",20413,長野県,ナガノケン,Nagano,下伊那郡天龍村,シモイナグンテンリュウムラ,Shimoina Gun Tenryu Mura,Shimoina District Tenryu Village
+"20","20414",20414,長野県,ナガノケン,Nagano,下伊那郡泰阜村,シモイナグンヤスオカムラ,Shimoina Gun Yasuoka Mura,Shimoina District Yasuoka Village
+"20","20415",20415,長野県,ナガノケン,Nagano,下伊那郡喬木村,シモイナグンタカギムラ,Shimoina Gun Takagi Mura,Shimoina District Takagi Village
+"20","20416",20416,長野県,ナガノケン,Nagano,下伊那郡豊丘村,シモイナグントヨオカムラ,Shimoina Gun Toyoka Mura,Shimoina District Toyoka Village
+"20","20417",20417,長野県,ナガノケン,Nagano,下伊那郡大鹿村,シモイナグンオオシカムラ,Shimoina Gun Oshika Mura,Shimoina District Oshika Village
+"20","20422",20422,長野県,ナガノケン,Nagano,木曽郡上松町,キソグンアゲマツマチ,Kiso Gun Agematsu Machi,Kiso District Agematsu Town
+"20","20423",20423,長野県,ナガノケン,Nagano,木曽郡南木曽町,キソグンナギソマチ,Kiso Gun Nagiso Machi,Kiso District Nagiso Town
+"20","20425",20425,長野県,ナガノケン,Nagano,木曽郡木祖村,キソグンキソムラ,Kiso Gun Kiso Mura,Kiso District Kiso Village
+"20","20429",20429,長野県,ナガノケン,Nagano,木曽郡王滝村,キソグンオウタキムラ,Kiso Gun Otaki Mura,Kiso District Otaki Village
+"20","20430",20430,長野県,ナガノケン,Nagano,木曽郡大桑村,キソグンオオクワムラ,Kiso Gun Okuwa Mura,Kiso District Okuwa Village
+"20","20432",20432,長野県,ナガノケン,Nagano,木曽郡木曽町,キソグンキソマチ,Kiso Gun Kiso Machi,Kiso District Kiso Town
+"20","20446",20446,長野県,ナガノケン,Nagano,東筑摩郡麻績村,ヒガシチクマグンオミムラ,Higashichikuma Gun Omi Mura,Higashichikuma District Omi Village
+"20","20448",20448,長野県,ナガノケン,Nagano,東筑摩郡生坂村,ヒガシチクマグンイクサカムラ,Higashichikuma Gun Ikusaka Mura,Higashichikuma District Ikusaka Village
+"20","20450",20450,長野県,ナガノケン,Nagano,東筑摩郡山形村,ヒガシチクマグンヤマガタムラ,Higashichikuma Gun Yamagata Mura,Higashichikuma District Yamagata Village
+"20","20451",20451,長野県,ナガノケン,Nagano,東筑摩郡朝日村,ヒガシチクマグンアサヒムラ,Higashichikuma Gun Asahi Mura,Higashichikuma District Asahi Village
+"20","20452",20452,長野県,ナガノケン,Nagano,東筑摩郡筑北村,ヒガシチクマグンチクホクムラ,Higashichikuma Gun Chikuhoku Mura,Higashichikuma District Chikuhoku Village
+"20","20481",20481,長野県,ナガノケン,Nagano,北安曇郡池田町,キタアヅミグンイケダマチ,Kitaazumi Gun Ikeda Machi,Kitaazumi District Ikeda Town
+"20","20482",20482,長野県,ナガノケン,Nagano,北安曇郡松川村,キタアヅミグンマツカワムラ,Kitaazumi Gun Matsukawa Mura,Kitaazumi District Matsukawa Village
+"20","20485",20485,長野県,ナガノケン,Nagano,北安曇郡白馬村,キタアヅミグンハクバムラ,Kitaazumi Gun Hakuba Mura,Kitaazumi District Hakuba Village
+"20","20486",20486,長野県,ナガノケン,Nagano,北安曇郡小谷村,キタアヅミグンオタリムラ,Kitaazumi Gun Otari Mura,Kitaazumi District Otari Village
+"20","20521",20521,長野県,ナガノケン,Nagano,埴科郡坂城町,ハニシナグンサカキマチ,Hanishina Gun Sakaki Machi,Hanishina District Sakaki Town
+"20","20541",20541,長野県,ナガノケン,Nagano,上高井郡小布施町,カミタカイグンオブセマチ,Kamitakai Gun Obuse Machi,Kamitakai District Obuse Town
+"20","20543",20543,長野県,ナガノケン,Nagano,上高井郡高山村,カミタカイグンタカヤマムラ,Kamitakai Gun Takayama Mura,Kamitakai District Takayama Village
+"20","20561",20561,長野県,ナガノケン,Nagano,下高井郡山ノ内町,シモタカイグンヤマノウチマチ,Shimotakai Gun Yamanochi Machi,Shimotakai District Yamanochi Town
+"20","20562",20562,長野県,ナガノケン,Nagano,下高井郡木島平村,シモタカイグンキジマダイラムラ,Shimotakai Gun Kijimadaira Mura,Shimotakai District Kijimadaira Village
+"20","20563",20563,長野県,ナガノケン,Nagano,下高井郡野沢温泉村,シモタカイグンノザワオンセンムラ,Shimotakai Gun Nozawaonsen Mura,Shimotakai District Nozawaonsen Village
+"20","20583",20583,長野県,ナガノケン,Nagano,上水内郡信濃町,カミミノチグンシナノマチ,Kamiminochi Gun Shinano Machi,Kamiminochi District Shinano Town
+"20","20588",20588,長野県,ナガノケン,Nagano,上水内郡小川村,カミミノチグンオガワムラ,Kamiminochi Gun Ogawa Mura,Kamiminochi District Ogawa Village
+"20","20590",20590,長野県,ナガノケン,Nagano,上水内郡飯綱町,カミミノチグンイイヅナマチ,Kamiminochi Gun Iizuna Machi,Kamiminochi District Iizuna Town
+"20","20602",20602,長野県,ナガノケン,Nagano,下水内郡栄村,シモミノチグンサカエムラ,Shimominochi Gun Sakae Mura,Shimominochi District Sakae Village
+"21","21201",21201,岐阜県,ギフケン,Gifu,岐阜市,ギフシ,Gifu Shi,Gifu City
+"21","21202",21202,岐阜県,ギフケン,Gifu,大垣市,オオガキシ,Ogaki Shi,Ogaki City
+"21","21203",21203,岐阜県,ギフケン,Gifu,高山市,タカヤマシ,Takayama Shi,Takayama City
+"21","21204",21204,岐阜県,ギフケン,Gifu,多治見市,タジミシ,Tajimi Shi,Tajimi City
+"21","21205",21205,岐阜県,ギフケン,Gifu,関市,セキシ,Seki Shi,Seki City
+"21","21206",21206,岐阜県,ギフケン,Gifu,中津川市,ナカツガワシ,Nakatsugawa Shi,Nakatsugawa City
+"21","21207",21207,岐阜県,ギフケン,Gifu,美濃市,ミノシ,Mino Shi,Mino City
+"21","21208",21208,岐阜県,ギフケン,Gifu,瑞浪市,ミズナミシ,Mizunami Shi,Mizunami City
+"21","21209",21209,岐阜県,ギフケン,Gifu,羽島市,ハシマシ,Hashima Shi,Hashima City
+"21","21210",21210,岐阜県,ギフケン,Gifu,恵那市,エナシ,Ena Shi,Ena City
+"21","21211",21211,岐阜県,ギフケン,Gifu,美濃加茂市,ミノカモシ,Minokamo Shi,Minokamo City
+"21","21212",21212,岐阜県,ギフケン,Gifu,土岐市,トキシ,Toki Shi,Toki City
+"21","21213",21213,岐阜県,ギフケン,Gifu,各務原市,カカミガハラシ,Kakamigahara Shi,Kakamigahara City
+"21","21214",21214,岐阜県,ギフケン,Gifu,可児市,カニシ,Kani Shi,Kani City
+"21","21215",21215,岐阜県,ギフケン,Gifu,山県市,ヤマガタシ,Yamagata Shi,Yamagata City
+"21","21216",21216,岐阜県,ギフケン,Gifu,瑞穂市,ミズホシ,Mizuho Shi,Mizuho City
+"21","21217",21217,岐阜県,ギフケン,Gifu,飛騨市,ヒダシ,Hida Shi,Hida City
+"21","21218",21218,岐阜県,ギフケン,Gifu,本巣市,モトスシ,Motosu Shi,Motosu City
+"21","21219",21219,岐阜県,ギフケン,Gifu,郡上市,グジョウシ,Gujo Shi,Gujo City
+"21","21220",21220,岐阜県,ギフケン,Gifu,下呂市,ゲロシ,Gero Shi,Gero City
+"21","21221",21221,岐阜県,ギフケン,Gifu,海津市,カイヅシ,Kaizu Shi,Kaizu City
+"21","21302",21302,岐阜県,ギフケン,Gifu,羽島郡岐南町,ハシマグンギナンチョウ,Hashima Gun Ginan Cho,Hashima District Ginan Town
+"21","21303",21303,岐阜県,ギフケン,Gifu,羽島郡笠松町,ハシマグンカサマツチョウ,Hashima Gun Kasamatsu Cho,Hashima District Kasamatsu Town
+"21","21341",21341,岐阜県,ギフケン,Gifu,養老郡養老町,ヨウロウグンヨウロウチョウ,Yoro Gun Yoro Cho,Yoro District Yoro Town
+"21","21361",21361,岐阜県,ギフケン,Gifu,不破郡垂井町,フワグンタルイチョウ,Fuwa Gun Tarui Cho,Fuwa District Tarui Town
+"21","21362",21362,岐阜県,ギフケン,Gifu,不破郡関ケ原町,フワグンセキガハラチョウ,Fuwa Gun Sekigahara Cho,Fuwa District Sekigahara Town
+"21","21381",21381,岐阜県,ギフケン,Gifu,安八郡神戸町,アンパチグンゴウドチョウ,Ampachi Gun Godo Cho,Ampachi District Godo Town
+"21","21382",21382,岐阜県,ギフケン,Gifu,安八郡輪之内町,アンパチグンワノウチチョウ,Ampachi Gun Wanochi Cho,Ampachi District Wanochi Town
+"21","21383",21383,岐阜県,ギフケン,Gifu,安八郡安八町,アンパチグンアンパチチョウ,Ampachi Gun Ampachi Cho,Ampachi District Ampachi Town
+"21","21401",21401,岐阜県,ギフケン,Gifu,揖斐郡揖斐川町,イビグンイビガワチョウ,Ibi Gun Ibigawa Cho,Ibi District Ibigawa Town
+"21","21403",21403,岐阜県,ギフケン,Gifu,揖斐郡大野町,イビグンオオノチョウ,Ibi Gun Ono Cho,Ibi District Ono Town
+"21","21404",21404,岐阜県,ギフケン,Gifu,揖斐郡池田町,イビグンイケダチョウ,Ibi Gun Ikeda Cho,Ibi District Ikeda Town
+"21","21421",21421,岐阜県,ギフケン,Gifu,本巣郡北方町,モトスグンキタガタチョウ,Motosu Gun Kitagata Cho,Motosu District Kitagata Town
+"21","21501",21501,岐阜県,ギフケン,Gifu,加茂郡坂祝町,カモグンサカホギチョウ,Kamo Gun Sakahogi Cho,Kamo District Sakahogi Town
+"21","21502",21502,岐阜県,ギフケン,Gifu,加茂郡富加町,カモグントミカチョウ,Kamo Gun Tomika Cho,Kamo District Tomika Town
+"21","21503",21503,岐阜県,ギフケン,Gifu,加茂郡川辺町,カモグンカワベチョウ,Kamo Gun Kawabe Cho,Kamo District Kawabe Town
+"21","21504",21504,岐阜県,ギフケン,Gifu,加茂郡七宗町,カモグンヒチソウチョウ,Kamo Gun Hichiso Cho,Kamo District Hichiso Town
+"21","21505",21505,岐阜県,ギフケン,Gifu,加茂郡八百津町,カモグンヤオツチョウ,Kamo Gun Yaotsu Cho,Kamo District Yaotsu Town
+"21","21506",21506,岐阜県,ギフケン,Gifu,加茂郡白川町,カモグンシラカワチョウ,Kamo Gun Shirakawa Cho,Kamo District Shirakawa Town
+"21","21507",21507,岐阜県,ギフケン,Gifu,加茂郡東白川村,カモグンヒガシシラカワムラ,Kamo Gun Higashishirakawa Mura,Kamo District Higashishirakawa Village
+"21","21521",21521,岐阜県,ギフケン,Gifu,可児郡御嵩町,カニグンミタケチョウ,Kani Gun Mitake Cho,Kani District Mitake Town
+"21","21604",21604,岐阜県,ギフケン,Gifu,大野郡白川村,オオノグンシラカワムラ,Ono Gun Shirakawa Mura,Ono District Shirakawa Village
+"22","22101",22101,静岡県,シズオカケン,Shizuoka,静岡市葵区,シズオカシアオイク,Shizuoka Shi Aoi Ku,"Aoi Ward,Shizuoka City"
+"22","22102",22102,静岡県,シズオカケン,Shizuoka,静岡市駿河区,シズオカシスルガク,Shizuoka Shi Suruga Ku,"Suruga Ward,Shizuoka City"
+"22","22103",22103,静岡県,シズオカケン,Shizuoka,静岡市清水区,シズオカシシミズク,Shizuoka Shi Shimizu Ku,"Shimizu Ward,Shizuoka City"
+"22","22131",22131,静岡県,シズオカケン,Shizuoka,浜松市中区,ハママツシナカク,Hamamatsu Shi Naka Ku,"Naka Ward,Hamamatsu City"
+"22","22132",22132,静岡県,シズオカケン,Shizuoka,浜松市東区,ハママツシヒガシク,Hamamatsu Shi Higashi Ku,"Higashi Ward,Hamamatsu City"
+"22","22133",22133,静岡県,シズオカケン,Shizuoka,浜松市西区,ハママツシニシク,Hamamatsu Shi Nishi Ku,"Nishi Ward,Hamamatsu City"
+"22","22134",22134,静岡県,シズオカケン,Shizuoka,浜松市南区,ハママツシミナミク,Hamamatsu Shi Minami Ku,"Minami Ward,Hamamatsu City"
+"22","22135",22135,静岡県,シズオカケン,Shizuoka,浜松市北区,ハママツシキタク,Hamamatsu Shi Kita Ku,"Kita Ward,Hamamatsu City"
+"22","22136",22136,静岡県,シズオカケン,Shizuoka,浜松市浜北区,ハママツシハマキタク,Hamamatsu Shi Hamakita Ku,"Hamakita Ward,Hamamatsu City"
+"22","22137",22137,静岡県,シズオカケン,Shizuoka,浜松市天竜区,ハママツシテンリュウク,Hamamatsu Shi Tenryu Ku,"Tenryu Ward,Hamamatsu City"
+"22","22203",22203,静岡県,シズオカケン,Shizuoka,沼津市,ヌマヅシ,Numazu Shi,Numazu City
+"22","22205",22205,静岡県,シズオカケン,Shizuoka,熱海市,アタミシ,Atami Shi,Atami City
+"22","22206",22206,静岡県,シズオカケン,Shizuoka,三島市,ミシマシ,Mishima Shi,Mishima City
+"22","22207",22207,静岡県,シズオカケン,Shizuoka,富士宮市,フジノミヤシ,Fujinomiya Shi,Fujinomiya City
+"22","22208",22208,静岡県,シズオカケン,Shizuoka,伊東市,イトウシ,Ito Shi,Ito City
+"22","22209",22209,静岡県,シズオカケン,Shizuoka,島田市,シマダシ,Shimada Shi,Shimada City
+"22","22210",22210,静岡県,シズオカケン,Shizuoka,富士市,フジシ,Fuji Shi,Fuji City
+"22","22211",22211,静岡県,シズオカケン,Shizuoka,磐田市,イワタシ,Iwata Shi,Iwata City
+"22","22212",22212,静岡県,シズオカケン,Shizuoka,焼津市,ヤイヅシ,Yaizu Shi,Yaizu City
+"22","22213",22213,静岡県,シズオカケン,Shizuoka,掛川市,カケガワシ,Kakegawa Shi,Kakegawa City
+"22","22214",22214,静岡県,シズオカケン,Shizuoka,藤枝市,フジエダシ,Fujieda Shi,Fujieda City
+"22","22215",22215,静岡県,シズオカケン,Shizuoka,御殿場市,ゴテンバシ,Gotemba Shi,Gotemba City
+"22","22216",22216,静岡県,シズオカケン,Shizuoka,袋井市,フクロイシ,Fukuroi Shi,Fukuroi City
+"22","22219",22219,静岡県,シズオカケン,Shizuoka,下田市,シモダシ,Shimoda Shi,Shimoda City
+"22","22220",22220,静岡県,シズオカケン,Shizuoka,裾野市,スソノシ,Susono Shi,Susono City
+"22","22221",22221,静岡県,シズオカケン,Shizuoka,湖西市,コサイシ,Kosai Shi,Kosai City
+"22","22222",22222,静岡県,シズオカケン,Shizuoka,伊豆市,イズシ,Izu Shi,Izu City
+"22","22223",22223,静岡県,シズオカケン,Shizuoka,御前崎市,オマエザキシ,Omaezaki Shi,Omaezaki City
+"22","22224",22224,静岡県,シズオカケン,Shizuoka,菊川市,キクガワシ,Kikugawa Shi,Kikugawa City
+"22","22225",22225,静岡県,シズオカケン,Shizuoka,伊豆の国市,イズノクニシ,Izunokuni Shi,Izunokuni City
+"22","22226",22226,静岡県,シズオカケン,Shizuoka,牧之原市,マキノハラシ,Makinohara Shi,Makinohara City
+"22","22301",22301,静岡県,シズオカケン,Shizuoka,賀茂郡東伊豆町,カモグンヒガシイズチョウ,Kamo Gun Higashiizu Cho,Kamo District Higashiizu Town
+"22","22302",22302,静岡県,シズオカケン,Shizuoka,賀茂郡河津町,カモグンカワヅチョウ,Kamo Gun Kawazu Cho,Kamo District Kawazu Town
+"22","22304",22304,静岡県,シズオカケン,Shizuoka,賀茂郡南伊豆町,カモグンミナミイズチョウ,Kamo Gun Minamiizu Cho,Kamo District Minamiizu Town
+"22","22305",22305,静岡県,シズオカケン,Shizuoka,賀茂郡松崎町,カモグンマツザキチョウ,Kamo Gun Matsuzaki Cho,Kamo District Matsuzaki Town
+"22","22306",22306,静岡県,シズオカケン,Shizuoka,賀茂郡西伊豆町,カモグンニシイズチョウ,Kamo Gun Nishiizu Cho,Kamo District Nishiizu Town
+"22","22325",22325,静岡県,シズオカケン,Shizuoka,田方郡函南町,タガタグンカンナミチョウ,Tagata Gun Kannami Cho,Tagata District Kannami Town
+"22","22341",22341,静岡県,シズオカケン,Shizuoka,駿東郡清水町,スントウグンシミズチョウ,Sunto Gun Shimizu Cho,Sunto District Shimizu Town
+"22","22342",22342,静岡県,シズオカケン,Shizuoka,駿東郡長泉町,スントウグンナガイズミチョウ,Sunto Gun Nagaizumi Cho,Sunto District Nagaizumi Town
+"22","22344",22344,静岡県,シズオカケン,Shizuoka,駿東郡小山町,スントウグンオヤマチョウ,Sunto Gun Oyama Cho,Sunto District Oyama Town
+"22","22424",22424,静岡県,シズオカケン,Shizuoka,榛原郡吉田町,ハイバラグンヨシダチョウ,Haibara Gun Yoshida Cho,Haibara District Yoshida Town
+"22","22429",22429,静岡県,シズオカケン,Shizuoka,榛原郡川根本町,ハイバラグンカワネホンチョウ,Haibara Gun Kawanehon Cho,Haibara District Kawanehon Town
+"22","22461",22461,静岡県,シズオカケン,Shizuoka,周智郡森町,シュウチグンモリマチ,Shuchi Gun Mori Machi,Shuchi District Mori Town
+"23","23101",23101,愛知県,アイチケン,Aichi,名古屋市千種区,ナゴヤシチクサク,Nagoya Shi Chikusa Ku,"Chikusa Ward,Nagoya City"
+"23","23102",23102,愛知県,アイチケン,Aichi,名古屋市東区,ナゴヤシヒガシク,Nagoya Shi Higashi Ku,"Higashi Ward,Nagoya City"
+"23","23103",23103,愛知県,アイチケン,Aichi,名古屋市北区,ナゴヤシキタク,Nagoya Shi Kita Ku,"Kita Ward,Nagoya City"
+"23","23104",23104,愛知県,アイチケン,Aichi,名古屋市西区,ナゴヤシニシク,Nagoya Shi Nishi Ku,"Nishi Ward,Nagoya City"
+"23","23105",23105,愛知県,アイチケン,Aichi,名古屋市中村区,ナゴヤシナカムラク,Nagoya Shi Nakamura Ku,"Nakamura Ward,Nagoya City"
+"23","23106",23106,愛知県,アイチケン,Aichi,名古屋市中区,ナゴヤシナカク,Nagoya Shi Naka Ku,"Naka Ward,Nagoya City"
+"23","23107",23107,愛知県,アイチケン,Aichi,名古屋市昭和区,ナゴヤシショウワク,Nagoya Shi Showa Ku,"Showa Ward,Nagoya City"
+"23","23108",23108,愛知県,アイチケン,Aichi,名古屋市瑞穂区,ナゴヤシミズホク,Nagoya Shi Mizuho Ku,"Mizuho Ward,Nagoya City"
+"23","23109",23109,愛知県,アイチケン,Aichi,名古屋市熱田区,ナゴヤシアツタク,Nagoya Shi Atsuta Ku,"Atsuta Ward,Nagoya City"
+"23","23110",23110,愛知県,アイチケン,Aichi,名古屋市中川区,ナゴヤシナカガワク,Nagoya Shi Nakagawa Ku,"Nakagawa Ward,Nagoya City"
+"23","23111",23111,愛知県,アイチケン,Aichi,名古屋市港区,ナゴヤシミナトク,Nagoya Shi Minato Ku,"Minato Ward,Nagoya City"
+"23","23112",23112,愛知県,アイチケン,Aichi,名古屋市南区,ナゴヤシミナミク,Nagoya Shi Minami Ku,"Minami Ward,Nagoya City"
+"23","23113",23113,愛知県,アイチケン,Aichi,名古屋市守山区,ナゴヤシモリヤマク,Nagoya Shi Moriyama Ku,"Moriyama Ward,Nagoya City"
+"23","23114",23114,愛知県,アイチケン,Aichi,名古屋市緑区,ナゴヤシミドリク,Nagoya Shi Midori Ku,"Midori Ward,Nagoya City"
+"23","23115",23115,愛知県,アイチケン,Aichi,名古屋市名東区,ナゴヤシメイトウク,Nagoya Shi Meito Ku,"Meito Ward,Nagoya City"
+"23","23116",23116,愛知県,アイチケン,Aichi,名古屋市天白区,ナゴヤシテンパクク,Nagoya Shi Tempaku Ku,"Tempaku Ward,Nagoya City"
+"23","23201",23201,愛知県,アイチケン,Aichi,豊橋市,トヨハシシ,Toyohashi Shi,Toyohashi City
+"23","23202",23202,愛知県,アイチケン,Aichi,岡崎市,オカザキシ,Okazaki Shi,Okazaki City
+"23","23203",23203,愛知県,アイチケン,Aichi,一宮市,イチノミヤシ,Ichinomiya Shi,Ichinomiya City
+"23","23204",23204,愛知県,アイチケン,Aichi,瀬戸市,セトシ,Seto Shi,Seto City
+"23","23205",23205,愛知県,アイチケン,Aichi,半田市,ハンダシ,Handa Shi,Handa City
+"23","23206",23206,愛知県,アイチケン,Aichi,春日井市,カスガイシ,Kasugai Shi,Kasugai City
+"23","23207",23207,愛知県,アイチケン,Aichi,豊川市,トヨカワシ,Toyokawa Shi,Toyokawa City
+"23","23208",23208,愛知県,アイチケン,Aichi,津島市,ツシマシ,Tsushima Shi,Tsushima City
+"23","23209",23209,愛知県,アイチケン,Aichi,碧南市,ヘキナンシ,Hekinan Shi,Hekinan City
+"23","23210",23210,愛知県,アイチケン,Aichi,刈谷市,カリヤシ,Kariya Shi,Kariya City
+"23","23211",23211,愛知県,アイチケン,Aichi,豊田市,トヨタシ,Toyota Shi,Toyota City
+"23","23212",23212,愛知県,アイチケン,Aichi,安城市,アンジョウシ,Anjo Shi,Anjo City
+"23","23213",23213,愛知県,アイチケン,Aichi,西尾市,ニシオシ,Nishio Shi,Nishio City
+"23","23214",23214,愛知県,アイチケン,Aichi,蒲郡市,ガマゴオリシ,Gamagori Shi,Gamagori City
+"23","23215",23215,愛知県,アイチケン,Aichi,犬山市,イヌヤマシ,Inuyama Shi,Inuyama City
+"23","23216",23216,愛知県,アイチケン,Aichi,常滑市,トコナメシ,Tokoname Shi,Tokoname City
+"23","23217",23217,愛知県,アイチケン,Aichi,江南市,コウナンシ,Konan Shi,Konan City
+"23","23219",23219,愛知県,アイチケン,Aichi,小牧市,コマキシ,Komaki Shi,Komaki City
+"23","23220",23220,愛知県,アイチケン,Aichi,稲沢市,イナザワシ,Inazawa Shi,Inazawa City
+"23","23221",23221,愛知県,アイチケン,Aichi,新城市,シンシロシ,Shinshiro Shi,Shinshiro City
+"23","23222",23222,愛知県,アイチケン,Aichi,東海市,トウカイシ,Tokai Shi,Tokai City
+"23","23223",23223,愛知県,アイチケン,Aichi,大府市,オオブシ,Obu Shi,Obu City
+"23","23224",23224,愛知県,アイチケン,Aichi,知多市,チタシ,Chita Shi,Chita City
+"23","23225",23225,愛知県,アイチケン,Aichi,知立市,チリュウシ,Chiryu Shi,Chiryu City
+"23","23226",23226,愛知県,アイチケン,Aichi,尾張旭市,オワリアサヒシ,Owariasahi Shi,Owariasahi City
+"23","23227",23227,愛知県,アイチケン,Aichi,高浜市,タカハマシ,Takahama Shi,Takahama City
+"23","23228",23228,愛知県,アイチケン,Aichi,岩倉市,イワクラシ,Iwakura Shi,Iwakura City
+"23","23229",23229,愛知県,アイチケン,Aichi,豊明市,トヨアケシ,Toyoake Shi,Toyoake City
+"23","23230",23230,愛知県,アイチケン,Aichi,日進市,ニッシンシ,Nisshin Shi,Nisshin City
+"23","23231",23231,愛知県,アイチケン,Aichi,田原市,タハラシ,Tahara Shi,Tahara City
+"23","23232",23232,愛知県,アイチケン,Aichi,愛西市,アイサイシ,Aisai Shi,Aisai City
+"23","23233",23233,愛知県,アイチケン,Aichi,清須市,キヨスシ,Kiyosu Shi,Kiyosu City
+"23","23234",23234,愛知県,アイチケン,Aichi,北名古屋市,キタナゴヤシ,Kitanagoya Shi,Kitanagoya City
+"23","23235",23235,愛知県,アイチケン,Aichi,弥富市,ヤトミシ,Yatomi Shi,Yatomi City
+"23","23236",23236,愛知県,アイチケン,Aichi,みよし市,ミヨシシ,Miyoshi Shi,Miyoshi City
+"23","23237",23237,愛知県,アイチケン,Aichi,あま市,アマシ,Ama Shi,Ama City
+"23","23238",23238,愛知県,アイチケン,Aichi,長久手市,ナガクテシ,Nagakute Shi,Nagakute City
+"23","23302",23302,愛知県,アイチケン,Aichi,愛知郡東郷町,アイチグントウゴウチョウ,Aichi Gun Togo Cho,Aichi District Togo Town
+"23","23342",23342,愛知県,アイチケン,Aichi,西春日井郡豊山町,ニシカスガイグントヨヤマチョウ,Nishikasugai Gun Toyoyama Cho,Nishikasugai District Toyoyama Town
+"23","23361",23361,愛知県,アイチケン,Aichi,丹羽郡大口町,ニワグンオオグチチョウ,Niwa Gun Oguchi Cho,Niwa District Oguchi Town
+"23","23362",23362,愛知県,アイチケン,Aichi,丹羽郡扶桑町,ニワグンフソウチョウ,Niwa Gun Fuso Cho,Niwa District Fuso Town
+"23","23424",23424,愛知県,アイチケン,Aichi,海部郡大治町,アマグンオオハルチョウ,Ama Gun Oharu Cho,Ama District Oharu Town
+"23","23425",23425,愛知県,アイチケン,Aichi,海部郡蟹江町,アマグンカニエチョウ,Ama Gun Kanie Cho,Ama District Kanie Town
+"23","23427",23427,愛知県,アイチケン,Aichi,海部郡飛島村,アマグントビシマムラ,Ama Gun Tobishima Mura,Ama District Tobishima Village
+"23","23441",23441,愛知県,アイチケン,Aichi,知多郡阿久比町,チタグンアグイチョウ,Chita Gun Agui Cho,Chita District Agui Town
+"23","23442",23442,愛知県,アイチケン,Aichi,知多郡東浦町,チタグンヒガシウラチョウ,Chita Gun Higashiura Cho,Chita District Higashiura Town
+"23","23445",23445,愛知県,アイチケン,Aichi,知多郡南知多町,チタグンミナミチタチョウ,Chita Gun Minamichita Cho,Chita District Minamichita Town
+"23","23446",23446,愛知県,アイチケン,Aichi,知多郡美浜町,チタグンミハマチョウ,Chita Gun Mihama Cho,Chita District Mihama Town
+"23","23447",23447,愛知県,アイチケン,Aichi,知多郡武豊町,チタグンタケトヨチョウ,Chita Gun Taketoyo Cho,Chita District Taketoyo Town
+"23","23501",23501,愛知県,アイチケン,Aichi,額田郡幸田町,ヌカタグンコウタチョウ,Nukata Gun Kota Cho,Nukata District Kota Town
+"23","23561",23561,愛知県,アイチケン,Aichi,北設楽郡設楽町,キタシタラグンシタラチョウ,Kitashitara Gun Shitara Cho,Kitashitara District Shitara Town
+"23","23562",23562,愛知県,アイチケン,Aichi,北設楽郡東栄町,キタシタラグントウエイチョウ,Kitashitara Gun Toei Cho,Kitashitara District Toei Town
+"23","23563",23563,愛知県,アイチケン,Aichi,北設楽郡豊根村,キタシタラグントヨネムラ,Kitashitara Gun Toyone Mura,Kitashitara District Toyone Village
+"24","24201",24201,三重県,ミエケン,Mie,津市,ツシ,Tsu Shi,Tsu City
+"24","24202",24202,三重県,ミエケン,Mie,四日市市,ヨッカイチシ,Yokkaichi Shi,Yokkaichi City
+"24","24203",24203,三重県,ミエケン,Mie,伊勢市,イセシ,Ise Shi,Ise City
+"24","24204",24204,三重県,ミエケン,Mie,松阪市,マツサカシ,Matsusaka Shi,Matsusaka City
+"24","24205",24205,三重県,ミエケン,Mie,桑名市,クワナシ,Kuwana Shi,Kuwana City
+"24","24207",24207,三重県,ミエケン,Mie,鈴鹿市,スズカシ,Suzuka Shi,Suzuka City
+"24","24208",24208,三重県,ミエケン,Mie,名張市,ナバリシ,Nabari Shi,Nabari City
+"24","24209",24209,三重県,ミエケン,Mie,尾鷲市,オワセシ,Owase Shi,Owase City
+"24","24210",24210,三重県,ミエケン,Mie,亀山市,カメヤマシ,Kameyama Shi,Kameyama City
+"24","24211",24211,三重県,ミエケン,Mie,鳥羽市,トバシ,Toba Shi,Toba City
+"24","24212",24212,三重県,ミエケン,Mie,熊野市,クマノシ,Kumano Shi,Kumano City
+"24","24214",24214,三重県,ミエケン,Mie,いなべ市,イナベシ,Inabe Shi,Inabe City
+"24","24215",24215,三重県,ミエケン,Mie,志摩市,シマシ,Shima Shi,Shima City
+"24","24216",24216,三重県,ミエケン,Mie,伊賀市,イガシ,Iga Shi,Iga City
+"24","24303",24303,三重県,ミエケン,Mie,桑名郡木曽岬町,クワナグンキソサキチョウ,Kuwana Gun Kisosaki Cho,Kuwana District Kisosaki Town
+"24","24324",24324,三重県,ミエケン,Mie,員弁郡東員町,イナベグントウインチョウ,Inabe Gun Toin Cho,Inabe District Toin Town
+"24","24341",24341,三重県,ミエケン,Mie,三重郡菰野町,ミエグンコモノチョウ,Mie Gun Komono Cho,Mie District Komono Town
+"24","24343",24343,三重県,ミエケン,Mie,三重郡朝日町,ミエグンアサヒチョウ,Mie Gun Asahi Cho,Mie District Asahi Town
+"24","24344",24344,三重県,ミエケン,Mie,三重郡川越町,ミエグンカワゴエチョウ,Mie Gun Kawagoe Cho,Mie District Kawagoe Town
+"24","24441",24441,三重県,ミエケン,Mie,多気郡多気町,タキグンタキチョウ,Taki Gun Taki Cho,Taki District Taki Town
+"24","24442",24442,三重県,ミエケン,Mie,多気郡明和町,タキグンメイワチョウ,Taki Gun Meiwa Cho,Taki District Meiwa Town
+"24","24443",24443,三重県,ミエケン,Mie,多気郡大台町,タキグンオオダイチョウ,Taki Gun Odai Cho,Taki District Odai Town
+"24","24461",24461,三重県,ミエケン,Mie,度会郡玉城町,ワタライグンタマキチョウ,Watarai Gun Tamaki Cho,Watarai District Tamaki Town
+"24","24470",24470,三重県,ミエケン,Mie,度会郡度会町,ワタライグンワタライチョウ,Watarai Gun Watarai Cho,Watarai District Watarai Town
+"24","24471",24471,三重県,ミエケン,Mie,度会郡大紀町,ワタライグンタイキチョウ,Watarai Gun Taiki Cho,Watarai District Taiki Town
+"24","24472",24472,三重県,ミエケン,Mie,度会郡南伊勢町,ワタライグンミナミイセチョウ,Watarai Gun Minamiise Cho,Watarai District Minamiise Town
+"24","24543",24543,三重県,ミエケン,Mie,北牟婁郡紀北町,キタムログンキホクチョウ,Kitamuro Gun Kihoku Cho,Kitamuro District Kihoku Town
+"24","24561",24561,三重県,ミエケン,Mie,南牟婁郡御浜町,ミナミムログンミハマチョウ,Minamimuro Gun Mihama Cho,Minamimuro District Mihama Town
+"24","24562",24562,三重県,ミエケン,Mie,南牟婁郡紀宝町,ミナミムログンキホウチョウ,Minamimuro Gun Kiho Cho,Minamimuro District Kiho Town
+"25","25201",25201,滋賀県,シガケン,Shiga,大津市,オオツシ,Otsu Shi,Otsu City
+"25","25202",25202,滋賀県,シガケン,Shiga,彦根市,ヒコネシ,Hikone Shi,Hikone City
+"25","25203",25203,滋賀県,シガケン,Shiga,長浜市,ナガハマシ,Nagahama Shi,Nagahama City
+"25","25204",25204,滋賀県,シガケン,Shiga,近江八幡市,オウミハチマンシ,Omihachiman Shi,Omihachiman City
+"25","25206",25206,滋賀県,シガケン,Shiga,草津市,クサツシ,Kusatsu Shi,Kusatsu City
+"25","25207",25207,滋賀県,シガケン,Shiga,守山市,モリヤマシ,Moriyama Shi,Moriyama City
+"25","25208",25208,滋賀県,シガケン,Shiga,栗東市,リットウシ,Ritto Shi,Ritto City
+"25","25209",25209,滋賀県,シガケン,Shiga,甲賀市,コウカシ,Koka Shi,Koka City
+"25","25210",25210,滋賀県,シガケン,Shiga,野洲市,ヤスシ,Yasu Shi,Yasu City
+"25","25211",25211,滋賀県,シガケン,Shiga,湖南市,コナンシ,Konan Shi,Konan City
+"25","25212",25212,滋賀県,シガケン,Shiga,高島市,タカシマシ,Takashima Shi,Takashima City
+"25","25213",25213,滋賀県,シガケン,Shiga,東近江市,ヒガシオウミシ,Higashiomi Shi,Higashiomi City
+"25","25214",25214,滋賀県,シガケン,Shiga,米原市,マイバラシ,Maibara Shi,Maibara City
+"25","25383",25383,滋賀県,シガケン,Shiga,蒲生郡日野町,ガモウグンヒノチョウ,Gamo Gun Hino Cho,Gamo District Hino Town
+"25","25384",25384,滋賀県,シガケン,Shiga,蒲生郡竜王町,ガモウグンリュウオウチョウ,Gamo Gun Ryuo Cho,Gamo District Ryuo Town
+"25","25425",25425,滋賀県,シガケン,Shiga,愛知郡愛荘町,エチグンアイショウチョウ,Echi Gun Aisho Cho,Echi District Aisho Town
+"25","25441",25441,滋賀県,シガケン,Shiga,犬上郡豊郷町,イヌカミグントヨサトチョウ,Inukami Gun Toyosato Cho,Inukami District Toyosato Town
+"25","25442",25442,滋賀県,シガケン,Shiga,犬上郡甲良町,イヌカミグンコウラチョウ,Inukami Gun Kora Cho,Inukami District Kora Town
+"25","25443",25443,滋賀県,シガケン,Shiga,犬上郡多賀町,イヌカミグンタガチョウ,Inukami Gun Taga Cho,Inukami District Taga Town
+"26","26101",26101,京都府,キョウトフ,Kyoto,京都市北区,キョウトシキタク,Kyoto Shi Kita Ku,"Kita Ward,Kyoto City"
+"26","26102",26102,京都府,キョウトフ,Kyoto,京都市上京区,キョウトシカミギョウク,Kyoto Shi Kamigyo Ku,"Kamigyo Ward,Kyoto City"
+"26","26103",26103,京都府,キョウトフ,Kyoto,京都市左京区,キョウトシサキョウク,Kyoto Shi Sakyo Ku,"Sakyo Ward,Kyoto City"
+"26","26104",26104,京都府,キョウトフ,Kyoto,京都市中京区,キョウトシナカギョウク,Kyoto Shi Nakagyo Ku,"Nakagyo Ward,Kyoto City"
+"26","26105",26105,京都府,キョウトフ,Kyoto,京都市東山区,キョウトシヒガシヤマク,Kyoto Shi Higashiyama Ku,"Higashiyama Ward,Kyoto City"
+"26","26106",26106,京都府,キョウトフ,Kyoto,京都市下京区,キョウトシシモギョウク,Kyoto Shi Shimogyo Ku,"Shimogyo Ward,Kyoto City"
+"26","26107",26107,京都府,キョウトフ,Kyoto,京都市南区,キョウトシミナミク,Kyoto Shi Minami Ku,"Minami Ward,Kyoto City"
+"26","26108",26108,京都府,キョウトフ,Kyoto,京都市右京区,キョウトシウキョウク,Kyoto Shi Ukyo Ku,"Ukyo Ward,Kyoto City"
+"26","26109",26109,京都府,キョウトフ,Kyoto,京都市伏見区,キョウトシフシミク,Kyoto Shi Fushimi Ku,"Fushimi Ward,Kyoto City"
+"26","26110",26110,京都府,キョウトフ,Kyoto,京都市山科区,キョウトシヤマシナク,Kyoto Shi Yamashina Ku,"Yamashina Ward,Kyoto City"
+"26","26111",26111,京都府,キョウトフ,Kyoto,京都市西京区,キョウトシニシキョウク,Kyoto Shi Nishikyo Ku,"Nishikyo Ward,Kyoto City"
+"26","26201",26201,京都府,キョウトフ,Kyoto,福知山市,フクチヤマシ,Fukuchiyama Shi,Fukuchiyama City
+"26","26202",26202,京都府,キョウトフ,Kyoto,舞鶴市,マイヅルシ,Maizuru Shi,Maizuru City
+"26","26203",26203,京都府,キョウトフ,Kyoto,綾部市,アヤベシ,Ayabe Shi,Ayabe City
+"26","26204",26204,京都府,キョウトフ,Kyoto,宇治市,ウジシ,Uji Shi,Uji City
+"26","26205",26205,京都府,キョウトフ,Kyoto,宮津市,ミヤヅシ,Miyazu Shi,Miyazu City
+"26","26206",26206,京都府,キョウトフ,Kyoto,亀岡市,カメオカシ,Kameoka Shi,Kameoka City
+"26","26207",26207,京都府,キョウトフ,Kyoto,城陽市,ジョウヨウシ,Joyo Shi,Joyo City
+"26","26208",26208,京都府,キョウトフ,Kyoto,向日市,ムコウシ,Muko Shi,Muko City
+"26","26209",26209,京都府,キョウトフ,Kyoto,長岡京市,ナガオカキョウシ,Nagaokakyo Shi,Nagaokakyo City
+"26","26210",26210,京都府,キョウトフ,Kyoto,八幡市,ヤワタシ,Yawata Shi,Yawata City
+"26","26211",26211,京都府,キョウトフ,Kyoto,京田辺市,キョウタナベシ,Kyotanabe Shi,Kyotanabe City
+"26","26212",26212,京都府,キョウトフ,Kyoto,京丹後市,キョウタンゴシ,Kyotango Shi,Kyotango City
+"26","26213",26213,京都府,キョウトフ,Kyoto,南丹市,ナンタンシ,Nantan Shi,Nantan City
+"26","26214",26214,京都府,キョウトフ,Kyoto,木津川市,キヅガワシ,Kizugawa Shi,Kizugawa City
+"26","26303",26303,京都府,キョウトフ,Kyoto,乙訓郡大山崎町,オトクニグンオオヤマザキチョウ,Otokuni Gun Oyamazaki Cho,Otokuni District Oyamazaki Town
+"26","26322",26322,京都府,キョウトフ,Kyoto,久世郡久御山町,クセグンクミヤマチョウ,Kuse Gun Kumiyama Cho,Kuse District Kumiyama Town
+"26","26343",26343,京都府,キョウトフ,Kyoto,綴喜郡井手町,ツヅキグンイデチョウ,Tsuzuki Gun Ide Cho,Tsuzuki District Ide Town
+"26","26344",26344,京都府,キョウトフ,Kyoto,綴喜郡宇治田原町,ツヅキグンウジタワラチョウ,Tsuzuki Gun Ujitawara Cho,Tsuzuki District Ujitawara Town
+"26","26364",26364,京都府,キョウトフ,Kyoto,相楽郡笠置町,ソウラクグンカサギチョウ,Soraku Gun Kasagi Cho,Soraku District Kasagi Town
+"26","26365",26365,京都府,キョウトフ,Kyoto,相楽郡和束町,ソウラクグンワヅカチョウ,Soraku Gun Wazuka Cho,Soraku District Wazuka Town
+"26","26366",26366,京都府,キョウトフ,Kyoto,相楽郡精華町,ソウラクグンセイカチョウ,Soraku Gun Seika Cho,Soraku District Seika Town
+"26","26367",26367,京都府,キョウトフ,Kyoto,相楽郡南山城村,ソウラクグンミナミヤマシロムラ,Soraku Gun Minamiyamashiro Mura,Soraku District Minamiyamashiro Village
+"26","26407",26407,京都府,キョウトフ,Kyoto,船井郡京丹波町,フナイグンキョウタンバチョウ,Funai Gun Kyotamba Cho,Funai District Kyotamba Town
+"26","26463",26463,京都府,キョウトフ,Kyoto,与謝郡伊根町,ヨサグンイネチョウ,Yosa Gun Ine Cho,Yosa District Ine Town
+"26","26465",26465,京都府,キョウトフ,Kyoto,与謝郡与謝野町,ヨサグンヨサノチョウ,Yosa Gun Yosano Cho,Yosa District Yosano Town
+"27","27102",27102,大阪府,オオサカフ,Osaka,大阪市都島区,オオサカシミヤコジマク,Osaka Shi Miyakojima Ku,"Miyakojima Ward,Osaka City"
+"27","27103",27103,大阪府,オオサカフ,Osaka,大阪市福島区,オオサカシフクシマク,Osaka Shi Fukushima Ku,"Fukushima Ward,Osaka City"
+"27","27104",27104,大阪府,オオサカフ,Osaka,大阪市此花区,オオサカシコノハナク,Osaka Shi Konohana Ku,"Konohana Ward,Osaka City"
+"27","27106",27106,大阪府,オオサカフ,Osaka,大阪市西区,オオサカシニシク,Osaka Shi Nishi Ku,"Nishi Ward,Osaka City"
+"27","27107",27107,大阪府,オオサカフ,Osaka,大阪市港区,オオサカシミナトク,Osaka Shi Minato Ku,"Minato Ward,Osaka City"
+"27","27108",27108,大阪府,オオサカフ,Osaka,大阪市大正区,オオサカシタイショウク,Osaka Shi Taisho Ku,"Taisho Ward,Osaka City"
+"27","27109",27109,大阪府,オオサカフ,Osaka,大阪市天王寺区,オオサカシテンノウジク,Osaka Shi Tennoji Ku,"Tennoji Ward,Osaka City"
+"27","27111",27111,大阪府,オオサカフ,Osaka,大阪市浪速区,オオサカシナニワク,Osaka Shi Naniwa Ku,"Naniwa Ward,Osaka City"
+"27","27113",27113,大阪府,オオサカフ,Osaka,大阪市西淀川区,オオサカシニシヨドガワク,Osaka Shi Nishiyodogawa Ku,"Nishiyodogawa Ward,Osaka City"
+"27","27114",27114,大阪府,オオサカフ,Osaka,大阪市東淀川区,オオサカシヒガシヨドガワク,Osaka Shi Higashiyodogawa Ku,"Higashiyodogawa Ward,Osaka City"
+"27","27115",27115,大阪府,オオサカフ,Osaka,大阪市東成区,オオサカシヒガシナリク,Osaka Shi Higashinari Ku,"Higashinari Ward,Osaka City"
+"27","27116",27116,大阪府,オオサカフ,Osaka,大阪市生野区,オオサカシイクノク,Osaka Shi Ikuno Ku,"Ikuno Ward,Osaka City"
+"27","27117",27117,大阪府,オオサカフ,Osaka,大阪市旭区,オオサカシアサヒク,Osaka Shi Asahi Ku,"Asahi Ward,Osaka City"
+"27","27118",27118,大阪府,オオサカフ,Osaka,大阪市城東区,オオサカシジョウトウク,Osaka Shi Joto Ku,"Joto Ward,Osaka City"
+"27","27119",27119,大阪府,オオサカフ,Osaka,大阪市阿倍野区,オオサカシアベノク,Osaka Shi Abeno Ku,"Abeno Ward,Osaka City"
+"27","27120",27120,大阪府,オオサカフ,Osaka,大阪市住吉区,オオサカシスミヨシク,Osaka Shi Sumiyoshi Ku,"Sumiyoshi Ward,Osaka City"
+"27","27121",27121,大阪府,オオサカフ,Osaka,大阪市東住吉区,オオサカシヒガシスミヨシク,Osaka Shi Higashisumiyoshi Ku,"Higashisumiyoshi Ward,Osaka City"
+"27","27122",27122,大阪府,オオサカフ,Osaka,大阪市西成区,オオサカシニシナリク,Osaka Shi Nishinari Ku,"Nishinari Ward,Osaka City"
+"27","27123",27123,大阪府,オオサカフ,Osaka,大阪市淀川区,オオサカシヨドガワク,Osaka Shi Yodogawa Ku,"Yodogawa Ward,Osaka City"
+"27","27124",27124,大阪府,オオサカフ,Osaka,大阪市鶴見区,オオサカシツルミク,Osaka Shi Tsurumi Ku,"Tsurumi Ward,Osaka City"
+"27","27125",27125,大阪府,オオサカフ,Osaka,大阪市住之江区,オオサカシスミノエク,Osaka Shi Suminoe Ku,"Suminoe Ward,Osaka City"
+"27","27126",27126,大阪府,オオサカフ,Osaka,大阪市平野区,オオサカシヒラノク,Osaka Shi Hirano Ku,"Hirano Ward,Osaka City"
+"27","27127",27127,大阪府,オオサカフ,Osaka,大阪市北区,オオサカシキタク,Osaka Shi Kita Ku,"Kita Ward,Osaka City"
+"27","27128",27128,大阪府,オオサカフ,Osaka,大阪市中央区,オオサカシチュウオウク,Osaka Shi Chuo Ku,"Chuo Ward,Osaka City"
+"27","27141",27141,大阪府,オオサカフ,Osaka,堺市堺区,サカイシサカイク,Sakai Shi Sakai Ku,"Sakai Ward,Sakai City"
+"27","27142",27142,大阪府,オオサカフ,Osaka,堺市中区,サカイシナカク,Sakai Shi Naka Ku,"Naka Ward,Sakai City"
+"27","27143",27143,大阪府,オオサカフ,Osaka,堺市東区,サカイシヒガシク,Sakai Shi Higashi Ku,"Higashi Ward,Sakai City"
+"27","27144",27144,大阪府,オオサカフ,Osaka,堺市西区,サカイシニシク,Sakai Shi Nishi Ku,"Nishi Ward,Sakai City"
+"27","27145",27145,大阪府,オオサカフ,Osaka,堺市南区,サカイシミナミク,Sakai Shi Minami Ku,"Minami Ward,Sakai City"
+"27","27146",27146,大阪府,オオサカフ,Osaka,堺市北区,サカイシキタク,Sakai Shi Kita Ku,"Kita Ward,Sakai City"
+"27","27147",27147,大阪府,オオサカフ,Osaka,堺市美原区,サカイシミハラク,Sakai Shi Mihara Ku,"Mihara Ward,Sakai City"
+"27","27202",27202,大阪府,オオサカフ,Osaka,岸和田市,キシワダシ,Kishiwada Shi,Kishiwada City
+"27","27203",27203,大阪府,オオサカフ,Osaka,豊中市,トヨナカシ,Toyonaka Shi,Toyonaka City
+"27","27204",27204,大阪府,オオサカフ,Osaka,池田市,イケダシ,Ikeda Shi,Ikeda City
+"27","27205",27205,大阪府,オオサカフ,Osaka,吹田市,スイタシ,Suita Shi,Suita City
+"27","27206",27206,大阪府,オオサカフ,Osaka,泉大津市,イズミオオツシ,Izumiotsu Shi,Izumiotsu City
+"27","27207",27207,大阪府,オオサカフ,Osaka,高槻市,タカツキシ,Takatsuki Shi,Takatsuki City
+"27","27208",27208,大阪府,オオサカフ,Osaka,貝塚市,カイヅカシ,Kaizuka Shi,Kaizuka City
+"27","27209",27209,大阪府,オオサカフ,Osaka,守口市,モリグチシ,Moriguchi Shi,Moriguchi City
+"27","27210",27210,大阪府,オオサカフ,Osaka,枚方市,ヒラカタシ,Hirakata Shi,Hirakata City
+"27","27211",27211,大阪府,オオサカフ,Osaka,茨木市,イバラキシ,Ibaraki Shi,Ibaraki City
+"27","27212",27212,大阪府,オオサカフ,Osaka,八尾市,ヤオシ,Yao Shi,Yao City
+"27","27213",27213,大阪府,オオサカフ,Osaka,泉佐野市,イズミサノシ,Izumisano Shi,Izumisano City
+"27","27214",27214,大阪府,オオサカフ,Osaka,富田林市,トンダバヤシシ,Tondabayashi Shi,Tondabayashi City
+"27","27215",27215,大阪府,オオサカフ,Osaka,寝屋川市,ネヤガワシ,Neyagawa Shi,Neyagawa City
+"27","27216",27216,大阪府,オオサカフ,Osaka,河内長野市,カワチナガノシ,Kawachinagano Shi,Kawachinagano City
+"27","27217",27217,大阪府,オオサカフ,Osaka,松原市,マツバラシ,Matsubara Shi,Matsubara City
+"27","27218",27218,大阪府,オオサカフ,Osaka,大東市,ダイトウシ,Daito Shi,Daito City
+"27","27219",27219,大阪府,オオサカフ,Osaka,和泉市,イズミシ,Izumi Shi,Izumi City
+"27","27220",27220,大阪府,オオサカフ,Osaka,箕面市,ミノオシ,Mino Shi,Mino City
+"27","27221",27221,大阪府,オオサカフ,Osaka,柏原市,カシワラシ,Kashiwara Shi,Kashiwara City
+"27","27222",27222,大阪府,オオサカフ,Osaka,羽曳野市,ハビキノシ,Habikino Shi,Habikino City
+"27","27223",27223,大阪府,オオサカフ,Osaka,門真市,カドマシ,Kadoma Shi,Kadoma City
+"27","27224",27224,大阪府,オオサカフ,Osaka,摂津市,セッツシ,Settsu Shi,Settsu City
+"27","27225",27225,大阪府,オオサカフ,Osaka,高石市,タカイシシ,Takaishi Shi,Takaishi City
+"27","27226",27226,大阪府,オオサカフ,Osaka,藤井寺市,フジイデラシ,Fujiidera Shi,Fujiidera City
+"27","27227",27227,大阪府,オオサカフ,Osaka,東大阪市,ヒガシオオサカシ,Higashiosaka Shi,Higashiosaka City
+"27","27228",27228,大阪府,オオサカフ,Osaka,泉南市,センナンシ,Sennan Shi,Sennan City
+"27","27229",27229,大阪府,オオサカフ,Osaka,四條畷市,シジョウナワテシ,Shijonawate Shi,Shijonawate City
+"27","27230",27230,大阪府,オオサカフ,Osaka,交野市,カタノシ,Katano Shi,Katano City
+"27","27231",27231,大阪府,オオサカフ,Osaka,大阪狭山市,オオサカサヤマシ,Osakasayama Shi,Osakasayama City
+"27","27232",27232,大阪府,オオサカフ,Osaka,阪南市,ハンナンシ,Hannan Shi,Hannan City
+"27","27301",27301,大阪府,オオサカフ,Osaka,三島郡島本町,ミシマグンシマモトチョウ,Mishima Gun Shimamoto Cho,Mishima District Shimamoto Town
+"27","27321",27321,大阪府,オオサカフ,Osaka,豊能郡豊能町,トヨノグントヨノチョウ,Toyono Gun Toyono Cho,Toyono District Toyono Town
+"27","27322",27322,大阪府,オオサカフ,Osaka,豊能郡能勢町,トヨノグンノセチョウ,Toyono Gun Nose Cho,Toyono District Nose Town
+"27","27341",27341,大阪府,オオサカフ,Osaka,泉北郡忠岡町,センボクグンタダオカチョウ,Semboku Gun Tadaoka Cho,Semboku District Tadaoka Town
+"27","27361",27361,大阪府,オオサカフ,Osaka,泉南郡熊取町,センナングンクマトリチョウ,Sennan Gun Kumatori Cho,Sennan District Kumatori Town
+"27","27362",27362,大阪府,オオサカフ,Osaka,泉南郡田尻町,センナングンタジリチョウ,Sennan Gun Tajiri Cho,Sennan District Tajiri Town
+"27","27366",27366,大阪府,オオサカフ,Osaka,泉南郡岬町,センナングンミサキチョウ,Sennan Gun Misaki Cho,Sennan District Misaki Town
+"27","27381",27381,大阪府,オオサカフ,Osaka,南河内郡太子町,ミナミカワチグンタイシチョウ,Minamikawachi Gun Taishi Cho,Minamikawachi District Taishi Town
+"27","27382",27382,大阪府,オオサカフ,Osaka,南河内郡河南町,ミナミカワチグンカナンチョウ,Minamikawachi Gun Kanan Cho,Minamikawachi District Kanan Town
+"27","27383",27383,大阪府,オオサカフ,Osaka,南河内郡千早赤阪村,ミナミカワチグンチハヤアカサカムラ,Minamikawachi Gun Chihayaakasaka Mura,Minamikawachi District Chihayaakasaka Village
+"28","28101",28101,兵庫県,ヒョウゴケン,Hyogo,神戸市東灘区,コウベシヒガシナダク,Kobe Shi Higashinada Ku,"Higashinada Ward,Kobe City"
+"28","28102",28102,兵庫県,ヒョウゴケン,Hyogo,神戸市灘区,コウベシナダク,Kobe Shi Nada Ku,"Nada Ward,Kobe City"
+"28","28105",28105,兵庫県,ヒョウゴケン,Hyogo,神戸市兵庫区,コウベシヒョウゴク,Kobe Shi Hyogo Ku,"Hyogo Ward,Kobe City"
+"28","28106",28106,兵庫県,ヒョウゴケン,Hyogo,神戸市長田区,コウベシナガタク,Kobe Shi Nagata Ku,"Nagata Ward,Kobe City"
+"28","28107",28107,兵庫県,ヒョウゴケン,Hyogo,神戸市須磨区,コウベシスマク,Kobe Shi Suma Ku,"Suma Ward,Kobe City"
+"28","28108",28108,兵庫県,ヒョウゴケン,Hyogo,神戸市垂水区,コウベシタルミク,Kobe Shi Tarumi Ku,"Tarumi Ward,Kobe City"
+"28","28109",28109,兵庫県,ヒョウゴケン,Hyogo,神戸市北区,コウベシキタク,Kobe Shi Kita Ku,"Kita Ward,Kobe City"
+"28","28110",28110,兵庫県,ヒョウゴケン,Hyogo,神戸市中央区,コウベシチュウオウク,Kobe Shi Chuo Ku,"Chuo Ward,Kobe City"
+"28","28111",28111,兵庫県,ヒョウゴケン,Hyogo,神戸市西区,コウベシニシク,Kobe Shi Nishi Ku,"Nishi Ward,Kobe City"
+"28","28201",28201,兵庫県,ヒョウゴケン,Hyogo,姫路市,ヒメジシ,Himeji Shi,Himeji City
+"28","28202",28202,兵庫県,ヒョウゴケン,Hyogo,尼崎市,アマガサキシ,Amagasaki Shi,Amagasaki City
+"28","28203",28203,兵庫県,ヒョウゴケン,Hyogo,明石市,アカシシ,Akashi Shi,Akashi City
+"28","28204",28204,兵庫県,ヒョウゴケン,Hyogo,西宮市,ニシノミヤシ,Nishinomiya Shi,Nishinomiya City
+"28","28205",28205,兵庫県,ヒョウゴケン,Hyogo,洲本市,スモトシ,Sumoto Shi,Sumoto City
+"28","28206",28206,兵庫県,ヒョウゴケン,Hyogo,芦屋市,アシヤシ,Ashiya Shi,Ashiya City
+"28","28207",28207,兵庫県,ヒョウゴケン,Hyogo,伊丹市,イタミシ,Itami Shi,Itami City
+"28","28208",28208,兵庫県,ヒョウゴケン,Hyogo,相生市,アイオイシ,Aioi Shi,Aioi City
+"28","28209",28209,兵庫県,ヒョウゴケン,Hyogo,豊岡市,トヨオカシ,Toyoka Shi,Toyoka City
+"28","28210",28210,兵庫県,ヒョウゴケン,Hyogo,加古川市,カコガワシ,Kakogawa Shi,Kakogawa City
+"28","28212",28212,兵庫県,ヒョウゴケン,Hyogo,赤穂市,アコウシ,Ako Shi,Ako City
+"28","28213",28213,兵庫県,ヒョウゴケン,Hyogo,西脇市,ニシワキシ,Nishiwaki Shi,Nishiwaki City
+"28","28214",28214,兵庫県,ヒョウゴケン,Hyogo,宝塚市,タカラヅカシ,Takarazuka Shi,Takarazuka City
+"28","28215",28215,兵庫県,ヒョウゴケン,Hyogo,三木市,ミキシ,Miki Shi,Miki City
+"28","28216",28216,兵庫県,ヒョウゴケン,Hyogo,高砂市,タカサゴシ,Takasago Shi,Takasago City
+"28","28217",28217,兵庫県,ヒョウゴケン,Hyogo,川西市,カワニシシ,Kawanishi Shi,Kawanishi City
+"28","28218",28218,兵庫県,ヒョウゴケン,Hyogo,小野市,オノシ,Ono Shi,Ono City
+"28","28219",28219,兵庫県,ヒョウゴケン,Hyogo,三田市,サンダシ,Sanda Shi,Sanda City
+"28","28220",28220,兵庫県,ヒョウゴケン,Hyogo,加西市,カサイシ,Kasai Shi,Kasai City
+"28","28221",28221,兵庫県,ヒョウゴケン,Hyogo,丹波篠山市,タンバササヤマシ,Tambasasayama Shi,Tambasasayama City
+"28","28222",28222,兵庫県,ヒョウゴケン,Hyogo,養父市,ヤブシ,Yabu Shi,Yabu City
+"28","28223",28223,兵庫県,ヒョウゴケン,Hyogo,丹波市,タンバシ,Tamba Shi,Tamba City
+"28","28224",28224,兵庫県,ヒョウゴケン,Hyogo,南あわじ市,ミナミアワジシ,Minamiawaji Shi,Minamiawaji City
+"28","28225",28225,兵庫県,ヒョウゴケン,Hyogo,朝来市,アサゴシ,Asago Shi,Asago City
+"28","28226",28226,兵庫県,ヒョウゴケン,Hyogo,淡路市,アワジシ,Awaji Shi,Awaji City
+"28","28227",28227,兵庫県,ヒョウゴケン,Hyogo,宍粟市,シソウシ,Shiso Shi,Shiso City
+"28","28228",28228,兵庫県,ヒョウゴケン,Hyogo,加東市,カトウシ,Kato Shi,Kato City
+"28","28229",28229,兵庫県,ヒョウゴケン,Hyogo,たつの市,タツノシ,Tatsuno Shi,Tatsuno City
+"28","28301",28301,兵庫県,ヒョウゴケン,Hyogo,川辺郡猪名川町,カワベグンイナガワチョウ,Kawabe Gun Inagawa Cho,Kawabe District Inagawa Town
+"28","28365",28365,兵庫県,ヒョウゴケン,Hyogo,多可郡多可町,タカグンタカチョウ,Taka Gun Taka Cho,Taka District Taka Town
+"28","28381",28381,兵庫県,ヒョウゴケン,Hyogo,加古郡稲美町,カコグンイナミチョウ,Kako Gun Inami Cho,Kako District Inami Town
+"28","28382",28382,兵庫県,ヒョウゴケン,Hyogo,加古郡播磨町,カコグンハリマチョウ,Kako Gun Harima Cho,Kako District Harima Town
+"28","28442",28442,兵庫県,ヒョウゴケン,Hyogo,神崎郡市川町,カンザキグンイチカワチョウ,Kanzaki Gun Ichikawa Cho,Kanzaki District Ichikawa Town
+"28","28443",28443,兵庫県,ヒョウゴケン,Hyogo,神崎郡福崎町,カンザキグンフクサキチョウ,Kanzaki Gun Fukusaki Cho,Kanzaki District Fukusaki Town
+"28","28446",28446,兵庫県,ヒョウゴケン,Hyogo,神崎郡神河町,カンザキグンカミカワチョウ,Kanzaki Gun Kamikawa Cho,Kanzaki District Kamikawa Town
+"28","28464",28464,兵庫県,ヒョウゴケン,Hyogo,揖保郡太子町,イボグンタイシチョウ,Ibo Gun Taishi Cho,Ibo District Taishi Town
+"28","28481",28481,兵庫県,ヒョウゴケン,Hyogo,赤穂郡上郡町,アコウグンカミゴオリチョウ,Ako Gun Kamigori Cho,Ako District Kamigori Town
+"28","28501",28501,兵庫県,ヒョウゴケン,Hyogo,佐用郡佐用町,サヨウグンサヨウチョウ,Sayo Gun Sayo Cho,Sayo District Sayo Town
+"28","28585",28585,兵庫県,ヒョウゴケン,Hyogo,美方郡香美町,ミカタグンカミチョウ,Mikata Gun Kami Cho,Mikata District Kami Town
+"28","28586",28586,兵庫県,ヒョウゴケン,Hyogo,美方郡新温泉町,ミカタグンシンオンセンチョウ,Mikata Gun Shinonsen Cho,Mikata District Shinonsen Town
+"29","29201",29201,奈良県,ナラケン,Nara,奈良市,ナラシ,Nara Shi,Nara City
+"29","29202",29202,奈良県,ナラケン,Nara,大和高田市,ヤマトタカダシ,Yamatotakada Shi,Yamatotakada City
+"29","29203",29203,奈良県,ナラケン,Nara,大和郡山市,ヤマトコオリヤマシ,Yamatokoriyama Shi,Yamatokoriyama City
+"29","29204",29204,奈良県,ナラケン,Nara,天理市,テンリシ,Tenri Shi,Tenri City
+"29","29205",29205,奈良県,ナラケン,Nara,橿原市,カシハラシ,Kashihara Shi,Kashihara City
+"29","29206",29206,奈良県,ナラケン,Nara,桜井市,サクライシ,Sakurai Shi,Sakurai City
+"29","29207",29207,奈良県,ナラケン,Nara,五條市,ゴジョウシ,Gojo Shi,Gojo City
+"29","29208",29208,奈良県,ナラケン,Nara,御所市,ゴセシ,Gose Shi,Gose City
+"29","29209",29209,奈良県,ナラケン,Nara,生駒市,イコマシ,Ikoma Shi,Ikoma City
+"29","29210",29210,奈良県,ナラケン,Nara,香芝市,カシバシ,Kashiba Shi,Kashiba City
+"29","29211",29211,奈良県,ナラケン,Nara,葛城市,カツラギシ,Katsuragi Shi,Katsuragi City
+"29","29212",29212,奈良県,ナラケン,Nara,宇陀市,ウダシ,Uda Shi,Uda City
+"29","29322",29322,奈良県,ナラケン,Nara,山辺郡山添村,ヤマベグンヤマゾエムラ,Yamabe Gun Yamazoe Mura,Yamabe District Yamazoe Village
+"29","29342",29342,奈良県,ナラケン,Nara,生駒郡平群町,イコマグンヘグリチョウ,Ikoma Gun Heguri Cho,Ikoma District Heguri Town
+"29","29343",29343,奈良県,ナラケン,Nara,生駒郡三郷町,イコマグンサンゴウチョウ,Ikoma Gun Sango Cho,Ikoma District Sango Town
+"29","29344",29344,奈良県,ナラケン,Nara,生駒郡斑鳩町,イコマグンイカルガチョウ,Ikoma Gun Ikaruga Cho,Ikoma District Ikaruga Town
+"29","29345",29345,奈良県,ナラケン,Nara,生駒郡安堵町,イコマグンアンドチョウ,Ikoma Gun Ando Cho,Ikoma District Ando Town
+"29","29361",29361,奈良県,ナラケン,Nara,磯城郡川西町,シキグンカワニシチョウ,Shiki Gun Kawanishi Cho,Shiki District Kawanishi Town
+"29","29362",29362,奈良県,ナラケン,Nara,磯城郡三宅町,シキグンミヤケチョウ,Shiki Gun Miyake Cho,Shiki District Miyake Town
+"29","29363",29363,奈良県,ナラケン,Nara,磯城郡田原本町,シキグンタワラモトチョウ,Shiki Gun Tawaramoto Cho,Shiki District Tawaramoto Town
+"29","29385",29385,奈良県,ナラケン,Nara,宇陀郡曽爾村,ウダグンソニムラ,Uda Gun Soni Mura,Uda District Soni Village
+"29","29386",29386,奈良県,ナラケン,Nara,宇陀郡御杖村,ウダグンミツエムラ,Uda Gun Mitsue Mura,Uda District Mitsue Village
+"29","29401",29401,奈良県,ナラケン,Nara,高市郡高取町,タカイチグンタカトリチョウ,Takaichi Gun Takatori Cho,Takaichi District Takatori Town
+"29","29402",29402,奈良県,ナラケン,Nara,高市郡明日香村,タカイチグンアスカムラ,Takaichi Gun Asuka Mura,Takaichi District Asuka Village
+"29","29424",29424,奈良県,ナラケン,Nara,北葛城郡上牧町,キタカツラギグンカンマキチョウ,Kitakatsuragi Gun Kammaki Cho,Kitakatsuragi District Kammaki Town
+"29","29425",29425,奈良県,ナラケン,Nara,北葛城郡王寺町,キタカツラギグンオウジチョウ,Kitakatsuragi Gun Oji Cho,Kitakatsuragi District Oji Town
+"29","29426",29426,奈良県,ナラケン,Nara,北葛城郡広陵町,キタカツラギグンコウリョウチョウ,Kitakatsuragi Gun Koryo Cho,Kitakatsuragi District Koryo Town
+"29","29427",29427,奈良県,ナラケン,Nara,北葛城郡河合町,キタカツラギグンカワイチョウ,Kitakatsuragi Gun Kawai Cho,Kitakatsuragi District Kawai Town
+"29","29441",29441,奈良県,ナラケン,Nara,吉野郡吉野町,ヨシノグンヨシノチョウ,Yoshino Gun Yoshino Cho,Yoshino District Yoshino Town
+"29","29442",29442,奈良県,ナラケン,Nara,吉野郡大淀町,ヨシノグンオオヨドチョウ,Yoshino Gun Oyodo Cho,Yoshino District Oyodo Town
+"29","29443",29443,奈良県,ナラケン,Nara,吉野郡下市町,ヨシノグンシモイチチョウ,Yoshino Gun Shimoichi Cho,Yoshino District Shimoichi Town
+"29","29444",29444,奈良県,ナラケン,Nara,吉野郡黒滝村,ヨシノグンクロタキムラ,Yoshino Gun Kurotaki Mura,Yoshino District Kurotaki Village
+"29","29446",29446,奈良県,ナラケン,Nara,吉野郡天川村,ヨシノグンテンカワムラ,Yoshino Gun Tenkawa Mura,Yoshino District Tenkawa Village
+"29","29447",29447,奈良県,ナラケン,Nara,吉野郡野迫川村,ヨシノグンノセガワムラ,Yoshino Gun Nosegawa Mura,Yoshino District Nosegawa Village
+"29","29449",29449,奈良県,ナラケン,Nara,吉野郡十津川村,ヨシノグントツカワムラ,Yoshino Gun Totsukawa Mura,Yoshino District Totsukawa Village
+"29","29450",29450,奈良県,ナラケン,Nara,吉野郡下北山村,ヨシノグンシモキタヤマムラ,Yoshino Gun Shimokitayama Mura,Yoshino District Shimokitayama Village
+"29","29451",29451,奈良県,ナラケン,Nara,吉野郡上北山村,ヨシノグンカミキタヤマムラ,Yoshino Gun Kamikitayama Mura,Yoshino District Kamikitayama Village
+"29","29452",29452,奈良県,ナラケン,Nara,吉野郡川上村,ヨシノグンカワカミムラ,Yoshino Gun Kawakami Mura,Yoshino District Kawakami Village
+"29","29453",29453,奈良県,ナラケン,Nara,吉野郡東吉野村,ヨシノグンヒガシヨシノムラ,Yoshino Gun Higashiyoshino Mura,Yoshino District Higashiyoshino Village
+"30","30201",30201,和歌山県,ワカヤマケン,Wakayama,和歌山市,ワカヤマシ,Wakayama Shi,Wakayama City
+"30","30202",30202,和歌山県,ワカヤマケン,Wakayama,海南市,カイナンシ,Kainan Shi,Kainan City
+"30","30203",30203,和歌山県,ワカヤマケン,Wakayama,橋本市,ハシモトシ,Hashimoto Shi,Hashimoto City
+"30","30204",30204,和歌山県,ワカヤマケン,Wakayama,有田市,アリダシ,Arida Shi,Arida City
+"30","30205",30205,和歌山県,ワカヤマケン,Wakayama,御坊市,ゴボウシ,Gobo Shi,Gobo City
+"30","30206",30206,和歌山県,ワカヤマケン,Wakayama,田辺市,タナベシ,Tanabe Shi,Tanabe City
+"30","30207",30207,和歌山県,ワカヤマケン,Wakayama,新宮市,シングウシ,Shingu Shi,Shingu City
+"30","30208",30208,和歌山県,ワカヤマケン,Wakayama,紀の川市,キノカワシ,Kinokawa Shi,Kinokawa City
+"30","30209",30209,和歌山県,ワカヤマケン,Wakayama,岩出市,イワデシ,Iwade Shi,Iwade City
+"30","30304",30304,和歌山県,ワカヤマケン,Wakayama,海草郡紀美野町,カイソウグンキミノチョウ,Kaiso Gun Kimino Cho,Kaiso District Kimino Town
+"30","30341",30341,和歌山県,ワカヤマケン,Wakayama,伊都郡かつらぎ町,イトグンカツラギチョウ,Ito Gun Katsuragi Cho,Ito District Katsuragi Town
+"30","30343",30343,和歌山県,ワカヤマケン,Wakayama,伊都郡九度山町,イトグンクドヤマチョウ,Ito Gun Kudoyama Cho,Ito District Kudoyama Town
+"30","30344",30344,和歌山県,ワカヤマケン,Wakayama,伊都郡高野町,イトグンコウヤチョウ,Ito Gun Koya Cho,Ito District Koya Town
+"30","30361",30361,和歌山県,ワカヤマケン,Wakayama,有田郡湯浅町,アリダグンユアサチョウ,Arida Gun Yuasa Cho,Arida District Yuasa Town
+"30","30362",30362,和歌山県,ワカヤマケン,Wakayama,有田郡広川町,アリダグンヒロガワチョウ,Arida Gun Hirogawa Cho,Arida District Hirogawa Town
+"30","30366",30366,和歌山県,ワカヤマケン,Wakayama,有田郡有田川町,アリダグンアリダガワチョウ,Arida Gun Aridagawa Cho,Arida District Aridagawa Town
+"30","30381",30381,和歌山県,ワカヤマケン,Wakayama,日高郡美浜町,ヒダカグンミハマチョウ,Hidaka Gun Mihama Cho,Hidaka District Mihama Town
+"30","30382",30382,和歌山県,ワカヤマケン,Wakayama,日高郡日高町,ヒダカグンヒダカチョウ,Hidaka Gun Hidaka Cho,Hidaka District Hidaka Town
+"30","30383",30383,和歌山県,ワカヤマケン,Wakayama,日高郡由良町,ヒダカグンユラチョウ,Hidaka Gun Yura Cho,Hidaka District Yura Town
+"30","30390",30390,和歌山県,ワカヤマケン,Wakayama,日高郡印南町,ヒダカグンイナミチョウ,Hidaka Gun Inami Cho,Hidaka District Inami Town
+"30","30391",30391,和歌山県,ワカヤマケン,Wakayama,日高郡みなべ町,ヒダカグンミナベチョウ,Hidaka Gun Minabe Cho,Hidaka District Minabe Town
+"30","30392",30392,和歌山県,ワカヤマケン,Wakayama,日高郡日高川町,ヒダカグンヒダカガワチョウ,Hidaka Gun Hidakagawa Cho,Hidaka District Hidakagawa Town
+"30","30401",30401,和歌山県,ワカヤマケン,Wakayama,西牟婁郡白浜町,ニシムログンシラハマチョウ,Nishimuro Gun Shirahama Cho,Nishimuro District Shirahama Town
+"30","30404",30404,和歌山県,ワカヤマケン,Wakayama,西牟婁郡上富田町,ニシムログンカミトンダチョウ,Nishimuro Gun Kamitonda Cho,Nishimuro District Kamitonda Town
+"30","30406",30406,和歌山県,ワカヤマケン,Wakayama,西牟婁郡すさみ町,ニシムログンスサミチョウ,Nishimuro Gun Susami Cho,Nishimuro District Susami Town
+"30","30421",30421,和歌山県,ワカヤマケン,Wakayama,東牟婁郡那智勝浦町,ヒガシムログンナチカツウラチョウ,Higashimuro Gun Nachikatsura Cho,Higashimuro District Nachikatsura Town
+"30","30422",30422,和歌山県,ワカヤマケン,Wakayama,東牟婁郡太地町,ヒガシムログンタイジチョウ,Higashimuro Gun Taiji Cho,Higashimuro District Taiji Town
+"30","30424",30424,和歌山県,ワカヤマケン,Wakayama,東牟婁郡古座川町,ヒガシムログンコザガワチョウ,Higashimuro Gun Kozagawa Cho,Higashimuro District Kozagawa Town
+"30","30427",30427,和歌山県,ワカヤマケン,Wakayama,東牟婁郡北山村,ヒガシムログンキタヤマムラ,Higashimuro Gun Kitayama Mura,Higashimuro District Kitayama Village
+"30","30428",30428,和歌山県,ワカヤマケン,Wakayama,東牟婁郡串本町,ヒガシムログンクシモトチョウ,Higashimuro Gun Kushimoto Cho,Higashimuro District Kushimoto Town
+"31","31201",31201,鳥取県,トットリケン,Tottori,鳥取市,トットリシ,Tottori Shi,Tottori City
+"31","31202",31202,鳥取県,トットリケン,Tottori,米子市,ヨナゴシ,Yonago Shi,Yonago City
+"31","31203",31203,鳥取県,トットリケン,Tottori,倉吉市,クラヨシシ,Kurayoshi Shi,Kurayoshi City
+"31","31204",31204,鳥取県,トットリケン,Tottori,境港市,サカイミナトシ,Sakaiminato Shi,Sakaiminato City
+"31","31302",31302,鳥取県,トットリケン,Tottori,岩美郡岩美町,イワミグンイワミチョウ,Iwami Gun Iwami Cho,Iwami District Iwami Town
+"31","31325",31325,鳥取県,トットリケン,Tottori,八頭郡若桜町,ヤズグンワカサチョウ,Yazu Gun Wakasa Cho,Yazu District Wakasa Town
+"31","31328",31328,鳥取県,トットリケン,Tottori,八頭郡智頭町,ヤズグンチヅチョウ,Yazu Gun Chizu Cho,Yazu District Chizu Town
+"31","31329",31329,鳥取県,トットリケン,Tottori,八頭郡八頭町,ヤズグンヤズチョウ,Yazu Gun Yazu Cho,Yazu District Yazu Town
+"31","31364",31364,鳥取県,トットリケン,Tottori,東伯郡三朝町,トウハクグンミササチョウ,Tohaku Gun Misasa Cho,Tohaku District Misasa Town
+"31","31370",31370,鳥取県,トットリケン,Tottori,東伯郡湯梨浜町,トウハクグンユリハマチョウ,Tohaku Gun Yurihama Cho,Tohaku District Yurihama Town
+"31","31371",31371,鳥取県,トットリケン,Tottori,東伯郡琴浦町,トウハクグンコトウラチョウ,Tohaku Gun Kotora Cho,Tohaku District Kotora Town
+"31","31372",31372,鳥取県,トットリケン,Tottori,東伯郡北栄町,トウハクグンホクエイチョウ,Tohaku Gun Hokuei Cho,Tohaku District Hokuei Town
+"31","31384",31384,鳥取県,トットリケン,Tottori,西伯郡日吉津村,サイハクグンヒエヅソン,Saihaku Gun Hiezu Son,Saihaku District Hiezu Village
+"31","31386",31386,鳥取県,トットリケン,Tottori,西伯郡大山町,サイハクグンダイセンチョウ,Saihaku Gun Daisen Cho,Saihaku District Daisen Town
+"31","31389",31389,鳥取県,トットリケン,Tottori,西伯郡南部町,サイハクグンナンブチョウ,Saihaku Gun Nambu Cho,Saihaku District Nambu Town
+"31","31390",31390,鳥取県,トットリケン,Tottori,西伯郡伯耆町,サイハクグンホウキチョウ,Saihaku Gun Hoki Cho,Saihaku District Hoki Town
+"31","31401",31401,鳥取県,トットリケン,Tottori,日野郡日南町,ヒノグンニチナンチョウ,Hino Gun Nichinan Cho,Hino District Nichinan Town
+"31","31402",31402,鳥取県,トットリケン,Tottori,日野郡日野町,ヒノグンヒノチョウ,Hino Gun Hino Cho,Hino District Hino Town
+"31","31403",31403,鳥取県,トットリケン,Tottori,日野郡江府町,ヒノグンコウフチョウ,Hino Gun Kofu Cho,Hino District Kofu Town
+"32","32201",32201,島根県,シマネケン,Shimane,松江市,マツエシ,Matsue Shi,Matsue City
+"32","32202",32202,島根県,シマネケン,Shimane,浜田市,ハマダシ,Hamada Shi,Hamada City
+"32","32203",32203,島根県,シマネケン,Shimane,出雲市,イズモシ,Izumo Shi,Izumo City
+"32","32204",32204,島根県,シマネケン,Shimane,益田市,マスダシ,Masuda Shi,Masuda City
+"32","32205",32205,島根県,シマネケン,Shimane,大田市,オオダシ,Oda Shi,Oda City
+"32","32206",32206,島根県,シマネケン,Shimane,安来市,ヤスギシ,Yasugi Shi,Yasugi City
+"32","32207",32207,島根県,シマネケン,Shimane,江津市,ゴウツシ,Gotsu Shi,Gotsu City
+"32","32209",32209,島根県,シマネケン,Shimane,雲南市,ウンナンシ,Unnan Shi,Unnan City
+"32","32343",32343,島根県,シマネケン,Shimane,仁多郡奥出雲町,ニタグンオクイズモチョウ,Nita Gun Okuizumo Cho,Nita District Okuizumo Town
+"32","32386",32386,島根県,シマネケン,Shimane,飯石郡飯南町,イイシグンイイナンチョウ,Iishi Gun Iinan Cho,Iishi District Iinan Town
+"32","32441",32441,島根県,シマネケン,Shimane,邑智郡川本町,オオチグンカワモトマチ,Ochi Gun Kawamoto Machi,Ochi District Kawamoto Town
+"32","32448",32448,島根県,シマネケン,Shimane,邑智郡美郷町,オオチグンミサトチョウ,Ochi Gun Misato Cho,Ochi District Misato Town
+"32","32449",32449,島根県,シマネケン,Shimane,邑智郡邑南町,オオチグンオオナンチョウ,Ochi Gun Onan Cho,Ochi District Onan Town
+"32","32501",32501,島根県,シマネケン,Shimane,鹿足郡津和野町,カノアシグンツワノチョウ,Kanoashi Gun Tsuwano Cho,Kanoashi District Tsuwano Town
+"32","32505",32505,島根県,シマネケン,Shimane,鹿足郡吉賀町,カノアシグンヨシカチョウ,Kanoashi Gun Yoshika Cho,Kanoashi District Yoshika Town
+"32","32525",32525,島根県,シマネケン,Shimane,隠岐郡海士町,オキグンアマチョウ,Oki Gun Ama Cho,Oki District Ama Town
+"32","32526",32526,島根県,シマネケン,Shimane,隠岐郡西ノ島町,オキグンニシノシマチョウ,Oki Gun Nishinoshima Cho,Oki District Nishinoshima Town
+"32","32527",32527,島根県,シマネケン,Shimane,隠岐郡知夫村,オキグンチブムラ,Oki Gun Chibu Mura,Oki District Chibu Village
+"32","32528",32528,島根県,シマネケン,Shimane,隠岐郡隠岐の島町,オキグンオキノシマチョウ,Oki Gun Okinoshima Cho,Oki District Okinoshima Town
+"33","33101",33101,岡山県,オカヤマケン,Okayama,岡山市北区,オカヤマシキタク,Okayama Shi Kita Ku,"Kita Ward,Okayama City"
+"33","33102",33102,岡山県,オカヤマケン,Okayama,岡山市中区,オカヤマシナカク,Okayama Shi Naka Ku,"Naka Ward,Okayama City"
+"33","33103",33103,岡山県,オカヤマケン,Okayama,岡山市東区,オカヤマシヒガシク,Okayama Shi Higashi Ku,"Higashi Ward,Okayama City"
+"33","33104",33104,岡山県,オカヤマケン,Okayama,岡山市南区,オカヤマシミナミク,Okayama Shi Minami Ku,"Minami Ward,Okayama City"
+"33","33202",33202,岡山県,オカヤマケン,Okayama,倉敷市,クラシキシ,Kurashiki Shi,Kurashiki City
+"33","33203",33203,岡山県,オカヤマケン,Okayama,津山市,ツヤマシ,Tsuyama Shi,Tsuyama City
+"33","33204",33204,岡山県,オカヤマケン,Okayama,玉野市,タマノシ,Tamano Shi,Tamano City
+"33","33205",33205,岡山県,オカヤマケン,Okayama,笠岡市,カサオカシ,Kasaoka Shi,Kasaoka City
+"33","33207",33207,岡山県,オカヤマケン,Okayama,井原市,イバラシ,Ibara Shi,Ibara City
+"33","33208",33208,岡山県,オカヤマケン,Okayama,総社市,ソウジャシ,Soja Shi,Soja City
+"33","33209",33209,岡山県,オカヤマケン,Okayama,高梁市,タカハシシ,Takahashi Shi,Takahashi City
+"33","33210",33210,岡山県,オカヤマケン,Okayama,新見市,ニイミシ,Niimi Shi,Niimi City
+"33","33211",33211,岡山県,オカヤマケン,Okayama,備前市,ビゼンシ,Bizen Shi,Bizen City
+"33","33212",33212,岡山県,オカヤマケン,Okayama,瀬戸内市,セトウチシ,Setochi Shi,Setochi City
+"33","33213",33213,岡山県,オカヤマケン,Okayama,赤磐市,アカイワシ,Akaiwa Shi,Akaiwa City
+"33","33214",33214,岡山県,オカヤマケン,Okayama,真庭市,マニワシ,Maniwa Shi,Maniwa City
+"33","33215",33215,岡山県,オカヤマケン,Okayama,美作市,ミマサカシ,Mimasaka Shi,Mimasaka City
+"33","33216",33216,岡山県,オカヤマケン,Okayama,浅口市,アサクチシ,Asakuchi Shi,Asakuchi City
+"33","33346",33346,岡山県,オカヤマケン,Okayama,和気郡和気町,ワケグンワケチョウ,Wake Gun Wake Cho,Wake District Wake Town
+"33","33423",33423,岡山県,オカヤマケン,Okayama,都窪郡早島町,ツクボグンハヤシマチョウ,Tsukubo Gun Hayashima Cho,Tsukubo District Hayashima Town
+"33","33445",33445,岡山県,オカヤマケン,Okayama,浅口郡里庄町,アサクチグンサトショウチョウ,Asakuchi Gun Satosho Cho,Asakuchi District Satosho Town
+"33","33461",33461,岡山県,オカヤマケン,Okayama,小田郡矢掛町,オダグンヤカゲチョウ,Oda Gun Yakage Cho,Oda District Yakage Town
+"33","33586",33586,岡山県,オカヤマケン,Okayama,真庭郡新庄村,マニワグンシンジョウソン,Maniwa Gun Shinjo Son,Maniwa District Shinjo Village
+"33","33606",33606,岡山県,オカヤマケン,Okayama,苫田郡鏡野町,トマタグンカガミノチョウ,Tomata Gun Kagamino Cho,Tomata District Kagamino Town
+"33","33622",33622,岡山県,オカヤマケン,Okayama,勝田郡勝央町,カツタグンショウオウチョウ,Katsuta Gun Shoo Cho,Katsuta District Shoo Town
+"33","33623",33623,岡山県,オカヤマケン,Okayama,勝田郡奈義町,カツタグンナギチョウ,Katsuta Gun Nagi Cho,Katsuta District Nagi Town
+"33","33643",33643,岡山県,オカヤマケン,Okayama,英田郡西粟倉村,アイダグンニシアワクラソン,Aida Gun Nishiawakura Son,Aida District Nishiawakura Village
+"33","33663",33663,岡山県,オカヤマケン,Okayama,久米郡久米南町,クメグンクメナンチョウ,Kume Gun Kumenan Cho,Kume District Kumenan Town
+"33","33666",33666,岡山県,オカヤマケン,Okayama,久米郡美咲町,クメグンミサキチョウ,Kume Gun Misaki Cho,Kume District Misaki Town
+"33","33681",33681,岡山県,オカヤマケン,Okayama,加賀郡吉備中央町,カガグンキビチュウオウチョウ,Kaga Gun Kibichuo Cho,Kaga District Kibichuo Town
+"34","34101",34101,広島県,ヒロシマケン,Hiroshima,広島市中区,ヒロシマシナカク,Hiroshima Shi Naka Ku,"Naka Ward,Hiroshima City"
+"34","34102",34102,広島県,ヒロシマケン,Hiroshima,広島市東区,ヒロシマシヒガシク,Hiroshima Shi Higashi Ku,"Higashi Ward,Hiroshima City"
+"34","34103",34103,広島県,ヒロシマケン,Hiroshima,広島市南区,ヒロシマシミナミク,Hiroshima Shi Minami Ku,"Minami Ward,Hiroshima City"
+"34","34104",34104,広島県,ヒロシマケン,Hiroshima,広島市西区,ヒロシマシニシク,Hiroshima Shi Nishi Ku,"Nishi Ward,Hiroshima City"
+"34","34105",34105,広島県,ヒロシマケン,Hiroshima,広島市安佐南区,ヒロシマシアサミナミク,Hiroshima Shi Asaminami Ku,"Asaminami Ward,Hiroshima City"
+"34","34106",34106,広島県,ヒロシマケン,Hiroshima,広島市安佐北区,ヒロシマシアサキタク,Hiroshima Shi Asakita Ku,"Asakita Ward,Hiroshima City"
+"34","34107",34107,広島県,ヒロシマケン,Hiroshima,広島市安芸区,ヒロシマシアキク,Hiroshima Shi Aki Ku,"Aki Ward,Hiroshima City"
+"34","34108",34108,広島県,ヒロシマケン,Hiroshima,広島市佐伯区,ヒロシマシサエキク,Hiroshima Shi Saeki Ku,"Saeki Ward,Hiroshima City"
+"34","34202",34202,広島県,ヒロシマケン,Hiroshima,呉市,クレシ,Kure Shi,Kure City
+"34","34203",34203,広島県,ヒロシマケン,Hiroshima,竹原市,タケハラシ,Takehara Shi,Takehara City
+"34","34204",34204,広島県,ヒロシマケン,Hiroshima,三原市,ミハラシ,Mihara Shi,Mihara City
+"34","34205",34205,広島県,ヒロシマケン,Hiroshima,尾道市,オノミチシ,Onomichi Shi,Onomichi City
+"34","34207",34207,広島県,ヒロシマケン,Hiroshima,福山市,フクヤマシ,Fukuyama Shi,Fukuyama City
+"34","34208",34208,広島県,ヒロシマケン,Hiroshima,府中市,フチュウシ,Fuchu Shi,Fuchu City
+"34","34209",34209,広島県,ヒロシマケン,Hiroshima,三次市,ミヨシシ,Miyoshi Shi,Miyoshi City
+"34","34210",34210,広島県,ヒロシマケン,Hiroshima,庄原市,ショウバラシ,Shobara Shi,Shobara City
+"34","34211",34211,広島県,ヒロシマケン,Hiroshima,大竹市,オオタケシ,Otake Shi,Otake City
+"34","34212",34212,広島県,ヒロシマケン,Hiroshima,東広島市,ヒガシヒロシマシ,Higashihiroshima Shi,Higashihiroshima City
+"34","34213",34213,広島県,ヒロシマケン,Hiroshima,廿日市市,ハツカイチシ,Hatsukaichi Shi,Hatsukaichi City
+"34","34214",34214,広島県,ヒロシマケン,Hiroshima,安芸高田市,アキタカタシ,Akitakata Shi,Akitakata City
+"34","34215",34215,広島県,ヒロシマケン,Hiroshima,江田島市,エタジマシ,Etajima Shi,Etajima City
+"34","34302",34302,広島県,ヒロシマケン,Hiroshima,安芸郡府中町,アキグンフチュウチョウ,Aki Gun Fuchu Cho,Aki District Fuchu Town
+"34","34304",34304,広島県,ヒロシマケン,Hiroshima,安芸郡海田町,アキグンカイタチョウ,Aki Gun Kaita Cho,Aki District Kaita Town
+"34","34307",34307,広島県,ヒロシマケン,Hiroshima,安芸郡熊野町,アキグンクマノチョウ,Aki Gun Kumano Cho,Aki District Kumano Town
+"34","34309",34309,広島県,ヒロシマケン,Hiroshima,安芸郡坂町,アキグンサカチョウ,Aki Gun Saka Cho,Aki District Saka Town
+"34","34368",34368,広島県,ヒロシマケン,Hiroshima,山県郡安芸太田町,ヤマガタグンアキオオタチョウ,Yamagata Gun Akiota Cho,Yamagata District Akiota Town
+"34","34369",34369,広島県,ヒロシマケン,Hiroshima,山県郡北広島町,ヤマガタグンキタヒロシマチョウ,Yamagata Gun Kitahiroshima Cho,Yamagata District Kitahiroshima Town
+"34","34431",34431,広島県,ヒロシマケン,Hiroshima,豊田郡大崎上島町,トヨタグンオオサキカミジマチョウ,Toyota Gun Osakikamijima Cho,Toyota District Osakikamijima Town
+"34","34462",34462,広島県,ヒロシマケン,Hiroshima,世羅郡世羅町,セラグンセラチョウ,Sera Gun Sera Cho,Sera District Sera Town
+"34","34545",34545,広島県,ヒロシマケン,Hiroshima,神石郡神石高原町,ジンセキグンジンセキコウゲンチョウ,Jinseki Gun Jinsekikogen Cho,Jinseki District Jinsekikogen Town
+"35","35201",35201,山口県,ヤマグチケン,Yamaguchi,下関市,シモノセキシ,Shimonoseki Shi,Shimonoseki City
+"35","35202",35202,山口県,ヤマグチケン,Yamaguchi,宇部市,ウベシ,Ube Shi,Ube City
+"35","35203",35203,山口県,ヤマグチケン,Yamaguchi,山口市,ヤマグチシ,Yamaguchi Shi,Yamaguchi City
+"35","35204",35204,山口県,ヤマグチケン,Yamaguchi,萩市,ハギシ,Hagi Shi,Hagi City
+"35","35206",35206,山口県,ヤマグチケン,Yamaguchi,防府市,ホウフシ,Hofu Shi,Hofu City
+"35","35207",35207,山口県,ヤマグチケン,Yamaguchi,下松市,クダマツシ,Kudamatsu Shi,Kudamatsu City
+"35","35208",35208,山口県,ヤマグチケン,Yamaguchi,岩国市,イワクニシ,Iwakuni Shi,Iwakuni City
+"35","35210",35210,山口県,ヤマグチケン,Yamaguchi,光市,ヒカリシ,Hikari Shi,Hikari City
+"35","35211",35211,山口県,ヤマグチケン,Yamaguchi,長門市,ナガトシ,Nagato Shi,Nagato City
+"35","35212",35212,山口県,ヤマグチケン,Yamaguchi,柳井市,ヤナイシ,Yanai Shi,Yanai City
+"35","35213",35213,山口県,ヤマグチケン,Yamaguchi,美祢市,ミネシ,Mine Shi,Mine City
+"35","35215",35215,山口県,ヤマグチケン,Yamaguchi,周南市,シュウナンシ,Shunan Shi,Shunan City
+"35","35216",35216,山口県,ヤマグチケン,Yamaguchi,山陽小野田市,サンヨウオノダシ,Sanyoonoda Shi,Sanyoonoda City
+"35","35305",35305,山口県,ヤマグチケン,Yamaguchi,大島郡周防大島町,オオシマグンスオウオオシマチョウ,Oshima Gun Suooshima Cho,Oshima District Suooshima Town
+"35","35321",35321,山口県,ヤマグチケン,Yamaguchi,玖珂郡和木町,クガグンワキチョウ,Kuga Gun Waki Cho,Kuga District Waki Town
+"35","35341",35341,山口県,ヤマグチケン,Yamaguchi,熊毛郡上関町,クマゲグンカミノセキチョウ,Kumage Gun Kaminoseki Cho,Kumage District Kaminoseki Town
+"35","35343",35343,山口県,ヤマグチケン,Yamaguchi,熊毛郡田布施町,クマゲグンタブセチョウ,Kumage Gun Tabuse Cho,Kumage District Tabuse Town
+"35","35344",35344,山口県,ヤマグチケン,Yamaguchi,熊毛郡平生町,クマゲグンヒラオチョウ,Kumage Gun Hirao Cho,Kumage District Hirao Town
+"35","35502",35502,山口県,ヤマグチケン,Yamaguchi,阿武郡阿武町,アブグンアブチョウ,Abu Gun Abu Cho,Abu District Abu Town
+"36","36201",36201,徳島県,トクシマケン,Tokushima,徳島市,トクシマシ,Tokushima Shi,Tokushima City
+"36","36202",36202,徳島県,トクシマケン,Tokushima,鳴門市,ナルトシ,Naruto Shi,Naruto City
+"36","36203",36203,徳島県,トクシマケン,Tokushima,小松島市,コマツシマシ,Komatsushima Shi,Komatsushima City
+"36","36204",36204,徳島県,トクシマケン,Tokushima,阿南市,アナンシ,Anan Shi,Anan City
+"36","36205",36205,徳島県,トクシマケン,Tokushima,吉野川市,ヨシノガワシ,Yoshinogawa Shi,Yoshinogawa City
+"36","36206",36206,徳島県,トクシマケン,Tokushima,阿波市,アワシ,Awa Shi,Awa City
+"36","36207",36207,徳島県,トクシマケン,Tokushima,美馬市,ミマシ,Mima Shi,Mima City
+"36","36208",36208,徳島県,トクシマケン,Tokushima,三好市,ミヨシシ,Miyoshi Shi,Miyoshi City
+"36","36301",36301,徳島県,トクシマケン,Tokushima,勝浦郡勝浦町,カツウラグンカツウラチョウ,Katsura Gun Katsura Cho,Katsura District Katsura Town
+"36","36302",36302,徳島県,トクシマケン,Tokushima,勝浦郡上勝町,カツウラグンカミカツチョウ,Katsura Gun Kamikatsu Cho,Katsura District Kamikatsu Town
+"36","36321",36321,徳島県,トクシマケン,Tokushima,名東郡佐那河内村,ミョウドウグンサナゴウチソン,Myodo Gun Sanagochi Son,Myodo District Sanagochi Village
+"36","36341",36341,徳島県,トクシマケン,Tokushima,名西郡石井町,ミョウザイグンイシイチョウ,Myozai Gun Ishii Cho,Myozai District Ishii Town
+"36","36342",36342,徳島県,トクシマケン,Tokushima,名西郡神山町,ミョウザイグンカミヤマチョウ,Myozai Gun Kamiyama Cho,Myozai District Kamiyama Town
+"36","36368",36368,徳島県,トクシマケン,Tokushima,那賀郡那賀町,ナカグンナカチョウ,Naka Gun Naka Cho,Naka District Naka Town
+"36","36383",36383,徳島県,トクシマケン,Tokushima,海部郡牟岐町,カイフグンムギチョウ,Kaifu Gun Mugi Cho,Kaifu District Mugi Town
+"36","36387",36387,徳島県,トクシマケン,Tokushima,海部郡美波町,カイフグンミナミチョウ,Kaifu Gun Minami Cho,Kaifu District Minami Town
+"36","36388",36388,徳島県,トクシマケン,Tokushima,海部郡海陽町,カイフグンカイヨウチョウ,Kaifu Gun Kaiyo Cho,Kaifu District Kaiyo Town
+"36","36401",36401,徳島県,トクシマケン,Tokushima,板野郡松茂町,イタノグンマツシゲチョウ,Itano Gun Matsushige Cho,Itano District Matsushige Town
+"36","36402",36402,徳島県,トクシマケン,Tokushima,板野郡北島町,イタノグンキタジマチョウ,Itano Gun Kitajima Cho,Itano District Kitajima Town
+"36","36403",36403,徳島県,トクシマケン,Tokushima,板野郡藍住町,イタノグンアイズミチョウ,Itano Gun Aizumi Cho,Itano District Aizumi Town
+"36","36404",36404,徳島県,トクシマケン,Tokushima,板野郡板野町,イタノグンイタノチョウ,Itano Gun Itano Cho,Itano District Itano Town
+"36","36405",36405,徳島県,トクシマケン,Tokushima,板野郡上板町,イタノグンカミイタチョウ,Itano Gun Kamiita Cho,Itano District Kamiita Town
+"36","36468",36468,徳島県,トクシマケン,Tokushima,美馬郡つるぎ町,ミマグンツルギチョウ,Mima Gun Tsurugi Cho,Mima District Tsurugi Town
+"36","36489",36489,徳島県,トクシマケン,Tokushima,三好郡東みよし町,ミヨシグンヒガシミヨシチョウ,Miyoshi Gun Higashimiyoshi Cho,Miyoshi District Higashimiyoshi Town
+"37","37201",37201,香川県,カガワケン,Kagawa,高松市,タカマツシ,Takamatsu Shi,Takamatsu City
+"37","37202",37202,香川県,カガワケン,Kagawa,丸亀市,マルガメシ,Marugame Shi,Marugame City
+"37","37203",37203,香川県,カガワケン,Kagawa,坂出市,サカイデシ,Sakaide Shi,Sakaide City
+"37","37204",37204,香川県,カガワケン,Kagawa,善通寺市,ゼンツウジシ,Zentsuji Shi,Zentsuji City
+"37","37205",37205,香川県,カガワケン,Kagawa,観音寺市,カンオンジシ,Kanonji Shi,Kanonji City
+"37","37206",37206,香川県,カガワケン,Kagawa,さぬき市,サヌキシ,Sanuki Shi,Sanuki City
+"37","37207",37207,香川県,カガワケン,Kagawa,東かがわ市,ヒガシカガワシ,Higashikagawa Shi,Higashikagawa City
+"37","37208",37208,香川県,カガワケン,Kagawa,三豊市,ミトヨシ,Mitoyo Shi,Mitoyo City
+"37","37322",37322,香川県,カガワケン,Kagawa,小豆郡土庄町,ショウズグントノショウチョウ,Shozu Gun Tonosho Cho,Shozu District Tonosho Town
+"37","37324",37324,香川県,カガワケン,Kagawa,小豆郡小豆島町,ショウズグンショウドシマチョウ,Shozu Gun Shodoshima Cho,Shozu District Shodoshima Town
+"37","37341",37341,香川県,カガワケン,Kagawa,木田郡三木町,キタグンミキチョウ,Kita Gun Miki Cho,Kita District Miki Town
+"37","37364",37364,香川県,カガワケン,Kagawa,香川郡直島町,カガワグンナオシマチョウ,Kagawa Gun Naoshima Cho,Kagawa District Naoshima Town
+"37","37386",37386,香川県,カガワケン,Kagawa,綾歌郡宇多津町,アヤウタグンウタヅチョウ,Ayauta Gun Utazu Cho,Ayauta District Utazu Town
+"37","37387",37387,香川県,カガワケン,Kagawa,綾歌郡綾川町,アヤウタグンアヤガワチョウ,Ayauta Gun Ayagawa Cho,Ayauta District Ayagawa Town
+"37","37403",37403,香川県,カガワケン,Kagawa,仲多度郡琴平町,ナカタドグンコトヒラチョウ,Nakatado Gun Kotohira Cho,Nakatado District Kotohira Town
+"37","37404",37404,香川県,カガワケン,Kagawa,仲多度郡多度津町,ナカタドグンタドツチョウ,Nakatado Gun Tadotsu Cho,Nakatado District Tadotsu Town
+"37","37406",37406,香川県,カガワケン,Kagawa,仲多度郡まんのう町,ナカタドグンマンノウチョウ,Nakatado Gun Manno Cho,Nakatado District Manno Town
+"38","38201",38201,愛媛県,エヒメケン,Ehime,松山市,マツヤマシ,Matsuyama Shi,Matsuyama City
+"38","38202",38202,愛媛県,エヒメケン,Ehime,今治市,イマバリシ,Imabari Shi,Imabari City
+"38","38203",38203,愛媛県,エヒメケン,Ehime,宇和島市,ウワジマシ,Uwajima Shi,Uwajima City
+"38","38204",38204,愛媛県,エヒメケン,Ehime,八幡浜市,ヤワタハマシ,Yawatahama Shi,Yawatahama City
+"38","38205",38205,愛媛県,エヒメケン,Ehime,新居浜市,ニイハマシ,Niihama Shi,Niihama City
+"38","38206",38206,愛媛県,エヒメケン,Ehime,西条市,サイジョウシ,Saijo Shi,Saijo City
+"38","38207",38207,愛媛県,エヒメケン,Ehime,大洲市,オオズシ,Ozu Shi,Ozu City
+"38","38210",38210,愛媛県,エヒメケン,Ehime,伊予市,イヨシ,Iyo Shi,Iyo City
+"38","38213",38213,愛媛県,エヒメケン,Ehime,四国中央市,シコクチュウオウシ,Shikokuchuo Shi,Shikokuchuo City
+"38","38214",38214,愛媛県,エヒメケン,Ehime,西予市,セイヨシ,Seiyo Shi,Seiyo City
+"38","38215",38215,愛媛県,エヒメケン,Ehime,東温市,トウオンシ,Toon Shi,Toon City
+"38","38356",38356,愛媛県,エヒメケン,Ehime,越智郡上島町,オチグンカミジマチョウ,Ochi Gun Kamijima Cho,Ochi District Kamijima Town
+"38","38386",38386,愛媛県,エヒメケン,Ehime,上浮穴郡久万高原町,カミウケナグンクマコウゲンチョウ,Kamiukena Gun Kumakogen Cho,Kamiukena District Kumakogen Town
+"38","38401",38401,愛媛県,エヒメケン,Ehime,伊予郡松前町,イヨグンマサキチョウ,Iyo Gun Masaki Cho,Iyo District Masaki Town
+"38","38402",38402,愛媛県,エヒメケン,Ehime,伊予郡砥部町,イヨグントベチョウ,Iyo Gun Tobe Cho,Iyo District Tobe Town
+"38","38422",38422,愛媛県,エヒメケン,Ehime,喜多郡内子町,キタグンウチコチョウ,Kita Gun Uchiko Cho,Kita District Uchiko Town
+"38","38442",38442,愛媛県,エヒメケン,Ehime,西宇和郡伊方町,ニシウワグンイカタチョウ,Nishiuwa Gun Ikata Cho,Nishiuwa District Ikata Town
+"38","38484",38484,愛媛県,エヒメケン,Ehime,北宇和郡松野町,キタウワグンマツノチョウ,Kitauwa Gun Matsuno Cho,Kitauwa District Matsuno Town
+"38","38488",38488,愛媛県,エヒメケン,Ehime,北宇和郡鬼北町,キタウワグンキホクチョウ,Kitauwa Gun Kihoku Cho,Kitauwa District Kihoku Town
+"38","38506",38506,愛媛県,エヒメケン,Ehime,南宇和郡愛南町,ミナミウワグンアイナンチョウ,Minamiuwa Gun Ainan Cho,Minamiuwa District Ainan Town
+"39","39201",39201,高知県,コウチケン,Kochi,高知市,コウチシ,Kochi Shi,Kochi City
+"39","39202",39202,高知県,コウチケン,Kochi,室戸市,ムロトシ,Muroto Shi,Muroto City
+"39","39203",39203,高知県,コウチケン,Kochi,安芸市,アキシ,Aki Shi,Aki City
+"39","39204",39204,高知県,コウチケン,Kochi,南国市,ナンコクシ,Nankoku Shi,Nankoku City
+"39","39205",39205,高知県,コウチケン,Kochi,土佐市,トサシ,Tosa Shi,Tosa City
+"39","39206",39206,高知県,コウチケン,Kochi,須崎市,スサキシ,Susaki Shi,Susaki City
+"39","39208",39208,高知県,コウチケン,Kochi,宿毛市,スクモシ,Sukumo Shi,Sukumo City
+"39","39209",39209,高知県,コウチケン,Kochi,土佐清水市,トサシミズシ,Tosashimizu Shi,Tosashimizu City
+"39","39210",39210,高知県,コウチケン,Kochi,四万十市,シマントシ,Shimanto Shi,Shimanto City
+"39","39211",39211,高知県,コウチケン,Kochi,香南市,コウナンシ,Konan Shi,Konan City
+"39","39212",39212,高知県,コウチケン,Kochi,香美市,カミシ,Kami Shi,Kami City
+"39","39301",39301,高知県,コウチケン,Kochi,安芸郡東洋町,アキグントウヨウチョウ,Aki Gun Toyo Cho,Aki District Toyo Town
+"39","39302",39302,高知県,コウチケン,Kochi,安芸郡奈半利町,アキグンナハリチョウ,Aki Gun Nahari Cho,Aki District Nahari Town
+"39","39303",39303,高知県,コウチケン,Kochi,安芸郡田野町,アキグンタノチョウ,Aki Gun Tano Cho,Aki District Tano Town
+"39","39304",39304,高知県,コウチケン,Kochi,安芸郡安田町,アキグンヤスダチョウ,Aki Gun Yasuda Cho,Aki District Yasuda Town
+"39","39305",39305,高知県,コウチケン,Kochi,安芸郡北川村,アキグンキタガワムラ,Aki Gun Kitagawa Mura,Aki District Kitagawa Village
+"39","39306",39306,高知県,コウチケン,Kochi,安芸郡馬路村,アキグンウマジムラ,Aki Gun Umaji Mura,Aki District Umaji Village
+"39","39307",39307,高知県,コウチケン,Kochi,安芸郡芸西村,アキグンゲイセイムラ,Aki Gun Geisei Mura,Aki District Geisei Village
+"39","39341",39341,高知県,コウチケン,Kochi,長岡郡本山町,ナガオカグンモトヤマチョウ,Nagaoka Gun Motoyama Cho,Nagaoka District Motoyama Town
+"39","39344",39344,高知県,コウチケン,Kochi,長岡郡大豊町,ナガオカグンオオトヨチョウ,Nagaoka Gun Otoyo Cho,Nagaoka District Otoyo Town
+"39","39363",39363,高知県,コウチケン,Kochi,土佐郡土佐町,トサグントサチョウ,Tosa Gun Tosa Cho,Tosa District Tosa Town
+"39","39364",39364,高知県,コウチケン,Kochi,土佐郡大川村,トサグンオオカワムラ,Tosa Gun Okawa Mura,Tosa District Okawa Village
+"39","39386",39386,高知県,コウチケン,Kochi,吾川郡いの町,アガワグンイノチョウ,Agawa Gun Ino Cho,Agawa District Ino Town
+"39","39387",39387,高知県,コウチケン,Kochi,吾川郡仁淀川町,アガワグンニヨドガワチョウ,Agawa Gun Niyodogawa Cho,Agawa District Niyodogawa Town
+"39","39401",39401,高知県,コウチケン,Kochi,高岡郡中土佐町,タカオカグンナカトサチョウ,Takaoka Gun Nakatosa Cho,Takaoka District Nakatosa Town
+"39","39402",39402,高知県,コウチケン,Kochi,高岡郡佐川町,タカオカグンサカワチョウ,Takaoka Gun Sakawa Cho,Takaoka District Sakawa Town
+"39","39403",39403,高知県,コウチケン,Kochi,高岡郡越知町,タカオカグンオチチョウ,Takaoka Gun Ochi Cho,Takaoka District Ochi Town
+"39","39405",39405,高知県,コウチケン,Kochi,高岡郡檮原町,タカオカグンユスハラチョウ,Takaoka Gun Yusuhara Cho,Takaoka District Yusuhara Town
+"39","39410",39410,高知県,コウチケン,Kochi,高岡郡日高村,タカオカグンヒダカムラ,Takaoka Gun Hidaka Mura,Takaoka District Hidaka Village
+"39","39411",39411,高知県,コウチケン,Kochi,高岡郡津野町,タカオカグンツノチョウ,Takaoka Gun Tsuno Cho,Takaoka District Tsuno Town
+"39","39412",39412,高知県,コウチケン,Kochi,高岡郡四万十町,タカオカグンシマントチョウ,Takaoka Gun Shimanto Cho,Takaoka District Shimanto Town
+"39","39424",39424,高知県,コウチケン,Kochi,幡多郡大月町,ハタグンオオツキチョウ,Hata Gun Otsuki Cho,Hata District Otsuki Town
+"39","39427",39427,高知県,コウチケン,Kochi,幡多郡三原村,ハタグンミハラムラ,Hata Gun Mihara Mura,Hata District Mihara Village
+"39","39428",39428,高知県,コウチケン,Kochi,幡多郡黒潮町,ハタグンクロシオチョウ,Hata Gun Kuroshio Cho,Hata District Kuroshio Town
+"40","40101",40101,福岡県,フクオカケン,Fukuoka,北九州市門司区,キタキュウシュウシモジク,Kitakyushu Shi Moji Ku,"Moji Ward,Kitakyushu City"
+"40","40103",40103,福岡県,フクオカケン,Fukuoka,北九州市若松区,キタキュウシュウシワカマツク,Kitakyushu Shi Wakamatsu Ku,"Wakamatsu Ward,Kitakyushu City"
+"40","40105",40105,福岡県,フクオカケン,Fukuoka,北九州市戸畑区,キタキュウシュウシトバタク,Kitakyushu Shi Tobata Ku,"Tobata Ward,Kitakyushu City"
+"40","40106",40106,福岡県,フクオカケン,Fukuoka,北九州市小倉北区,キタキュウシュウシコクラキタク,Kitakyushu Shi Kokurakita Ku,"Kokurakita Ward,Kitakyushu City"
+"40","40107",40107,福岡県,フクオカケン,Fukuoka,北九州市小倉南区,キタキュウシュウシコクラミナミク,Kitakyushu Shi Kokuraminami Ku,"Kokuraminami Ward,Kitakyushu City"
+"40","40108",40108,福岡県,フクオカケン,Fukuoka,北九州市八幡東区,キタキュウシュウシヤハタヒガシク,Kitakyushu Shi Yahatahigashi Ku,"Yahatahigashi Ward,Kitakyushu City"
+"40","40109",40109,福岡県,フクオカケン,Fukuoka,北九州市八幡西区,キタキュウシュウシヤハタニシク,Kitakyushu Shi Yahatanishi Ku,"Yahatanishi Ward,Kitakyushu City"
+"40","40131",40131,福岡県,フクオカケン,Fukuoka,福岡市東区,フクオカシヒガシク,Fukuoka Shi Higashi Ku,"Higashi Ward,Fukuoka City"
+"40","40132",40132,福岡県,フクオカケン,Fukuoka,福岡市博多区,フクオカシハカタク,Fukuoka Shi Hakata Ku,"Hakata Ward,Fukuoka City"
+"40","40133",40133,福岡県,フクオカケン,Fukuoka,福岡市中央区,フクオカシチュウオウク,Fukuoka Shi Chuo Ku,"Chuo Ward,Fukuoka City"
+"40","40134",40134,福岡県,フクオカケン,Fukuoka,福岡市南区,フクオカシミナミク,Fukuoka Shi Minami Ku,"Minami Ward,Fukuoka City"
+"40","40135",40135,福岡県,フクオカケン,Fukuoka,福岡市西区,フクオカシニシク,Fukuoka Shi Nishi Ku,"Nishi Ward,Fukuoka City"
+"40","40136",40136,福岡県,フクオカケン,Fukuoka,福岡市城南区,フクオカシジョウナンク,Fukuoka Shi Jonan Ku,"Jonan Ward,Fukuoka City"
+"40","40137",40137,福岡県,フクオカケン,Fukuoka,福岡市早良区,フクオカシサワラク,Fukuoka Shi Sawara Ku,"Sawara Ward,Fukuoka City"
+"40","40202",40202,福岡県,フクオカケン,Fukuoka,大牟田市,オオムタシ,Omuta Shi,Omuta City
+"40","40203",40203,福岡県,フクオカケン,Fukuoka,久留米市,クルメシ,Kurume Shi,Kurume City
+"40","40204",40204,福岡県,フクオカケン,Fukuoka,直方市,ノオガタシ,Nogata Shi,Nogata City
+"40","40205",40205,福岡県,フクオカケン,Fukuoka,飯塚市,イイヅカシ,Iizuka Shi,Iizuka City
+"40","40206",40206,福岡県,フクオカケン,Fukuoka,田川市,タガワシ,Tagawa Shi,Tagawa City
+"40","40207",40207,福岡県,フクオカケン,Fukuoka,柳川市,ヤナガワシ,Yanagawa Shi,Yanagawa City
+"40","40210",40210,福岡県,フクオカケン,Fukuoka,八女市,ヤメシ,Yame Shi,Yame City
+"40","40211",40211,福岡県,フクオカケン,Fukuoka,筑後市,チクゴシ,Chikugo Shi,Chikugo City
+"40","40212",40212,福岡県,フクオカケン,Fukuoka,大川市,オオカワシ,Okawa Shi,Okawa City
+"40","40213",40213,福岡県,フクオカケン,Fukuoka,行橋市,ユクハシシ,Yukuhashi Shi,Yukuhashi City
+"40","40214",40214,福岡県,フクオカケン,Fukuoka,豊前市,ブゼンシ,Buzen Shi,Buzen City
+"40","40215",40215,福岡県,フクオカケン,Fukuoka,中間市,ナカマシ,Nakama Shi,Nakama City
+"40","40216",40216,福岡県,フクオカケン,Fukuoka,小郡市,オゴオリシ,Ogori Shi,Ogori City
+"40","40217",40217,福岡県,フクオカケン,Fukuoka,筑紫野市,チクシノシ,Chikushino Shi,Chikushino City
+"40","40218",40218,福岡県,フクオカケン,Fukuoka,春日市,カスガシ,Kasuga Shi,Kasuga City
+"40","40219",40219,福岡県,フクオカケン,Fukuoka,大野城市,オオノジョウシ,Onojo Shi,Onojo City
+"40","40220",40220,福岡県,フクオカケン,Fukuoka,宗像市,ムナカタシ,Munakata Shi,Munakata City
+"40","40221",40221,福岡県,フクオカケン,Fukuoka,太宰府市,ダザイフシ,Dazaifu Shi,Dazaifu City
+"40","40223",40223,福岡県,フクオカケン,Fukuoka,古賀市,コガシ,Koga Shi,Koga City
+"40","40224",40224,福岡県,フクオカケン,Fukuoka,福津市,フクツシ,Fukutsu Shi,Fukutsu City
+"40","40225",40225,福岡県,フクオカケン,Fukuoka,うきは市,ウキハシ,Ukiha Shi,Ukiha City
+"40","40226",40226,福岡県,フクオカケン,Fukuoka,宮若市,ミヤワカシ,Miyawaka Shi,Miyawaka City
+"40","40227",40227,福岡県,フクオカケン,Fukuoka,嘉麻市,カマシ,Kama Shi,Kama City
+"40","40228",40228,福岡県,フクオカケン,Fukuoka,朝倉市,アサクラシ,Asakura Shi,Asakura City
+"40","40229",40229,福岡県,フクオカケン,Fukuoka,みやま市,ミヤマシ,Miyama Shi,Miyama City
+"40","40230",40230,福岡県,フクオカケン,Fukuoka,糸島市,イトシマシ,Itoshima Shi,Itoshima City
+"40","40231",40231,福岡県,フクオカケン,Fukuoka,那珂川市,ナカガワシ,Nakagawa Shi,Nakagawa City
+"40","40341",40341,福岡県,フクオカケン,Fukuoka,糟屋郡宇美町,カスヤグンウミマチ,Kasuya Gun Umi Machi,Kasuya District Umi Town
+"40","40342",40342,福岡県,フクオカケン,Fukuoka,糟屋郡篠栗町,カスヤグンササグリマチ,Kasuya Gun Sasaguri Machi,Kasuya District Sasaguri Town
+"40","40343",40343,福岡県,フクオカケン,Fukuoka,糟屋郡志免町,カスヤグンシメマチ,Kasuya Gun Shime Machi,Kasuya District Shime Town
+"40","40344",40344,福岡県,フクオカケン,Fukuoka,糟屋郡須恵町,カスヤグンスエマチ,Kasuya Gun Sue Machi,Kasuya District Sue Town
+"40","40345",40345,福岡県,フクオカケン,Fukuoka,糟屋郡新宮町,カスヤグンシングウマチ,Kasuya Gun Shingu Machi,Kasuya District Shingu Town
+"40","40348",40348,福岡県,フクオカケン,Fukuoka,糟屋郡久山町,カスヤグンヒサヤママチ,Kasuya Gun Hisayama Machi,Kasuya District Hisayama Town
+"40","40349",40349,福岡県,フクオカケン,Fukuoka,糟屋郡粕屋町,カスヤグンカスヤマチ,Kasuya Gun Kasuya Machi,Kasuya District Kasuya Town
+"40","40381",40381,福岡県,フクオカケン,Fukuoka,遠賀郡芦屋町,オンガグンアシヤマチ,Onga Gun Ashiya Machi,Onga District Ashiya Town
+"40","40382",40382,福岡県,フクオカケン,Fukuoka,遠賀郡水巻町,オンガグンミズマキマチ,Onga Gun Mizumaki Machi,Onga District Mizumaki Town
+"40","40383",40383,福岡県,フクオカケン,Fukuoka,遠賀郡岡垣町,オンガグンオカガキマチ,Onga Gun Okagaki Machi,Onga District Okagaki Town
+"40","40384",40384,福岡県,フクオカケン,Fukuoka,遠賀郡遠賀町,オンガグンオンガチョウ,Onga Gun Onga Cho,Onga District Onga Town
+"40","40401",40401,福岡県,フクオカケン,Fukuoka,鞍手郡小竹町,クラテグンコタケマチ,Kurate Gun Kotake Machi,Kurate District Kotake Town
+"40","40402",40402,福岡県,フクオカケン,Fukuoka,鞍手郡鞍手町,クラテグンクラテマチ,Kurate Gun Kurate Machi,Kurate District Kurate Town
+"40","40421",40421,福岡県,フクオカケン,Fukuoka,嘉穂郡桂川町,カホグンケイセンマチ,Kaho Gun Keisen Machi,Kaho District Keisen Town
+"40","40447",40447,福岡県,フクオカケン,Fukuoka,朝倉郡筑前町,アサクラグンチクゼンマチ,Asakura Gun Chikuzen Machi,Asakura District Chikuzen Town
+"40","40448",40448,福岡県,フクオカケン,Fukuoka,朝倉郡東峰村,アサクラグントウホウムラ,Asakura Gun Toho Mura,Asakura District Toho Village
+"40","40503",40503,福岡県,フクオカケン,Fukuoka,三井郡大刀洗町,ミイグンタチアライマチ,Mii Gun Tachiarai Machi,Mii District Tachiarai Town
+"40","40522",40522,福岡県,フクオカケン,Fukuoka,三潴郡大木町,ミズマグンオオキマチ,Mizuma Gun Oki Machi,Mizuma District Oki Town
+"40","40544",40544,福岡県,フクオカケン,Fukuoka,八女郡広川町,ヤメグンヒロカワマチ,Yame Gun Hirokawa Machi,Yame District Hirokawa Town
+"40","40601",40601,福岡県,フクオカケン,Fukuoka,田川郡香春町,タガワグンカワラマチ,Tagawa Gun Kawara Machi,Tagawa District Kawara Town
+"40","40602",40602,福岡県,フクオカケン,Fukuoka,田川郡添田町,タガワグンソエダマチ,Tagawa Gun Soeda Machi,Tagawa District Soeda Town
+"40","40604",40604,福岡県,フクオカケン,Fukuoka,田川郡糸田町,タガワグンイトダマチ,Tagawa Gun Itoda Machi,Tagawa District Itoda Town
+"40","40605",40605,福岡県,フクオカケン,Fukuoka,田川郡川崎町,タガワグンカワサキマチ,Tagawa Gun Kawasaki Machi,Tagawa District Kawasaki Town
+"40","40608",40608,福岡県,フクオカケン,Fukuoka,田川郡大任町,タガワグンオオトウマチ,Tagawa Gun Oto Machi,Tagawa District Oto Town
+"40","40609",40609,福岡県,フクオカケン,Fukuoka,田川郡赤村,タガワグンアカムラ,Tagawa Gun Aka Mura,Tagawa District Aka Village
+"40","40610",40610,福岡県,フクオカケン,Fukuoka,田川郡福智町,タガワグンフクチマチ,Tagawa Gun Fukuchi Machi,Tagawa District Fukuchi Town
+"40","40621",40621,福岡県,フクオカケン,Fukuoka,京都郡苅田町,ミヤコグンカンダマチ,Miyako Gun Kanda Machi,Miyako District Kanda Town
+"40","40625",40625,福岡県,フクオカケン,Fukuoka,京都郡みやこ町,ミヤコグンミヤコマチ,Miyako Gun Miyako Machi,Miyako District Miyako Town
+"40","40642",40642,福岡県,フクオカケン,Fukuoka,築上郡吉富町,チクジョウグンヨシトミマチ,Chikujo Gun Yoshitomi Machi,Chikujo District Yoshitomi Town
+"40","40646",40646,福岡県,フクオカケン,Fukuoka,築上郡上毛町,チクジョウグンコウゲマチ,Chikujo Gun Koge Machi,Chikujo District Koge Town
+"40","40647",40647,福岡県,フクオカケン,Fukuoka,築上郡築上町,チクジョウグンチクジョウマチ,Chikujo Gun Chikujo Machi,Chikujo District Chikujo Town
+"41","41201",41201,佐賀県,サガケン,Saga,佐賀市,サガシ,Saga Shi,Saga City
+"41","41202",41202,佐賀県,サガケン,Saga,唐津市,カラツシ,Karatsu Shi,Karatsu City
+"41","41203",41203,佐賀県,サガケン,Saga,鳥栖市,トスシ,Tosu Shi,Tosu City
+"41","41204",41204,佐賀県,サガケン,Saga,多久市,タクシ,Taku Shi,Taku City
+"41","41205",41205,佐賀県,サガケン,Saga,伊万里市,イマリシ,Imari Shi,Imari City
+"41","41206",41206,佐賀県,サガケン,Saga,武雄市,タケオシ,Takeo Shi,Takeo City
+"41","41207",41207,佐賀県,サガケン,Saga,鹿島市,カシマシ,Kashima Shi,Kashima City
+"41","41208",41208,佐賀県,サガケン,Saga,小城市,オギシ,Ogi Shi,Ogi City
+"41","41209",41209,佐賀県,サガケン,Saga,嬉野市,ウレシノシ,Ureshino Shi,Ureshino City
+"41","41210",41210,佐賀県,サガケン,Saga,神埼市,カンザキシ,Kanzaki Shi,Kanzaki City
+"41","41327",41327,佐賀県,サガケン,Saga,神埼郡吉野ヶ里町,カンザキグンヨシノガリチョウ,Kanzaki Gun Yoshinogari Cho,Kanzaki District Yoshinogari Town
+"41","41341",41341,佐賀県,サガケン,Saga,三養基郡基山町,ミヤキグンキヤマチョウ,Miyaki Gun Kiyama Cho,Miyaki District Kiyama Town
+"41","41345",41345,佐賀県,サガケン,Saga,三養基郡上峰町,ミヤキグンカミミネチョウ,Miyaki Gun Kamimine Cho,Miyaki District Kamimine Town
+"41","41346",41346,佐賀県,サガケン,Saga,三養基郡みやき町,ミヤキグンミヤキチョウ,Miyaki Gun Miyaki Cho,Miyaki District Miyaki Town
+"41","41387",41387,佐賀県,サガケン,Saga,東松浦郡玄海町,ヒガシマツウラグンゲンカイチョウ,Higashimatsura Gun Genkai Cho,Higashimatsura District Genkai Town
+"41","41401",41401,佐賀県,サガケン,Saga,西松浦郡有田町,ニシマツウラグンアリタチョウ,Nishimatsura Gun Arita Cho,Nishimatsura District Arita Town
+"41","41423",41423,佐賀県,サガケン,Saga,杵島郡大町町,キシマグンオオマチチョウ,Kishima Gun Omachi Cho,Kishima District Omachi Town
+"41","41424",41424,佐賀県,サガケン,Saga,杵島郡江北町,キシマグンコウホクマチ,Kishima Gun Kohoku Machi,Kishima District Kohoku Town
+"41","41425",41425,佐賀県,サガケン,Saga,杵島郡白石町,キシマグンシロイシチョウ,Kishima Gun Shiroishi Cho,Kishima District Shiroishi Town
+"41","41441",41441,佐賀県,サガケン,Saga,藤津郡太良町,フジツグンタラチョウ,Fujitsu Gun Tara Cho,Fujitsu District Tara Town
+"42","42201",42201,長崎県,ナガサキケン,Nagasaki,長崎市,ナガサキシ,Nagasaki Shi,Nagasaki City
+"42","42202",42202,長崎県,ナガサキケン,Nagasaki,佐世保市,サセボシ,Sasebo Shi,Sasebo City
+"42","42203",42203,長崎県,ナガサキケン,Nagasaki,島原市,シマバラシ,Shimabara Shi,Shimabara City
+"42","42204",42204,長崎県,ナガサキケン,Nagasaki,諫早市,イサハヤシ,Isahaya Shi,Isahaya City
+"42","42205",42205,長崎県,ナガサキケン,Nagasaki,大村市,オオムラシ,Omura Shi,Omura City
+"42","42207",42207,長崎県,ナガサキケン,Nagasaki,平戸市,ヒラドシ,Hirado Shi,Hirado City
+"42","42208",42208,長崎県,ナガサキケン,Nagasaki,松浦市,マツウラシ,Matsura Shi,Matsura City
+"42","42209",42209,長崎県,ナガサキケン,Nagasaki,対馬市,ツシマシ,Tsushima Shi,Tsushima City
+"42","42210",42210,長崎県,ナガサキケン,Nagasaki,壱岐市,イキシ,Iki Shi,Iki City
+"42","42211",42211,長崎県,ナガサキケン,Nagasaki,五島市,ゴトウシ,Goto Shi,Goto City
+"42","42212",42212,長崎県,ナガサキケン,Nagasaki,西海市,サイカイシ,Saikai Shi,Saikai City
+"42","42213",42213,長崎県,ナガサキケン,Nagasaki,雲仙市,ウンゼンシ,Unzen Shi,Unzen City
+"42","42214",42214,長崎県,ナガサキケン,Nagasaki,南島原市,ミナミシマバラシ,Minamishimabara Shi,Minamishimabara City
+"42","42307",42307,長崎県,ナガサキケン,Nagasaki,西彼杵郡長与町,ニシソノギグンナガヨチョウ,Nishisonogi Gun Nagayo Cho,Nishisonogi District Nagayo Town
+"42","42308",42308,長崎県,ナガサキケン,Nagasaki,西彼杵郡時津町,ニシソノギグントギツチョウ,Nishisonogi Gun Togitsu Cho,Nishisonogi District Togitsu Town
+"42","42321",42321,長崎県,ナガサキケン,Nagasaki,東彼杵郡東彼杵町,ヒガシソノギグンヒガシソノギチョウ,Higashisonogi Gun Higashisonogi Cho,Higashisonogi District Higashisonogi Town
+"42","42322",42322,長崎県,ナガサキケン,Nagasaki,東彼杵郡川棚町,ヒガシソノギグンカワタナチョウ,Higashisonogi Gun Kawatana Cho,Higashisonogi District Kawatana Town
+"42","42323",42323,長崎県,ナガサキケン,Nagasaki,東彼杵郡波佐見町,ヒガシソノギグンハサミチョウ,Higashisonogi Gun Hasami Cho,Higashisonogi District Hasami Town
+"42","42383",42383,長崎県,ナガサキケン,Nagasaki,北松浦郡小値賀町,キタマツウラグンオヂカチョウ,Kitamatsura Gun Ojika Cho,Kitamatsura District Ojika Town
+"42","42391",42391,長崎県,ナガサキケン,Nagasaki,北松浦郡佐々町,キタマツウラグンサザチョウ,Kitamatsura Gun Saza Cho,Kitamatsura District Saza Town
+"42","42411",42411,長崎県,ナガサキケン,Nagasaki,南松浦郡新上五島町,ミナミマツウラグンシンカミゴトウチョウ,Minamimatsura Gun Shinkamigoto Cho,Minamimatsura District Shinkamigoto Town
+"43","43101",43101,熊本県,クマモトケン,Kumamoto,熊本市中央区,クマモトシチュウオウク,Kumamoto Shi Chuo Ku,"Chuo Ward,Kumamoto City"
+"43","43102",43102,熊本県,クマモトケン,Kumamoto,熊本市東区,クマモトシヒガシク,Kumamoto Shi Higashi Ku,"Higashi Ward,Kumamoto City"
+"43","43103",43103,熊本県,クマモトケン,Kumamoto,熊本市西区,クマモトシニシク,Kumamoto Shi Nishi Ku,"Nishi Ward,Kumamoto City"
+"43","43104",43104,熊本県,クマモトケン,Kumamoto,熊本市南区,クマモトシミナミク,Kumamoto Shi Minami Ku,"Minami Ward,Kumamoto City"
+"43","43105",43105,熊本県,クマモトケン,Kumamoto,熊本市北区,クマモトシキタク,Kumamoto Shi Kita Ku,"Kita Ward,Kumamoto City"
+"43","43202",43202,熊本県,クマモトケン,Kumamoto,八代市,ヤツシロシ,Yatsushiro Shi,Yatsushiro City
+"43","43203",43203,熊本県,クマモトケン,Kumamoto,人吉市,ヒトヨシシ,Hitoyoshi Shi,Hitoyoshi City
+"43","43204",43204,熊本県,クマモトケン,Kumamoto,荒尾市,アラオシ,Arao Shi,Arao City
+"43","43205",43205,熊本県,クマモトケン,Kumamoto,水俣市,ミナマタシ,Minamata Shi,Minamata City
+"43","43206",43206,熊本県,クマモトケン,Kumamoto,玉名市,タマナシ,Tamana Shi,Tamana City
+"43","43208",43208,熊本県,クマモトケン,Kumamoto,山鹿市,ヤマガシ,Yamaga Shi,Yamaga City
+"43","43210",43210,熊本県,クマモトケン,Kumamoto,菊池市,キクチシ,Kikuchi Shi,Kikuchi City
+"43","43211",43211,熊本県,クマモトケン,Kumamoto,宇土市,ウトシ,Uto Shi,Uto City
+"43","43212",43212,熊本県,クマモトケン,Kumamoto,上天草市,カミアマクサシ,Kamiamakusa Shi,Kamiamakusa City
+"43","43213",43213,熊本県,クマモトケン,Kumamoto,宇城市,ウキシ,Uki Shi,Uki City
+"43","43214",43214,熊本県,クマモトケン,Kumamoto,阿蘇市,アソシ,Aso Shi,Aso City
+"43","43215",43215,熊本県,クマモトケン,Kumamoto,天草市,アマクサシ,Amakusa Shi,Amakusa City
+"43","43216",43216,熊本県,クマモトケン,Kumamoto,合志市,コウシシ,Koshi Shi,Koshi City
+"43","43348",43348,熊本県,クマモトケン,Kumamoto,下益城郡美里町,シモマシキグンミサトマチ,Shimomashiki Gun Misato Machi,Shimomashiki District Misato Town
+"43","43364",43364,熊本県,クマモトケン,Kumamoto,玉名郡玉東町,タマナグンギョクトウマチ,Tamana Gun Gyokuto Machi,Tamana District Gyokuto Town
+"43","43367",43367,熊本県,クマモトケン,Kumamoto,玉名郡南関町,タマナグンナンカンマチ,Tamana Gun Nankan Machi,Tamana District Nankan Town
+"43","43368",43368,熊本県,クマモトケン,Kumamoto,玉名郡長洲町,タマナグンナガスマチ,Tamana Gun Nagasu Machi,Tamana District Nagasu Town
+"43","43369",43369,熊本県,クマモトケン,Kumamoto,玉名郡和水町,タマナグンナゴミマチ,Tamana Gun Nagomi Machi,Tamana District Nagomi Town
+"43","43403",43403,熊本県,クマモトケン,Kumamoto,菊池郡大津町,キクチグンオオヅマチ,Kikuchi Gun Ozu Machi,Kikuchi District Ozu Town
+"43","43404",43404,熊本県,クマモトケン,Kumamoto,菊池郡菊陽町,キクチグンキクヨウマチ,Kikuchi Gun Kikuyo Machi,Kikuchi District Kikuyo Town
+"43","43423",43423,熊本県,クマモトケン,Kumamoto,阿蘇郡南小国町,アソグンミナミオグニマチ,Aso Gun Minamioguni Machi,Aso District Minamioguni Town
+"43","43424",43424,熊本県,クマモトケン,Kumamoto,阿蘇郡小国町,アソグンオグニマチ,Aso Gun Oguni Machi,Aso District Oguni Town
+"43","43425",43425,熊本県,クマモトケン,Kumamoto,阿蘇郡産山村,アソグンウブヤマムラ,Aso Gun Ubuyama Mura,Aso District Ubuyama Village
+"43","43428",43428,熊本県,クマモトケン,Kumamoto,阿蘇郡高森町,アソグンタカモリマチ,Aso Gun Takamori Machi,Aso District Takamori Town
+"43","43432",43432,熊本県,クマモトケン,Kumamoto,阿蘇郡西原村,アソグンニシハラムラ,Aso Gun Nishihara Mura,Aso District Nishihara Village
+"43","43433",43433,熊本県,クマモトケン,Kumamoto,阿蘇郡南阿蘇村,アソグンミナミアソムラ,Aso Gun Minamiaso Mura,Aso District Minamiaso Village
+"43","43441",43441,熊本県,クマモトケン,Kumamoto,上益城郡御船町,カミマシキグンミフネマチ,Kamimashiki Gun Mifune Machi,Kamimashiki District Mifune Town
+"43","43442",43442,熊本県,クマモトケン,Kumamoto,上益城郡嘉島町,カミマシキグンカシママチ,Kamimashiki Gun Kashima Machi,Kamimashiki District Kashima Town
+"43","43443",43443,熊本県,クマモトケン,Kumamoto,上益城郡益城町,カミマシキグンマシキマチ,Kamimashiki Gun Mashiki Machi,Kamimashiki District Mashiki Town
+"43","43444",43444,熊本県,クマモトケン,Kumamoto,上益城郡甲佐町,カミマシキグンコウサマチ,Kamimashiki Gun Kosa Machi,Kamimashiki District Kosa Town
+"43","43447",43447,熊本県,クマモトケン,Kumamoto,上益城郡山都町,カミマシキグンヤマトチョウ,Kamimashiki Gun Yamato Cho,Kamimashiki District Yamato Town
+"43","43468",43468,熊本県,クマモトケン,Kumamoto,八代郡氷川町,ヤツシログンヒカワチョウ,Yatsushiro Gun Hikawa Cho,Yatsushiro District Hikawa Town
+"43","43482",43482,熊本県,クマモトケン,Kumamoto,葦北郡芦北町,アシキタグンアシキタマチ,Ashikita Gun Ashikita Machi,Ashikita District Ashikita Town
+"43","43484",43484,熊本県,クマモトケン,Kumamoto,葦北郡津奈木町,アシキタグンツナギマチ,Ashikita Gun Tsunagi Machi,Ashikita District Tsunagi Town
+"43","43501",43501,熊本県,クマモトケン,Kumamoto,球磨郡錦町,クマグンニシキマチ,Kuma Gun Nishiki Machi,Kuma District Nishiki Town
+"43","43505",43505,熊本県,クマモトケン,Kumamoto,球磨郡多良木町,クマグンタラギマチ,Kuma Gun Taragi Machi,Kuma District Taragi Town
+"43","43507",43507,熊本県,クマモトケン,Kumamoto,球磨郡水上村,クマグンミズカミムラ,Kuma Gun Mizukami Mura,Kuma District Mizukami Village
+"43","43510",43510,熊本県,クマモトケン,Kumamoto,球磨郡相良村,クマグンサガラムラ,Kuma Gun Sagara Mura,Kuma District Sagara Village
+"43","43511",43511,熊本県,クマモトケン,Kumamoto,球磨郡五木村,クマグンイツキムラ,Kuma Gun Itsuki Mura,Kuma District Itsuki Village
+"43","43512",43512,熊本県,クマモトケン,Kumamoto,球磨郡山江村,クマグンヤマエムラ,Kuma Gun Yamae Mura,Kuma District Yamae Village
+"43","43513",43513,熊本県,クマモトケン,Kumamoto,球磨郡球磨村,クマグンクマムラ,Kuma Gun Kuma Mura,Kuma District Kuma Village
+"43","43514",43514,熊本県,クマモトケン,Kumamoto,球磨郡あさぎり町,クマグンアサギリチョウ,Kuma Gun Asagiri Cho,Kuma District Asagiri Town
+"43","43531",43531,熊本県,クマモトケン,Kumamoto,天草郡苓北町,アマクサグンレイホクマチ,Amakusa Gun Reihoku Machi,Amakusa District Reihoku Town
+"44","44201",44201,大分県,オオイタケン,Oita,大分市,オオイタシ,Oita Shi,Oita City
+"44","44202",44202,大分県,オオイタケン,Oita,別府市,ベップシ,Beppu Shi,Beppu City
+"44","44203",44203,大分県,オオイタケン,Oita,中津市,ナカツシ,Nakatsu Shi,Nakatsu City
+"44","44204",44204,大分県,オオイタケン,Oita,日田市,ヒタシ,Hita Shi,Hita City
+"44","44205",44205,大分県,オオイタケン,Oita,佐伯市,サイキシ,Saiki Shi,Saiki City
+"44","44206",44206,大分県,オオイタケン,Oita,臼杵市,ウスキシ,Usuki Shi,Usuki City
+"44","44207",44207,大分県,オオイタケン,Oita,津久見市,ツクミシ,Tsukumi Shi,Tsukumi City
+"44","44208",44208,大分県,オオイタケン,Oita,竹田市,タケタシ,Taketa Shi,Taketa City
+"44","44209",44209,大分県,オオイタケン,Oita,豊後高田市,ブンゴタカダシ,Bungotakada Shi,Bungotakada City
+"44","44210",44210,大分県,オオイタケン,Oita,杵築市,キツキシ,Kitsuki Shi,Kitsuki City
+"44","44211",44211,大分県,オオイタケン,Oita,宇佐市,ウサシ,Usa Shi,Usa City
+"44","44212",44212,大分県,オオイタケン,Oita,豊後大野市,ブンゴオオノシ,Bungoono Shi,Bungoono City
+"44","44213",44213,大分県,オオイタケン,Oita,由布市,ユフシ,Yufu Shi,Yufu City
+"44","44214",44214,大分県,オオイタケン,Oita,国東市,クニサキシ,Kunisaki Shi,Kunisaki City
+"44","44322",44322,大分県,オオイタケン,Oita,東国東郡姫島村,ヒガシクニサキグンヒメシマムラ,Higashikunisaki Gun Himeshima Mura,Higashikunisaki District Himeshima Village
+"44","44341",44341,大分県,オオイタケン,Oita,速見郡日出町,ハヤミグンヒジマチ,Hayami Gun Hiji Machi,Hayami District Hiji Town
+"44","44461",44461,大分県,オオイタケン,Oita,玖珠郡九重町,クスグンココノエマチ,Kusu Gun Kokonoe Machi,Kusu District Kokonoe Town
+"44","44462",44462,大分県,オオイタケン,Oita,玖珠郡玖珠町,クスグンクスマチ,Kusu Gun Kusu Machi,Kusu District Kusu Town
+"45","45201",45201,宮崎県,ミヤザキケン,Miyazaki,宮崎市,ミヤザキシ,Miyazaki Shi,Miyazaki City
+"45","45202",45202,宮崎県,ミヤザキケン,Miyazaki,都城市,ミヤコノジョウシ,Miyakonojo Shi,Miyakonojo City
+"45","45203",45203,宮崎県,ミヤザキケン,Miyazaki,延岡市,ノベオカシ,Nobeoka Shi,Nobeoka City
+"45","45204",45204,宮崎県,ミヤザキケン,Miyazaki,日南市,ニチナンシ,Nichinan Shi,Nichinan City
+"45","45205",45205,宮崎県,ミヤザキケン,Miyazaki,小林市,コバヤシシ,Kobayashi Shi,Kobayashi City
+"45","45206",45206,宮崎県,ミヤザキケン,Miyazaki,日向市,ヒュウガシ,Hyuga Shi,Hyuga City
+"45","45207",45207,宮崎県,ミヤザキケン,Miyazaki,串間市,クシマシ,Kushima Shi,Kushima City
+"45","45208",45208,宮崎県,ミヤザキケン,Miyazaki,西都市,サイトシ,Saito Shi,Saito City
+"45","45209",45209,宮崎県,ミヤザキケン,Miyazaki,えびの市,エビノシ,Ebino Shi,Ebino City
+"45","45341",45341,宮崎県,ミヤザキケン,Miyazaki,北諸県郡三股町,キタモロカタグンミマタチョウ,Kitamorokata Gun Mimata Cho,Kitamorokata District Mimata Town
+"45","45361",45361,宮崎県,ミヤザキケン,Miyazaki,西諸県郡高原町,ニシモロカタグンタカハルチョウ,Nishimorokata Gun Takaharu Cho,Nishimorokata District Takaharu Town
+"45","45382",45382,宮崎県,ミヤザキケン,Miyazaki,東諸県郡国富町,ヒガシモロカタグンクニトミチョウ,Higashimorokata Gun Kunitomi Cho,Higashimorokata District Kunitomi Town
+"45","45383",45383,宮崎県,ミヤザキケン,Miyazaki,東諸県郡綾町,ヒガシモロカタグンアヤチョウ,Higashimorokata Gun Aya Cho,Higashimorokata District Aya Town
+"45","45401",45401,宮崎県,ミヤザキケン,Miyazaki,児湯郡高鍋町,コユグンタカナベチョウ,Koyu Gun Takanabe Cho,Koyu District Takanabe Town
+"45","45402",45402,宮崎県,ミヤザキケン,Miyazaki,児湯郡新富町,コユグンシントミチョウ,Koyu Gun Shintomi Cho,Koyu District Shintomi Town
+"45","45403",45403,宮崎県,ミヤザキケン,Miyazaki,児湯郡西米良村,コユグンニシメラソン,Koyu Gun Nishimera Son,Koyu District Nishimera Village
+"45","45404",45404,宮崎県,ミヤザキケン,Miyazaki,児湯郡木城町,コユグンキジョウチョウ,Koyu Gun Kijo Cho,Koyu District Kijo Town
+"45","45405",45405,宮崎県,ミヤザキケン,Miyazaki,児湯郡川南町,コユグンカワミナミチョウ,Koyu Gun Kawaminami Cho,Koyu District Kawaminami Town
+"45","45406",45406,宮崎県,ミヤザキケン,Miyazaki,児湯郡都農町,コユグンツノチョウ,Koyu Gun Tsuno Cho,Koyu District Tsuno Town
+"45","45421",45421,宮崎県,ミヤザキケン,Miyazaki,東臼杵郡門川町,ヒガシウスキグンカドガワチョウ,Higashiusuki Gun Kadogawa Cho,Higashiusuki District Kadogawa Town
+"45","45429",45429,宮崎県,ミヤザキケン,Miyazaki,東臼杵郡諸塚村,ヒガシウスキグンモロツカソン,Higashiusuki Gun Morotsuka Son,Higashiusuki District Morotsuka Village
+"45","45430",45430,宮崎県,ミヤザキケン,Miyazaki,東臼杵郡椎葉村,ヒガシウスキグンシイバソン,Higashiusuki Gun Shiiba Son,Higashiusuki District Shiiba Village
+"45","45431",45431,宮崎県,ミヤザキケン,Miyazaki,東臼杵郡美郷町,ヒガシウスキグンミサトチョウ,Higashiusuki Gun Misato Cho,Higashiusuki District Misato Town
+"45","45441",45441,宮崎県,ミヤザキケン,Miyazaki,西臼杵郡高千穂町,ニシウスキグンタカチホチョウ,Nishiusuki Gun Takachiho Cho,Nishiusuki District Takachiho Town
+"45","45442",45442,宮崎県,ミヤザキケン,Miyazaki,西臼杵郡日之影町,ニシウスキグンヒノカゲチョウ,Nishiusuki Gun Hinokage Cho,Nishiusuki District Hinokage Town
+"45","45443",45443,宮崎県,ミヤザキケン,Miyazaki,西臼杵郡五ヶ瀬町,ニシウスキグンゴカセチョウ,Nishiusuki Gun Gokase Cho,Nishiusuki District Gokase Town
+"46","46201",46201,鹿児島県,カゴシマケン,Kagoshima,鹿児島市,カゴシマシ,Kagoshima Shi,Kagoshima City
+"46","46203",46203,鹿児島県,カゴシマケン,Kagoshima,鹿屋市,カノヤシ,Kanoya Shi,Kanoya City
+"46","46204",46204,鹿児島県,カゴシマケン,Kagoshima,枕崎市,マクラザキシ,Makurazaki Shi,Makurazaki City
+"46","46206",46206,鹿児島県,カゴシマケン,Kagoshima,阿久根市,アクネシ,Akune Shi,Akune City
+"46","46208",46208,鹿児島県,カゴシマケン,Kagoshima,出水市,イズミシ,Izumi Shi,Izumi City
+"46","46210",46210,鹿児島県,カゴシマケン,Kagoshima,指宿市,イブスキシ,Ibusuki Shi,Ibusuki City
+"46","46213",46213,鹿児島県,カゴシマケン,Kagoshima,西之表市,ニシノオモテシ,Nishinomote Shi,Nishinomote City
+"46","46214",46214,鹿児島県,カゴシマケン,Kagoshima,垂水市,タルミズシ,Tarumizu Shi,Tarumizu City
+"46","46215",46215,鹿児島県,カゴシマケン,Kagoshima,薩摩川内市,サツマセンダイシ,Satsumasendai Shi,Satsumasendai City
+"46","46216",46216,鹿児島県,カゴシマケン,Kagoshima,日置市,ヒオキシ,Hioki Shi,Hioki City
+"46","46217",46217,鹿児島県,カゴシマケン,Kagoshima,曽於市,ソオシ,So Shi,So City
+"46","46218",46218,鹿児島県,カゴシマケン,Kagoshima,霧島市,キリシマシ,Kirishima Shi,Kirishima City
+"46","46219",46219,鹿児島県,カゴシマケン,Kagoshima,いちき串木野市,イチキクシキノシ,Ichikikushikino Shi,Ichikikushikino City
+"46","46220",46220,鹿児島県,カゴシマケン,Kagoshima,南さつま市,ミナミサツマシ,Minamisatsuma Shi,Minamisatsuma City
+"46","46221",46221,鹿児島県,カゴシマケン,Kagoshima,志布志市,シブシシ,Shibushi Shi,Shibushi City
+"46","46222",46222,鹿児島県,カゴシマケン,Kagoshima,奄美市,アマミシ,Amami Shi,Amami City
+"46","46223",46223,鹿児島県,カゴシマケン,Kagoshima,南九州市,ミナミキュウシュウシ,Minamikyushu Shi,Minamikyushu City
+"46","46224",46224,鹿児島県,カゴシマケン,Kagoshima,伊佐市,イサシ,Isa Shi,Isa City
+"46","46225",46225,鹿児島県,カゴシマケン,Kagoshima,姶良市,アイラシ,Aira Shi,Aira City
+"46","46303",46303,鹿児島県,カゴシマケン,Kagoshima,鹿児島郡三島村,カゴシマグンミシマムラ,Kagoshima Gun Mishima Mura,Kagoshima District Mishima Village
+"46","46304",46304,鹿児島県,カゴシマケン,Kagoshima,鹿児島郡十島村,カゴシマグントシマムラ,Kagoshima Gun Toshima Mura,Kagoshima District Toshima Village
+"46","46392",46392,鹿児島県,カゴシマケン,Kagoshima,薩摩郡さつま町,サツマグンサツマチョウ,Satsuma Gun Satsuma Cho,Satsuma District Satsuma Town
+"46","46404",46404,鹿児島県,カゴシマケン,Kagoshima,出水郡長島町,イズミグンナガシマチョウ,Izumi Gun Nagashima Cho,Izumi District Nagashima Town
+"46","46452",46452,鹿児島県,カゴシマケン,Kagoshima,姶良郡湧水町,アイラグンユウスイチョウ,Aira Gun Yusui Cho,Aira District Yusui Town
+"46","46468",46468,鹿児島県,カゴシマケン,Kagoshima,曽於郡大崎町,ソオグンオオサキチョウ,So Gun Osaki Cho,So District Osaki Town
+"46","46482",46482,鹿児島県,カゴシマケン,Kagoshima,肝属郡東串良町,キモツキグンヒガシクシラチョウ,Kimotsuki Gun Higashikushira Cho,Kimotsuki District Higashikushira Town
+"46","46490",46490,鹿児島県,カゴシマケン,Kagoshima,肝属郡錦江町,キモツキグンキンコウチョウ,Kimotsuki Gun Kinko Cho,Kimotsuki District Kinko Town
+"46","46491",46491,鹿児島県,カゴシマケン,Kagoshima,肝属郡南大隅町,キモツキグンミナミオオスミチョウ,Kimotsuki Gun Minamiosumi Cho,Kimotsuki District Minamiosumi Town
+"46","46492",46492,鹿児島県,カゴシマケン,Kagoshima,肝属郡肝付町,キモツキグンキモツキチョウ,Kimotsuki Gun Kimotsuki Cho,Kimotsuki District Kimotsuki Town
+"46","46501",46501,鹿児島県,カゴシマケン,Kagoshima,熊毛郡中種子町,クマゲグンナカタネチョウ,Kumage Gun Nakatane Cho,Kumage District Nakatane Town
+"46","46502",46502,鹿児島県,カゴシマケン,Kagoshima,熊毛郡南種子町,クマゲグンミナミタネチョウ,Kumage Gun Minamitane Cho,Kumage District Minamitane Town
+"46","46505",46505,鹿児島県,カゴシマケン,Kagoshima,熊毛郡屋久島町,クマゲグンヤクシマチョウ,Kumage Gun Yakushima Cho,Kumage District Yakushima Town
+"46","46523",46523,鹿児島県,カゴシマケン,Kagoshima,大島郡大和村,オオシマグンヤマトソン,Oshima Gun Yamato Son,Oshima District Yamato Village
+"46","46524",46524,鹿児島県,カゴシマケン,Kagoshima,大島郡宇検村,オオシマグンウケンソン,Oshima Gun Uken Son,Oshima District Uken Village
+"46","46525",46525,鹿児島県,カゴシマケン,Kagoshima,大島郡瀬戸内町,オオシマグンセトウチチョウ,Oshima Gun Setochi Cho,Oshima District Setochi Town
+"46","46527",46527,鹿児島県,カゴシマケン,Kagoshima,大島郡龍郷町,オオシマグンタツゴウチョウ,Oshima Gun Tatsugo Cho,Oshima District Tatsugo Town
+"46","46529",46529,鹿児島県,カゴシマケン,Kagoshima,大島郡喜界町,オオシマグンキカイチョウ,Oshima Gun Kikai Cho,Oshima District Kikai Town
+"46","46530",46530,鹿児島県,カゴシマケン,Kagoshima,大島郡徳之島町,オオシマグントクノシマチョウ,Oshima Gun Tokunoshima Cho,Oshima District Tokunoshima Town
+"46","46531",46531,鹿児島県,カゴシマケン,Kagoshima,大島郡天城町,オオシマグンアマギチョウ,Oshima Gun Amagi Cho,Oshima District Amagi Town
+"46","46532",46532,鹿児島県,カゴシマケン,Kagoshima,大島郡伊仙町,オオシマグンイセンチョウ,Oshima Gun Isen Cho,Oshima District Isen Town
+"46","46533",46533,鹿児島県,カゴシマケン,Kagoshima,大島郡和泊町,オオシマグンワドマリチョウ,Oshima Gun Wadomari Cho,Oshima District Wadomari Town
+"46","46534",46534,鹿児島県,カゴシマケン,Kagoshima,大島郡知名町,オオシマグンチナチョウ,Oshima Gun China Cho,Oshima District China Town
+"46","46535",46535,鹿児島県,カゴシマケン,Kagoshima,大島郡与論町,オオシマグンヨロンチョウ,Oshima Gun Yoron Cho,Oshima District Yoron Town
+"47","47201",47201,沖縄県,オキナワケン,Okinawa,那覇市,ナハシ,Naha Shi,Naha City
+"47","47205",47205,沖縄県,オキナワケン,Okinawa,宜野湾市,ギノワンシ,Ginowan Shi,Ginowan City
+"47","47207",47207,沖縄県,オキナワケン,Okinawa,石垣市,イシガキシ,Ishigaki Shi,Ishigaki City
+"47","47208",47208,沖縄県,オキナワケン,Okinawa,浦添市,ウラソエシ,Urasoe Shi,Urasoe City
+"47","47209",47209,沖縄県,オキナワケン,Okinawa,名護市,ナゴシ,Nago Shi,Nago City
+"47","47210",47210,沖縄県,オキナワケン,Okinawa,糸満市,イトマンシ,Itoman Shi,Itoman City
+"47","47211",47211,沖縄県,オキナワケン,Okinawa,沖縄市,オキナワシ,Okinawa Shi,Okinawa City
+"47","47212",47212,沖縄県,オキナワケン,Okinawa,豊見城市,トミグスクシ,Tomigusuku Shi,Tomigusuku City
+"47","47213",47213,沖縄県,オキナワケン,Okinawa,うるま市,ウルマシ,Uruma Shi,Uruma City
+"47","47214",47214,沖縄県,オキナワケン,Okinawa,宮古島市,ミヤコジマシ,Miyakojima Shi,Miyakojima City
+"47","47215",47215,沖縄県,オキナワケン,Okinawa,南城市,ナンジョウシ,Nanjo Shi,Nanjo City
+"47","47301",47301,沖縄県,オキナワケン,Okinawa,国頭郡国頭村,クニガミグンクニガミソン,Kunigami Gun Kunigami Son,Kunigami District Kunigami Village
+"47","47302",47302,沖縄県,オキナワケン,Okinawa,国頭郡大宜味村,クニガミグンオオギミソン,Kunigami Gun Ogimi Son,Kunigami District Ogimi Village
+"47","47303",47303,沖縄県,オキナワケン,Okinawa,国頭郡東村,クニガミグンヒガシソン,Kunigami Gun Higashi Son,Kunigami District Higashi Village
+"47","47306",47306,沖縄県,オキナワケン,Okinawa,国頭郡今帰仁村,クニガミグンナキジンソン,Kunigami Gun Nakijin Son,Kunigami District Nakijin Village
+"47","47308",47308,沖縄県,オキナワケン,Okinawa,国頭郡本部町,クニガミグンモトブチョウ,Kunigami Gun Motobu Cho,Kunigami District Motobu Town
+"47","47311",47311,沖縄県,オキナワケン,Okinawa,国頭郡恩納村,クニガミグンオンナソン,Kunigami Gun Onna Son,Kunigami District Onna Village
+"47","47313",47313,沖縄県,オキナワケン,Okinawa,国頭郡宜野座村,クニガミグンギノザソン,Kunigami Gun Ginoza Son,Kunigami District Ginoza Village
+"47","47314",47314,沖縄県,オキナワケン,Okinawa,国頭郡金武町,クニガミグンキンチョウ,Kunigami Gun Kin Cho,Kunigami District Kin Town
+"47","47315",47315,沖縄県,オキナワケン,Okinawa,国頭郡伊江村,クニガミグンイエソン,Kunigami Gun Ie Son,Kunigami District Ie Village
+"47","47324",47324,沖縄県,オキナワケン,Okinawa,中頭郡読谷村,ナカガミグンヨミタンソン,Nakagami Gun Yomitan Son,Nakagami District Yomitan Village
+"47","47325",47325,沖縄県,オキナワケン,Okinawa,中頭郡嘉手納町,ナカガミグンカデナチョウ,Nakagami Gun Kadena Cho,Nakagami District Kadena Town
+"47","47326",47326,沖縄県,オキナワケン,Okinawa,中頭郡北谷町,ナカガミグンチャタンチョウ,Nakagami Gun Chatan Cho,Nakagami District Chatan Town
+"47","47327",47327,沖縄県,オキナワケン,Okinawa,中頭郡北中城村,ナカガミグンキタナカグスクソン,Nakagami Gun Kitanakagusuku Son,Nakagami District Kitanakagusuku Village
+"47","47328",47328,沖縄県,オキナワケン,Okinawa,中頭郡中城村,ナカガミグンナカグスクソン,Nakagami Gun Nakagusuku Son,Nakagami District Nakagusuku Village
+"47","47329",47329,沖縄県,オキナワケン,Okinawa,中頭郡西原町,ナカガミグンニシハラチョウ,Nakagami Gun Nishihara Cho,Nakagami District Nishihara Town
+"47","47348",47348,沖縄県,オキナワケン,Okinawa,島尻郡与那原町,シマジリグンヨナバルチョウ,Shimajiri Gun Yonabaru Cho,Shimajiri District Yonabaru Town
+"47","47350",47350,沖縄県,オキナワケン,Okinawa,島尻郡南風原町,シマジリグンハエバルチョウ,Shimajiri Gun Haebaru Cho,Shimajiri District Haebaru Town
+"47","47353",47353,沖縄県,オキナワケン,Okinawa,島尻郡渡嘉敷村,シマジリグントカシキソン,Shimajiri Gun Tokashiki Son,Shimajiri District Tokashiki Village
+"47","47354",47354,沖縄県,オキナワケン,Okinawa,島尻郡座間味村,シマジリグンザマミソン,Shimajiri Gun Zamami Son,Shimajiri District Zamami Village
+"47","47355",47355,沖縄県,オキナワケン,Okinawa,島尻郡粟国村,シマジリグンアグニソン,Shimajiri Gun Aguni Son,Shimajiri District Aguni Village
+"47","47356",47356,沖縄県,オキナワケン,Okinawa,島尻郡渡名喜村,シマジリグントナキソン,Shimajiri Gun Tonaki Son,Shimajiri District Tonaki Village
+"47","47357",47357,沖縄県,オキナワケン,Okinawa,島尻郡南大東村,シマジリグンミナミダイトウソン,Shimajiri Gun Minamidaito Son,Shimajiri District Minamidaito Village
+"47","47358",47358,沖縄県,オキナワケン,Okinawa,島尻郡北大東村,シマジリグンキタダイトウソン,Shimajiri Gun Kitadaito Son,Shimajiri District Kitadaito Village
+"47","47359",47359,沖縄県,オキナワケン,Okinawa,島尻郡伊平屋村,シマジリグンイヘヤソン,Shimajiri Gun Iheya Son,Shimajiri District Iheya Village
+"47","47360",47360,沖縄県,オキナワケン,Okinawa,島尻郡伊是名村,シマジリグンイゼナソン,Shimajiri Gun Izena Son,Shimajiri District Izena Village
+"47","47361",47361,沖縄県,オキナワケン,Okinawa,島尻郡久米島町,シマジリグンクメジマチョウ,Shimajiri Gun Kumejima Cho,Shimajiri District Kumejima Town
+"47","47362",47362,沖縄県,オキナワケン,Okinawa,島尻郡八重瀬町,シマジリグンヤエセチョウ,Shimajiri Gun Yaese Cho,Shimajiri District Yaese Town
+"47","47375",47375,沖縄県,オキナワケン,Okinawa,宮古郡多良間村,ミヤコグンタラマソン,Miyako Gun Tarama Son,Miyako District Tarama Village
+"47","47381",47381,沖縄県,オキナワケン,Okinawa,八重山郡竹富町,ヤエヤマグンタケトミチョウ,Yaeyama Gun Taketomi Cho,Yaeyama District Taketomi Town
+"47","47382",47382,沖縄県,オキナワケン,Okinawa,八重山郡与那国町,ヤエヤマグンヨナグニチョウ,Yaeyama Gun Yonaguni Cho,Yaeyama District Yonaguni Town

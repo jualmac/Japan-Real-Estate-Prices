@@ -10,7 +10,14 @@ import sqlite3
 from pathlib import Path
 from typing import Dict, Optional
 import pandas as pd
-from src.config import DATASETS_DIR, DB_FILE
+from src.config import (
+    DATASETS_DIR,
+    DB_FILE,
+    DISTRICT_CODE_FILE,
+    MUNICIPALITY_CODE_FILE,
+    PREFECTURE_CODE_FILE,
+    TRADE_PRICES_DIR,
+)
 
 ########################################################################################################################
 #
@@ -18,6 +25,12 @@ from src.config import DATASETS_DIR, DB_FILE
 #
 ########################################################################################################################
 DEFAULT_QUERY = "SELECT * FROM TokyoPrices"  # TODO: expand once SQL exposes all prefectures;
+
+LOOKUP_TABLE_FILES: Dict[str, Path] = {
+    "prefecture_code": PREFECTURE_CODE_FILE,
+    "municipality_code": MUNICIPALITY_CODE_FILE,
+    "district_code": DISTRICT_CODE_FILE,
+}
 
 DATA_TYPES: Dict[str, type] = {
     "Breadth": float,
@@ -163,7 +176,11 @@ class DBConnection:
 
     def initialize_database(self, data_directory: str | Path = DATASETS_DIR) -> None:
         """
-        Populate SQLite tables from downloaded Kaggle CSV files when the database is empty.
+        Populate SQLite tables from local CSV files when expected tables are missing.
+
+        Trade-price rows are loaded from datasets/trade_prices/01.csv ... 47.csv.
+        Location lookup tables come from prefecture_code.csv, municipality_code.csv,
+        and district_code.csv in datasets/.
         """
         data_directory = Path(data_directory)
         Path(self.database_file).parent.mkdir(parents=True, exist_ok=True)
@@ -176,28 +193,43 @@ class DBConnection:
                 )
 
                 existing_table_names = set(existing_tables["name"])
-                expected_data_tables = {f"{i:02d}" for i in range(1, 48)} | {
-                    "prefecture_code",
-                    "municipality_code",
-                    "district_code",
-                }
+                expected_data_tables = {f"{i:02d}" for i in range(1, 48)} | set(
+                    LOOKUP_TABLE_FILES
+                )
 
                 if expected_data_tables.issubset(existing_table_names):
                     print("Database already has all expected data tables, skipping initialization.")
                     return
 
-                csv_files = sorted(data_directory.rglob("*.csv"))
+                csv_sources: list[tuple[str, Path]] = []
+                trade_prices_dir = TRADE_PRICES_DIR if data_directory == DATASETS_DIR else data_directory / "trade_prices"
 
-                if not csv_files:
-                    print(f"No CSV files found in {data_directory.resolve()}.")
-                    return
-
-                for csv_file in csv_files:
-                    table_name = csv_file.stem
+                for prefecture_index in range(1, 48):
+                    table_name = f"{prefecture_index:02d}"
                     if table_name in existing_table_names:
                         continue
 
-                    # Each Kaggle CSV becomes one SQLite table with the same base filename;
+                    csv_path = trade_prices_dir / f"{table_name}.csv"
+                    if csv_path.is_file():
+                        csv_sources.append((table_name, csv_path))
+
+                for table_name, csv_path in LOOKUP_TABLE_FILES.items():
+                    if table_name in existing_table_names:
+                        continue
+                    if csv_path.is_file():
+                        csv_sources.append((table_name, csv_path))
+                    else:
+                        print(f"Missing CSV for table {table_name!r}: {csv_path.resolve()}")
+
+                if not csv_sources:
+                    missing_tables = sorted(expected_data_tables - existing_table_names)
+                    print(
+                        "No CSV sources found for missing tables: "
+                        + ", ".join(missing_tables)
+                    )
+                    return
+
+                for table_name, csv_file in csv_sources:
                     dataframe = pd.read_csv(csv_file, low_memory=False)
                     dataframe.to_sql(table_name, conn, if_exists="replace", index=False)
                     print(f"Created table {table_name} from {csv_file.name}.")
