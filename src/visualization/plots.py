@@ -235,8 +235,11 @@ def plot_test_predictions(
 
     y_true = np.asarray(inverse_log_transform_target(y_plot_log))
     model_count = len(models)
-    ncols = min(3, model_count)
-    nrows = int(np.ceil(model_count / ncols))
+    if model_count == 4:
+        nrows, ncols = 2, 2
+    else:
+        ncols = min(3, model_count)
+        nrows = int(np.ceil(model_count / ncols))
     fig, axes = plt.subplots(
         nrows,
         ncols,
