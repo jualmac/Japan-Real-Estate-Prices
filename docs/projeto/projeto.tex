@@ -21,22 +21,23 @@
 
 \begin{abstract}
 This paper studies residential real estate price prediction in Japan using transaction-level data from the Ministry of
-Land, Infrastructure, Transport and Tourism (MLIT), made available through Kaggle. The problem is formulated as a
-supervised regression task in which prices are estimated from spatial, temporal, accessibility, and physical attributes.
-The empirical workflow combines chronological validation, leakage-aware preprocessing, model comparison, and
-interpretability analysis across the main residential property types. The study compares tree-based ensembles,
-regularized linear regression, and support vector regression. [Space reserved for the main conclusions and final
-empirical findings.]
+Land, Infrastructure, Transport and Tourism (MLIT). The problem is formulated as a supervised regression task in which
+prices are estimated from spatial, temporal, accessibility, and physical attributes. The empirical workflow combines
+chronological validation, leakage-aware preprocessing, model comparison, and interpretability analysis across the main
+residential property types. The study compares tree-based ensembles, regularized linear regression, and support vector
+regression. Gradient boosting outperforms the baselines. The predictions are strongest for pre-owned condominiums and
+weakest for residential land, where location matters more than physical size.
 \end{abstract}
      
 \begin{resumo} 
 Este trabalho investiga a predição de preços de imóveis residenciais no Japão a partir de dados transacionais do
-Ministry of Land, Infrastructure, Transport and Tourism (MLIT), disponibilizados por meio do Kaggle. O problema é
-formulado como uma tarefa de regressão supervisionada, na qual os preços são estimados a partir de atributos espaciais,
-temporais, físicos e de acessibilidade. O fluxo empírico combina validação cronológica, pré-processamento voltado à
-prevenção de vazamento de informação, comparação de modelos e análise interpretável para os principais tipos de imóveis
-residenciais. O estudo compara ensembles de árvores, regressão linear regularizada e regressão por vetores de suporte.
-[Espaço reservado para as principais conclusões e resultados empíricos finais.]
+Ministry of Land, Infrastructure, Transport and Tourism (MLIT). O problema é formulado como uma tarefa de regressão
+supervisionada, na qual os preços são estimados a partir de atributos espaciais, temporais, físicos e de acessibilidade.
+O fluxo empírico combina validação cronológica, pré-processamento voltado à prevenção de vazamento de informação,
+comparação de modelos e análise interpretável para os principais tipos de imóveis residenciais. O estudo compara
+ensembles de árvores, regressão linear regularizada e regressão por vetores de suporte. O gradient boosting supera as
+baselines. As previsões são mais precisas em condomínios usados e mais fracas em terrenos residenciais, nos quais a
+localização pesa mais que o tamanho físico.
 \end{resumo}
 
 
@@ -57,19 +58,19 @@ and rapid urbanization, the Japanese government prioritized speed and quantity o
 \cite{hirayama2006housing}. The resulting regulatory framework and market incentives codified a system of high-turnover
 construction, which was later exacerbated by the asset price bubble of the late 1980s. Japan’s geographic vulnerability
 to seismic activity also dictates its building philosophies. The Building Standard Act of Japan has undergone continuous
-revisions, with the most critical shift occurring in 1981 with the introduction of the \textit{Shin-Taishin} (New
+revisions, with the most critical shift occurring in 1981 with the introduction of the \textit{Shin-Taishin} New
 Anti-Seismic Design Code). Homes constructed prior to 1981 are fundamentally viewed as structurally unsafe and
 frequently fail to qualify for standard bank financing, as they're heavily penalized under modern insurance structures.
 Subsequent amendments following the 1995 Hanshin-Awaji (Kobe) earthquake and the 2011 Tohoku earthquake have further
 accelerated the technological obsolescence of older properties. Consequently, buyers often perceive purchasing a
 pre-owned home not just as an economic compromise, but as a direct compromise on structural safety.
 
-Complementing these rigid safety mandates is a pervasive cultural preference for new builds, known as
-\textit{Shinchiku}. A newly built home carries a significant socio-cultural premium in Japan, symbolizing clean slates,
-modernization, and social status. This preference is structurally reinforced by financial institutions, whereas Japanese
-banks routinely structure residential mortgages around the statutory useful life (\textit{Taikyusei}) of the building.
-For a standard timber-frame home, this period is legally defined as 22 years. Once a structure surpasses this threshold,
-securing a mortgage for its resale becomes exceedingly difficult, effectively freezing the secondary market.
+Complementing these rigid safety mandates is a pervasive cultural preference for new builds. A newly built home carries
+a significant socio-cultural premium in Japan, symbolizing clean slates, modernization, and social status. This
+preference is structurally reinforced by financial institutions, whereas Japanese banks routinely structure residential
+mortgages around the statutory useful life of the building. For a standard timber-frame home, this period is legally
+defined as 22 years. Once a structure surpasses this threshold, securing a mortgage for its resale becomes exceedingly
+difficult, effectively freezing the secondary market.
 
 It is also important to note that one of the most pressing modern challenge facing the Japanese housing market is the
 nation's demographic trajectory. Japan is characterized by a rapid aging society combined with a beneath replacement
@@ -101,12 +102,12 @@ while providing insight into the main determinants of valuation in the Japanese 
 
 This study followed a reproducible empirical workflow that combined data cleaning, feature preparation, model
 comparison, and interpretability analysis. Several regression algorithms with distinct inductive biases, including
-Gradient Boosting, Random Forests, ElasticNet regression, and Support Vector Regression, were trained and evaluated
-under the same temporal validation strategy. Rather than estimating a single pooled model for all observations, the
-empirical design separated the task into independent studies for the main residential property types. The models were
-trained and evaluated under the same temporal validation strategy within each study. Their predictive performance was
-compared using standard regression metrics, while feature importance and SHAP-based analyses were used to relate model
-behavior back to the economic and spatial determinants of Japanese housing prices.
+Gradient Boosting ElasticNet regression, and Support Vector Regression, were trained and evaluated under the same
+temporal validation strategy. Rather than estimating a single pooled model for all observations, the empirical design
+separated the task into independent studies for the main residential property types. The models were trained and
+evaluated under the same temporal validation strategy within each study. Their predictive performance was compared using
+standard regression metrics, while feature importance analysis was used to relate model behavior back to the economic
+and spatial determinants of Japanese housing prices.
 
 \section{Exploratory Data Analysis}
 The exploratory analysis began with an inspection of the structure, completeness, and temporal distribution of the MLIT
@@ -183,26 +184,28 @@ was also reconstructed from the minimum and maximum time-to-station variables, p
 accessibility measure. Remaining numerical gaps, including frontage, breadth, coverage ratio, and floor-area ratio, were
 imputed with statistics learned exclusively from the training set, primarily district-level aggregates with global
 medians as fallbacks. Remaining missing values in structure, road classification, and city planning were kept as an
-explicit unknown category before categorical encoding. After latitude and longitude were merged into the data, missing
-coordinates were handled with municipality-level medians, again fitted only on the training partition and then applied
-consistently to the validation and test sets.
+explicit unknown category before categorical encoding. Because the MLIT transaction records do not include geographic
+coordinates, latitude and longitude were obtained from an auxiliary source, the Geolonia Japanese address dataset. Each
+transaction was matched to a coordinate pair by combining Prefecture, Municipality, and District, yielding
+district-level \textit{Latitude} and \textit{Longitude} features that were merged into the modeling tables. Missing
+coordinates after this merge were handled with municipality-level medians, again fitted only on the training partition
+and then applied consistently to the validation and test sets.
 
 Additional feature preparation was applied after the initial cleaning stage. The original station-distance
 representation was converted into a numerical \textit{TimeToNearestStation} variable using the midpoint between the
 minimum and maximum reported travel times, while the transaction quarter was encoded with sine and cosine
-transformations to preserve its cyclical structure. Geographic information was enriched by merging latitude and
-longitude from the auxiliary locations database, using Geolonia address data to obtain more reliable district-level
-coordinates. The target variable was transformed with $\log(1+x)$ because housing prices are strongly right-skewed, with
-a small number of very expensive transactions that can dominate loss functions based on absolute or squared errors.
-Modeling the logarithm of price compresses these extreme values and makes the learning problem closer to predicting
-relative price differences rather than only fitting the largest transactions. The models were therefore trained and
-produced predictions on the transformed scale. Before reporting evaluation metrics, both predictions and observed values
-were converted back to Yen using the inverse transformation. The final feature set combined numerical attributes
-(\textit{TimeToNearestStation}, \textit{Area}, \textit{BuildingYear}, \textit{CoverageRatio}, \textit{FloorAreaRatio},
-\textit{Year}, cyclical quarter encodings, \textit{Latitude}, \textit{Longitude}, \textit{Frontage}, and
-\textit{Breadth}) with one-hot encoded categorical attributes for \textit{Structure}, road \textit{Classification}, and
-\textit{CityPlanning}. Finally, numerical features were normalized with train-fitted min-max scalers, and feature names
-were standardized to ensure compatibility with the different modeling libraries.
+transformations to preserve its cyclical structure. The target variable was transformed with $\log(1+x)$ because housing
+prices are strongly right-skewed, with a small number of very expensive transactions that can dominate loss functions
+based on absolute or squared errors. Modeling the logarithm of price compresses these extreme values and makes the
+learning problem closer to predicting relative price differences rather than only fitting the largest transactions. The
+models were therefore trained and produced predictions on the transformed scale. Before reporting evaluation metrics,
+both predictions and observed values were converted back to Yen using the inverse transformation. The final feature set
+combined numerical attributes (\textit{TimeToNearestStation}, \textit{Area}, \textit{BuildingYear},
+\textit{CoverageRatio}, \textit{FloorAreaRatio}, \textit{Year}, cyclical quarter encodings, \textit{Latitude},
+\textit{Longitude}, \textit{Frontage}, and \textit{Breadth}) with one-hot encoded categorical attributes for
+\textit{Structure}, road \textit{Classification}, and \textit{CityPlanning}. Finally, numerical features were normalized
+with train-fitted min-max scalers, and feature names were standardized to ensure compatibility with the different
+modeling libraries.
 
 \subsection{Property-Type Study Design}
 The final modeling pipeline was organized as a set of independent property-type studies. Three residential market
@@ -216,21 +219,17 @@ workflow of chronological splitting, cleaning, feature engineering, scaling, hyp
 evaluation, and interpretability analysis. This avoids forcing structurally heterogeneous markets into a single
 regression function. It also prevents the property-type indicator from acting as a coarse proxy for different valuation
 regimes, as we've noted in the preliminary tests, where the \textit{Type} would act was one the of the main indicators
-of value; after filtering, that variable is constant within each study and is therefore not used as a model feature. The
-same experimental protocol was applied to all studies, while parameter files, diagnostic plots, input snapshots, and
-metric records were stored separately or tagged by study name to preserve traceability.
+of value. The same experimental setup was applied to all studies, while parameter files, diagnostic plots, input
+snapshots, and metric records were stored separately or tagged by study name to preserve traceability.
 
 \subsection{Models and Evaluation}
-The study compared five regression models with different assumptions and learning architectures. \textit{XGBoost}
+The study compared four regression models with different assumptions and learning architectures. \textit{XGBoost}
 \cite{chen_xgboost} was used as a gradient boosting model that builds weak decision trees sequentially, using previous
 errors to construct a stronger ensemble, while \textit{LightGBM} \cite{lightgbm} provided a more computationally
-efficient boosting approach based on leaf-wise tree growth. \textit{Random Forest} represented a bagging-based ensemble
-of decision trees trained on bootstrapped samples, reducing variance by averaging many independent predictors. For
-technical reasons, the version of \textit{Random Forest} implemented was the one from \textit{cuML}
-\cite{raschka2020machine}, given their faster training and inference on GPU. As a linear baseline, \textit{ElasticNet}
-\cite{Zou2005} combined L1 and L2 regularization to balance feature selection and coefficient shrinkage. Finally,
-\textit{Support Vector Regression} \cite{Smola2004} estimated a regression function within an error-tolerant margin,
-allowing nonlinear patterns to be modeled through kernel transformations.
+efficient boosting approach based on leaf-wise tree growth. As a linear baseline, \textit{ElasticNet} \cite{Zou2005}
+combined L1 and L2 regularization to balance feature selection and coefficient shrinkage. Finally, \textit{Support
+Vector Regression} \cite{Smola2004} estimated a regression function within an error-tolerant margin, allowing nonlinear
+patterns to be modeled through kernel transformations.
 
 Model performance was evaluated using complementary regression metrics on both the transformed and original price
 scales. In log space, Root Mean Squared Error (RMSE) and the coefficient of determination ($R^2$) were used to compare
@@ -246,12 +245,109 @@ partitions, and feature set used during training.
 
 Interpretability was incorporated after model selection (\textit{post hoc}) in order to connect predictive performance
 with substantive housing-market explanations. For the best-performing model, global feature importance was used to
-identify the variables that contributed most strongly to prediction, while SHAP analysis provided a more detailed view
-of how individual features influenced model outputs across the test set.
+identify the variables that contributed most strongly to prediction across the test set.
 
 \section{Results}
-IN PROGRESS
+Across all three markets, the gradient boosting models (GBMs) consistently outperformed the linear and kernel baselines.
+\textit{ElasticNet} and \textit{Support Vector Regression} achieved substantially higher error on both the
+log-transformed and original Yen scales and struggled to reproduce the wide, right-skewed distribution of transaction
+prices. On the test set, their predictions failed to track the observed price range, either compressing values near the
+lower end of the distribution or producing unstable extrapolations for higher-priced transactions.
+Figure~\ref{fig:test-predictions-land-and-building} illustrates this pattern through an actual-versus-predicted scatter
+plot for the baseline models on the held-out test period in the \textit{Residential Land (Land and Building)} study, a
+similar patter emerges for the \textit{Residential Land (Land Only)}.
 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/residential_land_and_building/test_actual_vs_predicted.png}
+  \caption{Test-set actual versus predicted trade prices in the \textit{Residential Land (Land and Building)} study}
+  \label{fig:test-predictions-land-and-building}
+\end{figure}
+
+Table~\ref{tab:test-metrics} summarizes the test-set performance across the different models and property-type studies.
+The regression errors are highest in the residential land segments, where no model managed to generalize a highly robust
+solution. Performance on \textit{Residential Land (Land Only)} is slightly worse than on \textit{Residential Land (Land
+and Building)}, though both remain far behind the condominium study. Conversely, the models trained on \textit{Pre-owned
+Condominiums} yield significantly better metrics, demonstrating a genuine ability to make accurate, reliable
+predictions.
+
+\begin{table}[ht]
+  \centering
+  \caption{Test-set regression metrics by property-type study and model. Log-space metrics correspond to the $\log(1+x)$
+  target; Yen-scale metrics are computed after inverse transformation. RMSE and MAE in Yen are reported in millions.}
+  \label{tab:test-metrics}
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{p{2.4cm}|lrrrrr}
+    \hline
+    \textbf{Study} & \textbf{Model} & \textbf{RMSE$_{\log}$} & \textbf{$R^2_{\log}$} & \textbf{RMSE (M¥)} & \textbf{MAE
+    (M¥)} & \textbf{$R^2$ (Yen)} \\
+    \hline
+    \textit{R. Land (Land and Building)} & \textit{XGBoost} & 0.554 & 0.757 & 110.8 & 14.6 & 0.538 \\
+    & \textit{LightGBM} & 0.555 & 0.756 & 106.3 & 14.4 & 0.575 \\
+    & \textit{ElasticNet} & 0.790 & 0.575 & 149.7 & 23.3 & 0.157 \\
+    & \textit{Support Vector Regression} & 0.804 & 0.582 & 150.2 & 23.0 & 0.151 \\
+    \hline
+    \textit{R. Land (Land Only)} & \textit{XGBoost} & 0.690 & 0.722 & 80.1 & 10.6 & 0.512 \\
+    & \textit{LightGBM} & 0.692 & 0.720 & 83.2 & 10.7 & 0.474 \\
+    & \textit{ElasticNet} & 0.969 & 0.435 & 108.3 & 17.2 & 0.107 \\
+    & \textit{Support Vector Regression} & 0.970 & 0.434 & 107.8 & 17.2 & 0.116 \\
+    \hline
+    \textit{Pre-owned Condominiums} & \textit{XGBoost} & 0.363 & 0.800 & 13.6 & 5.4 & 0.673 \\
+    & \textit{LightGBM} & 0.356 & 0.808 & 12.9 & 5.1 & 0.703 \\
+    & \textit{ElasticNet} & 0.591 & 0.471 & 104.3 & 14.2 & 0.563 \\
+    & \textit{Support Vector Regression} & 0.590 & 0.472 & 103.8 & 14.1 & 0.561 \\
+    \hline
+  \end{tabular}%
+  }
+\end{table}
+
+Comparing the feature importance profiles between these distinct market segments highlights why the condominium models
+achieve superior predictive power. As illustrated in Figure~\ref{fig:feature-importance}, valuation dynamics differ
+fundamentally between property types. For \textit{Pre-owned Condominiums} (typically Japanese apartments), a single
+structural attribute, \textit{Area}, dominates the model's decision-making process, capturing the core variance of the
+problem and enabling clean generalization. That is, the asset class has a more predictable, standardized pricing
+mechanism.
+
+In contrast, for \textit{R. Land (Land and Building)}, physical dimensions alone are insufficient. Instead, spatial
+coordinates (\textit{Latitude} and \textit{Longitude}) emerge as primary drivers, confirming that real estate valuation
+in this segment is very sensitive to location. Since modeling localized geographical premiums and complex neighborhood
+dynamics are inherently more difficult than scaling prices by floor area, the models struggle to find an optimal global
+solution, resulting in the higher error metrics observed in Table~\ref{tab:test-metrics}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.99\textwidth]{../../plots/featureimp.jpeg}
+  \caption{Comparison of the top 15 feature importances for Residential Land (Land and Building) versus Pre-owned Condominiums.}
+  \label{fig:feature-importance}
+\end{figure}
+
+\section{Conclusion}
+This study has investigated the task of predicting residential real estate transaction prices in Japan, a market
+characterized by a unique decoupling of structural and land values driven by strict anti-seismic mandates, cultural
+fresh-build preferences, and stark demographic contractions. Our empirical findings demonstrate that real estate
+valuation in this environment is an inherently complex problem. The predictive difficulty is heavily
+stratified across property types. That is, while condominium valuations scale predictably with physical size, standalone
+residential properties depend on localized geographical premiums that are notoriously difficult to capture using global
+estimators. 
+
+The primary insight of this work is that confronting this inherent difficulty requires a strategic decomposition of the
+market. By segmenting the macro-level dataset into isolated, homogeneous property-type studies, we prevented structural
+differences from muddying the models' inductive biases. This design paved a clear path toward localized optimization,
+yielding highly viable predictions in the condominium sector and establishing baselines for land transactions. 
+
+To bridge the remaining performance gaps in the more volatile residential land segments, future research should
+transition from global spatial coordinates to richer localized indicators. Integrating localized features, such as
+moving historical neighborhood averages, district-level socioeconomic indices, and granular accessibility metrics, will
+allow the models to better map complex spatial dynamics. Ultimately, this combination of targeted data segmentation and
+localized feature engineering offers a reproducible framework for executing predictive modeling inside highly
+non-traditional asset markets.
+
+\noindent\textbf{Code availability.} The source code for this study is open and available at
+\url{https://github.com/jualmac/Japan-Real-Estate-Prices}.
+
+\bigskip
 \bibliographystyle{projeto}
 \bibliography{projeto}
 
