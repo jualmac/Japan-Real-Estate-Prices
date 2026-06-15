@@ -143,7 +143,7 @@ class Config:
     Immutable runtime configuration consumed by main.py and the pipeline modules.
     """
     seed: int = 42
-    n_trials: int = 10
+    n_trials: int = 5
     val_quantile: float = 0.70
     test_quantile: float = 0.85
     target_transform: str = "log1p"
